@@ -1,0 +1,94 @@
+.resetpass-back{
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.resetpass-container {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    left: 30%;
+    margin: 12% 10% 0 0;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Poppins', FontAwesome, sans-serif;
+    font-weight: 500;
+    font-style: inherit;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.resetpass-container img {
+    width: 70%;
+    height: 70%;
+    margin: 15%;
+    grid-column: 1;
+}
+
+.resetpass-form {
+    display: grid;
+    font-family: 'Poppins', FontAwesome, sans-serif;
+    font-style: inherit;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 1fr 0.5fr;
+    justify-items: center;
+}
+
+.resetpass-form input {
+    font-family: 'Poppins', FontAwesome, sans-serif;
+    width: 50%;
+    height: 45%;
+    border-radius: 25px;
+    border: 1px solid dimgrey;
+    background-color: #f2f2f2;
+    padding: 5px 2px 5px 10px;
+    font-weight: 500;
+}
+
+.resetpass-form input:focus {
+    outline: none;
+}
+
+.resetpass-form input:focus::placeholder {
+    color: #48c78b;
+    transition-duration: 1s;
+    padding-left: 5px;
+}
+
+.resetpass-form input:not(:focus)::placeholder {
+    transition-duration: 1s;
+}
+
+.resetpass-form button {
+    margin-top: 10%;
+    width: 50%;
+    height: 45%;
+    font-family: 'Poppins', FontAwesome, sans-serif;
+    border-radius: 25px;
+    border: 1px solid white;
+    background-color: #48c78b;
+    color: white;
+    font-size: 15px;
+}
+
+.resetpass-form button:hover {
+    background-color: black;
+    transition-duration: 1.5s;
+    transform: scale(1.1);
+}
+
+.resetpass-form button:not(:hover) {
+    transition-duration: 1.5s;
+}
+
+.resetpass-form span{
+    width: 50%;
+    height: 40%;
+    text-align: center;
+    font-family: 'Poppins', FontAwesome, sans-serif;
+    color: #ed958e;
+    font-size: 12px;
+}

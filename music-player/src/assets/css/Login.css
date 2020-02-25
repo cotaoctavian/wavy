@@ -1,0 +1,176 @@
+.login-back {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: rgb(204,112,112);
+    background: linear-gradient(90deg, rgba(204,112,112,1) 0%, rgba(144,194,175,1) 70%, rgba(118,205,174,1) 100%);
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.login-container{
+    width:40%;
+    position: relative;
+    background-color: white;
+    left:30%;
+    margin: 12% 10% 0 0;
+    border-radius:15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Poppins', FontAwesome, 'sans-serif';
+    -webkit-box-shadow: -1px 0px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 0px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 0px 16px 0px rgba(0,0,0,0.75);
+}
+
+.login-container img{
+    position: relative;
+    top: 10%;
+    left: 18%;
+}
+
+.login-container form {
+    display: grid;
+    grid-template-rows: 1fr 0.4fr 0.4fr 0.8fr 25px 0.4fr 1.5fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.cell1{
+    grid-column: 1;
+    grid-row: 1;
+    font-weight: 500;
+}
+
+.cell2{
+    grid-column: 1;
+    grid-row: 2;
+    width: 55%;
+    height: 55%;
+    border-radius: 25px;
+    border: 1px solid white;
+    padding: 5px 5px 5px 15px;
+    font-family: 'Poppins', FontAwesome, sans-serif;
+    font-style: inherit;
+    font-weight: 500;
+    background-color: #f2f2f2;
+}
+
+.cell2:focus{
+    outline: none;
+}
+
+.cell2:focus::placeholder{
+    color: #48c78b;
+    transition-duration: 1s;
+}
+
+.cell2:not(:focus)::placeholder{
+    transition-duration:1s;
+}
+
+.cell3{
+    grid-column: 1;
+    grid-row:3;
+    width: 55%;
+    height: 55%;
+    border-radius: 25px;
+    border: 1px solid white;
+    padding: 5px 5px 5px 15px;
+    font-family: 'Poppins', FontAwesome, sans-serif;
+    font-weight: 500;
+    background-color: #f2f2f2;
+}
+
+.cell3:focus{
+    outline: none;
+}
+
+.cell3:focus::placeholder{
+    color: #48c78b;
+    transition-duration: 1s;
+}
+
+.cell3:not(:focus)::placeholder{
+    transition-duration:1s;
+}
+
+.cell4{
+    grid-column: 1;
+    grid-row: 4;
+    width: 58.5%;
+    height: 60%;
+    border-radius: 25px;
+    border: 1px solid white;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #48c78b;
+    font-weight: bold;
+}
+
+.cell4:focus{
+    outline: none;
+}
+
+.cell4:hover{
+    transition-duration: 1.5s;
+    transform: scale(1.05);
+    background-color: black;
+}
+
+.cell4:not(:hover){
+    transition-duration: 1.5s;
+    transform: scale(1);
+}
+
+.cell5{
+    grid-column: 1;
+    grid-row: 5;
+    font-family: 'Poppins', sans-serif;
+    color:#969696;
+    font-size: 12px;
+}
+
+.cell6{
+    grid-column: 1;
+    grid-row: 7;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-top: 12.5%;
+    font-size: 14px;
+}
+
+.cell6:hover{
+    color: #48c78b;
+}
+
+.forgot{
+    text-decoration: none;
+    color: black;
+}
+
+.forgot:hover{
+    color: #48c78b;
+}
+
+.cell7{
+    grid-column: 1;
+    grid-row: 6;
+    position: fixed;
+    width: 11%;
+    height: 2%;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid white;
+    padding: 5px 5px 5px 5px;
+    margin-top: 15%;
+    margin-left: 4.25%;
+    font-family: 'Poppins', FontAwesome, sans-serif;
+    background-color: #ed958e;
+    color: white;
+    font-size: 12px;
+}
+

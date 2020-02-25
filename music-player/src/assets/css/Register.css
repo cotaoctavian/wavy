@@ -1,0 +1,234 @@
+.register-back{
+    background: rgb(254,223,223);
+    background: linear-gradient(260deg, rgba(254,223,223,1) 0%, rgba(198,218,255,1) 100%);
+    font-family: 'Poppins', FontAwesome, sans-serif;
+}
+
+.register-container {
+    position: relative;
+    left:30%;
+    margin: 12% 10% 0 0;
+    width: 40%;
+    background: aliceblue;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -webkit-box-shadow: -1px 0px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 0px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 0px 16px 0px rgba(0,0,0,0.75);
+}
+
+.register-container form{
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 2fr 0.8fr 0.1fr 0.8fr 0.1fr 0.8fr 0.1fr 0.8fr 0.1fr 2.0fr 0.1fr 2fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.register-container img {
+    margin-top: 8%;
+    width: 85%;
+    height: 85%;
+    grid-column: 2;
+    grid-row: 1 / 11;
+    left: 2%;
+}
+
+.register-cell1{
+    grid-row: 1;
+    grid-column: 1;
+    font-weight: 500;
+}
+
+.register-cell2{
+    grid-row: 2;
+    grid-column: 1;
+    width: 55%;
+    height: 55%;
+    border-radius: 25px;
+    border: 1px solid grey;
+    padding: 5px 5px 5px 15px;
+    font-family: 'Poppins', FontAwesome, sans-serif;
+    font-style: inherit;
+    font-weight: 500;
+    background-color: ghostwhite;
+}
+
+.register-cell2:focus::placeholder{
+    color: #48c78b;
+    transition-duration: 1s;
+}
+
+.register-cell2:not(:focus)::placeholder{
+    transition-duration:1s;
+}
+
+.register-cell2:focus{
+    outline: none;
+}
+
+.register-cell3{
+    grid-row: 4;
+    grid-column: 1;
+    width: 55%;
+    height: 55%;
+    border-radius: 25px;
+    border: 1px solid grey;
+    padding: 5px 5px 5px 15px;
+    font-family: 'Poppins', FontAwesome, sans-serif;
+    font-style: inherit;
+    font-weight: 500;
+    background-color: ghostwhite;
+}
+
+.register-cell3:focus::placeholder{
+    color: #48c78b;
+    transition-duration: 1s;
+}
+
+.register-cell3:focus{
+    outline: none;
+}
+
+.register-cell3:not(:focus)::placeholder{
+    transition-duration:1s;
+}
+
+.register-cell4{
+    grid-row: 6;
+    grid-column: 1;
+    width: 55%;
+    height: 55%;
+    border-radius: 25px;
+    border: 1px solid grey;
+    padding: 5px 5px 5px 15px;
+    font-family: 'Poppins', FontAwesome, sans-serif;
+    font-style: inherit;
+    font-weight: 500;
+    background-color: ghostwhite;
+}
+
+.register-cell4:focus{
+    outline: none;
+}
+
+.register-cell4:focus::placeholder{
+    color: #48c78b;
+    transition-duration: 1s;
+}
+
+.register-cell4:not(:focus)::placeholder{
+    transition-duration:1s;
+}
+
+.register-cell5{
+    grid-row: 8;
+    grid-column: 1;
+    width: 55%;
+    height: 55%;
+    border-radius: 25px;
+    border: 1px solid grey;
+    padding: 5px 5px 5px 15px;
+    font-family: 'Poppins', FontAwesome, sans-serif;
+    font-style: inherit;
+    font-weight: 500;
+    background-color: ghostwhite;
+}
+
+.register-cell5:focus{
+    outline: none;
+}
+
+.register-cell5:focus::placeholder{
+    color: #48c78b;
+    transition-duration: 1s;
+}
+
+.register-cell5:not(:focus)::placeholder{
+    transition-duration:1s;
+}
+
+.register-cell6{
+    grid-row: 10;
+    grid-column: 1;
+    width: 46%;
+    height: 40%;
+    border-radius: 25px;
+    border: 1px solid grey;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #48c78b;
+    font-weight: 500;
+}
+
+.register-cell6:focus{
+    outline: none;
+}
+
+.register-cell6:hover{
+    height: 40%;
+    background-color:black;
+    transition-duration: 1.5s;
+    transform: scale(1.1);
+}
+
+.register-cell6:not(:hover){
+    transition-duration: 1.5s;
+    transform: scale(1);
+}
+
+.register-cell7{
+    grid-row: 12;
+    grid-column: 1;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.register-cell7:hover{
+    color: #48c78b;
+}
+
+.register-cell8{
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+    grid-column: 1;
+    grid-row: 7;
+}
+
+.register-cell9{
+    font-size: 12px;
+    grid-column: 1;
+    grid-row: 9;
+    font-weight: bold;
+    color: red;
+}
+
+.register-cell10{
+    grid-row: 3;
+    grid-column: 1;
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+}
+
+.register-cell11{
+    grid-row: 5;
+    grid-column: 1;
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+}
+
+.register-cell12{
+    grid-row: 11;
+    grid-column: 1;
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+}
