@@ -21,6 +21,7 @@ const UpdateProfile = props => {
     const [currentUsername, setCurrentUsername] = useState('')
     const [password, setPassword] = useState('')
     const [message, setMessage] = useState('')
+    const [uploadMessage, setUploadMessage] = useState('')
     const [usernameMessage, setUsernameMessage] = useState('')
     const [file, setFile] = useState('')
     const [filename, setFilename] = useState('')
@@ -54,7 +55,6 @@ const UpdateProfile = props => {
 
     }
 
-    // TODO: u can do it!
     const updateImage = async (e) => {
         e.preventDefault()
 
@@ -69,18 +69,13 @@ const UpdateProfile = props => {
             });
 
             const { token, fileName, filePath } = res.data;
+            setUploadMessage(res.data.message);
             setUploadedFile({ fileName, filePath });
             setPhotoPath(filePath)
             localStorage.setItem('token', token);
             dispatch(setUpUser(jwt(token)))
         } catch (err) {
-            if (err) {
-                if (err.response.status === 500) {
-                    console.log('There was a problem with the server');
-                } else {
-                    console.log(err.response.data.msg);
-                }
-            }
+            console.log(err)
         }
     }
 
@@ -107,7 +102,6 @@ const UpdateProfile = props => {
                 setUsernameMessage(res.data.message)
                 setCurrentUsername(username)
                 setUsername('')
-                setUsernameMessage('')
                 setMessage('')
                 localStorage.setItem('token', res.data.token);
                 dispatch(setUpUser(jwt(res.data.token)))
@@ -170,6 +164,7 @@ const UpdateProfile = props => {
                                     onChange={updatePhoto}
                                 />
                                 <button> Upload </button>
+                                {uploadMessage.length > 0 ? <span> {uploadMessage} </span> : null}
                             </form>
                         </div>
 

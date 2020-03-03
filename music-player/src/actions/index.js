@@ -11,6 +11,8 @@ export const login = () => {
     }
 }
 
-export const setUpUser = (userData) => dispatch => {
-    return Promise.all([dispatch(saveUserData(userData))])
+export const setUpUser = (userData) => async (dispatch) => {
+    dispatch(login());
+    dispatch(saveUserData(userData));
 }
+

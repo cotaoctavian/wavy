@@ -12,7 +12,7 @@ router.post('/:id', (req, res) => {
 
 
     const file = req.files.file;
-    file.name = file.name + '_' + crypto.randomBytes(6).toString('hex') + '_' + id + '_' + Date.now()
+    file.name = file.name.split('.')[0] + '_' + crypto.randomBytes(6).toString('hex') + '_' + id + '_' + Date.now() + file.name.split('.')[1]
 
 
     file.mv(`${process.cwd()}/public/images/${file.name}`, err => {
@@ -26,7 +26,7 @@ router.post('/:id', (req, res) => {
                         user.img = `images/${file.name}`
                         const jwt_data = {id: user._id, email: user.email, username: user.username, img: user.img}
                         user.save()
-                            .then(() => res.json({token: jwt.sign(jwt_data, process.env.TOKEN_SECRET), fileName: file.name, filePath: `images/${file.name}`}))
+                            .then(() => res.json({message: "Your profile picture has been changed.", token: jwt.sign(jwt_data, process.env.TOKEN_SECRET), fileName: file.name, filePath: `images/${file.name}`}))
                             .catch(err => res.status(400).send(err))
                     }
                 })

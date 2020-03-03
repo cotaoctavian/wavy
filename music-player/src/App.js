@@ -7,7 +7,7 @@ import Reset from './components/Reset';
 import Home from './components/Home';
 import Dashboard from './components/Dashboard';
 import Profile from './components/Profile';
-import Player from './components/Player';
+import WebPlayer from './components/WebPlayer';
 import ChangePassword from './components/ChangePassword';
 import UpdateProfile from './components/UpdateProfile';
 
@@ -22,7 +22,7 @@ function App() {
         <Route exact path = "/resetpass" component = {ResetPass} />
         <Route exact path = "/dashboard" component = {Dashboard} />
         <Route exact path = "/profile" component = {Profile} />
-        <Route exact path = "/player" component = {Player} />
+        <Route exact path = "/player" component = {WebPlayer} />
         <Route exact path = "/change_password" component={ChangePassword} />
         <Route exact path = "/update_profile" component={UpdateProfile} />
       </Switch>
