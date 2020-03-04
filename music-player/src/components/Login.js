@@ -2,7 +2,7 @@ import React, { useState, useEffect, } from 'react';
 import photo from '../assets/images/img-01.png'
 import '../assets/css/Login.css';
 import { NavLink, useHistory } from "react-router-dom";
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Axios from 'axios';
 import jwt from 'jwt-decode'
 import { setUpUser } from '../actions/index';

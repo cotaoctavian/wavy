@@ -16,15 +16,15 @@ export const ContainerPlayer=styled.div`
     border: 2px solid black;
     width: 100%;
     height: 6%;
-    background-color: #9c7c7c;
+    background-color: black;
 
     & button {
+        padding-top: 2px;
         border: 0;
-        background-color: black;
         outline: none;
         color: white;
         width: 40px;
-        background-color: #9c7c7c;
+        background-color: black;
         font-size: 30px;
     }
 `;
@@ -33,6 +33,7 @@ export const TimerDiv = styled.div`
     & span {
         display: inline-block;
         font-family: "Poppins";
+        color: white;
     }
     
     & span:nth-child(1) {

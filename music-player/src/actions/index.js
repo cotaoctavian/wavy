@@ -1,7 +1,7 @@
 export const saveUserData = (userData) => {
     return {
         type: 'SAVE',
-        data: userData
+        data: userData,
     }
 }
 
@@ -12,7 +12,6 @@ export const login = () => {
 }
 
 export const setUpUser = (userData) => async (dispatch) => {
-    dispatch(login());
     dispatch(saveUserData(userData));
 }
 

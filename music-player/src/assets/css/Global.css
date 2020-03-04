@@ -42,4 +42,39 @@
 .header-nav-link {
     text-decoration: none;
     color: white;
+    font-weight:500;
+}
+
+.header-player-link {
+    text-decoration: none;
+    color: #c7c7c7;
+    font-weight: 500;
+}
+
+.header-player-link:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.header-player-link:focus {
+    color:white;
+    font-weight: 500;
+}
+
+.main-player-link {
+    text-decoration: none;
+    color: #c7c7c7;
+    font-weight: 500;
+}
+
+.main-player-link:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.main-player-link:focus {
+    color:white;
+    font-weight: 500;
 }

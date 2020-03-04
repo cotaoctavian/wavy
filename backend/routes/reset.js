@@ -1,5 +1,5 @@
 const router = require("express").Router();
-let User = require("../models/User");
+let User = require("../models/users.model");
 const nodemailer = require('nodemailer');
 
 const transporter = nodemailer.createTransport({

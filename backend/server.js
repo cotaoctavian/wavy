@@ -32,6 +32,7 @@ const passRouter = require('./routes/resetpass');
 const resetRouter = require('./routes/reset');
 const profileRouter = require('./routes/profile')
 const uploadRouter = require('./routes/upload');
+const songRouter = require('./routes/songs');
 
 app.use('/register', registerRouter);
 app.use('/login', loginRouter);
@@ -39,6 +40,7 @@ app.use('/resetpass', passRouter);
 app.use('/reset', resetRouter);
 app.use('/profile', profileRouter);
 app.use('/upload', uploadRouter);
+app.use('/song', songRouter);
 app.use('/static', express.static(path.join(__dirname, 'public')))
 app.use(express.static('public'));
 

@@ -1,5 +1,5 @@
 const router = require('express').Router();
-let User = require('../models/User');
+let User = require('../models/users.model');
 const crypto = require('crypto');
 const jwt = require('jsonwebtoken');
 
@@ -12,7 +12,7 @@ router.post('/:id', (req, res) => {
 
 
     const file = req.files.file;
-    file.name = file.name.split('.')[0] + '_' + crypto.randomBytes(6).toString('hex') + '_' + id + '_' + Date.now() + file.name.split('.')[1]
+    file.name = file.name.split('.')[0] + '_' + crypto.randomBytes(6).toString('hex') + '_' + Date.now() + "." + file.name.split('.')[1]
 
 
     file.mv(`${process.cwd()}/public/images/${file.name}`, err => {

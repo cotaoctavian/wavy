@@ -10,6 +10,8 @@ import Profile from './components/Profile';
 import WebPlayer from './components/WebPlayer';
 import ChangePassword from './components/ChangePassword';
 import UpdateProfile from './components/UpdateProfile';
+import Library from './components/Library';
+import LikedSongs from './components/LikedSongs';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <Route exact path = "/player" component = {WebPlayer} />
         <Route exact path = "/change_password" component={ChangePassword} />
         <Route exact path = "/update_profile" component={UpdateProfile} />
+        <Route exact path = "/library" component={Library} />
+        <Route exact path = "/library/tracks" component={LikedSongs} />
       </Switch>
     </React.Fragment>
   );

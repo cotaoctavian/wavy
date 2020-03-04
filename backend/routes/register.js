@@ -1,5 +1,6 @@
 const router = require('express').Router();
-let User = require('../models/User');
+let User = require('../models/users.model');
+
 const bcrypt = require('bcrypt');
 const nodemailer = require('nodemailer');
 
