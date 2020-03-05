@@ -78,3 +78,7 @@
     color:white;
     font-weight: 500;
 }
+
+.img__library {
+    border-radius: 25px;
+}

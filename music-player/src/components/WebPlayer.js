@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
+import { useSelector } from 'react-redux'
 import Player from './Player';
 import { Header, Global, Links, Main } from '../assets/styles/webplayer';
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -9,8 +10,8 @@ import '../assets/css/Global.css';
 
 const WebPlayer = props => {
 
-    const [url, setUrl] = useState('')
-
+    const user = useSelector(state => state.user)
+    
     let content = (
         <React.Fragment>
             <Global />
@@ -27,7 +28,7 @@ const WebPlayer = props => {
                     <span> <NavLink exact to="/search" className="header-player-link"> <FontAwesomeIcon icon={faSearch} /> Search </NavLink> </span>
                 </Links>
 
-                <NavLink exact to="/profile" className="header-nav-link"> <img src={"http://localhost:5000/images/user_avatar.svg"} alt="" /> </NavLink>
+                <NavLink exact to="/profile" className="header-nav-link"> <img src={`http://localhost:5000/${user.img}`} alt="" className="img__library"/> </NavLink>
 
             </Header>
 
@@ -35,7 +36,6 @@ const WebPlayer = props => {
 
             </Main>
 
-            <Player url={url} />
         </React.Fragment>
     );
     return content;

@@ -35,7 +35,7 @@ const Library = props => {
                     <span> <NavLink exact to="/search" className="header-player-link"> <FontAwesomeIcon icon={faSearch} /> Search </NavLink> </span>
                 </Links>
 
-                <NavLink exact to="/profile" className="header-nav-link"> <img src={"http://localhost:5000/images/user_avatar.svg"} alt="" /> </NavLink>
+                <NavLink exact to="/profile" className="header-nav-link"> <img src={`http://localhost:5000/${user.img}`} className="img__library" alt="" /> </NavLink>
 
             </Header>
 
