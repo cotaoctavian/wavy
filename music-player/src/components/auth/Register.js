@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useHistory } from "react-router-dom";
-import photo from "../assets/images/signup.png";
-import "../assets/css/Register.css";
+import photo from "../../assets/images/signup.png";
+import "../../assets/css/Register.css";
 import Axios from "axios";
 import * as EmailValidator from "email-validator";
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import photo from "../assets/images/resetpass.png";
-import "../assets/css/ResetPass.css";
+import photo from "../../assets/images/resetpass.png";
+import "../../assets/css/ResetPass.css";
 import Axios from "axios";
 
 const ResetPass = props => {

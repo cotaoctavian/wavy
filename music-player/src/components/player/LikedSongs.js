@@ -3,21 +3,20 @@ import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux'
 import Axios from 'axios';
 import Player from './Player';
-import { Header, Global, Links, Main, Menu, SongsList } from '../assets/styles/webplayer';
+import { Header, Global, Links, Main, Menu, SongsList } from '../../assets/styles/webplayer';
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Song from './Song';
-import wavy from '../assets/images/white_wave.png';
-import '../assets/css/Global.css';
+import wavy from '../../assets/images/white_wave.png';
+import '../../assets/css/Global.css';
 
-const Library = props => {
+const LikedSongs = props => {
 
-    const [url, setUrl] = useState('')
     const user = useSelector(state => state.user)
-    
-    useEffect(() => {
-        setInterval(() => setUrl(localStorage.getItem('song')), 10)
-    }, [url])
+
+    const handleSongUrl = (url) => {
+        props.handle(url)
+    }
 
     let content = (
         <React.Fragment>
@@ -49,17 +48,15 @@ const Library = props => {
                 </Menu>
 
                 <SongsList>
-                    {user.songs.map(item => {
-                        return <Song data={item} />
+                    {user.songs.map((item, id) => {
+                        return <Song handle={handleSongUrl} key={id} data={item} />
                     })}
                 </SongsList>
             </Main>
-
-            {url.length > 0? <Player url={`http://localhost:5000/${url}`} start={true} /> : null}
 
         </React.Fragment>
     );
     return content;
 }
 
-export default Library
+export default LikedSongs

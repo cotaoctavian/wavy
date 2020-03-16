@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux'
-import Player from './Player';
-import { Header, Global, Links, Main } from '../assets/styles/webplayer';
+import { Header, Global, Links, Main } from '../../assets/styles/webplayer';
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import wavy from '../assets/images/white_wave.png';
-import '../assets/css/Global.css';
+import wavy from '../../assets/images/white_wave.png';
+import '../../assets/css/Global.css';
 
 const WebPlayer = props => {
 

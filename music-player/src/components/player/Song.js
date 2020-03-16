@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
-import {SongDiv} from '../assets/styles/song';
+import {SongDiv} from '../../assets/styles/song';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 
 
@@ -13,12 +13,10 @@ const Song = props => {
                 setSong(res.data.info)
             })
             .catch(err => console.log(err))
-        
-        localStorage.setItem('song', '');
     }, [])
 
     const togglePlay = () => {
-        localStorage.setItem('song', song.path)
+        props.handle(song.path)
     }
 
     let content = (

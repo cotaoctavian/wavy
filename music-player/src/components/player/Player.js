@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Slider from '@material-ui/core/Slider';
 import VolumeUp from '@material-ui/icons/VolumeUp';
-import { ContainerPlayer, Global, TimerDiv, OptionsDiv } from '../assets/styles/player';
+import { ContainerPlayer, Global, TimerDiv, OptionsDiv } from '../../assets/styles/player';
 import PlayCircleOutlineSharpIcon from '@material-ui/icons/PlayCircleOutlineSharp';
 import PauseCircleOutlineSharpIcon from '@material-ui/icons/PauseCircleOutlineSharp';
 import SkipPreviousSharpIcon from '@material-ui/icons/SkipPreviousSharp';
@@ -57,7 +57,11 @@ const Player = props => {
 
     useEffect(() => {
         document.body.classList.remove('dashboard-back');
-        playing ? audio.play() : audio.pause();
+        if(playing) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
 
 
         setInterval(() => {
@@ -72,6 +76,16 @@ const Player = props => {
 
         audio.volume = volume / 100;
     }, [playing, volume, currentTime, audio])
+
+
+    useEffect(() => {
+        return () => {
+            setPlaying(false)
+            setCurrentTime(null)
+            setDuration(null)
+            
+        }
+    }, [])
 
     const togglePlay = () => setPlaying(!playing);
 

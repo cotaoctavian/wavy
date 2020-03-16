@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import Axios from 'axios';
 import { useHistory, NavLink } from 'react-router-dom';
-import { Global, Header, LeftHeader, RightHeader, Footer, FooterLeftSide, FooterRightSide, Main, Tdiv, Fdiv } from '../assets/styles/profile';
-import { Sdiv, Ftdiv} from '../assets/styles/changepassword';
-import w_wave from '../assets/images/white_wave.png';
-import flag from '../assets/images/romania-flag.png';
-import '../assets/css/Global.css';
+import { Global, Header, LeftHeader, RightHeader, Footer, FooterLeftSide, FooterRightSide, Main, Tdiv, Fdiv } from '../../assets/styles/profile';
+import { Sdiv, Ftdiv} from '../../assets/styles/changepassword';
+import w_wave from '../../assets/images/white_wave.png';
+import flag from '../../assets/images/romania-flag.png';
+import '../../assets/css/Global.css';
 
 const ChangePassword = props => {
 

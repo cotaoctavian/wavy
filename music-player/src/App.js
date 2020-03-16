@@ -1,19 +1,17 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
-import Register from './components/Register';
-import Login from './components/Login';
-import ResetPass from './components/ResetPass';
-import Reset from './components/Reset';
+import Register from './components/auth/Register';
+import Login from './components/auth/Login';
+import ResetPass from './components/auth/ResetPass';
+import Reset from './components/profile/ResetEmail';
 import Home from './components/Home';
 import Dashboard from './components/Dashboard';
-import Profile from './components/Profile';
-import WebPlayer from './components/WebPlayer';
-import ChangePassword from './components/ChangePassword';
-import UpdateProfile from './components/UpdateProfile';
-import Library from './components/Library';
-import LikedSongs from './components/LikedSongs';
+import Profile from './components/profile/Profile';
+import WebPlayer from './components/player/WebPlayer';
+import ChangePassword from './components/auth/ChangePassword';
+import UpdateProfile from './components/profile/UpdateProfile';
 
-function App() {
+const App = () => {
   return (
     <React.Fragment>
       <Switch>
@@ -24,12 +22,13 @@ function App() {
         <Route exact path = "/resetpass" component = {ResetPass} />
         <Route exact path = "/dashboard" component = {Dashboard} />
         <Route exact path = "/profile" component = {Profile} />
-        <Route exact path = "/player" component = {WebPlayer} />
         <Route exact path = "/change_password" component={ChangePassword} />
         <Route exact path = "/update_profile" component={UpdateProfile} />
-        <Route exact path = "/library" component={Library} />
-        <Route exact path = "/library/tracks" component={LikedSongs} />
+        <Route exact path = "/player" component = {WebPlayer} />
+        <Route exact path = "/library" component={WebPlayer} />
+        <Route exact path = "/library/tracks" component={WebPlayer} />
       </Switch>
+
     </React.Fragment>
   );
 }

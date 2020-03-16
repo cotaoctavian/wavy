@@ -1,11 +1,11 @@
 import React, { useState, useEffect, } from 'react';
-import photo from '../assets/images/img-01.png'
-import '../assets/css/Login.css';
+import photo from '../../assets/images/img-01.png'
+import '../../assets/css/Login.css';
 import { NavLink, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import Axios from 'axios';
 import jwt from 'jwt-decode'
-import { setUpUser } from '../actions/index';
+import { setUpUser } from '../../actions/index';
 
 
 const Login = () => {
@@ -40,9 +40,9 @@ const Login = () => {
 
         Axios.post('http://localhost:5000/login/', login)
             .then(res => {
-                const result = res.data.token;
-                if (result.message) setMessage(result.message);
+                if (res.data.message) setMessage(res.data.message);
                 else {
+                    const result = res.data.token;
                     localStorage.setItem('token', result);
                     localStorage.setItem('loggedIn', true);
                     dispatch(setUpUser(jwt(result)))

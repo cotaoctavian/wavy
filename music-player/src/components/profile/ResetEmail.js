@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
-import { ResetContainer, ResetForm, ResetCell1, ResetCell2, ResetCell3, Global } from '../assets/styles/reset';
+import { ResetContainer, ResetForm, ResetCell1, ResetCell2, ResetCell3, Global } from '../../assets/styles/reset';
 
 
 const Reset = props => {

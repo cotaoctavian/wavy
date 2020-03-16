@@ -2,11 +2,11 @@ import React, {useState, useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Player from './Player';
-import { Header, Global, Links, Main, Menu } from '../assets/styles/webplayer';
+import { Header, Global, Links, Main, Menu } from '../../assets/styles/webplayer';
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import wavy from '../assets/images/white_wave.png';
-import '../assets/css/Global.css';
+import wavy from '../../assets/images/white_wave.png';
+import '../../assets/css/Global.css';
 
 const Library = props => {
 
@@ -29,7 +29,6 @@ const Library = props => {
                 </Links>
 
                 <NavLink exact to="/profile" className="header-nav-link"> <img src={`http://localhost:5000/${user.img}`} alt="" className="img__library"/> </NavLink>
-
             </Header>
 
             <Main>

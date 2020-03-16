@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useHistory, NavLink } from 'react-router-dom';
-import { Global, Header, LeftHeader, RightHeader, Footer, FooterLeftSide, FooterRightSide, Main, Sdiv, Tdiv, Fdiv, Ftdiv } from '../assets/styles/profile';
-import w_wave from '../assets/images/white_wave.png';
-import flag from '../assets/images/romania-flag.png';
-import '../assets/css/Global.css';
+import { Global, Header, LeftHeader, RightHeader, Footer, FooterLeftSide, FooterRightSide, Main, Sdiv, Tdiv, Fdiv, Ftdiv } from '../../assets/styles/profile';
+import w_wave from '../../assets/images/white_wave.png';
+import flag from '../../assets/images/romania-flag.png';
+import '../../assets/css/Global.css';
 
 const Profile = props => {
 
