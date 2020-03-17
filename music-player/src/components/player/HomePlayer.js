@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { NavLink, useHistory } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux'
 import { Header, Global, Links, Main } from '../../assets/styles/webplayer';
 import { faSearch } from "@fortawesome/free-solid-svg-icons";

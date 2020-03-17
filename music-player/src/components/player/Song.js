@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
-import {SongDiv} from '../../assets/styles/song';
+import { SongDiv } from '../../assets/styles/song';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 
 
@@ -13,7 +13,7 @@ const Song = props => {
                 setSong(res.data.info)
             })
             .catch(err => console.log(err))
-    }, [])
+    })
 
     const togglePlay = () => {
         props.handle(song.path)
@@ -21,7 +21,7 @@ const Song = props => {
 
     let content = (
         <SongDiv>
-            <button onClick={togglePlay}> <PlayArrowIcon style={{color:"white"}}/> </button> 
+            <button onClick={togglePlay}> <PlayArrowIcon style={{ color: "white" }} /> </button>
             <span> {song.title} </span>
             <span> {song.artist} </span>
             <span> {song.album} </span>

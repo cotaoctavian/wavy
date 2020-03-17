@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef, useInterval } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Slider from '@material-ui/core/Slider';
@@ -25,20 +25,17 @@ const useStyles = makeStyles({
     }
 });
 
-const Player = props => {
+const Player = ({ audio, url }) => {
     const classes = useStyles();
-    const [audio] = useState(new Audio(props.url));
+    // const [audio, setAudio] = useState("");
     const [currentTime, setCurrentTime] = useState(null);
     const [duration, setDuration] = useState(null);
-    const [playing, setPlaying] = useState(props.start);
+    const [playing, setPlaying] = useState(false);
     const [volume, setVolume] = useState(40)
     const [totalTrackTime, setTotalTrackTime] = useState(null)
     const [repeatMode, setRepeatMode] = useState(0)
-    const [shuffle, setShuffle] = useState(false) 
-
-    audio.addEventListener('loadedmetadata', (e) => {
-        setTotalTrackTime(e.target.duration)
-    });
+    const [shuffle, setShuffle] = useState(false)
+    const [reset, setReset] = useState(false)
 
     const formatSecondsAsTime = (secs) => {
         var hr = Math.floor(secs / 3600);
@@ -56,36 +53,52 @@ const Player = props => {
     }
 
     useEffect(() => {
-        document.body.classList.remove('dashboard-back');
-        if(playing) {
-            audio.play();
-        } else {
-            audio.pause();
+        audio.src = `http://localhost:5000/${url}`;
+        audio.play();
+        if (url !== "") {
+            audio.pause()
         }
+        // setAudio(props.audio)
+        setPlaying(true)
+        setReset(true)
+        setDuration(null)
+        setCurrentTime(null)
+        setTotalTrackTime(null)
+    }, [url])
 
-
-        setInterval(() => {
-            setCurrentTime(formatSecondsAsTime(Math.floor(audio.currentTime).toString()))
-            if (isNaN(Math.floor(audio.duration).toString())) {
-                setDuration("00:00")
+    useEffect(() => {
+        document.body.classList.remove('dashboard-back');
+        if (audio instanceof Audio) {
+            if (playing) {
+                if (reset === true) {
+                    audio.load();
+                    audio.addEventListener('loadedmetadata', (e) => {
+                        setTotalTrackTime(e.target.duration)
+                        setDuration(formatSecondsAsTime(Math.floor(e.target.duration).toString()));
+                    });
+                    setReset(false)
+                }
+                audio.play();
+            } else {
+                audio.pause();
             }
-            else {
-                setDuration(formatSecondsAsTime(Math.floor(audio.duration).toString()));
-            }
-        }, 100)
 
-        audio.volume = volume / 100;
-    }, [playing, volume, currentTime, audio])
+            audio.addEventListener('timeupdate', (e) => {
+                setCurrentTime(formatSecondsAsTime(e.target.currentTime))
+            })
 
+            audio.volume = volume / 100;
+
+        }
+    }, [playing, volume, duration, totalTrackTime, currentTime, audio, url])
 
     useEffect(() => {
         return () => {
             setPlaying(false)
             setCurrentTime(null)
             setDuration(null)
-            
         }
-    }, [])
+    }, [audio, url])
 
     const togglePlay = () => setPlaying(!playing);
 
@@ -93,10 +106,12 @@ const Player = props => {
         setVolume(volume);
     };
 
+    // TODO -> SKIP TO THE NEXT SONG 
     const toggleForward = () => {
         console.log("next")
     }
 
+    // TODO -> SKIP TO THE PREVIOUS SONG
     const toggleBackward = () => {
         console.log("back")
     }
@@ -107,7 +122,7 @@ const Player = props => {
 
     const toggleRepeat = () => {
         if (repeatMode === 0) setRepeatMode(1);
-        else if (repeatMode === 1) setRepeatMode(2);  
+        else if (repeatMode === 1) setRepeatMode(2);
         else if (repeatMode === 2) setRepeatMode(0);
     }
 
@@ -119,84 +134,84 @@ const Player = props => {
     let content = (
         <React.Fragment>
             <Global />
-            <ContainerPlayer>
-                <button onClick={toggleBackward}> <SkipPreviousSharpIcon style={{ fontSize: 30 }} /> </button>
-                <button onClick={togglePlay}> {playing ? <PauseCircleOutlineSharpIcon style={{ fontSize: 40 }} /> : <PlayCircleOutlineSharpIcon style={{ fontSize: 40 }} />} </button>
-                <button onClick={toggleForward}> <SkipNextSharpIcon style={{ fontSize: 30 }} /> </button>
-                <TimerDiv>
-                    <span> {currentTime} </span>
-                    <span> / </span>
-                    <span> {duration} </span>
-                </TimerDiv>
+            {audio !== "" ?
+                <ContainerPlayer>
+                    <button onClick={toggleBackward}> <SkipPreviousSharpIcon style={{ fontSize: 30 }} /> </button>
+                    <button onClick={togglePlay}> {playing ? <PauseCircleOutlineSharpIcon style={{ fontSize: 40 }} /> : <PlayCircleOutlineSharpIcon style={{ fontSize: 40 }} />} </button>
+                    <button onClick={toggleForward}> <SkipNextSharpIcon style={{ fontSize: 30 }} /> </button>
+                    <TimerDiv>
+                        <span> {currentTime} </span>
+                        <span> / </span>
+                        <span> {duration} </span>
+                    </TimerDiv>
 
-                <div className={classes.trackSlider}>
-                    <Tooltip TransitionComponent={Zoom} title={formatSecondsAsTime(Math.floor(audio.currentTime).toString())}>
-                        <Grid container spacing={1}>
-                            <Grid item xs>
-                                <Slider
-                                    min={0}
-                                    step={1}
-                                    max={totalTrackTime}
-                                    value={Math.floor(audio.currentTime)}
-                                    onChange={toggleTime}
-                                    aria-labelledby="continuous-slider"
-                                    style={{ color: "white" }} />
-                            </Grid>
-                        </Grid>
-                    </Tooltip>
-                </div>
-
-
-                <OptionsDiv>
-                    <div className={classes.root}>
-                        <Tooltip TransitionComponent={Zoom} title={volume}>
+                    <div className={classes.trackSlider}>
+                        <Tooltip TransitionComponent={Zoom} title={formatSecondsAsTime(Math.floor(audio.currentTime).toString())}>
                             <Grid container spacing={1}>
                                 <Grid item xs>
                                     <Slider
                                         min={0}
                                         step={1}
-                                        max={100}
-                                        value={volume}
-                                        onChange={toggleVolume}
+                                        max={totalTrackTime}
+                                        value={Math.floor(audio.currentTime)}
+                                        onChange={toggleTime}
                                         aria-labelledby="continuous-slider"
                                         style={{ color: "white" }} />
                                 </Grid>
-                                <Grid item>
-                                    <VolumeUp style={{ width: 20, paddingTop: 2, color: "white" }} />
-                                </Grid>
                             </Grid>
                         </Tooltip>
-
                     </div>
 
-                    {repeatMode === 0 ?
-                        <Tooltip TransitionComponent={Zoom} title="Repeat none">
-                            <button onClick={toggleRepeat}> <RepeatIcon style={{ width: 20, paddingTop: 5, color: "#bbc0c7", fontSize: 25 }} /> </button>
-                        </Tooltip> : null}
 
-                    {repeatMode === 1 ?
-                        <Tooltip TransitionComponent={Zoom} title="Repeat all">
-                            <button onClick={toggleRepeat}> <RepeatIcon style={{ width: 20, paddingTop: 5, color: "white", fontSize: 25 }} /> </button>
-                        </Tooltip> : null}
+                    <OptionsDiv>
+                        <div className={classes.root}>
+                            <Tooltip TransitionComponent={Zoom} title={volume}>
+                                <Grid container spacing={1}>
+                                    <Grid item xs>
+                                        <Slider
+                                            min={0}
+                                            step={1}
+                                            max={100}
+                                            value={volume}
+                                            onChange={toggleVolume}
+                                            aria-labelledby="continuous-slider"
+                                            style={{ color: "white" }} />
+                                    </Grid>
+                                    <Grid item>
+                                        <VolumeUp style={{ width: 20, paddingTop: 2, color: "white" }} />
+                                    </Grid>
+                                </Grid>
+                            </Tooltip>
 
-                    {repeatMode === 2 ?
-                        <Tooltip TransitionComponent={Zoom} title="Repeat one">
-                            <button onClick={toggleRepeat}><RepeatOneIcon style={{ width: 20, paddingTop: 5, color: "white", fontSize: 25 }} /> </button>
-                        </Tooltip> : null}
+                        </div>
 
-                    {shuffle === false ?
-                        <Tooltip TransitionComponent={Zoom} title="Shuffle off">
-                            <button onClick={toggleShuffle}> <ShuffleIcon style={{ width: 20, paddingTop: 5, color: "#bbc0c7", fontSize: 25 }} /> </button>
-                        </Tooltip> 
-                        :
-                        <Tooltip TransitionComponent={Zoom} title="Shuffle on">
-                            <button onClick={toggleShuffle}> <ShuffleIcon style={{ width: 20, paddingTop: 5, color: "white", fontSize: 25 }} /> </button>
-                        </Tooltip>}
+                        {repeatMode === 0 ?
+                            <Tooltip TransitionComponent={Zoom} title="Repeat none">
+                                <button onClick={toggleRepeat}> <RepeatIcon style={{ width: 20, paddingTop: 5, color: "#bbc0c7", fontSize: 25 }} /> </button>
+                            </Tooltip> : null}
 
-                </OptionsDiv>
+                        {repeatMode === 1 ?
+                            <Tooltip TransitionComponent={Zoom} title="Repeat all">
+                                <button onClick={toggleRepeat}> <RepeatIcon style={{ width: 20, paddingTop: 5, color: "white", fontSize: 25 }} /> </button>
+                            </Tooltip> : null}
 
+                        {repeatMode === 2 ?
+                            <Tooltip TransitionComponent={Zoom} title="Repeat one">
+                                <button onClick={toggleRepeat}><RepeatOneIcon style={{ width: 20, paddingTop: 5, color: "white", fontSize: 25 }} /> </button>
+                            </Tooltip> : null}
 
-            </ContainerPlayer>
+                        {shuffle === false ?
+                            <Tooltip TransitionComponent={Zoom} title="Shuffle off">
+                                <button onClick={toggleShuffle}> <ShuffleIcon style={{ width: 20, paddingTop: 5, color: "#bbc0c7", fontSize: 25 }} /> </button>
+                            </Tooltip>
+                            :
+                            <Tooltip TransitionComponent={Zoom} title="Shuffle on">
+                                <button onClick={toggleShuffle}> <ShuffleIcon style={{ width: 20, paddingTop: 5, color: "white", fontSize: 25 }} /> </button>
+                            </Tooltip>}
+
+                    </OptionsDiv>
+                </ContainerPlayer> : null}
+
         </React.Fragment>
     );
 

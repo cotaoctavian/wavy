@@ -2,7 +2,7 @@ import React, { useState, useEffect, } from 'react';
 import photo from '../../assets/images/img-01.png'
 import '../../assets/css/Login.css';
 import { NavLink, useHistory } from "react-router-dom";
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import Axios from 'axios';
 import jwt from 'jwt-decode'
 import { setUpUser } from '../../actions/index';
@@ -33,7 +33,7 @@ const Login = () => {
     const onSubmit = event => {
         event.preventDefault()
 
-        const login = { 
+        const login = {
             email: email,
             password: password
         }
@@ -63,7 +63,7 @@ const Login = () => {
                 <h1 className="cell1"> Join our world! </h1>
 
                 {message.length > 0 ? <span className="cell7"> {message} </span> : null}
-                
+
                 <input className="cell2"
                     type="text"
                     required

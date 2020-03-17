@@ -15,19 +15,25 @@ import HomePlayer from './HomePlayer';
 const WebPlayer = props => {
 
     // const user = useSelector(state => state.user)
-    const [songUrl, setSongUrl] = useState('')
+    const [url, setUrl] = useState('')
+    const [audio, setAudio] = useState(new Audio())
     const urlPathname = window.location.pathname
 
-    const handleUrl = (url) => {
-        setSongUrl(url)
+    const handleUrl = (songUrl) => {
+        setUrl(songUrl)
+        // setAudio(new Audio(`http://localhost:5000/${songUrl}`))
     }
+
+    useEffect(() => {
+        
+    }, [url])
 
     let content = (
         <React.Fragment>
             {urlPathname === "/player" ? <HomePlayer handle={handleUrl} /> : null}
             {urlPathname === "/library" ? <Library handle={handleUrl} /> : null}
             {urlPathname === "/library/tracks" ? <LikedSongs handle={handleUrl} /> : null}
-            {songUrl.length > 0 ? <Player url={`http://localhost:5000/${songUrl}`} /> : null}
+            {url.length > 0 ? <Player audio={audio} url={url} /> : null}
         </React.Fragment>
     );
     return content;

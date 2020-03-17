@@ -28,7 +28,6 @@ const App = () => {
         <Route exact path = "/library" component={WebPlayer} />
         <Route exact path = "/library/tracks" component={WebPlayer} />
       </Switch>
-
     </React.Fragment>
   );
 }
