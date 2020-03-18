@@ -44,7 +44,6 @@ const Login = () => {
                 else {
                     const result = res.data.token;
                     localStorage.setItem('token', result);
-                    localStorage.setItem('loggedIn', true);
                     dispatch(setUpUser(jwt(result)))
                     history.push("/dashboard")
                 }

@@ -20,7 +20,7 @@ const Profile = props => {
     }, [user.username, user.email])
 
     const logout = () => {
-        localStorage.removeItem('logged');
+        localStorage.setItem('token', null);
         history.push('/')
     }
 

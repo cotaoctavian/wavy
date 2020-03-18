@@ -5,12 +5,6 @@ export const saveUserData = (userData) => {
     }
 }
 
-export const login = () => {
-    return {
-        type: 'SIGN_IN'
-    }
-}
-
 export const setUpUser = (userData) => async (dispatch) => {
     dispatch(saveUserData(userData));
 }

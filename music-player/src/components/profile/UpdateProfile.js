@@ -34,7 +34,7 @@ const UpdateProfile = props => {
     }, [user.username])
 
     const logout = () => {
-        localStorage.removeItem('logged');
+        localStorage.setItem('token', null);
         history.push('/')
     }
 

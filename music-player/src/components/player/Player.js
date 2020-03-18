@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, useInterval } from 'react';
+import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Slider from '@material-ui/core/Slider';
@@ -58,7 +58,6 @@ const Player = ({ audio, url }) => {
         if (url !== "") {
             audio.pause()
         }
-        // setAudio(props.audio)
         setPlaying(true)
         setReset(true)
         setDuration(null)

@@ -1,11 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Switch, Route } from 'react-router-dom';
-import { NavLink, useHistory } from 'react-router-dom';
-import { useSelector } from 'react-redux'
-import { Header, Global, Links, Main } from '../../assets/styles/webplayer';
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import wavy from '../../assets/images/white_wave.png';
 import '../../assets/css/Global.css';
 import Library from './Library';
 import LikedSongs from './LikedSongs';
@@ -16,12 +9,11 @@ const WebPlayer = props => {
 
     // const user = useSelector(state => state.user)
     const [url, setUrl] = useState('')
-    const [audio, setAudio] = useState(new Audio())
+    const [audio] = useState(new Audio())
     const urlPathname = window.location.pathname
 
     const handleUrl = (songUrl) => {
         setUrl(songUrl)
-        // setAudio(new Audio(`http://localhost:5000/${songUrl}`))
     }
 
     useEffect(() => {
