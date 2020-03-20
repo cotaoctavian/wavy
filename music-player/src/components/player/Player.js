@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Slider from '@material-ui/core/Slider';
 import VolumeUp from '@material-ui/icons/VolumeUp';
-import { ContainerPlayer, Global, TimerDiv, OptionsDiv } from '../../assets/styles/player';
+import { ContainerPlayer, Global, TimerDiv, OptionsDiv, SongInformation } from '../../assets/styles/player';
 import PlayCircleOutlineSharpIcon from '@material-ui/icons/PlayCircleOutlineSharp';
 import PauseCircleOutlineSharpIcon from '@material-ui/icons/PauseCircleOutlineSharp';
 import SkipPreviousSharpIcon from '@material-ui/icons/SkipPreviousSharp';
@@ -13,6 +13,8 @@ import RepeatOneIcon from '@material-ui/icons/RepeatOne';
 import ShuffleIcon from '@material-ui/icons/Shuffle';
 import Tooltip from '@material-ui/core/Tooltip';
 import Zoom from '@material-ui/core/Zoom';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 
 const useStyles = makeStyles({
     root: {
@@ -25,7 +27,7 @@ const useStyles = makeStyles({
     }
 });
 
-const Player = ({ audio, url }) => {
+const Player = ({handleLike, songInfo, audio, url, play, changePlay, likeState}) => {
     const classes = useStyles();
     // const [audio, setAudio] = useState("");
     const [currentTime, setCurrentTime] = useState(null);
@@ -36,6 +38,7 @@ const Player = ({ audio, url }) => {
     const [repeatMode, setRepeatMode] = useState(0)
     const [shuffle, setShuffle] = useState(false)
     const [reset, setReset] = useState(false)
+    const [like, setLike] = useState(true)
 
     const formatSecondsAsTime = (secs) => {
         var hr = Math.floor(secs / 3600);
@@ -52,6 +55,14 @@ const Player = ({ audio, url }) => {
         return min + ':' + sec;
     }
 
+    // Button play pressed from another component.
+    useEffect(() => {
+        setPlaying(play)
+        setLike(likeState)
+    }, [play, likeState])
+
+
+    // Change track by the url from props.
     useEffect(() => {
         audio.src = `http://localhost:5000/${url}`;
         audio.play();
@@ -65,6 +76,8 @@ const Player = ({ audio, url }) => {
         setTotalTrackTime(null)
     }, [url])
 
+
+    // Player functionality.
     useEffect(() => {
         document.body.classList.remove('dashboard-back');
         if (audio instanceof Audio) {
@@ -86,6 +99,12 @@ const Player = ({ audio, url }) => {
                 setCurrentTime(formatSecondsAsTime(e.target.currentTime))
             })
 
+            if (repeatMode === 2) {
+                audio.addEventListener('ended', (e) => {
+                    audio.currentTime = 0
+                })
+            }
+
             audio.volume = volume / 100;
 
         }
@@ -99,7 +118,10 @@ const Player = ({ audio, url }) => {
         }
     }, [audio, url])
 
-    const togglePlay = () => setPlaying(!playing);
+    const togglePlay = () => {
+        changePlay(!playing);
+        setPlaying(!playing);
+    }
 
     const toggleVolume = (event, volume) => {
         setVolume(volume);
@@ -117,6 +139,11 @@ const Player = ({ audio, url }) => {
 
     const toggleTime = (event, time) => {
         audio.currentTime = time;
+    }
+
+    const toggleLike = () => {
+        setLike(!like);
+        handleLike(!like, url);
     }
 
     const toggleRepeat = () => {
@@ -161,6 +188,22 @@ const Player = ({ audio, url }) => {
                         </Tooltip>
                     </div>
 
+
+                    <SongInformation>
+                        {songInfo !== null ? 
+                            <img src={`http://localhost:5000/${songInfo.photo_path}`} alt ="" /> : null } 
+                        {songInfo !== null ? 
+                            <div> 
+                                <span> {songInfo.title} </span>
+                                <span> {songInfo.artist} &#8226; {songInfo.album} </span> 
+                            </div> 
+                            : null}
+                        {songInfo !== null ? 
+                            <button onClick={toggleLike}> {like ? <FavoriteIcon style={{color: "white"}} /> : <FavoriteBorderIcon style={{color: "white"}} />}  </button> 
+                            : null
+                        }
+                        
+                    </SongInformation>
 
                     <OptionsDiv>
                         <div className={classes.root}>

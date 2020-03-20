@@ -76,6 +76,11 @@ export const Menu = styled.div`
 
 export const SongsList = styled.div`
     display: grid;
+    margin-top: 25px;
+    width: 80%;
+    margin-left: 65px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    max-height: 600px;
+    font-size: 15px;
 `;

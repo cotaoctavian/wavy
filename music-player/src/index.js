@@ -19,7 +19,6 @@ const store = createStore(allReducers, composeEnhancer(applyMiddleware(thunk)))
 
 try {
     const data = jwt.verify(persistedState, TOKEN_SECRET)
-    console.log(data)
     store.dispatch(setUpUser(data))
 } catch (err) {
     

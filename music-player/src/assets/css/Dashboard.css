@@ -131,9 +131,8 @@ header span {
     color: black;
     border: 2px solid black;
     border-radius: 25px;
-    padding: 10px 30px 10px 30px;
-    font-family: 'Poppins';
     font-size: 15px;
+    padding: 10px 30px 10px 30px;
 }
 
 .web-player-button:hover{

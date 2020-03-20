@@ -9,7 +9,7 @@ export const Global = createGlobalStyle`
 
 export const ContainerPlayer=styled.div`
     display: grid;
-    grid-template-columns: 0.07fr 0.075fr 0.07fr 0.2fr 2fr 0.3fr;
+    grid-template-columns: 0.07fr 0.075fr 0.07fr 0.2fr 0.8fr 1.2fr 0.3fr;
     align-items: center;
     position: absolute;
     bottom: 0;
@@ -48,4 +48,24 @@ export const TimerDiv = styled.div`
 
 export const OptionsDiv = styled.div`
     display: flex;
+`;
+
+export const SongInformation = styled.div` 
+    color: white;
+    font-family: 'Poppins', sans-serif;     
+    display: grid;
+    grid-template-columns: 0.07fr 0.3fr 0.1fr;
+
+    & img {
+        width: 45px;
+        height: 45px;
+        border-radius: 5%;
+        margin-top: 2px;
+    }
+
+    & div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 `;
