@@ -24,8 +24,6 @@ const UpdateProfile = props => {
     const [uploadMessage, setUploadMessage] = useState('')
     const [usernameMessage, setUsernameMessage] = useState('')
     const [file, setFile] = useState('')
-    const [filename, setFilename] = useState('')
-    const [uploadedFile, setUploadedFile] = useState({})
     const [photoPath, setPhotoPath] = useState(user.img)
 
     useEffect(() => {
@@ -68,9 +66,8 @@ const UpdateProfile = props => {
                 }
             });
 
-            const { token, fileName, filePath } = res.data;
+            const { token, filePath } = res.data;
             setUploadMessage(res.data.message);
-            setUploadedFile({ fileName, filePath });
             setPhotoPath(filePath)
             localStorage.setItem('token', token);
             dispatch(setUpUser(jwt(token)))
@@ -81,7 +78,6 @@ const UpdateProfile = props => {
 
     const updatePhoto = (e) => {
         setFile(e.target.files[0])
-        setFilename(e.target.files[0].name)
     }
 
     const onSubmitUsername = async (e) => {

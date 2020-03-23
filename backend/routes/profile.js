@@ -59,7 +59,7 @@ router.post('/update_username', async (req, res) => {
                         res.json({ message: "You already own this username." })
                     } else {
                         user.username = req.body.username
-                        const jwt_data = {id: user._id, email: user.email, username: user.username, img: user.img}
+                        const jwt_data = {id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs}
                         user.save()
                             .then(() => res.json({ message: "Username updated successfully.", token: jwt.sign(jwt_data, process.env.TOKEN_SECRET)}))
                             .catch(err => {

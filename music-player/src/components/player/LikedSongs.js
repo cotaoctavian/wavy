@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { useSelector } from 'react-redux'
 import { Header, Global, Links, Main, Menu, SongsList } from '../../assets/styles/webplayer';
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,14 +9,13 @@ import '../../assets/css/Global.css';
 
 const LikedSongs = props => {
 
-    const user = useSelector(state => state.user)
-    const handleSongUrl = (url, play) => {
-        props.handle(url, play)
+    const handleSongUrl = (url, play, songId) => {
+        props.handle(url, play, songId)
     }
 
     useEffect(() => {
 
-    }, [props.songs])
+    }, [props.songs, props.play])
 
     let content = (
         <React.Fragment>
@@ -35,7 +33,7 @@ const LikedSongs = props => {
                     <span> <NavLink exact to="/search" className="header-player-link"> <FontAwesomeIcon icon={faSearch} /> Search </NavLink> </span>
                 </Links>
 
-                <NavLink exact to="/profile" className="header-nav-link"> <img src={`http://localhost:5000/${user.img}`} className="img__library" alt="" /> </NavLink>
+                {props.image.length > 0 ? <NavLink exact to="/profile" className="header-nav-link"> <img src={`http://localhost:5000/${props.image}`} className="img__library" alt="" /> </NavLink> : null }
 
             </Header>
 
@@ -48,11 +46,19 @@ const LikedSongs = props => {
                     <span> <NavLink exact to="/library/made-for-you" className="main-player-link"> MADE FOR YOU </NavLink> </span>
                 </Menu>
 
-            
-                
+
+
                 <SongsList>
                     {props.songs.map((item, id) => {
-                        return <Song handle={handleSongUrl} key={id} data={item} play={props.play} url={props.url} handleLike={props.handleLike}/>
+                        if (props.songId != null) {
+                            if (item === props.songId) {
+                                return <Song key={id} data={item} handle={handleSongUrl} handleLike={props.handleLike} playing={props.songIdState} hover={true}/>
+                            } else {
+                                return <Song key={id} data={item} handle={handleSongUrl} handleLike={props.handleLike} playing={false} hover={false}/>
+                            }
+                        } else {
+                            return <Song key={id} data={item} handle={handleSongUrl} handleLike={props.handleLike} playing={false} hover={false} />
+                        }
                     })}
                 </SongsList>
             </Main>

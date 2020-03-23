@@ -24,6 +24,7 @@ try {
     
 }
 
+localStorage.setItem('repeatMode', 0);
 ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>

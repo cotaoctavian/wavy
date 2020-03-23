@@ -26,7 +26,7 @@ router.post('/:id', (req, res) => {
                         user.img = `images/${file.name}`
                         const jwt_data = {id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs}
                         user.save()
-                            .then(() => res.json({message: "Your profile picture has been changed.", token: jwt.sign(jwt_data, process.env.TOKEN_SECRET), fileName: file.name, filePath: `images/${file.name}`}))
+                            .then(() => res.json({message: "Your profile picture has been changed.", token: jwt.sign(jwt_data, process.env.TOKEN_SECRET), filePath: `images/${file.name}`}))
                             .catch(err => res.status(400).send(err))
                     }
                 })
