@@ -3,7 +3,7 @@ const userReducer = (state = null, action) => {
         case 'SAVE':
             return action.data
         default:
-            return null;
+            return state;
     }
 }
 

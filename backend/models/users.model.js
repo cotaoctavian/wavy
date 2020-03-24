@@ -7,7 +7,7 @@ const userSchema = new Schema({
   password: { type: String, required: true, minlength: 8 },
   img: { type: String },
   date: { type: Date, default: Date.now },
-  liked_songs: {type: [Schema.Types.ObjectId], default: [] },
+  liked_songs: {type: [Schema.Types.ObjectId], default: []},
   playlists: {type: [Schema.Types.ObjectId], default: []},
   artists: {type: [Schema.Types.ObjectId], default: []},
   albums: {type: [Schema.Types.ObjectId], default: []}

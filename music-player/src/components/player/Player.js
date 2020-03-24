@@ -148,9 +148,9 @@ const Player = ({ resetTrack, handlePrevious, handleForward, handleLike, songInf
         audio.currentTime = time;
     }
 
-    const toggleLike = async () => {
+    const toggleLike = () => {
         setLike(!like);
-        await handleLike(!like, url);
+        handleLike(!like, url);
     }
 
     const toggleRepeat = () => {

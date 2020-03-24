@@ -9,7 +9,6 @@ const songSchema = new Schema({
     duration: {type: String, required: true},
     artist: {type: String, required: true},
     album: {type: String}, 
-    date: { type: Date, default: Date.now },
 });
 
 const Song = mongoose.model('Song', songSchema)

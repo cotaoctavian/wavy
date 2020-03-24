@@ -20,29 +20,29 @@
     transition: 1s;
 }
 
-.profile-nav-container:not(:hover){
+.profile-nav-container:not(:hover) {
     transition: 1s;
 }
 
-.change-pass-nav{
-    color:black;
+.change-pass-nav {
+    color: black;
     margin-top: 8px;
     text-decoration: none;
 }
 
-.change-pass-nav:hover{
+.change-pass-nav:hover {
     transition: 1s;
     color: #ff887a;
 }
 
-.change-pass-nav:not(:hover){
+.change-pass-nav:not(:hover) {
     transition: 1s;
 }
 
 .header-nav-link {
     text-decoration: none;
     color: white;
-    font-weight:500;
+    font-weight: 500;
 }
 
 .header-player-link {
@@ -58,7 +58,7 @@
 }
 
 .header-player-link:focus {
-    color:white;
+    color: white;
     font-weight: 500;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .main-player-link:focus {
-    color:white;
+    color: white;
     font-weight: 500;
 }
 
@@ -86,6 +86,96 @@
 .main-nav-link {
     text-decoration: none;
     color: white;
-    font-weight:500;
+    font-weight: 500;
     border-bottom: 2px solid white;
+}
+
+.squared-nav-link {
+    text-decoration: none;
+}
+
+.squared-nav-link img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.modal {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 17%;
+    position: absolute;
+    top: 350px;
+    left: 800px;
+    bottom: 400px;
+    border-radius: 10px;
+    outline: none;
+    padding-top: 20px;
+    opacity: 1;
+}
+
+.modal div {
+    position: relative;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.modal div span {
+    font-size: 20px;
+}
+
+.modal div input {
+    width: 90%;
+    background-color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    border-bottom: 1px solid white;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    color: white;
+}
+
+.modal div div{
+    margin-top: 30px;
+    display: flex;
+}
+
+.modal div div button:nth-child(1) {
+    grid-row: 3;
+    background-color: #1a1a1a;
+    border: #1a1a1a;
+    color: white;
+    outline: none;
+    flex: 2.5;
+    margin-left: 70px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.modal div div button:nth-child(2) {
+    grid-row: 3;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    color: black;
+    outline: none;
+    flex: 1;
+    margin-right: 35px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
 }

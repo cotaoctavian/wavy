@@ -6,6 +6,7 @@ import Library from './Library';
 import LikedSongs from './LikedSongs';
 import Player from './Player';
 import HomePlayer from './HomePlayer';
+import Playlist from './Playlist';
 import Axios from 'axios';
 import jwt from 'jwt-decode';
 
@@ -40,16 +41,16 @@ const WebPlayer = (props) => {
             await Axios.post("http://localhost:5000/song/dislike", { name: songUrl, id: user.id })
                 .then(res => {
                     dispatch(setUpUser(jwt(res.data.token)))
-                    setUser(jwt(res.data.token))
                     localStorage.setItem('token', res.data.token);
+                    setUser(jwt(res.data.token))
                 })
                 .catch(err => console.log(err))
         } else if (like === true) {
             await Axios.post("http://localhost:5000/song/like", { name: songUrl, id: user.id })
                 .then(res => {
                     dispatch(setUpUser(jwt(res.data.token)))
-                    setUser(jwt(res.data.token))
                     localStorage.setItem('token', res.data.token)
+                    setUser(jwt(res.data.token))
                 })
         }
     }
@@ -135,12 +136,13 @@ const WebPlayer = (props) => {
     }
 
     useEffect(() => {
-    }, [url, playing, user, like, songId])
+    }, [url, playing, user, like, songId, user])
 
     let content = (
         <React.Fragment>
             {urlPathname === "/player" ? <HomePlayer handle={handleUrl} /> : null}
-            {urlPathname === "/library" ? <Library handle={handleUrl} /> : null}
+            {urlPathname === "/library" ? <Library handle={handleUrl} /> : null}    
+            {urlPathname === "/library/playlists" ? <Playlist image={user.img} userId={user.id} /> : null}
             {urlPathname === "/library/tracks" ? <LikedSongs image={user.img} songs={user.songs} songId={songId} songIdState={playing} handle={handleUrl} handleLike={handleLike} /> : null}
             {url.length > 0 ? <Player resetTrack={reset} handlePrevious={handlePrevious} handleForward={handleForward} handleLike={handleLike} songInfo={songInfo} audio={audio} url={url} play={playing} changePlay={setPlaying} likeState={like} /> : null}
         </React.Fragment>

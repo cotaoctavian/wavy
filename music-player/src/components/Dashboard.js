@@ -29,7 +29,7 @@ const Dashboard = props => {
     }, [userData.username])
 
     const logout = () => {
-        localStorage.removeItem('loggedIn');
+        localStorage.setItem('token', null);
         history.push('/')
     }
 

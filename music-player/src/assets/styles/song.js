@@ -88,7 +88,6 @@ export const HoveredSongDiv = styled.div`
         position: relative;
 
         & button {
-            background-color: #1a1a1a;
             position: absolute;
             background-color: #212121;
         }
