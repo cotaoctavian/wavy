@@ -9,12 +9,56 @@ router.post('/', (req, res) => {
     Playlist.findById({_id: req.body.id})
             .then((playlist) => {
                 if(playlist) {
-                    console.log(playlist);
                     res.json({playlist: playlist})
                 }
             })
             .catch(err => console.log(err));
 
+})
+
+router.delete('/:id/:userId', (req, res) => {
+    User.findById({ _id: req.params.userId})
+        .then(user => {
+            if(user) {
+                playlist = user.playlists
+                console.log(playlist)
+                console.log(req.params.userId)
+                console.log(req.params.id)
+
+                let i;
+                for(i = 0; i < playlist.length; i++) {
+                    if(new ObjectId(playlist[i]).equals(req.params.id)) {
+                        playlist.splice(i, 1)
+                    } 
+                }
+                
+                user.playlists = playlist
+                user.save()
+                console.log(playlist)
+
+                const token = jwt.sign({id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists:user.playlists}, process.env.TOKEN_SECRET)
+                Playlist.deleteOne({ _id: req.params.id}, (err) => {
+                    if(err) {
+                        res.json({message: "The playlist couldn't be deleted."})
+                    } else {
+                        res.json({token: token, message: "Playlist deleted successfully!"})
+                    }
+                })
+            }
+        })
+})
+
+router.patch('/', (req, res) => {
+    Playlist.findById({ _id: req.body.id})
+            .then((playlist) => {
+                if(playlist) {
+                    playlist.title = req.body.title
+                    playlist.save()
+                            .then(() => {res.json({message: "Title changed successfully!"})})
+                            .catch((err) => console.log(err))
+                }   
+            })
+            .catch((err) => console.log(err))
 })
 
 router.post('/add', (req, res) => {

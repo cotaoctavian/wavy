@@ -10,7 +10,6 @@ import Profile from './components/profile/Profile';
 import WebPlayer from './components/player/WebPlayer';
 import ChangePassword from './components/auth/ChangePassword';
 import UpdateProfile from './components/profile/UpdateProfile';
-import PlaylistQP from './components/player/PlaylistQP';
 
 const App = () => {
   return (
@@ -29,7 +28,7 @@ const App = () => {
         <Route exact path="/library" component={WebPlayer} />
         <Route exact path="/library/tracks" component={WebPlayer} />
         <Route exact path="/library/playlists" component={WebPlayer} />
-        <Route path="/library/playlists/:id" component={PlaylistQP} />
+        <Route path="/library/playlists/:id" component={WebPlayer} />
       </Switch>
     </React.Fragment>
   );

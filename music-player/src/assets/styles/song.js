@@ -9,7 +9,6 @@ export const SongDiv = styled.div`
     justify-content: center;
 
     & div {
-
         padding-right: 50px;
         position: relative;
 

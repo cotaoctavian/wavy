@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { Header, Global, Links, Main, Menu } from '../../assets/styles/webplayer';
 import { PlaylistContainer } from '../../assets/styles/playlist';
 import wavy from '../../assets/images/white_wave.png';
-import playlistImage from '../../assets/images/playlist.png';
+import playlistCover from '../../assets/images/playlist.png';
 import '../../assets/css/Global.css';
 import liked_songs from '../../assets/images/liked_songs.gif';
 import { faSearch, faPlus } from "@fortawesome/free-solid-svg-icons";
@@ -19,18 +19,26 @@ Modal.setAppElement("#root");
 const PlaylistItem = (props) => {
     const [title, setTitle] = useState('')
     const [playlistId, setPlaylistId] = useState(null)
+    const [playlistImage, setPlaylistImage] = useState(null)
 
     useEffect(() => {
         Axios.post("http://localhost:5000/playlist/", {id: props.id})
             .then((res) => {
-                console.log(res.data)
                 setTitle(res.data.playlist.title)
+                if (res.data.playlist.songs.length > 0) {
+                    Axios.post('http://localhost:5000/song/', { song: res.data.playlist.songs[0] })
+                        .then(res => {
+                            setPlaylistImage(res.data.info.photo_path);
+                        })
+                        .catch(err => console.log(err))
+                }
             })
-    }, [props.id])
+            .catch(err => console.log(err))
+    }, [props.id, playlistImage])
 
     let content = (
         <div>
-            <NavLink exact to={`/library/playlists/${props.id}`} className="squared-nav-link"> <img src={playlistImage} alt="Liked songs" /> </NavLink>
+            <NavLink exact to={`/library/playlists/${props.id}`}  className="squared-nav-link"> {playlistImage !== null ? <img src={`http://localhost:5000/${playlistImage}`} /> : <img src={playlistImage} alt="Liked songs" />} </NavLink>
             <span> {title} </span>
         </div>
     );
@@ -43,8 +51,6 @@ const Playlist = (props) => {
     const [playlistTitle, setPlaylistTitle] = useState('')
     const dispatch = useDispatch();
     const playlists = useSelector(state => state.user.playlists)
-
-    console.log(playlists)
 
     const handlePlaylistClick = () => {
         setShowUpModal(!showUpModal)
@@ -103,8 +109,8 @@ const Playlist = (props) => {
                         <span> Liked songs </span>
                     </div>
 
-                    {playlists.map((item) => {
-                        return <PlaylistItem id={item} />
+                    {playlists.map((item, index) => {
+                        return <PlaylistItem key={index} id={item} />
                     })}
 
                 </PlaylistContainer>

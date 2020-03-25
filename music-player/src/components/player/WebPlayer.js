@@ -7,11 +7,13 @@ import LikedSongs from './LikedSongs';
 import Player from './Player';
 import HomePlayer from './HomePlayer';
 import Playlist from './Playlist';
+import PlaylistQP from './PlaylistQP';
 import Axios from 'axios';
 import jwt from 'jwt-decode';
 
 const WebPlayer = (props) => {
 
+    console.log(props);
     const [user, setUser] = useState(useSelector(state => state.user))
     const [songId, setSongId] = useState(null)
     const [url, setUrl] = useState('')
@@ -23,6 +25,7 @@ const WebPlayer = (props) => {
     const urlPathname = window.location.pathname
     const dispatch = useDispatch();
 
+    // Handle audio url changes that triggers the player.
     const handleUrl = async (songUrl, playing, currentSongId) => {
         setUrl(songUrl)
         setPlaying(playing)
@@ -35,6 +38,7 @@ const WebPlayer = (props) => {
             .catch(err => console.log(err))
     }
 
+    // Handle like functionality of tracks
     const handleLike = async (like, songUrl) => {
         setLike(like)
         if (like === false) {
@@ -55,6 +59,7 @@ const WebPlayer = (props) => {
         }
     }
 
+    // handle previous button of the player
     const handlePrevious = async (repeatMode) => {
         let i, position;
         for (i = 0; i < user.songs.length; i++) {
@@ -93,6 +98,7 @@ const WebPlayer = (props) => {
         }
     }
 
+    // Handle forward button of the player
     const handleForward = async (repeatMode) => {
 
         let i, position;
@@ -136,10 +142,13 @@ const WebPlayer = (props) => {
     }
 
     useEffect(() => {
+        document.body.classList.remove('dashboard-back')
     }, [url, playing, user, like, songId, user])
 
     let content = (
+        
         <React.Fragment>
+            {props.match.params.id !== undefined? <PlaylistQP id={props.match.params.id}/> : null}
             {urlPathname === "/player" ? <HomePlayer handle={handleUrl} /> : null}
             {urlPathname === "/library" ? <Library handle={handleUrl} /> : null}    
             {urlPathname === "/library/playlists" ? <Playlist image={user.img} userId={user.id} /> : null}
