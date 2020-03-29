@@ -18,7 +18,7 @@ Modal.setAppElement("#root");
 
 const PlaylistItem = (props) => {
     const [title, setTitle] = useState('')
-    const [playlistId, setPlaylistId] = useState(null)
+    // const [playlistId, setPlaylistId] = useState(null)
     const [playlistImage, setPlaylistImage] = useState(null)
 
     useEffect(() => {
@@ -38,7 +38,7 @@ const PlaylistItem = (props) => {
 
     let content = (
         <div>
-            <NavLink exact to={`/library/playlists/${props.id}`}  className="squared-nav-link"> {playlistImage !== null ? <img src={`http://localhost:5000/${playlistImage}`} /> : <img src={playlistImage} alt="Liked songs" />} </NavLink>
+            <NavLink exact to={`/library/playlists/${props.id}`}  className="squared-nav-link"> {playlistImage !== null ? <img src={`http://localhost:5000/${playlistImage}`} /> : <img src={playlistCover} alt="Liked songs" />} </NavLink>
             <span> {title} </span>
         </div>
     );

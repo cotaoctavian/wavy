@@ -3,14 +3,13 @@ import styled from 'styled-components';
 export const PlaylistContainer = styled.div`
     color: white;
     font-family: 'Poppins', sans-serif;
-    margin-left: 62px;
-    margin-top: 25px;
     width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-column-gap: 25px;
     grid-row-gap: 20px; 
+    margin-left: 62px;
 
     & button {
         background-color: #363636;

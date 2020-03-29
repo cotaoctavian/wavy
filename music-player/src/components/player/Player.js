@@ -58,6 +58,7 @@ const Player = ({ resetTrack, handlePrevious, handleForward, handleLike, songInf
         if (url !== "") {
             audio.pause()
         }
+
         setPlaying(play)
         setReset(true)
         setDuration(null)

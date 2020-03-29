@@ -1,7 +1,6 @@
 const router = require('express').Router();
 let User = require('../models/users.model');
 let Playlist = require('../models/playlists.model');
-let Songs = require('../models/songs.model');
 const jwt = require('jsonwebtoken');
 var ObjectId = require('mongoose').Types.ObjectId;
 
@@ -16,14 +15,34 @@ router.post('/', (req, res) => {
 
 })
 
+
+router.delete('/:playlistId/:trackId', (req, res) => {
+    Playlist.findById({ _id: req.params.playlistId})
+            .then( playlist => {
+                if(playlist) {
+                    songs = playlist.songs
+
+                    let i ;
+                    for(i = 0; i < songs.length; i++) {
+                        if(new ObjectId(songs[i]).equals(req.params.trackId)) {
+                            songs.splice(i, 1)
+                        }
+                    }
+
+                    playlist.songs = songs
+                    playlist.save()
+                            .then(() => res.json({message: 'The track has been deleted.'}))
+                            .catch(() => res.json({message: 'There was an error deleting the track.'}))
+
+                }
+            })
+})
+
 router.delete('/:id/:userId', (req, res) => {
     User.findById({ _id: req.params.userId})
         .then(user => {
             if(user) {
                 playlist = user.playlists
-                console.log(playlist)
-                console.log(req.params.userId)
-                console.log(req.params.id)
 
                 let i;
                 for(i = 0; i < playlist.length; i++) {
@@ -34,7 +53,6 @@ router.delete('/:id/:userId', (req, res) => {
                 
                 user.playlists = playlist
                 user.save()
-                console.log(playlist)
 
                 const token = jwt.sign({id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists:user.playlists}, process.env.TOKEN_SECRET)
                 Playlist.deleteOne({ _id: req.params.id}, (err) => {
@@ -88,7 +106,9 @@ router.post('/add', (req, res) => {
                     })
             }
         })
-
 })
+
+
+
 
 module.exports = router;

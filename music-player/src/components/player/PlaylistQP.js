@@ -25,6 +25,25 @@ const PlaylistQPNotification = (props) => {
     const [newPlaylistTitle, setNewPlaylistTitle] = useState('')
     const [playlistImage, setPlaylistImage] = useState(null);
     const user = useSelector(state => state.user)
+    
+    useEffect(() => {
+        document.body.classList.remove('dashboard-back')
+        if (props.id !== undefined) {
+            Axios.post("http://localhost:5000/playlist/", { id: props.id })
+                .then(res => {
+                    setPlaylistTitle(res.data.playlist.title);
+                    setPlaylistSongs(res.data.playlist.songs);
+                    if (res.data.playlist.songs.length > 0) {
+                        Axios.post('http://localhost:5000/song/', { song: res.data.playlist.songs[0] })
+                            .then(res => {
+                                setPlaylistImage(res.data.info.photo_path);
+                            })
+                            .catch(err => console.log(err))
+                    }
+                })
+                .catch(err => console.log(err))
+        }
+    }, [props.id, props.songs, props.songId, props.songIdState, user])
 
     // Trigger the modal to show/hide.
     const handleEdit = () => {
@@ -43,6 +62,21 @@ const PlaylistQPNotification = (props) => {
         }
     }
 
+    const handleDeleteTrack = async (songId) => {
+        try {
+            const result = await Axios.delete(`http://localhost:5000/playlist/${props.id}/${songId}`);
+            Axios.post("http://localhost:5000/playlist/", { id: props.id })
+                .then(res => {
+                    setPlaylistSongs(res.data.playlist.songs);
+                })
+                .catch(err => console.log(err))
+
+            enqueueSnackbar(result.data.message, { variant: 'default'})
+        } catch (err) {
+            console.log(err)
+        }
+    }
+
     // Handle playlist edit title functionality.
     const handleSubmit = async () => {
         setPlaylistTitle(newPlaylistTitle)
@@ -57,26 +91,6 @@ const PlaylistQPNotification = (props) => {
         }
     }
 
-    useEffect(() => {
-        document.body.classList.remove('dashboard-back')
-        if (props.id !== undefined) {
-            Axios.post("http://localhost:5000/playlist/", { id: props.id })
-                .then(res => {
-                    setPlaylistTitle(res.data.playlist.title);
-                    setPlaylistSongs(res.data.playlist.songs);
-                    if (res.data.playlist.songs.length > 0) {
-                        Axios.post('http://localhost:5000/song/', { song: res.data.playlist.songs[0] })
-                            .then(res => {
-                                setPlaylistImage(res.data.info.photo_path);
-                            })
-                            .catch(err => console.log(err))
-                    }
-                })
-                .catch(err => console.log(err))
-        }
-    }, [props.id])
-
-
     let content = (
         <div>
             <Global />
@@ -87,9 +101,9 @@ const PlaylistQPNotification = (props) => {
                 </div>
 
                 <Links>
-                    <span> <NavLink exact to="/player" className="header-nav-link"> Home </NavLink> </span>
+                    <span> <NavLink exact to="/player" className="header-player-link"> Home </NavLink> </span>
                     <span> <NavLink exact to="/hotlist" className="header-player-link"> Hotlist </NavLink></span>
-                    <span> <NavLink exact to="/library" className="header-player-link"> Library </NavLink></span>
+                    <span> <NavLink exact to="/library" className="header-nav-link"> Library </NavLink></span>
                     <span> <NavLink exact to="/search" className="header-player-link"> <FontAwesomeIcon icon={faSearch} /> Search </NavLink> </span>
                 </Links>
 
@@ -112,7 +126,8 @@ const PlaylistQPNotification = (props) => {
             <PlaylistContainer>
                 {playlistSongs !== null ?
                     playlistSongs.map((song, index) => {
-                        return <PlaylistSong key={index} id={song} songs={user.songs} />
+                        if(song === props.songId) return <PlaylistSong key={index} handleDeleteTrack={handleDeleteTrack} playlistId={props.id} id={song} songs={props.songs} handleLike={props.handleLike} handleUrl={props.handleUrl} hover={true} songState={props.songIdState} />
+                        else return <PlaylistSong key={index} handleDeleteTrack={handleDeleteTrack} playlistId={props.id} id={song} songs={props.songs} handleLike={props.handleLike} handleUrl={props.handleUrl} hover={false} songState={false} />
                     }) : null
                 }
             </PlaylistContainer>
@@ -144,10 +159,14 @@ const PlaylistQPNotification = (props) => {
 }
 
 const PlaylistQP = (props) => {
+    useEffect(() => {
+
+    }, [props.songs, props.songId, props.songIdState])
+    
     let content = (
         <SnackbarProvider maxSnack={1} preventDuplicate>
             <Global />
-            <PlaylistQPNotification id={props.id} />
+            <PlaylistQPNotification songId={props.songId} songs={props.songs} id={props.id} handleLike={props.handleLike} handleUrl={props.handleUrl} songIdState={props.songIdState} />
         </SnackbarProvider>
     );
     return content;
