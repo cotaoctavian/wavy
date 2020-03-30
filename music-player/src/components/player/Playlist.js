@@ -51,6 +51,7 @@ const Playlist = (props) => {
     const [playlistTitle, setPlaylistTitle] = useState('')
     const dispatch = useDispatch();
     const playlists = useSelector(state => state.user.playlists)
+    console.log(playlists)
 
     const handlePlaylistClick = () => {
         setShowUpModal(!showUpModal)
@@ -66,9 +67,9 @@ const Playlist = (props) => {
         } catch (err) {
             console.log(err);
         }
-    }
+    }   
 
-    useEffect(() => { }, [showUpModal])
+    useEffect(() => { }, [showUpModal, props.userId, playlists])
 
     let content = (
         <React.Fragment>

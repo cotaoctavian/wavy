@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import { HoveredPlaylistItem, PlaylistItem } from '../../assets/styles/playlistSong';
+import '../../assets/css/Global.css';
 import Axios from 'axios';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
@@ -8,11 +10,38 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import { faPause } from '@fortawesome/free-solid-svg-icons';
 import RemoveCircleIcon from '@material-ui/icons/RemoveCircle';
 import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
+import { useSnackbar } from 'notistack';
+import Modal from 'react-modal';
+
+
+const ModalItem = ({ playlistId, handleAddToPlaylist }) => {
+
+    const [title, setTitle] = useState('')
+
+    useEffect(() => {
+        Axios.post("http://localhost:5000/playlist/", { id: playlistId })
+            .then((res) => {
+                setTitle(res.data.playlist.title)
+            })
+            .catch(err => console.log(err))
+    }, [])
+
+    const triggerAddToPlaylist = () => {
+        handleAddToPlaylist(playlistId)
+    }
+
+    return (
+        <button onClick={triggerAddToPlaylist}> {title} </button>
+    );
+}
 
 const PlaylistSong = ({ handleDeleteTrack, playlistId, id, songs, handleLike, handleUrl, hover, songState }) => {
     const [songInfo, setSongInfo] = useState('');
     const [playing, setPlaying] = useState(false)
     const [like, setLike] = useState(false)
+    const [showUpModal, setShowUpModal] = useState(false)
+    const playlists = useSelector(state => state.user.playlists)
+    const { enqueueSnackbar } = useSnackbar();
 
     useEffect(() => {
         if (id !== undefined) {
@@ -52,7 +81,19 @@ const PlaylistSong = ({ handleDeleteTrack, playlistId, id, songs, handleLike, ha
         handleDeleteTrack(id)
     }
 
-    const onClick = () => {}
+    const triggerModal = () => {
+        setShowUpModal(true)
+    }
+
+    const handleAddToPlaylist = async (playlistId) => {
+        setShowUpModal(false)
+        try {
+            const response = await Axios.post("http://localhost:5000/playlist/track", { playlistId: playlistId, trackId: id })
+            enqueueSnackbar(response.data.message, { variant: 'default' })
+        } catch (err) {
+
+        }
+    }
 
     let content = (
         <React.Fragment>
@@ -68,8 +109,8 @@ const PlaylistSong = ({ handleDeleteTrack, playlistId, id, songs, handleLike, ha
                     <span> {songInfo.artist} </span>
                     <span> {songInfo.album} </span>
                     <button onClick={toggleLike}> {like ? <FavoriteIcon style={{ color: "white" }} /> : <FavoriteBorderIcon style={{ color: "#c7c7c7" }} />} </button>
-                    <button onClick={triggerDeleteTrack}> <RemoveCircleIcon style={{ color: "white" }}/> </button>
-                    <button onClick={onClick}> <PlaylistAddIcon style={{ color: "white" }}/> </button>
+                    <button onClick={triggerDeleteTrack}> <RemoveCircleIcon style={{ color: "white" }} /> </button>
+                    <button onClick={triggerModal}> <PlaylistAddIcon style={{ color: "white" }} /> </button>
                     <span> {songInfo.duration} </span>
                 </HoveredPlaylistItem> :
                 <PlaylistItem>
@@ -83,10 +124,28 @@ const PlaylistSong = ({ handleDeleteTrack, playlistId, id, songs, handleLike, ha
                     <span> {songInfo.artist} </span>
                     <span> {songInfo.album} </span>
                     <button onClick={toggleLike}> {like ? <FavoriteIcon style={{ color: "white" }} /> : <FavoriteBorderIcon style={{ color: "#c7c7c7" }} />} </button>
-                    <button onClick={triggerDeleteTrack}> <RemoveCircleIcon style={{ color: "white" }}/> </button>
-                    <button onClick={onClick}> <PlaylistAddIcon style={{ color: "white" }}/> </button>
+                    <button onClick={triggerDeleteTrack}> <RemoveCircleIcon style={{ color: "white" }} /> </button>
+                    <button onClick={triggerModal}> <PlaylistAddIcon style={{ color: "white" }} /> </button>
                     <span> {songInfo.duration} </span>
                 </PlaylistItem>}
+
+            {showUpModal ? <Modal
+                isOpen={showUpModal}
+                onRequestClose={() => setShowUpModal(false)}
+                className="playlist-modal"
+                overlayClassName="overlay">
+
+                <div>
+                    <h3> Add to playlist </h3>
+                    <div>
+                        {playlists.map((playlist, index) => {
+                            if (playlist !== playlistId) return <ModalItem key={index} playlistId={playlist} handleAddToPlaylist={handleAddToPlaylist}> {playlist} </ModalItem>
+                        })}
+                    </div>
+                </div>
+
+            </Modal> : null}
+
         </React.Fragment>
 
     );

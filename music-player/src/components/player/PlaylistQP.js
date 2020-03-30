@@ -53,7 +53,7 @@ const PlaylistQPNotification = (props) => {
     // Handle delete playlist functionality
     const handleDelete = async () => {
         try {
-            const result = await Axios.delete(`http://localhost:5000/playlist/${props.id}/${user.id}`)
+            const result = await Axios.delete(`http://localhost:5000/playlist/track/${props.id}/${user.id}`)
             dispatch(setUpUser(jwt(result.data.token)))
             localStorage.setItem('token', result.data.token)
             history.push('/library/playlists')

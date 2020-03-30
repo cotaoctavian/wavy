@@ -179,3 +179,116 @@
     bottom: 0;
     background-color: black;
 }
+
+.playlist-modal {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    max-height: 270px;
+    width: 17%;
+    position: relative;
+    top: 325px;
+    left: 1580px;
+    bottom: 400px;
+    border-radius: 10px;
+    outline: none;
+    padding-top: 20px;
+    opacity: 1;
+}
+
+.playlist-modal div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.playlist-modal div div {
+    overflow-y: scroll;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+.playlist-modal div h3 {
+    border-bottom: 1px solid white;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.playlist-modal div div button {
+    background-color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 20px 10px;
+    text-align: left;
+    outline: none;
+}
+
+.playlist-modal div div button:hover {
+    background-color: #212121;
+    border: 1px solid #212121;
+    padding: 20px 10px;
+}
+
+.playlist-modal div div::-webkit-scrollbar{
+	width: 0px;
+}
+
+
+.song-modal {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    max-height: 270px;
+    width: 17%;
+    position: relative;
+    top: 170px;
+    left: 1580px;
+    bottom: 400px;
+    border-radius: 10px;
+    outline: none;
+    padding-top: 20px;
+    opacity: 1;
+}
+
+.song-modal div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.song-modal div div {
+    overflow-y: scroll;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+.song-modal div h3 {
+    border-bottom: 1px solid white;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.song-modal div div button {
+    background-color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 20px 10px;
+    text-align: left;
+    outline: none;
+}
+
+.song-modal div div button:hover {
+    background-color: #212121;
+    border: 1px solid #212121;
+    padding: 20px 10px;
+}
+
+.song-modal div div::-webkit-scrollbar{
+	width: 0px;
+}

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const SongDiv = styled.div`
     display: grid;
-    grid-template-columns: 0fr 0.3fr 0.3fr 0.2fr 0fr 0.1fr;
+    grid-template-columns: 0fr 0.3fr 0.3fr 0.25fr 0.001fr 0.10fr 0.05fr;
     width: 90%;
     padding-top: 15px;
     border-bottom: 0.05px solid #bdbdbd;
@@ -74,7 +74,7 @@ export const SongDiv = styled.div`
 
 export const HoveredSongDiv = styled.div`
     display: grid;
-    grid-template-columns: 0fr 0.3fr 0.3fr 0.2fr 0fr 0.1fr;
+    grid-template-columns: 0fr 0.3fr 0.3fr 0.2fr 0fr 0.1fr 0.05fr;
     width: 90%;
     border-bottom: 0.05px solid #bdbdbd;
     justify-content: center;
