@@ -84,7 +84,7 @@ export const PlaylistContainer = styled.div`
 
 export const PlaylistItem = styled.div`
     display: grid;
-    grid-template-columns: 0fr 0.3fr 0.3fr 0.25fr 0.35fr 0.001fr 0.10fr 0.05fr;
+    grid-template-columns: 0.01fr 0.25fr 0.2fr 0.30fr 0.001fr 0.10fr 0.15fr 0.05fr;
     width: 80%;
     padding-top: 15px;
     border-bottom: 0.05px solid #bdbdbd;
@@ -141,7 +141,7 @@ export const PlaylistItem = styled.div`
 
     
     & span:nth-child(8) {
-        margin-left: 60px;
+        text-align: right;
         color: #c7c7c7;
     }
 
@@ -152,11 +152,16 @@ export const PlaylistItem = styled.div`
         cursor: pointer;
         margin-bottom: 20px;
     }
+
+    & button:nth-child(7) {
+        text-align: left;
+    }
+
 `;
 
 export const HoveredPlaylistItem = styled.div`
     display: grid;
-    grid-template-columns: 0fr 0.3fr 0.3fr 0.25fr 0.35fr 0.001fr 0.10fr 0.05fr;
+    grid-template-columns: 0.01fr 0.25fr 0.2fr 0.30fr 0.001fr 0.10fr 0.15fr 0.05fr;
     width: 80%;
     padding-top: 15px;
     border-bottom: 0.05px solid #bdbdbd;
@@ -214,7 +219,7 @@ export const HoveredPlaylistItem = styled.div`
 
     
     & span:nth-child(8) {
-        margin-left: 60px;
+        text-align: right;
         color: #c7c7c7;
     }
 
@@ -225,4 +230,10 @@ export const HoveredPlaylistItem = styled.div`
         cursor: pointer;
         margin-bottom: 20px;
     }
+
+    & button:nth-child(7) {
+        text-align: left;
+    }
+
+
 `;

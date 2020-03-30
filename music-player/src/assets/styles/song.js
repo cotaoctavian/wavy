@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const SongDiv = styled.div`
     display: grid;
-    grid-template-columns: 0fr 0.3fr 0.3fr 0.25fr 0.001fr 0.10fr 0.05fr;
+    grid-template-columns: 0.01fr 0.25fr 0.25fr 0.25fr 0.1fr 0.20fr 0.05fr;
     width: 90%;
     padding-top: 15px;
     border-bottom: 0.05px solid #bdbdbd;
@@ -58,8 +58,8 @@ export const SongDiv = styled.div`
     }
 
     
-    & span:nth-child(6) {
-        margin-left: 40px;
+    & span:nth-child(7) {
+        text-align: right;
         color: #c7c7c7;
     }
 
@@ -70,11 +70,16 @@ export const SongDiv = styled.div`
         cursor: pointer;
         margin-bottom: 20px;
     }
+
+    & button:nth-child(6) {
+        text-align: left;
+    }
+
 `;
 
 export const HoveredSongDiv = styled.div`
     display: grid;
-    grid-template-columns: 0fr 0.3fr 0.3fr 0.2fr 0fr 0.1fr 0.05fr;
+    grid-template-columns: 0.01fr 0.25fr 0.25fr 0.25fr 0.1fr 0.20fr 0.05fr;
     width: 90%;
     border-bottom: 0.05px solid #bdbdbd;
     justify-content: center;
@@ -132,8 +137,8 @@ export const HoveredSongDiv = styled.div`
     }
 
     
-    & span:nth-child(6) {
-        margin-left: 40px;
+    & span:nth-child(7) {
+        text-align: right;
         color: #c7c7c7;
     }
 
@@ -144,5 +149,9 @@ export const HoveredSongDiv = styled.div`
         cursor: pointer;
         margin-bottom: 20px;
         background-color: #212121;
+    }
+
+    & button:nth-child(6) {
+        text-align: left;
     }
 `;
