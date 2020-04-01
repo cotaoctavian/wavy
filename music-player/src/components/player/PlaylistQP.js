@@ -115,7 +115,6 @@ const PlaylistQPNotification = (props) => {
                 <div>
                     <h2> {playlistTitle} </h2>
                     <span> Playlist &#8226; {user.username} </span>
-                    <span> </span>
                     <div>
                         <button onClick={handleEdit}> <FontAwesomeIcon icon={faPen} /> Edit playlist </button>
                         <button onClick={handleDelete}> <FontAwesomeIcon icon={faTrashAlt} /> Delete playlist </button>

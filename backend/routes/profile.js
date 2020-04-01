@@ -59,11 +59,11 @@ router.post('/update_username', async (req, res) => {
                         res.json({ message: "You already own this username." })
                     } else {
                         user.username = req.body.username
-                        const jwt_data = {id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists:user.playlists}
+                        const jwt_data = {id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists:user.artists}
                         user.save()
                             .then(() => res.json({ message: "Username updated successfully.", token: jwt.sign(jwt_data, process.env.TOKEN_SECRET)}))
                             .catch(err => {
-                                res.json({ message: "The username is too short. Minimum 6 characters "})
+                                res.json({ message: "The username is too short. Minimum 6 characters. ❌"})
                             })
                     }
                 }

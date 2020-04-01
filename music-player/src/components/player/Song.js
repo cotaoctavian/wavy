@@ -119,9 +119,9 @@ const Song = props => {
                 <div>
                     <h3> Add to playlist </h3>
                     <div>
-                        {playlists.map((playlist, index) => {
+                        {playlists.length > 0 ? playlists.map((playlist, index) => {
                             return <ModalItem key={index} playlistId={playlist} handleAddToPlaylist={handleAddToPlaylist}> {playlist} </ModalItem>
-                        })}
+                        }): (<p> No playlist found. 😥</p>)}
                     </div>
                 </div>
 

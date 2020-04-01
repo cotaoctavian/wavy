@@ -31,8 +31,8 @@ router.delete('/:playlistId/:trackId', (req, res) => {
 
                 playlist.songs = songs
                 playlist.save()
-                    .then(() => res.json({ message: 'The track has been deleted.' }))
-                    .catch(() => res.json({ message: 'There was an error deleting the track.' }))
+                    .then(() => res.json({ message: 'The track has been deleted. ✔️' }))
+                    .catch(() => res.json({ message: 'There was an error deleting the track. 🤔' }))
 
             }
         })
@@ -57,9 +57,9 @@ router.delete('/track/:id/:userId', (req, res) => {
                 const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists }, process.env.TOKEN_SECRET)
                 Playlist.deleteOne({ _id: req.params.id }, (err) => {
                     if (err) {
-                        res.json({ message: "The playlist couldn't be deleted." })
+                        res.json({ message: "The playlist couldn't be deleted. 😥" })
                     } else {
-                        res.json({ token: token, message: "Playlist deleted successfully!" })
+                        res.json({ token: token, message: "Playlist deleted successfully! ✔️" })
                     }
                 })
             }
@@ -72,7 +72,7 @@ router.patch('/', (req, res) => {
             if (playlist) {
                 playlist.title = req.body.title
                 playlist.save()
-                    .then(() => { res.json({ message: "Title changed successfully!" }) })
+                    .then(() => { res.json({ message: "Title changed successfully! ✔️" }) })
                     .catch((err) => console.log(err))
             }
         })
@@ -91,13 +91,13 @@ router.post('/track', (req, res) => {
                 }
 
                 if (check) {
-                    res.json({ message: "The track already exists in the playlist." })
+                    res.json({ message: "The track already exists in the playlist. ❌" })
                 }
                 else {
                     playlist.songs.push(req.body.trackId)
                     playlist.save()
-                        .then(() => res.json({ message: "Track added successfully!" }))
-                        .catch(() => res.json({ message: "Something went wrong..." }))
+                        .then(() => res.json({ message: "Track added successfully! ✔️" }))
+                        .catch(() => res.json({ message: "Something went wrong... 🤔" }))
                 }
             }
         })
@@ -124,7 +124,7 @@ router.post('/add', (req, res) => {
                         user.playlists = playlists;
                         user.save()
                             .then(() => {
-                                const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists }, process.env.TOKEN_SECRET)
+                                const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists:user.artists }, process.env.TOKEN_SECRET)
                                 res.json({ token: token })
                             })
                             .catch((err) => console.log(err));

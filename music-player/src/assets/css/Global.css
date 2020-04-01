@@ -100,6 +100,38 @@
     border-radius: 10px;
 }
 
+.circle-nav-link {
+    text-decoration: none;
+}
+
+.circle-nav-link > div {
+    background-color: #363636;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    justify-content: center;
+    border-radius: 10px;
+    width: 170px;
+    height: 210px;
+}
+
+.circle-nav-link > div > img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 1em;
+}
+
+.circle-nav-link > div > p {
+    color: white;
+    font-size: 15px;
+    margin-bottom: -0.02px;
+}
+
+.circle-nav-link > div > span {
+    color: #d1cfcf;
+    font-size: 12px;
+}
+
 .modal {
     background-color: #1a1a1a;
     color: white;
@@ -226,6 +258,10 @@
     outline: none;
 }
 
+.playlist-modal div div > p {
+    margin-left: 10px;
+}
+
 .playlist-modal div div button:hover {
     background-color: #212121;
     border: 1px solid #212121;
@@ -281,6 +317,10 @@
     padding: 20px 10px;
     text-align: left;
     outline: none;
+}
+
+.song-modal div div > p {
+    margin-left: 10px;
 }
 
 .song-modal div div button:hover {

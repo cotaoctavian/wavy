@@ -79,6 +79,11 @@ export const PlaylistContainer = styled.div`
     grid-template-rows: auto;
     max-height: 600px;
     font-size: 15px;
+
+    & h2 {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
 `;
 
 

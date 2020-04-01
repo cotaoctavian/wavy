@@ -6,8 +6,7 @@ import Axios from 'axios';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlay } from '@fortawesome/free-solid-svg-icons';
-import { faPause } from '@fortawesome/free-solid-svg-icons';
+import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
 import RemoveCircleIcon from '@material-ui/icons/RemoveCircle';
 import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
 import { useSnackbar } from 'notistack';
@@ -138,9 +137,9 @@ const PlaylistSong = ({ handleDeleteTrack, playlistId, id, songs, handleLike, ha
                 <div>
                     <h3> Add to playlist </h3>
                     <div>
-                        {playlists.map((playlist, index) => {
+                        {playlists.length > 1 ? playlists.map((playlist, index) => {
                             if (playlist !== playlistId) return <ModalItem key={index} playlistId={playlist} handleAddToPlaylist={handleAddToPlaylist}> {playlist} </ModalItem>
-                        })}
+                        }): <p> No playlist found. 😥</p>}
                     </div>
                 </div>
 

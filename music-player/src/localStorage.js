@@ -9,13 +9,3 @@ export const loadState = () => {
         return undefined;
     }
 }
-
-
-export const saveState = (state) => {
-    try {
-        
-    }
-    catch (err) {
-
-    }
-}

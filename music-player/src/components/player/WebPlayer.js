@@ -3,16 +3,17 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setUpUser } from '../../actions/index';
 import '../../assets/css/Global.css';
 import Library from './Library';
+import Artists from './Artists';
 import LikedSongs from './LikedSongs';
 import Player from './Player';
 import HomePlayer from './HomePlayer';
 import Playlist from './Playlist';
 import PlaylistQP from './PlaylistQP';
+import ArtistQP from './ArtistQP';
 import Axios from 'axios';
 import jwt from 'jwt-decode';
 
 const WebPlayer = (props) => {
-
     const user = useSelector(state => state.user)
     const [songId, setSongId] = useState(null)
     const [url, setUrl] = useState('')
@@ -175,9 +176,11 @@ const WebPlayer = (props) => {
 
     let content = (
         <React.Fragment>
-            {props.match.params.id !== undefined ? <PlaylistQP songId={songId} songs={user.songs} id={props.match.params.id} handleLike={handleLike} handleUrl={handleUrl} songIdState={playing} /> : null}
+            {props.match.params.id !== undefined && props.match.path.includes('artists') ? <ArtistQP id={props.match.params.id} handleLike={handleLike} songs={user.songs} /> : null}
+            {props.match.params.id !== undefined && props.match.path.includes('playlists') ? <PlaylistQP songId={songId} songs={user.songs} id={props.match.params.id} handleLike={handleLike} handleUrl={handleUrl} songIdState={playing} /> : null}
             {urlPathname === "/player" ? <HomePlayer handle={handleUrl} /> : null}
             {urlPathname === "/library" ? <Library handle={handleUrl} /> : null}
+            {urlPathname === "/library/artists" ? <Artists /> : null}
             {urlPathname === "/library/playlists" ? <Playlist image={user.img} userId={user.id} /> : null}
             {urlPathname === "/library/tracks" ? <LikedSongs image={user.img} songs={user.songs} songId={songId} songIdState={playing} handle={handleUrl} handleLike={handleLike} /> : null}
             {url.length > 0 ? <Player resetTrack={reset} handlePrevious={handlePrevious} handleForward={handleForward} handleLike={handleLike} songInfo={songInfo} audio={audio} url={url} play={playing} changePlay={setPlaying} likeState={like} /> : null}
