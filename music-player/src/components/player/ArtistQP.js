@@ -3,6 +3,9 @@ import { NavLink } from 'react-router-dom';
 import Modal from 'react-modal';
 import Axios from 'axios';
 
+/* COMPONENTS */
+import Album from './Album';
+
 /* REDUX */
 import { setUpUser } from '../../actions/index';
 import { useSelector, useDispatch } from 'react-redux';
@@ -16,14 +19,13 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
 import wavy from '../../assets/images/white_wave.png';
 
-
 /* SNACK BAR */
 import { SnackbarProvider, useSnackbar } from 'notistack';
 
 /* STYLING */
 import '../../assets/css/Global.css';
 import { PlaylistContainer } from '../../assets/styles/playlistSong';
-import { Global, ArtistHeader } from '../../assets/styles/artists';
+import { Global, ArtistHeader, AlbumsContainer } from '../../assets/styles/artists';
 import { Header, Links } from '../../assets/styles/webplayer';
 import { SongDiv, HoveredSongDiv } from '../../assets/styles/song';
 
@@ -49,7 +51,7 @@ const ModalItem = ({ playlistId, handleAddToPlaylist }) => {
     );
 }
 
-const ArtistSingle = ({ id, handleLike, songs }) => {
+const ArtistSingle = ({ artistId, id, handleLike, songs, handleUrl, hover, songState }) => {
 
     const [songInfo, setSongInfo] = useState('');
     const [playing, setPlaying] = useState(false)
@@ -72,7 +74,15 @@ const ArtistSingle = ({ id, handleLike, songs }) => {
                 if (songs[i] === id) setLike(true)
             }
         }
-    }, [])
+
+        setPlaying(songState)
+    }, [songs, playing, id, songState])
+
+    useEffect(() => {
+        return () => {
+            setLike(false)
+        }
+    }, [songs])
 
     const toggleLike = () => {
         setLike(!like)
@@ -81,6 +91,9 @@ const ArtistSingle = ({ id, handleLike, songs }) => {
 
     const togglePlay = () => {
         setPlaying(!playing)
+        handleUrl(songInfo.path, !playing, id)
+        localStorage.setItem('artist_singles', artistId)
+        localStorage.setItem('playlist', null);
     }
 
     const triggerModal = () => {
@@ -99,20 +112,36 @@ const ArtistSingle = ({ id, handleLike, songs }) => {
 
     let content = (
         <React.Fragment>
-            <SongDiv>
-                <div>
-                    <button onClick={togglePlay}>
-                        {songInfo.photo_path ? <img src={`http://localhost:5000/${songInfo.photo_path}`} alt="" /> : null}
-                    </button>
-                    {playing ? <FontAwesomeIcon icon={faPause} /> : <FontAwesomeIcon icon={faPlay} />}
-                </div>
-                <span> {songInfo.title} </span>
-                <span> {songInfo.artist} </span>
-                <span> {songInfo.album} </span>
-                <button onClick={toggleLike}> {like ? <FavoriteIcon style={{ color: "white" }} /> : <FavoriteBorderIcon style={{ color: "#c7c7c7" }} />} </button>
-                <button onClick={triggerModal}> <PlaylistAddIcon style={{ color: "white" }} /> </button>
-                <span> {songInfo.duration} </span>
-            </SongDiv>
+            {hover ?
+                <HoveredSongDiv>
+                    <div>
+                        <button onClick={togglePlay}>
+                            {songInfo.photo_path ? <img src={`http://localhost:5000/${songInfo.photo_path}`} alt="" /> : null}
+                        </button>
+                        {playing ? <FontAwesomeIcon icon={faPause} /> : <FontAwesomeIcon icon={faPlay} />}
+                    </div>
+                    <span> {songInfo.title} </span>
+                    <span> {songInfo.artist} </span>
+                    <span> {songInfo.album} </span>
+                    <button onClick={toggleLike}> {like ? <FavoriteIcon style={{ color: "white" }} /> : <FavoriteBorderIcon style={{ color: "#c7c7c7" }} />} </button>
+                    <button onClick={triggerModal}> <PlaylistAddIcon style={{ color: "white" }} /> </button>
+                    <span> {songInfo.duration} </span>
+                </HoveredSongDiv>
+                :
+                <SongDiv>
+                    <div>
+                        <button onClick={togglePlay}>
+                            {songInfo.photo_path ? <img src={`http://localhost:5000/${songInfo.photo_path}`} alt="" /> : null}
+                        </button>
+                        {playing ? <FontAwesomeIcon icon={faPause} /> : <FontAwesomeIcon icon={faPlay} />}
+                    </div>
+                    <span> {songInfo.title} </span>
+                    <span> {songInfo.artist} </span>
+                    <span> {songInfo.album} </span>
+                    <button onClick={toggleLike}> {like ? <FavoriteIcon style={{ color: "white" }} /> : <FavoriteBorderIcon style={{ color: "#c7c7c7" }} />} </button>
+                    <button onClick={triggerModal}> <PlaylistAddIcon style={{ color: "white" }} /> </button>
+                    <span> {songInfo.duration} </span>
+                </SongDiv>}
 
             {showUpModal ? <Modal
                 isOpen={showUpModal}
@@ -137,11 +166,12 @@ const ArtistSingle = ({ id, handleLike, songs }) => {
 }
 
 
-const ArtistQPNotification = ({ id, handleLike, songs }) => {
+const ArtistQPNotification = ({ id, songId, handleLike, songs, handleUrl, songIdState }) => {
 
     const [artist, setArtist] = useState(null)
     const [following, setFollowing] = useState(false);
     const [singles, setSingles] = useState(null)
+    const [albums, setAlbums] = useState(null);
     const user = useSelector(state => state.user)
     const { enqueueSnackbar } = useSnackbar();
     const dispatch = useDispatch();
@@ -149,6 +179,7 @@ const ArtistQPNotification = ({ id, handleLike, songs }) => {
     useEffect(() => {
         Axios.get(`http://localhost:5000/artist/${id}`)
             .then(res => {
+                setAlbums(res.data.artist.albums);
                 setArtist(res.data.artist);
                 setSingles(res.data.artist.singles);
             })
@@ -233,10 +264,22 @@ const ArtistQPNotification = ({ id, handleLike, songs }) => {
                 <h2> Songs </h2>
                 {singles !== null ?
                     singles.map((single, index) => {
-                        return (<ArtistSingle key={index} id={single} handleLike={handleLike} songs={songs} />)
+                        if (single === songId) return (<ArtistSingle key={index} artistId={id} id={single} handleLike={handleLike} songs={songs} handleUrl={handleUrl} hover={true} songState={songIdState} />)
+                        else return (<ArtistSingle key={index} artistId={id} id={single} handleLike={handleLike} songs={songs} handleUrl={handleUrl} hover={false} songState={false} />)
                     })
                     : null}
             </PlaylistContainer>
+
+            <AlbumsContainer>
+                <h2> Albums </h2>
+                <div>
+                    {albums !== null ?
+                        albums.map((album, index) => {
+                            return (<Album key={index} id={album}> {album} </Album>)
+                        })
+                        : null}
+                </div>
+            </AlbumsContainer>
 
         </React.Fragment>
 
@@ -244,14 +287,14 @@ const ArtistQPNotification = ({ id, handleLike, songs }) => {
     return content;
 }
 
-const ArtistQP = ({ id, handleLike, songs }) => {
+const ArtistQP = ({ id, songId, handleLike, songs, handleUrl, songIdState }) => {
     useEffect(() => {
 
     }, [id])
 
     let content = (
         <SnackbarProvider maxSnack={1} preventDuplicate>
-            <ArtistQPNotification id={id} handleLike={handleLike} songs={songs} />
+            <ArtistQPNotification id={id} songId={songId} handleLike={handleLike} songs={songs} handleUrl={handleUrl} songIdState={songIdState} />
         </SnackbarProvider>
     );
     return content;

@@ -1,6 +1,7 @@
 const router = require('express').Router();
 let User = require('../models/users.model');
 let Artist = require('../models/artists.model');
+let Album = require('../models/albums.model');
 const jwt = require('jsonwebtoken');
 var ObjectId = require('mongoose').Types.ObjectId;
 

@@ -66,9 +66,10 @@ const PlaylistSong = ({ handleDeleteTrack, playlistId, id, songs, handleLike, ha
     }, [songs])
 
     const togglePlay = () => {
-        setPlaying(!playing)
-        handleUrl(songInfo.path, !playing, id)
-        localStorage.setItem('playlist', playlistId)
+        setPlaying(!playing);
+        handleUrl(songInfo.path, !playing, id);
+        localStorage.setItem('playlist', playlistId);
+        localStorage.setItem('artist_singles', null);
     }
 
     const toggleLike = () => {

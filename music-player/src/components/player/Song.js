@@ -55,6 +55,7 @@ const Song = props => {
     const togglePlay = () => {
         props.handle(song.path, !playing, songId)
         localStorage.setItem('playlist', 'liked_songs')
+        localStorage.setItem('artist_singles', null)
         setPlaying(!playing)
     }
 

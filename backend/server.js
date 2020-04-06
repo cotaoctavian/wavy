@@ -35,6 +35,7 @@ const uploadRouter = require('./routes/upload');
 const songRouter = require('./routes/songs');
 const playlistRouter = require('./routes/playlists');
 const artistRouter = require('./routes/artist');
+const albumRouter = require('./routes/album');
 
 app.use('/register', registerRouter);
 app.use('/login', loginRouter);
@@ -45,6 +46,7 @@ app.use('/upload', uploadRouter);
 app.use('/song', songRouter);
 app.use('/playlist', playlistRouter);
 app.use('/artist', artistRouter);
+app.use('/album', albumRouter);
 app.use('/static', express.static(path.join(__dirname, 'public')))
 app.use(express.static('public'));
 
