@@ -94,6 +94,7 @@ const ArtistSingle = ({ artistId, id, handleLike, songs, handleUrl, hover, songS
         handleUrl(songInfo.path, !playing, id)
         localStorage.setItem('artist_singles', artistId)
         localStorage.setItem('playlist', null);
+        localStorage.setItem('album', null);
     }
 
     const triggerModal = () => {
@@ -194,8 +195,16 @@ const ArtistQPNotification = ({ id, songId, handleLike, songs, handleUrl, songId
 
     }, [following])
 
-    const handleClick = () => {
+    const handlePlay = () => {
+        Axios.post('http://localhost:5000/song/', { song: singles[0] })
+            .then(res => {
+                handleUrl(res.data.info.path, true, singles[0]);
+            })
+            .catch(err => console.log(err))
 
+        localStorage.setItem('artist_singles', id)
+        localStorage.setItem('playlist', null);
+        localStorage.setItem('album', null);
     }
 
     const handleFollow = async () => {
@@ -248,7 +257,7 @@ const ArtistQPNotification = ({ id, songId, handleLike, songs, handleUrl, songId
                             <h1> {artist.name} </h1>
                             <span> {artist.followers} {artist.followers !== 1 ? "followers" : "follower"} </span>
                             <div>
-                                <button onClick={handleClick} > Play <FontAwesomeIcon icon={faPlay} /> </button>
+                                <button onClick={handlePlay} > Play <FontAwesomeIcon icon={faPlay} /> </button>
                                 <button onClick={handleFollow}> {following ? <React.Fragment> Unfollow <FontAwesomeIcon icon={faHeart} /> </React.Fragment> :
                                     <React.Fragment> Follow <FontAwesomeIcon icon={faHeart} /> </React.Fragment>} </button>
                             </div>

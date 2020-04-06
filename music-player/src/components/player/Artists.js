@@ -18,7 +18,6 @@ const ArtistItem = ({ id }) => {
         Axios.get(`http://localhost:5000/artist/${id}`)
             .then(res => {
                 setArtist(res.data.artist)
-                console.log(res.data)
             })
             .catch(err => console.log(err))
     }, [id])

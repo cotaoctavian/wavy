@@ -1,9 +1,8 @@
 const router = require('express').Router();
 let User = require('../models/users.model');
 let Artist = require('../models/artists.model');
-let Album = require('../models/albums.model');
+let ObjectId = require('mongoose').Types.ObjectId;
 const jwt = require('jsonwebtoken');
-var ObjectId = require('mongoose').Types.ObjectId;
 
 
 router.get('/:id', (req, res) => {
@@ -44,7 +43,7 @@ router.patch('/follow/:artistId/:userId', (req, res) => {
                                         followers = followers + 1
                                         artist.followers = followers
                                         
-                                        const token = jwt.sign({id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists:user.playlists, artists:user.artists}, process.env.TOKEN_SECRET)
+                                        const token = jwt.sign({id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists:user.playlists, artists:user.artists, albums: user.albums}, process.env.TOKEN_SECRET)
                                         artist.save()
                                             .then(() => res.status(200).json({ token: token,  message: `You started following ${artist.name}. ✔️` }))
                                             .catch(() => res.status(500).json({ message: "Something went wrong.. 🤔" }))
@@ -83,7 +82,7 @@ router.patch('/unfollow/:artistId/:userId', (req, res) => {
                                     followers = followers - 1
                                     artist.followers = followers
                                     
-                                    const token = jwt.sign({id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists:user.playlists, artists:user.artists}, process.env.TOKEN_SECRET)
+                                    const token = jwt.sign({id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists:user.playlists, artists:user.artists, albums: user.albums}, process.env.TOKEN_SECRET)
 
                                     artist.save()
                                         .then(() => res.status(200).json({token: token,  message: `You stopped following ${artist.name}. 🛑` }))

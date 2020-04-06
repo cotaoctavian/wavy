@@ -56,6 +56,7 @@ const Song = props => {
         props.handle(song.path, !playing, songId)
         localStorage.setItem('playlist', 'liked_songs')
         localStorage.setItem('artist_singles', null)
+        localStorage.setItem('album', null);
         setPlaying(!playing)
     }
 

@@ -11,6 +11,7 @@ import Playlist from './Playlist';
 import PlaylistQP from './PlaylistQP';
 import ArtistQP from './ArtistQP';
 import AlbumQP from './AlbumQP';
+import LibraryAlbum from './LibraryAlbum';
 import Axios from 'axios';
 import jwt from 'jwt-decode';
 
@@ -70,8 +71,8 @@ const WebPlayer = (props) => {
     const getPlaylistLikeState = (playlistId) => {
         const likedSongs = user.songs;
         let likeState = false, i;
-        for(i = 0; i < likedSongs.length; i++) {
-            if(likedSongs[i] === playlistId) likeState = true;
+        for (i = 0; i < likedSongs.length; i++) {
+            if (likedSongs[i] === playlistId) likeState = true;
         }
         return likeState;
     }
@@ -81,6 +82,7 @@ const WebPlayer = (props) => {
 
         let playlistIdentifier = localStorage.getItem('playlist');
         let artistSingleIdentifier = localStorage.getItem('artist_singles');
+        let albumIdentifier = localStorage.getItem('album');
         let playlist, position;
 
         if (playlistIdentifier !== "null") {
@@ -89,14 +91,25 @@ const WebPlayer = (props) => {
                 try {
                     const result = await Axios.post("http://localhost:5000/playlist/", { id: playlistIdentifier })
                     playlist = result.data.playlist.songs
-                } catch (err) { console.log(err) }
+                } catch (err) {
+                    console.log(err)
+                }
             }
-        } else if(artistSingleIdentifier !== "null") {
+        } else if (artistSingleIdentifier !== "null") {
             try {
                 const result = await Axios.get(`http://localhost:5000/artist/${artistSingleIdentifier}`)
                 playlist = result.data.artist.singles;
-                console.log(playlist);
-            } catch(err) { console.log(err) }
+            } catch (err) {
+                console.log(err)
+            }
+        } else if (albumIdentifier !== "null") {
+            try {
+                const result = await Axios.get(`http://localhost:5000/album/${albumIdentifier}`)
+                console.log(result.data);
+                playlist = result.data.album.tracks;
+            } catch (err) {
+                console.log(err)
+            }
         }
 
         let i;
@@ -145,9 +158,9 @@ const WebPlayer = (props) => {
 
         let playlistIdentifier = localStorage.getItem('playlist');
         let artistSingleIdentifier = localStorage.getItem('artist_singles')
+        let albumIdentifier = localStorage.getItem('album');
+
         let playlist, position;
-        console.log(typeof playlistIdentifier);
-        console.log(typeof artistSingleIdentifier);
 
         if (playlistIdentifier !== "null") {
             if (playlistIdentifier === "liked_songs") playlist = user.songs
@@ -155,14 +168,24 @@ const WebPlayer = (props) => {
                 try {
                     const result = await Axios.post("http://localhost:5000/playlist/", { id: playlistIdentifier })
                     playlist = result.data.playlist.songs
-                } catch (err) { console.log(err) }
+                } catch (err) {
+                    console.log(err)
+                }
             }
-        } else if(artistSingleIdentifier !== "null") {
+        } else if (artistSingleIdentifier !== "null") {
             try {
                 const result = await Axios.get(`http://localhost:5000/artist/${artistSingleIdentifier}`)
                 playlist = result.data.artist.singles;
-                console.log("####", playlist);
-            } catch(err) { console.log(err) }
+            } catch (err) {
+                console.log(err)
+            }
+        } else if (albumIdentifier !== "null") {
+            try {
+                const result = await Axios.get(`http://localhost:5000/album/${albumIdentifier}`)
+                playlist = result.data.album.tracks;
+            } catch (err) {
+                console.log(err);
+            }
         }
 
         let i;
@@ -211,9 +234,10 @@ const WebPlayer = (props) => {
         <React.Fragment>
             {props.match.params.id !== undefined && props.match.path.includes('artists') ? <ArtistQP id={props.match.params.id} songId={songId} handleLike={handleLike} songs={user.songs} handleUrl={handleUrl} songIdState={playing} /> : null}
             {props.match.params.id !== undefined && props.match.path.includes('playlists') ? <PlaylistQP songId={songId} songs={user.songs} id={props.match.params.id} handleLike={handleLike} handleUrl={handleUrl} songIdState={playing} /> : null}
-            {props.match.params.id !== undefined && props.match.path.includes('album') ? <AlbumQP id={props.match.params.id} /> : null} 
+            {props.match.params.id !== undefined && props.match.path.includes('album') ? <AlbumQP id={props.match.params.id} songId={songId} handleLike={handleLike} songs={user.songs} handleUrl={handleUrl} songIdState={playing} /> : null}
             {urlPathname === "/player" ? <HomePlayer handle={handleUrl} /> : null}
             {urlPathname === "/library" ? <Library handle={handleUrl} /> : null}
+            {urlPathname === "/library/albums" ? <LibraryAlbum image={user.img} /> : null}
             {urlPathname === "/library/artists" ? <Artists /> : null}
             {urlPathname === "/library/playlists" ? <Playlist image={user.img} userId={user.id} /> : null}
             {urlPathname === "/library/tracks" ? <LikedSongs image={user.img} songs={user.songs} songId={songId} songIdState={playing} handle={handleUrl} handleLike={handleLike} /> : null}

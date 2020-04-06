@@ -10,8 +10,8 @@ const Album = ({ id }) => {
         Axios.get(`http://localhost:5000/album/${id}`)
             .then(res => {
                 setAlbumData(res.data.album)
-                console.log(res.data.album)
             })
+            .catch(err => console.log(err))
     }, [])
 
     let content = (

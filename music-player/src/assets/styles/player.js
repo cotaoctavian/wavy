@@ -3,7 +3,6 @@ import styled, { createGlobalStyle } from 'styled-components';
 export const Global = createGlobalStyle`
     body {
         margin: 0;
-        overflow: hidden;
     }
 `;
 
@@ -11,7 +10,7 @@ export const ContainerPlayer=styled.div`
     display: grid;
     grid-template-columns: 0.07fr 0.075fr 0.07fr 0.2fr 0.8fr 1.2fr 0.3fr;
     align-items: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     border: 2px solid black;
     width: 100%;

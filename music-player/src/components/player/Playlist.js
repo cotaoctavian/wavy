@@ -51,7 +51,6 @@ const Playlist = (props) => {
     const [playlistTitle, setPlaylistTitle] = useState('')
     const dispatch = useDispatch();
     const playlists = useSelector(state => state.user.playlists)
-    console.log(playlists)
 
     const handlePlaylistClick = () => {
         setShowUpModal(!showUpModal)

@@ -3,7 +3,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 export const Global = createGlobalStyle`
     body {
         margin: 0;
-        background-color:#1a1a1a;
+        background-color: #1a1a1a;
     }
 `;
 
@@ -28,6 +28,8 @@ export const ArtistHeader = styled.div`
     display: flex;
     flex-direction: row;
     font-family: 'Poppins', sans-serif;
+
+    & h2 { color: white }
 
     & img {
         flex: 0.15;

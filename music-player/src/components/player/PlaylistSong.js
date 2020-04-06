@@ -70,6 +70,7 @@ const PlaylistSong = ({ handleDeleteTrack, playlistId, id, songs, handleLike, ha
         handleUrl(songInfo.path, !playing, id);
         localStorage.setItem('playlist', playlistId);
         localStorage.setItem('artist_singles', null);
+        localStorage.setItem('album', null);
     }
 
     const toggleLike = () => {

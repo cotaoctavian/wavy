@@ -54,7 +54,7 @@ router.delete('/track/:id/:userId', (req, res) => {
                 user.playlists = playlist
                 user.save()
 
-                const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists }, process.env.TOKEN_SECRET)
+                const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, albums: user.albums }, process.env.TOKEN_SECRET)
                 Playlist.deleteOne({ _id: req.params.id }, (err) => {
                     if (err) {
                         res.json({ message: "The playlist couldn't be deleted. 😥" })
@@ -124,7 +124,7 @@ router.post('/add', (req, res) => {
                         user.playlists = playlists;
                         user.save()
                             .then(() => {
-                                const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists:user.artists }, process.env.TOKEN_SECRET)
+                                const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists:user.artists, albums: user.albums }, process.env.TOKEN_SECRET)
                                 res.json({ token: token })
                             })
                             .catch((err) => console.log(err));
