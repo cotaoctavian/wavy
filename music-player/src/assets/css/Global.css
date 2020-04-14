@@ -342,3 +342,63 @@
 .song-modal div div::-webkit-scrollbar{
 	width: 0px;
 }
+
+
+.search-modal {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 17%;
+    position: absolute;
+    top: 240px;
+    left: 1500px;
+    bottom: 525px;
+    border-radius: 10px;
+    outline: none;
+    padding-top: 20px;
+    opacity: 1;
+}
+
+.search-modal div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.search-modal div div {
+    overflow-y: scroll;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+.search-modal div h3 {
+    border-bottom: 1px solid white;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.search-modal div div button {
+    background-color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 20px 10px;
+    text-align: left;
+    outline: none;
+}
+
+.search-modal div div > p {
+    margin-left: 10px;
+}
+
+.search-modal div div button:hover {
+    background-color: #212121;
+    border: 1px solid #212121;
+    padding: 20px 10px;
+}
+
+.search-modal div div::-webkit-scrollbar{
+	width: 0px;
+}

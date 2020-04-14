@@ -19,6 +19,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
 import LibraryMusicIcon from '@material-ui/icons/LibraryMusic';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 /* STYLING */
 import { Global } from '../../assets/styles/playlistSong';
@@ -166,6 +167,7 @@ const AlbumTrack = ({ albumId, id, handleLike, songs, handleUrl, hover, songStat
 const AlbumQPNotification = ({ id, songId, handleLike, songs, handleUrl, songIdState }) => {
     const user = useSelector(state => state.user)
     const [album, setAlbum] = useState(null)
+    const [addedToLibrary, setAddedToLibrary] = useState(false)
     const { enqueueSnackbar } = useSnackbar();
     const dispatch = useDispatch();
 
@@ -175,6 +177,15 @@ const AlbumQPNotification = ({ id, songId, handleLike, songs, handleUrl, songIdS
                 setAlbum(res.data.album);
             })
             .catch(err => console.log(err))
+
+        let i;
+        const albums = user.albums
+        if (albums !== undefined) {
+            for (i = 0; i < albums.length; i++) {
+                if (id === albums[i]) setAddedToLibrary(true);
+            }
+        }
+
     }, [])
 
     const handlePlay = () => {
@@ -183,7 +194,7 @@ const AlbumQPNotification = ({ id, songId, handleLike, songs, handleUrl, songIdS
                 handleUrl(res.data.info.path, true, album.tracks[0]);
             })
             .catch(err => console.log(err))
-        
+
         localStorage.setItem('artist_singles', null)
         localStorage.setItem('playlist', null);
         localStorage.setItem('album', id);
@@ -192,13 +203,26 @@ const AlbumQPNotification = ({ id, songId, handleLike, songs, handleUrl, songIdS
     const handleAddToLibrary = async () => {
         try {
             const result = await Axios.post(`http://localhost:5000/album/${user.id}/${id}/${album.name}`)
+            enqueueSnackbar(result.data.message, { variant: 'default' })
+            localStorage.setItem('token', result.data.token);
+            dispatch(setUpUser(jwt(result.data.token)))
+        } catch (err) {
+            enqueueSnackbar(err.response.data.message, { variant: 'default' })
+        }
+        setAddedToLibrary(true)
+    }
+
+    const handleDeleteFromLibrary = async () => {
+        try {
+            const result = await Axios.delete(`http://localhost:5000/album/${user.id}/${id}/${album.name}`)
             console.log(result.data)
             enqueueSnackbar(result.data.message, { variant: 'default' })
             localStorage.setItem('token', result.data.token);
             dispatch(setUpUser(jwt(result.data.token)))
         } catch (err) {
-
+            enqueueSnackbar(err.response.data.message, { variant: 'default' })
         }
+        setAddedToLibrary(false)
     }
 
     let content = (
@@ -229,7 +253,11 @@ const AlbumQPNotification = ({ id, songId, handleLike, songs, handleUrl, songIdS
                             <span> {album.year} &#8226; {album.tracks.length} {album.tracks.length === 1 ? "song" : "songs"} </span>
                             <div>
                                 <button onClick={handlePlay}> <FontAwesomeIcon icon={faPlay} /> PLAY </button>
-                                <button onClick={handleAddToLibrary}> Add to library <LibraryMusicIcon /> </button>
+                                {addedToLibrary ?
+                                    <button onClick={handleDeleteFromLibrary}> REMOVE FROM LIBRARY <DeleteIcon /> </button>
+                                    :
+                                    <button onClick={handleAddToLibrary}> ADD TO LIBRARY <LibraryMusicIcon /> </button>
+                                }
                             </div>
                         </div>
                     </React.Fragment>

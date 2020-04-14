@@ -55,11 +55,10 @@ export const RightHeader = styled.div`
     grid-template-rows: 1fr;
 
     & img {
-        width: 55px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
         border-radius: 100%;
-        border: 1px solid gray;
-        margin-top: 7px;
+        margin-top: 0.8em;
     }
 `;
 

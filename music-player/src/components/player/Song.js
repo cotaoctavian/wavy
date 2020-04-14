@@ -68,7 +68,7 @@ const Song = props => {
     const triggerModal = () => {
         setShowUpModal(true)
     }
-    
+
     const handleAddToPlaylist = async (playlistId) => {
         setShowUpModal(false)
         try {
@@ -112,22 +112,24 @@ const Song = props => {
                     <span> {song.duration} </span>
                 </HoveredSongDiv>}
 
-                {showUpModal ? <Modal
-                isOpen={showUpModal}
-                onRequestClose={() => setShowUpModal(false)}
-                className="song-modal"
-                overlayClassName="overlay">
+            {showUpModal ?
+                <Modal
+                    isOpen={showUpModal}
+                    onRequestClose={() => setShowUpModal(false)}
+                    className="song-modal"
+                    overlayClassName="overlay">
 
-                <div>
-                    <h3> Add to playlist </h3>
                     <div>
-                        {playlists.length > 0 ? playlists.map((playlist, index) => {
-                            return <ModalItem key={index} playlistId={playlist} handleAddToPlaylist={handleAddToPlaylist}> {playlist} </ModalItem>
-                        }): (<p> No playlist found. 😥</p>)}
+                        <h3> Add to playlist </h3>
+                        <div>
+                            {playlists.length > 0 ? playlists.map((playlist, index) => {
+                                return <ModalItem key={index} playlistId={playlist} handleAddToPlaylist={handleAddToPlaylist}> {playlist} </ModalItem>
+                            }) : (<p> No playlist found. 😥</p>)}
+                        </div>
                     </div>
-                </div>
 
-            </Modal> : null}
+                </Modal>
+                : null}
 
         </div>
 

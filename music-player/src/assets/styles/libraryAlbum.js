@@ -14,6 +14,11 @@ export const LibraryAlbumContainer = styled.div`
         color: white;
     }
 
+    & h3 {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+
     & > div {
         color: white;
         font-family: 'Poppins', sans-serif;

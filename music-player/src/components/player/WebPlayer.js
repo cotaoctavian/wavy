@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { setUpUser } from '../../actions/index';
+import Axios from 'axios';
+
+/* STYLES */
 import '../../assets/css/Global.css';
+
+/* COMPONENTS */
 import Library from './Library';
 import Artists from './Artists';
 import LikedSongs from './LikedSongs';
@@ -12,7 +15,11 @@ import PlaylistQP from './PlaylistQP';
 import ArtistQP from './ArtistQP';
 import AlbumQP from './AlbumQP';
 import LibraryAlbum from './LibraryAlbum';
-import Axios from 'axios';
+import Search from './Search';
+
+/* REDUX */
+import { useSelector, useDispatch } from 'react-redux';
+import { setUpUser } from '../../actions/index';
 import jwt from 'jwt-decode';
 
 const WebPlayer = (props) => {
@@ -241,6 +248,7 @@ const WebPlayer = (props) => {
             {urlPathname === "/library/artists" ? <Artists /> : null}
             {urlPathname === "/library/playlists" ? <Playlist image={user.img} userId={user.id} /> : null}
             {urlPathname === "/library/tracks" ? <LikedSongs image={user.img} songs={user.songs} songId={songId} songIdState={playing} handle={handleUrl} handleLike={handleLike} /> : null}
+            {urlPathname === "/search" ? <Search songId={songId} songIdState={playing} handleUrl={handleUrl}/> : null} 
             {url.length > 0 ? <Player resetTrack={reset} handlePrevious={handlePrevious} handleForward={handleForward} handleLike={handleLike} songInfo={songInfo} audio={audio} url={url} play={playing} changePlay={setPlaying} likeState={like} /> : null}
         </React.Fragment>
     );

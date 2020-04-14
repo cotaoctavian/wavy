@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
 import { Header, Global, Links, Main, Menu } from '../../assets/styles/webplayer';
 import { ArtistContainer } from '../../assets/styles/artists';
@@ -8,38 +7,7 @@ import wavy from '../../assets/images/white_wave.png';
 import '../../assets/css/Global.css';
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-
-const ArtistItem = ({ id }) => {
-
-    const [artist, setArtist] = useState(null)
-
-    useEffect(() => {
-        Axios.get(`http://localhost:5000/artist/${id}`)
-            .then(res => {
-                setArtist(res.data.artist)
-            })
-            .catch(err => console.log(err))
-    }, [id])
-
-    let content = (
-        <React.Fragment>
-            {artist != null ?
-                <div>
-                    <NavLink exact to={`/library/artists/${id}`} className="circle-nav-link">
-                        <div>
-                            <img src={`http://localhost:5000/${artist.photo}`} />
-                            <p> {artist.name} </p> 
-                            <span> {artist.followers} {artist.followers === 1 ? "follower" : "followers"} </span>
-                        </div>
-                    </NavLink>
-                </div>
-                :
-                null}
-        </React.Fragment>
-    );
-    return content;
-}
+import ArtistItem from './ArtistItem'
 
 
 const Artists = () => {

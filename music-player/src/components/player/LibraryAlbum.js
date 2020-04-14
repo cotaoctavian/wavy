@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import Modal from 'react-modal';
-import { NavLink } from 'react-router-dom';
-import { Header, Global, Links, Main, Menu } from '../../assets/styles/webplayer';
-import { PlaylistContainer } from '../../assets/styles/playlist';
-import wavy from '../../assets/images/white_wave.png';
-import playlistCover from '../../assets/images/playlist.png';
-import '../../assets/css/Global.css';
-import liked_songs from '../../assets/images/liked_songs.gif';
-import { faSearch, faPlus } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Axios from 'axios';
-import jwt from 'jwt-decode';
-import { useSelector, useDispatch } from 'react-redux';
-import { setUpUser } from '../../actions/index';
+import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
+/* IMAGES AND ICONS */
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import wavy from '../../assets/images/white_wave.png';
+
+/* STYLING */
+import '../../assets/css/Global.css';
+import { Header, Global, Links, Main, Menu } from '../../assets/styles/webplayer';
 import { LibraryAlbumContainer } from '../../assets/styles/libraryAlbum';
+import Modal from 'react-modal';
+
 
 Modal.setAppElement("#root");
 
@@ -44,7 +44,6 @@ const AlbumItem = ({ id }) => {
 }
 
 const LibraryAlbum = ({ image }) => {
-    const dispatch = useDispatch();
     const albums = useSelector(state => state.user.albums)
 
     let content = (
@@ -77,8 +76,11 @@ const LibraryAlbum = ({ image }) => {
                 </Menu>
 
                 <LibraryAlbumContainer>
+
+                    {albums.length === 0 ? <h3> No albums available in your library. 😥 </h3> : null}
+
                     <div>
-                        {albums !== null ?
+                        {albums.length !== 0 ?
                             albums.map((album, index) => {
                                 return (<AlbumItem key={index} id={album}> {album} </AlbumItem>)
                             })

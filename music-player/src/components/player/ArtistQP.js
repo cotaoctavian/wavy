@@ -267,8 +267,6 @@ const ArtistQPNotification = ({ id, songId, handleLike, songs, handleUrl, songId
                 }
             </ArtistHeader>
 
-
-
             <PlaylistContainer>
                 <h2> Songs </h2>
                 {singles !== null ?

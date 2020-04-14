@@ -3,13 +3,15 @@ import styled, { createGlobalStyle } from 'styled-components';
 export const Global = createGlobalStyle`
     body {
         margin: 0;
+        background-color: #1a1a1a;
     }
 `;
 
 export const Header = styled.nav`
-    overflow:hidden;
+    overflow: hidden;
     background-color: black;
     position: absolute;
+    top: 0;
     width: 100%;
     height: 7%;
     display: grid;
@@ -17,7 +19,6 @@ export const Header = styled.nav`
     align-items: center;
     justify-content: center;
     align-content: center;
-    
 
     & div:nth-child(1) {
         padding-left: 50px;

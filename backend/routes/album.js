@@ -43,5 +43,27 @@ router.post('/:userId/:albumId/:albumTitle', (req, res) => {
         .catch(() => res.status(500).json({ message: "Something went wrong.. 🤔" }))
 })
 
+/* Remove album from library */
+router.delete('/:userId/:albumId/:albumTitle', (req, res) => {
+    User.findById({ _id: req.params.userId})
+        .then((user) => {
+            let i, check = true;
+            for(i = 0; i < user.albums.length; i++) {
+                if(new ObjectId(user.albums[i]).equals(req.params.albumId)) 
+                    user.albums.splice(i, 1);
+                    break;
+            }
+
+            user.save()
+                .then(() => {
+                    const token = jwt.sign({id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists:user.playlists, artists:user.artists, albums: user.albums}, process.env.TOKEN_SECRET)
+                    res.status(200).json({ token: token,  message: `You removed ${req.params.albumTitle} from library. ❌` })
+                })
+                .catch(() => {
+                    res.status(500).json({ message: "Something went wrong.. 🤔" })
+                })
+        })
+})
+
 
 module.exports = router;

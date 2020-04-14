@@ -1,8 +1,36 @@
 const router = require('express').Router();
 let Songs = require('../models/songs.model');
 let User = require('../models/users.model');
+let Artist = require('../models/artists.model');
+let Album = require('../models/albums.model');
 const jwt = require('jsonwebtoken');
 var ObjectId = require('mongoose').Types.ObjectId;
+
+
+router.get('/', (req, res) => {
+    Songs.find({}, (err, songs) => {
+        if(err) {
+            res.status(404).json({message: 'No songs found'})
+        }
+        else {
+            Artist.find({}, (err, artists) => {
+                if(err) {
+                    res.status(404).json({message: 'No artists found'})
+                }
+                else {
+                    Album.find({}, (err, albums) => {
+                        if(err) {
+                            res.status(404).json({message: 'No albums found'})
+                        }
+                        else {
+                            res.status(200).json({songs: songs, artists: artists, albums: albums})
+                        }
+                    })
+                }
+            })
+        }
+    })
+})
 
 router.post('/', (req, res) => {
 

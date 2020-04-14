@@ -10,6 +10,7 @@ import Profile from './components/profile/Profile';
 import WebPlayer from './components/player/WebPlayer';
 import ChangePassword from './components/auth/ChangePassword';
 import UpdateProfile from './components/profile/UpdateProfile';
+import Search from './components/player/Search';
 
 const App = () => {
   return (
@@ -32,7 +33,8 @@ const App = () => {
         <Route path="/library/playlists/:id" component={WebPlayer} />
         <Route path="/library/artists/:id" component={WebPlayer} />
         <Route exact path="/library/artists" component={WebPlayer} />
-        <Route exact path="/library/album/:id" component={WebPlayer} />
+        <Route path="/library/album/:id" component={WebPlayer} />
+        <Route exact path="/search" component={WebPlayer} />
       </Switch>
     </React.Fragment>
   );
