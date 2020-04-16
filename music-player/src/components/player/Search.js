@@ -7,7 +7,7 @@ import { SnackbarProvider, useSnackbar } from 'notistack';
 
 /* STYLING */
 import { Header, Global, Links } from '../../assets/styles/webplayer';
-import { SearchBar, TopResult, SearchContainer, TopResultWithSongs, SearchSong, AlbumsList, ArtistsList, HoveredSearchSong } from '../../assets/styles/search';
+import { SearchBar, TopResult, SearchContainer, TopResultWithSongs, SearchSong, AlbumsList, ArtistsList, HoveredSearchSong, SearchBarMessage, NoResultsFound, TopResultSong } from '../../assets/styles/search';
 import '../../assets/css/Global.css';
 
 /* IMAGES AND ICONS */
@@ -17,6 +17,10 @@ import wavy from '../../assets/images/white_wave.png';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import { faPause } from '@fortawesome/free-solid-svg-icons';
 import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
+import search from '../../../src/assets/images/search.svg'
+import notfound from '../../../src/assets/images/not_found.svg'
+import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
+import PauseCircleFilledIcon from '@material-ui/icons/PauseCircleFilled';
 
 /* COMPONENTS */
 import Album from './Album';
@@ -144,6 +148,9 @@ const Search = ({ songId, songIdState, handleUrl }) => {
     const [filteredSongs, setFilteredSongs] = useState(null)
     const [filteredAlbums, setFilteredAlbums] = useState(null)
     const [topResult, setTopResult] = useState(null)
+    const [searchMessage, setSearchMessage] = useState(null)
+    const [introMessage, setIntroMessage] = useState(null)
+    const [playing, setPlaying] = useState(false)
 
     useEffect(() => {
         Axios.get('http://localhost:5000/song')
@@ -153,7 +160,11 @@ const Search = ({ songId, songIdState, handleUrl }) => {
                 setAlbumsList(res.data.albums)
             })
             .catch(error => console.log(error))
-    }, [topResult, filteredSongs, filteredAlbums, filteredArtists])
+            if(filteredSongs !== null) {
+                if(filteredSongs[0]._id === songId) setPlaying(songIdState)
+                else setPlaying(false)
+            }
+    }, [topResult, filteredSongs, filteredAlbums, filteredArtists, songIdState, songId, handleUrl])
 
     const handleOnChange = (e) => {
         e.preventDefault()
@@ -162,6 +173,8 @@ const Search = ({ songId, songIdState, handleUrl }) => {
         let trackList = []
         let albumList = []
         let artistList = []
+
+        console.log(e.target.value)
 
         if (e.target.value !== "" && /^[a-zA-Z0-9\s]+$/.test(e.target.value)) {
 
@@ -257,7 +270,19 @@ const Search = ({ songId, songIdState, handleUrl }) => {
         }
         else setFilteredArtists(null)
 
-        if (albumList.length === 0 && artistList.length === 0 && trackList.length === 0) setTopResult(null)
+        if (albumList.length === 0 && artistList.length === 0 && trackList.length === 0) {
+            setTopResult(null)
+            setSearchMessage('No results found.')
+            setIntroMessage('')
+        } else {
+            setSearchMessage(null)
+            setIntroMessage('')
+        }
+    }
+
+    const togglePlay = () => {
+        handleUrl(filteredSongs[0].path, !playing, filteredSongs[0]._id)
+        setPlaying(!playing)
     }
 
     let content = (
@@ -278,12 +303,30 @@ const Search = ({ songId, songIdState, handleUrl }) => {
                     </Links>
 
                     <NavLink exact to="/profile" className="header-nav-link"> <img src={`http://localhost:5000/${user.img}`} alt="" className="img__library" /> </NavLink>
-
                 </Header>
 
                 <SearchBar>
                     <input type="search" placeholder="Search" onChange={handleOnChange} />
                 </SearchBar>
+
+                {introMessage === null ?
+                    <SearchBarMessage>
+
+                        <div>
+                            <img src={search} alt="" />
+                            <h2> Search your favorite <span className="search-wavy-text"> wavy </span> songs, ablums or artists! </h2>
+                        </div>
+                    </SearchBarMessage>
+                    : null}
+
+                {searchMessage !== null ?
+                    <NoResultsFound>
+                        <div>
+                            <img src={notfound} alt="" />
+                            <h2> <span className="search-wavy-text"> {searchMessage} </span> </h2>
+                        </div>
+                    </NoResultsFound>
+                    : null}
 
                 <SearchContainer>
                     <TopResultWithSongs>
@@ -291,35 +334,43 @@ const Search = ({ songId, songIdState, handleUrl }) => {
                             {topResult !== null ? <h2> Top result </h2> : null}
 
                             {topResult === 0 ?
-                                <TopResult>
+                                <TopResultSong>
                                     <img src={`http://localhost:5000/${filteredSongs[0].photo_path}`} alt="" />
                                     <span> {filteredSongs[0].title} </span>
                                     <div>
                                         <span> {filteredSongs[0].artist} &#x2022; Song</span>
+                                        {playing ?
+                                            <button onClick={togglePlay}> <PauseCircleFilledIcon style={{ color: "white", fontSize: 50 }} /> </button>
+                                            :
+                                            <button onClick={togglePlay}> <PlayCircleFilledIcon style={{ color: "white", fontSize: 50 }} /> </button>}
                                     </div>
-                                </TopResult>
+                                </TopResultSong>
                                 :
                                 null}
 
                             {topResult === 1 ?
                                 <TopResult>
-                                    <img src={`http://localhost:5000/${filteredAlbums[0].photo}`} alt="" />
-                                    <span> {filteredAlbums[0].name} </span>
-                                    <div>
-                                        <span> {filteredAlbums[0].artist} &#x2022; Album </span>
+                                    <NavLink exact to={`/library/album/${filteredAlbums[0]._id}`}>
+                                        <img src={`http://localhost:5000/${filteredAlbums[0].photo}`} alt="" />
+                                        <span> {filteredAlbums[0].name} </span>
+                                        <div>
+                                            <span> {filteredAlbums[0].artist} &#x2022; Album </span>
 
-                                    </div>
+                                        </div>
+                                    </NavLink>
                                 </TopResult>
                                 :
                                 null}
 
                             {topResult === 2 ?
                                 <TopResult>
-                                    <img src={`http://localhost:5000/${filteredArtists[0].photo}`} alt="" />
-                                    <span> {filteredArtists[0].name} </span>
-                                    <div>
-                                        <span> Artist </span>
-                                    </div>
+                                    <NavLink exact to={`/library/artists/${filteredArtists[0]._id}`}>
+                                        <img src={`http://localhost:5000/${filteredArtists[0].photo}`} alt="" />
+                                        <span> {filteredArtists[0].name} </span>
+                                        <div>
+                                            <span> Artist </span>
+                                        </div>
+                                    </NavLink>
                                 </TopResult>
                                 :
                                 null}

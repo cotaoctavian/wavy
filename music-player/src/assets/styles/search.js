@@ -65,6 +65,57 @@ export const SearchContainer = styled.div`
 `;
 
 export const TopResult = styled.div`
+    & a {
+        background-color: #2b2b2b;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: 25vh;
+        width: 33vh;
+        border-radius: 5%;
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+
+        & > img {
+        margin-top: 1.5em;
+        margin-left: 1.5em;
+        width: 15vh;
+        height: 15vh;
+        border-radius: 5%;
+        }
+
+        & > span {
+            margin-top: 5px;
+            margin-left: 1.3em;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        & > div {
+            display: flex;
+            width: 55%;
+            margin-left: 1.5em;
+            padding-bottom: 1em;
+
+            & > span {
+                flex: 0.7;
+                font-size: 12px;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            & > span:nth-child(2) {
+                flex: 0.3;
+                background-color: #1e1e1e;
+                border-radius: 10px;
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+    }
+`;
+
+export const TopResultSong = styled.div`
     background-color: #2b2b2b;
     color: white;
     display: grid;
@@ -74,13 +125,14 @@ export const TopResult = styled.div`
     width: 33vh;
     border-radius: 5%;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 
-    & img {
-        margin-top: 1.5em;
-        margin-left: 1.5em;
-        width: 15vh;
-        height: 15vh;
-        border-radius: 5%;
+    & > img {
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 5%;
     }
 
     & > span {
@@ -89,26 +141,29 @@ export const TopResult = styled.div`
         font-size: 18px;
         font-weight: bold;
         font-family: 'Poppins', sans-serif;
-
     }
 
     & > div {
-        display: flex;
-        width: 55%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        
+        width: 100%;
         margin-left: 1.5em;
         padding-bottom: 1em;
 
         & > span {
-            flex: 0.7;
             font-size: 12px;
             font-family: 'Poppins', sans-serif;
         }
 
-        & span:nth-child(2) {
-            flex: 0.3;
-            background-color: #1e1e1e;
-            border-radius: 10px;
-            font-family: 'Poppins', sans-serif;
+        & button {
+            width: 0px;
+            background-color: #2b2b2b;
+            border: 1px solid #2b2b2b;
+            margin-left: 7.5em;
+            margin-top: -2em;
+            cursor: pointer;
+            outline: none;
         }
     }
 `;
@@ -292,4 +347,42 @@ export const ArtistsList = styled.div`
     grid-row-gap: 20px;
     margin-bottom: 20em;
     margin-top: -2em;
+`;
+
+export const SearchBarMessage = styled.div`
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 4em;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+    & img {
+        width: 25em;
+        height: 25em;
+    }
+`;
+
+export const NoResultsFound = styled.div`
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 4em;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+    & img {
+        width: 25em;
+        height: 25em;
+    }
 `;

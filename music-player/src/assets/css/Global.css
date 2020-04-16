@@ -350,9 +350,9 @@
     font-family: 'Poppins', sans-serif;
     width: 17%;
     position: absolute;
-    top: 240px;
+    top: 252px;
     left: 1500px;
-    bottom: 525px;
+    bottom: 465px;
     border-radius: 10px;
     outline: none;
     padding-top: 20px;
@@ -401,4 +401,11 @@
 
 .search-modal div div::-webkit-scrollbar{
 	width: 0px;
+}
+
+.search-wavy-text{
+    background: rgb(255,185,185);
+    background: linear-gradient(90deg, rgba(255,185,185,1) 0%, rgba(255,153,153,1) 32%, rgba(255,110,110,1) 77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
