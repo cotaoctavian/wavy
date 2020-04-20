@@ -409,3 +409,27 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.admin-nav {
+    outline: none;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.admin-nav:hover {
+    transform: scale(1.1);
+    transition: transform .1s linear;
+}
+
+.admin-nav:not(:hover) {
+    transform: scale(1);
+    transition: transform .1s linear;
+}
+
+.admin-nav.active { 
+    color: white;
+}
+

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import PrivateRoute from './components/admin_panel/PrivateRoute';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import ResetPass from './components/auth/ResetPass';
@@ -10,7 +11,10 @@ import Profile from './components/profile/Profile';
 import WebPlayer from './components/player/WebPlayer';
 import ChangePassword from './components/auth/ChangePassword';
 import UpdateProfile from './components/profile/UpdateProfile';
-import Search from './components/player/Search';
+import AdminPanel from './components/admin_panel/AdminPanel';
+import AdminArtists from './components/admin_panel/AdminArtists';
+import AdminAlbums from './components/admin_panel/AdminAlbums';
+import AdminSongs from './components/admin_panel/AdminSongs';
 
 const App = () => {
   return (
@@ -35,6 +39,10 @@ const App = () => {
         <Route exact path="/library/artists" component={WebPlayer} />
         <Route path="/library/album/:id" component={WebPlayer} />
         <Route exact path="/search" component={WebPlayer} />
+        <Route exact path="/panel" component={AdminPanel} />
+        <PrivateRoute exact path="/admin/artists" component={AdminArtists} />
+        <PrivateRoute exact path="/admin/albums" component={AdminAlbums} />
+        <PrivateRoute exact path="/admin/songs" component={AdminSongs} />
       </Switch>
     </React.Fragment>
   );
