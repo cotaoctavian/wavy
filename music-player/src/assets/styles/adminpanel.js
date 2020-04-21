@@ -119,7 +119,7 @@ export const HeaderAdmin = styled.header`
         }
     }
 
-    & div > navbar {
+    & div > nav {
         height: 100%;
         display: flex;
         justify-self: end;
@@ -228,7 +228,7 @@ export const AlbumsContainer = styled.div`
     left: 32%;
     top: 20%;
     width: 25%;
-    height: 43%;
+    height: 49%;
     font-family: 'Poppins', sans-serif;
 
     background-color: #87bdff;
@@ -253,7 +253,7 @@ export const AlbumsContainer = styled.div`
 
         & input[type="text"] {
             padding: 10px 20px;
-            width: 110%;
+            width: 84%;
             border-radius: 5px;
             border: 2px solid #68AEFF;
             outline: none;
@@ -270,7 +270,7 @@ export const AlbumsContainer = styled.div`
 
         & button {
             padding: 10px 20px;
-            width: 129%;
+            width: 100%;
             border-radius: 5px;
             border: 1px solid #68AEFF;
             font-family: 'Poppins', sans-serif;

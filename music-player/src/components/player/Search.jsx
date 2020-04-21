@@ -314,7 +314,7 @@ const Search = ({ songId, songIdState, handleUrl }) => {
 
                         <div>
                             <img src={search} alt="" />
-                            <h2> Search your favorite <span className="search-wavy-text"> wavy </span> songs, ablums or artists! </h2>
+                            <h2> Search your favorite <span className="search-wavy-text"> wavy </span> songs, albums or artists! </h2>
                         </div>
                     </SearchBarMessage>
                     : null}

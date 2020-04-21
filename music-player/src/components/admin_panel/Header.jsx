@@ -21,12 +21,12 @@ const Header = ({ history }) => {
                         <img src={w_wave} alt="" />
                         <span> wavy. </span>
                     </div>
-                    <navbar>
+                    <nav>
                         <NavLink className='admin-nav' to="/admin/artists"> Artists</NavLink>
                         <NavLink className='admin-nav' to="/admin/albums"> Albums </NavLink>
                         <NavLink className='admin-nav' to="/admin/songs"> Songs </NavLink>
                         <button onClick={handleSignOut}> SIGN OUT </button>
-                    </navbar>
+                    </nav>
                 </div>
             </HeaderAdmin>
         </React.Fragment>

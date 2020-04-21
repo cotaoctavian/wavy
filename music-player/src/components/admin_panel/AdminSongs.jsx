@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import { SongsContainer } from '../../assets/styles/adminpanel'
+import Axios from 'axios';
+
 
 const AdminSongs = () => {
 
@@ -9,9 +11,34 @@ const AdminSongs = () => {
     const [artist, setArtist] = useState('');
     const [album, setAlbum] = useState('');
     const [genre, setGenre] = useState('');
+    const [photo, setPhoto] = useState('');
+    const [song, setSong] = useState('');
 
-    const handleSubmit = (event) => {
-        event.preventDefault()
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        
+        const formData = new FormData();
+        formData.append('photo', photo);
+        formData.append('song', song);
+
+        try {
+            const result = await Axios.post(`http://localhost:5000/song/${title}/${artist}/${album}/${genre}/${duration}`, formData, {
+                headers: { 'Content-Type': 'multipart/form-data'}
+            })
+
+            console.log(result.data)
+        } catch (err) {
+            console.log(err)
+        }
+
+    }
+
+    const updatePhoto = (e) => {
+        setPhoto(e.target.files[0]);
+    }
+
+    const updateSong = (e) => {
+        setSong(e.target.files[0]);
     }
 
     let content = (
@@ -64,15 +91,14 @@ const AdminSongs = () => {
                     <label> Select song </label>
                     <input
                         type="file"
-                        required
-                        placeholder="Select song"
+                        onChange={updateSong}
                     />
 
                     <label> Select photo </label>
                     <input
                         type="file"
                         required
-                        placeholder="Select photo"
+                        onChange={updatePhoto}
                     />
 
                     <button> Upload </button>
