@@ -139,7 +139,18 @@ router.post('/:title/:artist/:album/:genre/:duration', (req, res) => {
 
     const newSong = new Songs({ title: req.params.title, path: `songs/${song.name}`, photo_path: `images/${photo.name}`, artist: req.params.artist, album: req.params.album, genre: req.params.genre, duration: req.params.duration })
     newSong.save()
-        .then(() => res.json({ message: "Done!" }))
+        .then((song) => {
+            Album.findOne({ name: req.params.album })
+                .then((album) => {
+                    if (album) {
+                        album.tracks.push(song._id)
+
+                        album.save()
+                            .then(() => res.json({message: "Done!"}))
+                            .catch((err) => console.log(err))
+                    }
+                })
+        })
         .catch(err => console.log(err))
 
 })

@@ -33,7 +33,7 @@ export const ArtistHeader = styled.div`
 
     & img {
         flex: 0.15;
-        width: 260px;
+        width: 250px;
         height: 230px;
         border-radius: 100%;
         margin-top: 6em;

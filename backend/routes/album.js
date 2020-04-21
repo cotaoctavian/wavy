@@ -68,9 +68,11 @@ router.delete('/:userId/:albumId/:albumTitle', (req, res) => {
         })
 })
 
-router.post('/:artist/:name/:year/:track', (req, res) => {
+router.post('/1/:artist/:name/:year', (req, res) => {
 
-    if (res.files !== null) {
+    console.log(req.files)
+
+    if (req.files !== null) {
         let file = req.files.file;
         file.name = file.name.split('.')[0] + '_' + crypto.randomBytes(6).toString('hex') + '_' + Date.now() + "." + file.name.split('.')[1];
 
@@ -82,33 +84,26 @@ router.post('/:artist/:name/:year/:track', (req, res) => {
                 Album.findOne({ name: req.params.name })
                     .then((album) => {
                         if (album) {
-                            album.tracks.push(new ObjectId(req.params.track))
-                            album.save()
-                                .then(() => res.json({ message: "Done!" }))
-                                .catch(err => console.log(err))
+                            
                         } else {
                             Artist.findById({ _id: req.params.artist })
-                                .then((artist) => {
-                                    if (artist) {
-                                        let tracks = [];
-                                        tracks.push(new ObjectId(req.params.track))
-                                        let artistName = artist.name
-                                        const newAlbum = new Album({ artistId: new ObjectId(req.params.artist), artist: artistName, name: req.params.name, photo: `images/album/${file.name}`, year: parseInt(req.params.year), tracks: tracks })
+                            .then((artist) => {
+                                if (artist) {
+                                    let tracks = [];
+                                    let artistName = artist.name
+                                    const newAlbum = new Album({ artistId: new ObjectId(req.params.artist), artist: artistName, name: req.params.name, photo: `images/album/${file.name}`, year: parseInt(req.params.year), tracks: tracks })
 
-                                        newAlbum.save()
-                                            .then(() => res.json({ message: "Done!" }))
-                                            .catch((err) => console.log(err))
-                                    }
-                                    else res.status(404).json({ message: "Artist not found" })
-                                })
+                                    newAlbum.save()
+                                        .then(() => res.json({ message: "Done!" }))
+                                        .catch((err) => console.log(err))
+                                }
+                                else res.status(404).json({ message: "Artist not found" })
+                            })
                         }
                     })
                     .catch(err => console.log(err))
             }
         })
-    }
-    else {
-
     }
 })
 

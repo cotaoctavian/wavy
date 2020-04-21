@@ -53,6 +53,18 @@ const AdminArtists = () => {
             catch (err) {
                 console.log(err)
             }
+        } else if(name.length > 0 && solo.length === 0 && album.length === 0) {
+            try {
+                const result = await Axios.post(`http://localhost:5000/artist/${name}`, formData, { 
+                    headers: {
+                        'Content-Type': 'multipart/form-data'
+                    }
+                })
+                console.log(result.data)
+            }
+            catch (err) {
+                console.log(err)
+            }
         }
     } 
 

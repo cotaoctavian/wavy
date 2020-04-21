@@ -95,12 +95,11 @@ export const TopResult = styled.div`
 
         & > div {
             display: flex;
-            width: 55%;
+            width: 100%;
             margin-left: 1.5em;
-            padding-bottom: 1em;
 
             & > span {
-                flex: 0.7;
+                flex: 1;
                 font-size: 12px;
                 font-family: 'Poppins', sans-serif;
             }
@@ -128,11 +127,11 @@ export const TopResultSong = styled.div`
     text-decoration: none;
 
     & > img {
-    margin-top: 1.5em;
-    margin-left: 1.5em;
-    width: 15vh;
-    height: 15vh;
-    border-radius: 5%;
+        margin-top: 1.5em;
+        margin-left: 1.5em;
+        width: 15vh;
+        height: 15vh;
+        border-radius: 5%;
     }
 
     & > span {

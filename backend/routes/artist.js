@@ -206,6 +206,7 @@ router.post('/2/:name/:album', (req, res) => {
 
 
 router.post('/:name/:album/:solo', (req, res) => {
+    
     if (req.files !== null) {
         let file = req.files.file;
         file.name = file.name.split('.')[0] + '_' + crypto.randomBytes(6).toString('hex') + '_' + Date.now() + "." + file.name.split('.')[1]
@@ -269,6 +270,38 @@ router.post('/:name/:album/:solo', (req, res) => {
                 }
             })
             .catch(err => console.log(err))
+    }
+})
+
+
+router.post('/:name', (req, res) => {
+    if (req.files !== null) {
+        let file = req.files.file;
+        file.name = file.name.split('.')[0] + '_' + crypto.randomBytes(6).toString('hex') + '_' + Date.now() + "." + file.name.split('.')[1]
+
+        file.mv(`${process.cwd()}/public/images/artists/${file.name}`, err => {
+            if (err) {
+                return res.status(500).send(err);
+            } else {
+                //const artist = new Artist({artist: req.params.name, name: req.params.album, })
+
+                Artist.findOne({ name: req.params.name })
+                    .then(artist => {
+                        if (!artist) {
+                            /* Create a new artist */
+                            let albums = [];
+                            let singles = [];
+
+                            const newArtist = new Artist({ name: req.params.name, photo: `images/artists/${file.name}`, albums: albums, singles: singles, followers: 0 })
+                            
+                            newArtist.save()
+                                .then(() => res.status(200).json({ message: "Done!" }))
+                                .catch((err) => console.log(err))
+                        }
+                    })
+                    .catch(err => console.log(err))
+            }
+        })
     }
 })
 

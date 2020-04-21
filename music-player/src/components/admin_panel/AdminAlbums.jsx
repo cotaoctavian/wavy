@@ -7,7 +7,6 @@ const AdminAlbum = () => {
     const [artist, setArtist] = useState('')
     const [name, setName] = useState('')
     const [year, setYear] = useState('')
-    const [track, setTrack] = useState('')
     const [file, setFile] = useState(null)
     
     const handleSubmit = async (event) => {
@@ -16,8 +15,9 @@ const AdminAlbum = () => {
         const formData = new FormData();
         formData.append('file', file);
 
+
         try {
-            const result = await Axios.post(`http://localhost:5000/album/${artist}/${name}/${year}/${track}`, formData, {
+            const result = await Axios.post(`http://localhost:5000/album/1/${artist}/${name}/${year}`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
@@ -63,14 +63,6 @@ const AdminAlbum = () => {
                         value={year}
                         placeholder="Year of the album"
                         onChange={(e) => setYear(e.target.value)}
-                    />
-
-                    <input
-                        type="text"
-                        required
-                        value={track}
-                        placeholder="Track of the album"
-                        onChange={(e) => setTrack(e.target.value)}
                     />
 
                     <input 

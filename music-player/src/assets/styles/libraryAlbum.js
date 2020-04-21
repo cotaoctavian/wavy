@@ -22,7 +22,7 @@ export const LibraryAlbumContainer = styled.div`
     & > div {
         color: white;
         font-family: 'Poppins', sans-serif;
-        width: 100%;
+        width: 150px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;

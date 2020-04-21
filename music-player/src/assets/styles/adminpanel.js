@@ -162,7 +162,7 @@ export const ArtistsContainer = styled.div`
     left: 32%;
     top: 20%;
     width: 25%;
-    height: 45%;
+    height: 49%;
     font-family: 'Poppins', sans-serif;
 
     background-color: #87bdff;
@@ -297,7 +297,7 @@ export const SongsContainer = styled.div`
     left: 32%;
     top: 20%;
     width: 25%;
-    height: 65%;
+    height: 70%;
     font-family: 'Poppins', sans-serif;
 
     background-color: #87bdff;
