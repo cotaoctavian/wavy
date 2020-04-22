@@ -1,2 +1,2 @@
 # wavy
- Music streaming app with AI recommendation for users.
+ Music streaming app with AI recommendation.
