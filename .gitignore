@@ -109,4 +109,5 @@ dist
 *.png
 *.jpeg
 *.webp
-*.*
+
+public/
