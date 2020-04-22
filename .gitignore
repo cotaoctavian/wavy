@@ -107,3 +107,6 @@ dist
 *.mp3
 *.jpg
 *.png
+*.jpeg
+*.webp
+*.*

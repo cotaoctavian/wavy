@@ -148,8 +148,9 @@ router.post('/:title/:artist/:album/:genre/:duration', (req, res) => {
                         album.save()
                             .then(() => res.json({message: "Done!"}))
                             .catch((err) => console.log(err))
-                    }
+                    } 
                 })
+                .catch(err => console.log(err))
         })
         .catch(err => console.log(err))
 

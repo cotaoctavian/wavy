@@ -215,7 +215,7 @@ const Player = ({ resetTrack, handlePrevious, handleForward, handleLike, songInf
                         </div>
                         : null}
                     {songInfo !== null ?
-                        <button onClick={toggleLike}> {like ? <FavoriteIcon style={{ color: "white" }} /> : <FavoriteBorderIcon style={{ color: "white" }} />}  </button>
+                        <button onClick={toggleLike}> {like ? <FavoriteIcon style={{ color: "white", cursor: "pointer" }} /> : <FavoriteBorderIcon style={{ color: "white", cursor:"pointer" }} />}  </button>
                         : null
                     }
 
@@ -245,26 +245,26 @@ const Player = ({ resetTrack, handlePrevious, handleForward, handleLike, songInf
 
                     {repeatMode === 0 ?
                         <Tooltip TransitionComponent={Zoom} title="Repeat none">
-                            <button onClick={toggleRepeat}> <RepeatIcon style={{ width: 20, paddingTop: 5, color: "#bbc0c7", fontSize: 25 }} /> </button>
+                            <button onClick={toggleRepeat}> <RepeatIcon style={{ width: 20, paddingTop: 5, color: "#bbc0c7", fontSize: 25, cursor: "pointer" }} /> </button>
                         </Tooltip> : null}
 
                     {repeatMode === 1 ?
                         <Tooltip TransitionComponent={Zoom} title="Repeat all">
-                            <button onClick={toggleRepeat}> <RepeatIcon style={{ width: 20, paddingTop: 5, color: "white", fontSize: 25 }} /> </button>
+                            <button onClick={toggleRepeat}> <RepeatIcon style={{ width: 20, paddingTop: 5, color: "white", fontSize: 25, cursor: "pointer"}} /> </button>
                         </Tooltip> : null}
 
                     {repeatMode === 2 ?
                         <Tooltip TransitionComponent={Zoom} title="Repeat one">
-                            <button onClick={toggleRepeat}><RepeatOneIcon style={{ width: 20, paddingTop: 5, color: "white", fontSize: 25 }} /> </button>
+                            <button onClick={toggleRepeat}><RepeatOneIcon style={{ width: 20, paddingTop: 5, color: "white", fontSize: 25, cursor: "pointer" }} /> </button>
                         </Tooltip> : null}
 
                     {shuffle === false ?
                         <Tooltip TransitionComponent={Zoom} title="Shuffle off">
-                            <button onClick={toggleShuffle}> <ShuffleIcon style={{ width: 20, paddingTop: 5, color: "#bbc0c7", fontSize: 25 }} /> </button>
+                            <button onClick={toggleShuffle}> <ShuffleIcon style={{ width: 20, paddingTop: 5, color: "#bbc0c7", fontSize: 25, cursor: "pointer" }} /> </button>
                         </Tooltip>
                         :
                         <Tooltip TransitionComponent={Zoom} title="Shuffle on">
-                            <button onClick={toggleShuffle}> <ShuffleIcon style={{ width: 20, paddingTop: 5, color: "white", fontSize: 25 }} /> </button>
+                            <button onClick={toggleShuffle}> <ShuffleIcon style={{ width: 20, paddingTop: 5, color: "white", fontSize: 25, cursor: "pointer" }} /> </button>
                         </Tooltip>}
 
                 </OptionsDiv>

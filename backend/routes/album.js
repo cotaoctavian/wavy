@@ -70,8 +70,6 @@ router.delete('/:userId/:albumId/:albumTitle', (req, res) => {
 
 router.post('/1/:artist/:name/:year', (req, res) => {
 
-    console.log(req.files)
-
     if (req.files !== null) {
         let file = req.files.file;
         file.name = file.name.split('.')[0] + '_' + crypto.randomBytes(6).toString('hex') + '_' + Date.now() + "." + file.name.split('.')[1];
@@ -86,15 +84,20 @@ router.post('/1/:artist/:name/:year', (req, res) => {
                         if (album) {
                             
                         } else {
-                            Artist.findById({ _id: req.params.artist })
+                            Artist.findOne({ name: req.params.artist })
                             .then((artist) => {
                                 if (artist) {
                                     let tracks = [];
                                     let artistName = artist.name
-                                    const newAlbum = new Album({ artistId: new ObjectId(req.params.artist), artist: artistName, name: req.params.name, photo: `images/album/${file.name}`, year: parseInt(req.params.year), tracks: tracks })
+                                    const newAlbum = new Album({ artistId: artist._id, artist: artistName, name: req.params.name, photo: `images/album/${file.name}`, year: parseInt(req.params.year), tracks: tracks })
 
                                     newAlbum.save()
-                                        .then(() => res.json({ message: "Done!" }))
+                                        .then((album) => {
+                                            artist.albums.push(album._id);
+                                            artist.save()
+                                                .then(() => res.json({message: "Done!"}))
+                                                .catch(err => console.log(err))
+                                        })
                                         .catch((err) => console.log(err))
                                 }
                                 else res.status(404).json({ message: "Artist not found" })

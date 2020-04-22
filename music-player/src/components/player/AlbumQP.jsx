@@ -13,7 +13,7 @@ import { SnackbarProvider, useSnackbar } from 'notistack';
 import Modal from 'react-modal';
 
 /* ICONS AND IMAGES */
-import { faSearch, faPlay, faPause, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
@@ -23,11 +23,10 @@ import DeleteIcon from '@material-ui/icons/Delete';
 
 /* STYLING */
 import { Global } from '../../assets/styles/playlistSong';
-import { AlbumHeader } from '../../assets/styles/album';
+import { AlbumHeader, AlbumContainer } from '../../assets/styles/album';
 import { Header, Links, Main } from '../../assets/styles/webplayer';
 import wavy from '../../assets/images/white_wave.png';
 import '../../assets/css/Global.css';
-import { PlaylistContainer } from '../../assets/styles/playlistSong';
 import { SongDiv, HoveredSongDiv } from '../../assets/styles/song';
 
 const ModalItem = ({ playlistId, handleAddToPlaylist }) => {
@@ -73,6 +72,8 @@ const AlbumTrack = ({ albumId, id, handleLike, songs, handleUrl, hover, songStat
             for (i = 0; i < songs.length; i++) {
                 if (songs[i] === id) setLike(true)
             }
+        
+            setPlaying(songState)
         }
     }, [id, songs, playing, songState])
 
@@ -264,7 +265,7 @@ const AlbumQPNotification = ({ id, songId, handleLike, songs, handleUrl, songIdS
                     : null}
             </AlbumHeader>
 
-            <PlaylistContainer>
+            <AlbumContainer>
                 <h2> Songs </h2>
                 {album !== null ?
                     album.tracks.map((track, index) => {
@@ -272,7 +273,7 @@ const AlbumQPNotification = ({ id, songId, handleLike, songs, handleUrl, songIdS
                         else return (<AlbumTrack key={index} albumId={id} id={track} handleLike={handleLike} songs={songs} handleUrl={handleUrl} hover={false} songState={false} />)
                     })
                     : null}
-            </PlaylistContainer>
+            </AlbumContainer>
 
         </React.Fragment>
     );

@@ -72,3 +72,20 @@ export const AlbumHeader = styled.div`
         }
     }
 `;
+
+
+export const AlbumContainer = styled.div`
+    display: grid;
+    margin-top: 45px;
+    margin-left: 8%;
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    font-size: 15px;
+    margin-bottom: 10em;
+
+    & h2 {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+`;

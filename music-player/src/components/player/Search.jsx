@@ -174,8 +174,6 @@ const Search = ({ songId, songIdState, handleUrl }) => {
         let albumList = []
         let artistList = []
 
-        console.log(e.target.value)
-
         if (e.target.value !== "" && /^[a-zA-Z0-9\s]+$/.test(e.target.value)) {
 
             currentList = songsList
@@ -338,7 +336,7 @@ const Search = ({ songId, songIdState, handleUrl }) => {
                                     <img src={`http://localhost:5000/${filteredSongs[0].photo_path}`} alt="" />
                                     <span> {filteredSongs[0].title} </span>
                                     <div>
-                                        <span> {filteredSongs[0].artist} &#x2022; Song</span>
+                                        <span> {filteredSongs[0].artist} &#x2022; Song </span>
                                         {playing ?
                                             <button onClick={togglePlay}> <PauseCircleFilledIcon style={{ color: "white", fontSize: 50 }} /> </button>
                                             :

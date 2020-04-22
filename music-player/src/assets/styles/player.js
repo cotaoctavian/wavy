@@ -53,7 +53,7 @@ export const SongInformation = styled.div`
     color: white;
     font-family: 'Poppins', sans-serif;     
     display: grid;
-    grid-template-columns: 0.07fr 0.4fr 0.1fr;
+    grid-template-columns: 0.1fr 1.1fr 0.1fr;
 
     & img {
         width: 45px;

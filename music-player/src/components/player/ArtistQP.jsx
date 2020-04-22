@@ -267,15 +267,17 @@ const ArtistQPNotification = ({ id, songId, handleLike, songs, handleUrl, songId
                 }
             </ArtistHeader>
 
-            <PlaylistContainer>
-                <h2> Songs </h2>
-                {singles !== null ?
-                    singles.map((single, index) => {
-                        if (single === songId) return (<ArtistSingle key={index} artistId={id} id={single} handleLike={handleLike} songs={songs} handleUrl={handleUrl} hover={true} songState={songIdState} />)
-                        else return (<ArtistSingle key={index} artistId={id} id={single} handleLike={handleLike} songs={songs} handleUrl={handleUrl} hover={false} songState={false} />)
-                    })
-                    : null}
-            </PlaylistContainer>
+            {singles !== null && singles.length > 0 ?
+                <PlaylistContainer>
+                    <h2> Songs </h2>
+                    {singles !== null ?
+                        singles.map((single, index) => {
+                            if (single === songId) return (<ArtistSingle key={index} artistId={id} id={single} handleLike={handleLike} songs={songs} handleUrl={handleUrl} hover={true} songState={songIdState} />)
+                            else return (<ArtistSingle key={index} artistId={id} id={single} handleLike={handleLike} songs={songs} handleUrl={handleUrl} hover={false} songState={false} />)
+                        })
+                        : null}
+                </PlaylistContainer>
+                : null}
 
             <AlbumsContainer>
                 <h2> Albums </h2>

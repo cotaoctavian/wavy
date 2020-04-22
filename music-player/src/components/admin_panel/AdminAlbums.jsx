@@ -45,7 +45,7 @@ const AdminAlbum = () => {
                         type="text"
                         required
                         value={artist}
-                        placeholder="ID of the artist"
+                        placeholder="Name of the artist"
                         onChange={(e) => setArtist(e.target.value)}
                     />
 

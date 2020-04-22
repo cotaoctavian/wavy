@@ -151,7 +151,8 @@ export const TopResultSong = styled.div`
         padding-bottom: 1em;
 
         & > span {
-            font-size: 12px;
+            width: 100%;
+            font-size: 11px;
             font-family: 'Poppins', sans-serif;
         }
 
@@ -306,7 +307,6 @@ export const AlbumsList = styled.div`
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     font-size: 15px;
-    margin-bottom: 20em;
     
     & h2 {
         font-family: 'Poppins', sans-serif;
