@@ -67,16 +67,19 @@ export const Ftdiv = styled.div`
         border: 1px solid gray;
         width: 80%;
         padding: 2px;
+        font-family: 'Poppins', sans-serif;
     }
 
     & div div:nth-child(2) form input{
         padding: 5px 5px 5px 5px;
         border: 1px solid gray;
+        font-family: 'Poppins', sans-serif;
     }
 
     & div div form input:focus{
         outline: none;
         border:1px solid #ff887a;
+        font-family: 'Poppins', sans-serif;
     }
 
     & div div form button {

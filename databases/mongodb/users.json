@@ -1,0 +1,48 @@
+{ 
+    "id" : "5e5f8b494170054154ef9a52", 
+    "liked_songs" : [
+        "5e7766291c9d440000336a03", 
+        "5e708aee1c9d4400009eb7d4", 
+        "5e7765d91c9d440000336a02", 
+        "5e5fa65b1c9d440000143f20", 
+        "5e9ef584ba539c4234970522", 
+        "5e9ef8b6ba539c4234970529"
+    ], 
+    "playlists" : [
+        "5e80a50f1ab03a42809037f1", 
+        "5e82fe4e3d3d0663383efbd6"
+    ], 
+    "artists" : [
+        "5e8454251c9d44000090ba1d", 
+        "5e9ef67fba539c4234970524", 
+        "5e9f05c3ba539c4234970541", 
+        "5e9eedd00bc4bd1edc7cf221", 
+        "5e9f1ea2ba539c423497056f", 
+        "5e9f38d26d4a6c36242ce4af", 
+        "5e9f14d9ba539c4234970564", 
+        "5e9f271c6d4a6c36242ce48c", 
+        "5ea004c02cde1535107a3905", 
+        "5ea0343afcdca327c8697a2a", 
+        "5ea036bdfcdca327c8697a35", 
+        "5e9f0f64ba539c4234970553", 
+        "5ea01f1afcdca327c86979e5"
+    ], 
+    "albums" : [
+        "5e8afe681c9d44000011cc70", 
+        "5e9ef6daba539c4234970525", 
+        "5e9f1ed7ba539c4234970570", 
+        "5e9ff45a653e60322c1b322a", 
+        "5e9f0604ba539c4234970542", 
+        "5ea02c8efcdca327c8697a0d", 
+        "5ea03446fcdca327c8697a2b", 
+        "5ea036d0fcdca327c8697a36", 
+        "5ea011cefcdca327c86979b7", 
+        "5ea02a69fcdca327c8697a00", 
+        "5ea04611fcdca327c8697a79", 
+        "5ea01f3ffcdca327c86979e6"
+    ], 
+    "username" : "Octavian", 
+    "email" : "octavian_cota@yahoo.com", 
+    "password" : "$2b$10$UYmUYRqULWGmGzusSgk/rezJtl3Q85XwaSx3zYvk4d2qVE40uxuI.", 
+    "img" : "images/emimen_eed8675bbcc2_1587589207480.jpg"
+}

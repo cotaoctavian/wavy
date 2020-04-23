@@ -171,12 +171,14 @@ const UpdateProfile = props => {
                                     type="text"
                                     required
                                     value={email}
+                                    placeholder="Enter your new email"
                                     onChange={e => setEmail(e.target.value)}
                                 />
                                 <input
                                     type="password"
                                     required
                                     value={password}
+                                    placeholder="Enter your current password"
                                     onChange={e => setPassword(e.target.value)}
                                 />
                                 <button> Update </button>

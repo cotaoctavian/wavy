@@ -1,0 +1,563 @@
+[
+    {
+        "id": "5e8454251c9d44000090ba1d",
+        "name": "J Cole",
+        "photo": "images/artists/jcole.jpg",
+        "albums": [
+            "5e8afe681c9d44000011cc70"
+        ],
+        "singles": [
+            "5e84a8ea1c9d440000377a1f",
+            "5e84a8321c9d440000377a1e",
+            "5e84a8021c9d440000377a1d",
+            "5e84a72b1c9d440000377a1c",
+            "5e5fa65b1c9d440000143f20",
+            "5e7766291c9d440000336a03"
+        ],
+        "followers": 1
+    },
+    {
+        "id": "5e9ee4804c560b27c0772322",
+        "albums": [
+            "5e9ee6894c560b27c0772324"
+        ],
+        "singles": [
+            "5e9ee4564c560b27c0772321",
+            "5e7765d91c9d440000336a02"
+        ],
+        "followers": 0,
+        "name": "Nane",
+        "photo": "images/artists/47fbbd0ee8cb33888ae9b8db13833da6b0cf75c1_30a0fd21008e_1587471526857.jpg"
+    },
+    {
+        "id": "5e9eedd00bc4bd1edc7cf221",
+        "albums": [
+            "5e9ef0a8ba539c4234970511"
+        ],
+        "singles": [
+            "5e9ef584ba539c4234970522"
+        ],
+        "followers": 1,
+        "name": "Post Malone",
+        "photo": "images/artists/93fec27f9aac86526b9010e882037afbda4e3d5f_b5e89750419c_1587473872025.jpg"
+    },
+    {
+        "id": "5e9ef67fba539c4234970524",
+        "albums": [
+            "5e9ef6daba539c4234970525"
+        ],
+        "singles": [
+            "5e9ef977ba539c423497052c"
+        ],
+        "followers": 1,
+        "name": "The Weekend",
+        "photo": "images/artists/ab67616d0000b273a60b03701c5f3c3288e487f9_baa8e640901e_1587476095758.jpg"
+    },
+    {
+        "id": "5e9efcb1ba539c423497052d",
+        "albums": [
+            "5e9efd09ba539c423497052e"
+        ],
+        "singles": [
+            "5e9f041dba539c4234970540"
+        ],
+        "followers": 0,
+        "name": "Deliric",
+        "photo": "images/artists/921e64421f1f6013d50673f437ccda8b94b8e6c0_5823ddf3fe54_1587477681616.jpg"
+    },
+    {
+        "id": "5e9f05c3ba539c4234970541",
+        "albums": [
+            "5e9f0604ba539c4234970542"
+        ],
+        "singles": [
+            "5e9f0d65ba539c4234970552"
+        ],
+        "followers": 1,
+        "name": "Eminem",
+        "photo": "images/artists/56f4762485066b4ef867b96e16775f2b5b4db277_e319d82536e4_1587480003773.jpg"
+    },
+    {
+        "id": "5e9f0f64ba539c4234970553",
+        "albums": [
+            "5e9f0f84ba539c4234970554"
+        ],
+        "singles": [
+            "5e9f13f7ba539c4234970563"
+        ],
+        "followers": 1,
+        "name": "Kanye West",
+        "photo": "images/artists/bd1c6fdf3705cf9b7d0c8ac8e7bbed98e31a1559_d958aa8a0500_1587482467861.jpg"
+    },
+    {
+        "id": "5e9f14d9ba539c4234970564",
+        "albums": [
+            "5e9f154fba539c4234970565"
+        ],
+        "singles": [
+            "5e9f25df6d4a6c36242ce48b"
+        ],
+        "followers": 1,
+        "name": "Billie Eilish",
+        "photo": "images/artists/billie.jpg"
+    },
+    {
+        "id": "5e9f1ea2ba539c423497056f",
+        "albums": [
+            "5e9f1ed7ba539c4234970570"
+        ],
+        "singles": [
+            "5e9f253f6d4a6c36242ce48a"
+        ],
+        "followers": 1,
+        "name": "Travis Scott",
+        "photo": "images/artists/fec51156ed94b7ee30fbd4c7fd29b4a840e7daec_e3436a7af8b0_1587486370312.jpg"
+    },
+    {
+        "id": "5e9f271c6d4a6c36242ce48c",
+        "albums": [
+            "5e9f27516d4a6c36242ce48d"
+        ],
+        "singles": [
+            "5e9f2c536d4a6c36242ce49e"
+        ],
+        "followers": 1,
+        "name": "Ariana Grande",
+        "photo": "images/artists/Ariana-Grande-No-Tears-Left-to-Cry-coperta-single-600x600_0d19fb1df9ee_1587488540009.jpg"
+    },
+    {
+        "id": "5e9f2de76d4a6c36242ce49f",
+        "albums": [
+            "5e9f2e4a6d4a6c36242ce4a0"
+        ],
+        "singles": [
+            "5e9f37946d4a6c36242ce4ae"
+        ],
+        "followers": 0,
+        "name": "Ed Sheeran",
+        "photo": "images/artists/f55cab0739390cf3b2c2f773b9c779b2f0ae8a99_0f56fd665fb7_1587490279420.jpg"
+    },
+    {
+        "id": "5e9f38d26d4a6c36242ce4af",
+        "albums": [
+            "5e9f39b76d4a6c36242ce4b0"
+        ],
+        "singles": [
+            "5e9ff27c653e60322c1b3228"
+        ],
+        "followers": 1,
+        "name": "Future",
+        "photo": "images/artists/future-spotify_30da06ad1dec_1587493074378.png"
+    },
+    {
+        "id": "5e9ff423653e60322c1b3229",
+        "albums": [
+            "5e9ff45a653e60322c1b322a"
+        ],
+        "singles": [
+            "5e9ff76c653e60322c1b3236"
+        ],
+        "followers": 0,
+        "name": "Justin Bieber",
+        "photo": "images/artists/download_73b957754515_1587541027555.jpg"
+    },
+    {
+        "id": "5e9ff86e653e60322c1b3239",
+        "albums": [
+            "5e9ff99f7931ca4154dbaa7b"
+        ],
+        "singles": [
+            "5e9ffc1c2cde1535107a38e7"
+        ],
+        "followers": 0,
+        "name": "Justin Timberlake",
+        "photo": "images/artists/646fba36b604f30e0c59f9d1043ee0b105ccd5e0_34b7d8b746b2_1587542126444.jpg"
+    },
+    {
+        "id": "5e9ffd472cde1535107a38e8",
+        "albums": [
+            "5e9ffd622cde1535107a38e9"
+        ],
+        "singles": [
+            "5ea000162cde1535107a38f4"
+        ],
+        "followers": 0,
+        "name": "Gucci Mane",
+        "photo": "images/artists/ab67616d0000b273af7525e55333b110ff0f4e95_f09993a949ec_1587543367425.jpg"
+    },
+    {
+        "id": "5ea001052cde1535107a38f5",
+        "albums": [
+            "5ea001142cde1535107a38f6"
+        ],
+        "singles": [
+            "5ea0039d2cde1535107a3904"
+        ],
+        "followers": 0,
+        "name": "Migos",
+        "photo": "images/artists/32aabfa226518266c1af603267e4405edd8c9c2d_14c92fccaea6_1587544325714.jpg"
+    },
+    {
+        "id": "5ea004c02cde1535107a3905",
+        "albums": [
+            "5ea004e12cde1535107a3906"
+        ],
+        "singles": [
+            "5ea006a22cde1535107a3911"
+        ],
+        "followers": 1,
+        "name": "Juice WRLD",
+        "photo": "images/artists/Schermafbeelding-2019-12-10-om-11_076005435a0c_1587545280713.03"
+    },
+    {
+        "id": "5ea0086d2cde1535107a3912",
+        "albums": [],
+        "singles": [
+            "5ea00d09fcdca327c86979a7"
+        ],
+        "followers": 0,
+        "name": "Arctic Monkeys",
+        "photo": "images/artists/ed0552e9746ed2bbf04ae4bcb5525700ca31522d_7f3c9aca4b5c_1587546221233.jpg"
+    },
+    {
+        "id": "5ea00dcafcdca327c86979a8",
+        "albums": [
+            "5ea00e02fcdca327c86979a9"
+        ],
+        "singles": [
+            "5ea01029fcdca327c86979b4",
+            "5ea010d3fcdca327c86979b5"
+        ],
+        "followers": 0,
+        "name": "Gorillaz",
+        "photo": "images/artists/ab67616d0000b27319d85a472f328a6ed9b704cf_ce777fd8b2c7_1587547594760.jpg"
+    },
+    {
+        "id": "5ea011b7fcdca327c86979b6",
+        "albums": [
+            "5ea011cefcdca327c86979b7"
+        ],
+        "singles": [
+            "5ea0141bfcdca327c86979c1"
+        ],
+        "followers": 0,
+        "name": "Queen",
+        "photo": "images/artists/Queen-768x700_a3d813be8c77_1587548598862.jpg"
+    },
+    {
+        "id": "5ea014a5fcdca327c86979c2",
+        "albums": [
+            "5ea014d8fcdca327c86979c3"
+        ],
+        "singles": [
+            "5ea016dffcdca327c86979cd"
+        ],
+        "followers": 0,
+        "name": "Nirvana",
+        "photo": "images/artists/tablou-inramat-cu-geam-nirvana-smiley-i75958_548e39047c21_1587549349412.jpg"
+    },
+    {
+        "id": "5ea01747fcdca327c86979ce",
+        "albums": [
+            "5ea017cefcdca327c86979cf"
+        ],
+        "singles": [
+            "5ea019b7fcdca327c86979d7"
+        ],
+        "followers": 0,
+        "name": "Guns N' Roses",
+        "photo": "images/artists/ab67616d0000b2734e04404c40be7b80855656a8_cd50a2d8e905_1587550023470.jpg"
+    },
+    {
+        "id": "5ea01b59fcdca327c86979d8",
+        "albums": [
+            "5ea01b75fcdca327c86979d9"
+        ],
+        "singles": [
+            "5ea01e26fcdca327c86979e4"
+        ],
+        "followers": 0,
+        "name": "Chris Brown",
+        "photo": "images/artists/ab67616d0000b27391d47d1fdcb7eff98317cfd3_b520f86f7d8c_1587551065113.jpg"
+    },
+    {
+        "id": "5ea01f1afcdca327c86979e5",
+        "albums": [
+            "5ea01f3ffcdca327c86979e6"
+        ],
+        "singles": [
+            "5ea02117fcdca327c86979f1"
+        ],
+        "followers": 1,
+        "name": "Mac Miller",
+        "photo": "images/artists/ed63d93ec5348edc9cdf85c97179bbc78cd57292_6a16a114238f_1587552026829.jpg"
+    },
+    {
+        "id": "5ea02305fcdca327c86979f2",
+        "albums": [
+            "5ea02340fcdca327c86979f3"
+        ],
+        "singles": [
+            "5ea02509fcdca327c86979fe"
+        ],
+        "followers": 0,
+        "name": "Rihanna",
+        "photo": "images/artists/dublura-Rihannei9_93d9851265fd_1587553028947.jpg"
+    },
+    {
+        "id": "5ea02a53fcdca327c86979ff",
+        "albums": [
+            "5ea02a69fcdca327c8697a00"
+        ],
+        "singles": [
+            "5ea02be5fcdca327c8697a0b"
+        ],
+        "followers": 0,
+        "name": "Khalid",
+        "photo": "images/artists/05da6a798c59e8ab7102d77c8deb79d67a1360ed_7c6623e0966e_1587554899835.jpg"
+    },
+    {
+        "id": "5ea02c6ffcdca327c8697a0c",
+        "albums": [
+            "5ea02c8efcdca327c8697a0d"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "Miles Davis",
+        "photo": "images/artists/ab67616d0000b273599dfe976032830e5ec68945_d4ff9a0213aa_1587555439342.jpg"
+    },
+    {
+        "id": "5ea02ed7fcdca327c8697a13",
+        "albums": [
+            "5ea02f09fcdca327c8697a14"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "Louis Armstrong",
+        "photo": "images/artists/louis-armstrong-red-hot-jazz_8f1f97e2ec42_1587556055711.jpg"
+    },
+    {
+        "id": "5ea03155fcdca327c8697a1e",
+        "albums": [
+            "5ea0316cfcdca327c8697a1f"
+        ],
+        "singles": [
+            "5ea0337cfcdca327c8697a29"
+        ],
+        "followers": 0,
+        "name": "Frank Sinatra",
+        "photo": "images/artists/Frank-Sinatra-2-©-Herman-Leonard-Photography-LLC_d291d60fa5b8_1587556693680.jpg"
+    },
+    {
+        "id": "5ea0343afcdca327c8697a2a",
+        "albums": [
+            "5ea03446fcdca327c8697a2b"
+        ],
+        "singles": [
+            "5ea035aefcdca327c8697a34"
+        ],
+        "followers": 1,
+        "name": "Chet Baker",
+        "photo": "images/artists/8fd767aa91ecd8e5720b424812e2a17586834ac2_f551d766a7a7_1587557434040.jpg"
+    },
+    {
+        "id": "5ea036bdfcdca327c8697a35",
+        "albums": [
+            "5ea036d0fcdca327c8697a36"
+        ],
+        "singles": [],
+        "followers": 1,
+        "name": "John Coltrane",
+        "photo": "images/artists/b5958fbd911c9ada338a50c15fbc01c0b60a1b9e_ce77d9ac27c7_1587558077762.jpg"
+    },
+    {
+        "id": "5ea0382cfcdca327c8697a3c",
+        "albums": [
+            "5ea03851fcdca327c8697a3d"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "James Brown",
+        "photo": "images/artists/103939-james_brown_617_409-compressed_c231067c09af_1587558444706.jpg"
+    },
+    {
+        "id": "5ea03966fcdca327c8697a41",
+        "albums": [
+            "5ea0397dfcdca327c8697a42"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "Prince",
+        "photo": "images/artists/unnamed-2-1534445065-640x640_d5329d4e4293_1587558758039.jpg"
+    },
+    {
+        "id": "5ea03bf9fcdca327c8697a4c",
+        "albums": [
+            "5ea03c14fcdca327c8697a4d"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "Stivie Wonder",
+        "photo": "images/artists/GettyImages-74301268-5c60d93846e0fb00017dd2ce_f498ab687496_1587559416909.jpg"
+    },
+    {
+        "id": "5ea03d3ffcdca327c8697a57",
+        "albums": [
+            "5ea03e86fcdca327c8697a5d"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "George Clinton",
+        "photo": "images/artists/gc_372378383829-1_8675b5823a87_1587559743645.jpg"
+    },
+    {
+        "id": "5ea03ff1fcdca327c8697a5f",
+        "albums": [
+            "5ea04037fcdca327c8697a60"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "Rick James",
+        "photo": "images/artists/Rick-James-Morown-press-shot-1000-CREDIT-Motown-Records-Archives_03f528d19ddb_1587560433253.jpg"
+    },
+    {
+        "id": "5ea043e0fcdca327c8697a6c",
+        "albums": [
+            "5ea04437fcdca327c8697a6d"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "J Balvin",
+        "photo": "images/artists/810x0_15598956042eae1178_cd92ea26d225_1587561440175.jpg"
+    },
+    {
+        "id": "5ea04603fcdca327c8697a78",
+        "albums": [
+            "5ea04611fcdca327c8697a79"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "Maluma",
+        "photo": "images/artists/d12586e8e67dffd2ea281d6eeefbe4b06b06b69a_a2a4bdb0f1f1_1587561987195.jpg"
+    },
+    {
+        "id": "5ea04896fcdca327c8697a85",
+        "albums": [
+            "5ea0493efcdca327c8697a88"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "Shakira",
+        "photo": "images/artists/avatars-000754019632-3ewkg8-t500x500_94d22c330d80_1587562646743.jpg"
+    },
+    {
+        "id": "5ea04f3821c64711189b1c09",
+        "albums": [
+            "5ea04f6221c64711189b1c0a"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "Pitbull",
+        "photo": "images/artists/1353990534aef10c946cf3a47865ac22471be5c4_d30df37ac532_1587564344433.jpg"
+    },
+    {
+        "id": "5ea051e421c64711189b1c15",
+        "albums": [
+            "5ea051ff21c64711189b1c16"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "Enrique Iglesias",
+        "photo": "images/artists/lNqK0oO3_400x400_bc22715a154b_1587565028707.jpg"
+    },
+    {
+        "id": "5ea0567521c64711189b1c21",
+        "albums": [
+            "5ea0569121c64711189b1c22"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "Kendrick Lamar",
+        "photo": "images/artists/1_585zsgDkiMcGOnjmihd7CA_2ac17b863408_1587566196923.jpg"
+    },
+    {
+        "id": "5ea0593421c64711189b1c2d",
+        "albums": [
+            "5ea059c521c64711189b1c2e"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "The Notorious B.I.G.",
+        "photo": "images/artists/1b4858fbd24046a81cace5ee18d19c868262b91f_b519e20de885_1587566900737.jpg"
+    },
+    {
+        "id": "5ea05d1c21c64711189b1c39",
+        "albums": [
+            "5ea05d4221c64711189b1c3a"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "Jay Z",
+        "photo": "images/artists/4912d27d6b01dd790313d8ef76586be6b100550f_696b0dcab47e_1587567900705.jpg"
+    },
+    {
+        "id": "5ea05f2f21c64711189b1c45",
+        "albums": [
+            "5ea05f4f21c64711189b1c46"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "Drake",
+        "photo": "images/artists/e22113c0d1fa59b710e5e4d643e2e65110-drake_f1b02a3cf65b_1587568431513.rsquare"
+    },
+    {
+        "id": "5ea0613b21c64711189b1c4d",
+        "albums": [
+            "5ea0615721c64711189b1c4e"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "Selena Gomez",
+        "photo": "images/artists/dc6dd5ccdccee8c947b41af13e3b60ce0a235708_0e0ef29746d2_1587568955626.jpg"
+    },
+    {
+        "id": "5ea063cd21c64711189b1c5a",
+        "albums": [
+            "5ea063f021c64711189b1c5b"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "Pink Floyd",
+        "photo": "images/artists/pink-floyd-i49855_78005e72a54a_1587569613748.jpg"
+    },
+    {
+        "id": "5ea0662421c64711189b1c63",
+        "albums": [
+            "5ea0664421c64711189b1c64"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "Ella Fitzgerald",
+        "photo": "images/artists/ella-fitzgerald-albums_5e87752a7dc5_1587570212830.jpg"
+    },
+    {
+        "id": "5ea06e7021c64711189b1c6e",
+        "albums": [
+            "5ea06e7d21c64711189b1c6f"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "Becky G",
+        "photo": "images/artists/1562747042cb8a1bf6_780205ff02da_1587572336762.jpg"
+    },
+    {
+        "id": "5ea0744a21c64711189b1c79",
+        "albums": [
+            "5ea074a421c64711189b1c7a"
+        ],
+        "singles": [],
+        "followers": 0,
+        "name": "Michael Jackson",
+        "photo": "images/artists/Thriller-Digi01-1024x1024_bda13177032f_1587573834230.jpg"
+    }
+]

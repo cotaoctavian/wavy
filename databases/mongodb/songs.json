@@ -1,0 +1,4529 @@
+[
+    {
+        "id": "5e5fa65b1c9d440000143f20",
+        "title": "January 28th",
+        "path": "songs/jcole.mp3",
+        "photo_path": "images/jcole.png",
+        "artist": "J Cole",
+        "album": "Forest Hill Drive",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e708aee1c9d4400009eb7d4",
+        "title": "Sing About Me",
+        "path": "songs/song.mp3",
+        "photo_path": "images/kendrick.jpg",
+        "artist": "Kendrick Lamar",
+        "album": "m.A.A.d City",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e7765d91c9d440000336a02",
+        "title": "Ceai",
+        "path": "songs/ceai.mp3",
+        "photo_path": "images/nane.png",
+        "artist": "Nane",
+        "album": "NANALIEN",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e7766291c9d440000336a03",
+        "title": "Cursa",
+        "path": "songs/cursa.mp3",
+        "photo_path": "images/deliric.jpg",
+        "artist": "Deliric",
+        "album": "Deliric x Silent Strike",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e84a72b1c9d440000377a1c",
+        "title": "Middle Child",
+        "path": "songs/middle.mp3",
+        "photo_path": "images/middle.jpg",
+        "artist": "J Cole",
+        "album": "Middle Child",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e84a8021c9d440000377a1d",
+        "title": "Tribe",
+        "path": "songs/tribe.mp3",
+        "photo_path": "images/tribe.png",
+        "artist": "J Cole & Bas",
+        "album": "",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e84a8321c9d440000377a1e",
+        "title": "Kevin's Heart",
+        "path": "songs/kevin.mp3",
+        "photo_path": "images/kevin.jpg",
+        "artist": "J Cole",
+        "album": "K.O.D",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e84a8ea1c9d440000377a1f",
+        "title": "ATM",
+        "path": "songs/atm.mp3",
+        "photo_path": "images/atm.jpg",
+        "artist": "J Cole",
+        "album": "K.O.D",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9ee4564c560b27c0772321",
+        "title": "B.M.W",
+        "path": "songs/c1fdc1a2ac350a470d49e40f9cf39c9f_bae7e3394b3c_1587471446985_86063c1253ad_1587471446985.M",
+        "photo_path": "images/c1fdc1a2ac350a470d49e40f9cf39c9f_bae7e3394b3c_1587471446985.960x960x1",
+        "artist": "Nane",
+        "album": "-",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9ee6434c560b27c0772323",
+        "title": "Casă de nebuni",
+        "path": "songs/5acc8f550a990134f10a8a9f1e99932f_0eecc5533f8d_1587471939243_54772bdafb31_1587471939243.mp3",
+        "photo_path": "images/5acc8f550a990134f10a8a9f1e99932f_0eecc5533f8d_1587471939243.1000x1000x1",
+        "artist": "Nane",
+        "album": "Șmecherescu",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9ee78d4c560b27c0772325",
+        "title": "Gheng Gheng",
+        "path": "songs/5acc8f550a990134f10a8a9f1e99932f_3f398fa6d8b9_1587472269625_83877b2ef22c_1587472269625.mp3",
+        "photo_path": "images/5acc8f550a990134f10a8a9f1e99932f_3f398fa6d8b9_1587472269625.1000x1000x1",
+        "artist": "Nane",
+        "album": "Șmecherescu",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9ee7ba4c560b27c0772326",
+        "title": "Val",
+        "path": "songs/5acc8f550a990134f10a8a9f1e99932f_0ed153afba71_1587472314170_9762ec65e167_1587472314170.mp3",
+        "photo_path": "images/5acc8f550a990134f10a8a9f1e99932f_0ed153afba71_1587472314170.1000x1000x1",
+        "artist": "Nane",
+        "album": "Șmecherescu",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9ee7e04c560b27c0772327",
+        "title": "Coloana",
+        "path": "songs/5acc8f550a990134f10a8a9f1e99932f_e0bc20c92e25_1587472352215_84e7a1b98b6f_1587472352215.mp3",
+        "photo_path": "images/5acc8f550a990134f10a8a9f1e99932f_e0bc20c92e25_1587472352215.1000x1000x1",
+        "artist": "Nane",
+        "album": "Șmecherescu",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9ee8034c560b27c0772328",
+        "title": "B.M.V 2.0",
+        "path": "songs/5acc8f550a990134f10a8a9f1e99932f_2df80b556a83_1587472387036_2a907bbb4bfa_1587472387036.M",
+        "photo_path": "images/5acc8f550a990134f10a8a9f1e99932f_2df80b556a83_1587472387036.1000x1000x1",
+        "artist": "Nane",
+        "album": "Șmecherescu",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9ee8504c560b27c0772329",
+        "title": "Amsterdam",
+        "path": "songs/5acc8f550a990134f10a8a9f1e99932f_5b977c8a68ec_1587472464834_50fc4c02e05d_1587472464834.mp3",
+        "photo_path": "images/5acc8f550a990134f10a8a9f1e99932f_5b977c8a68ec_1587472464834.1000x1000x1",
+        "artist": "Nane",
+        "album": "Șmecherescu",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9ee8e54c560b27c077232a",
+        "title": "Pe Nori",
+        "path": "songs/5acc8f550a990134f10a8a9f1e99932f_d8e990a97bf3_1587472613455_2e06c058b848_1587472613455.mp3",
+        "photo_path": "images/5acc8f550a990134f10a8a9f1e99932f_d8e990a97bf3_1587472613455.1000x1000x1",
+        "artist": "Nane",
+        "album": "Șmecherescu",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9eeaafdaee963e1c9c19cf",
+        "title": "Teancuri",
+        "path": "songs/5acc8f550a990134f10a8a9f1e99932f_8d609d49c188_1587473071482_a2e9e51397cc_1587473071483.mp3",
+        "photo_path": "images/5acc8f550a990134f10a8a9f1e99932f_8d609d49c188_1587473071482.1000x1000x1",
+        "artist": "Nane",
+        "album": "Șmecherescu",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9ef0f6ba539c4234970512",
+        "title": "Hollywood's Bleeding",
+        "path": "songs/ab67616d0000b2739478c87599550dd73bfa7e02_7c7acf260813_1587474678069_34b1485c7604_1587474678069.mp3",
+        "photo_path": "images/ab67616d0000b2739478c87599550dd73bfa7e02_7c7acf260813_1587474678069.jpg",
+        "artist": "Post Malone",
+        "album": "Hollywood's Bleeding",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9ef136ba539c4234970513",
+        "title": "Saint-Tropez",
+        "path": "songs/ab67616d0000b2739478c87599550dd73bfa7e02_fd1db3309afa_1587474742296_a8624e3ffe40_1587474742296.mp3",
+        "photo_path": "images/ab67616d0000b2739478c87599550dd73bfa7e02_fd1db3309afa_1587474742296.jpg",
+        "artist": "Post Malone",
+        "album": "Hollywood's Bleeding",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9ef14fba539c4234970514",
+        "title": "Enemies",
+        "path": "songs/ab67616d0000b2739478c87599550dd73bfa7e02_30ac2fa28a53_1587474767002_a4ed599680de_1587474767003.mp3",
+        "photo_path": "images/ab67616d0000b2739478c87599550dd73bfa7e02_30ac2fa28a53_1587474767002.jpg",
+        "artist": "Post Malone",
+        "album": "Hollywood's Bleeding",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9ef1a7ba539c4234970515",
+        "title": "Allergic",
+        "path": "songs/ab67616d0000b2739478c87599550dd73bfa7e02_b42ad4b4f8c9_1587474855359_df8dc78dd21d_1587474855359.mp3",
+        "photo_path": "images/ab67616d0000b2739478c87599550dd73bfa7e02_b42ad4b4f8c9_1587474855359.jpg",
+        "artist": "Post Malone",
+        "album": "Hollywood's Bleeding",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9ef1c4ba539c4234970516",
+        "title": "A Thousand Bad Times",
+        "path": "songs/ab67616d0000b2739478c87599550dd73bfa7e02_6bd71f1b4db3_1587474884333_9ca5257b5237_1587474884333.mp3",
+        "photo_path": "images/ab67616d0000b2739478c87599550dd73bfa7e02_6bd71f1b4db3_1587474884333.jpg",
+        "artist": "Post Malone",
+        "album": "Hollywood's Bleeding",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9ef1d9ba539c4234970517",
+        "title": "Circles",
+        "path": "songs/ab67616d0000b2739478c87599550dd73bfa7e02_77fce2f7e484_1587474905609_22be70f9bce0_1587474905609.mp3",
+        "photo_path": "images/ab67616d0000b2739478c87599550dd73bfa7e02_77fce2f7e484_1587474905609.jpg",
+        "artist": "Post Malone",
+        "album": "Hollywood's Bleeding",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9ef1f3ba539c4234970518",
+        "title": "Die For Me",
+        "path": "songs/ab67616d0000b2739478c87599550dd73bfa7e02_073267e1cf29_1587474931332_e83f7cb92300_1587474931332.mp3",
+        "photo_path": "images/ab67616d0000b2739478c87599550dd73bfa7e02_073267e1cf29_1587474931332.jpg",
+        "artist": "Post Malone",
+        "album": "Hollywood's Bleeding",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9ef224ba539c4234970519",
+        "title": "On The Road",
+        "path": "songs/ab67616d0000b2739478c87599550dd73bfa7e02_08d6d3b746bc_1587474980154_774b2689be50_1587474980154.mp3",
+        "photo_path": "images/ab67616d0000b2739478c87599550dd73bfa7e02_08d6d3b746bc_1587474980154.jpg",
+        "artist": "Post Malone",
+        "album": "Hollywood's Bleeding",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9ef26dba539c423497051a",
+        "title": "Take What You Want",
+        "path": "songs/ab67616d0000b2739478c87599550dd73bfa7e02_e4c212a78520_1587475053173_ce7290645e9a_1587475053174.mp3",
+        "photo_path": "images/ab67616d0000b2739478c87599550dd73bfa7e02_e4c212a78520_1587475053173.jpg",
+        "artist": "Post Malone",
+        "album": "Hollywood's Bleeding",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9ef283ba539c423497051b",
+        "title": "I'm Gonna Be",
+        "path": "songs/ab67616d0000b2739478c87599550dd73bfa7e02_6cc834937613_1587475075747_7c5e52e35ca9_1587475075748.mp3",
+        "photo_path": "images/ab67616d0000b2739478c87599550dd73bfa7e02_6cc834937613_1587475075747.jpg",
+        "artist": "Post Malone",
+        "album": "Hollywood's Bleeding",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9ef2a1ba539c423497051c",
+        "title": "Staring At The Sun",
+        "path": "songs/ab67616d0000b2739478c87599550dd73bfa7e02_ed169cd7abf1_1587475105016_c324cf9facce_1587475105016.mp3",
+        "photo_path": "images/ab67616d0000b2739478c87599550dd73bfa7e02_ed169cd7abf1_1587475105016.jpg",
+        "artist": "Post Malone",
+        "album": "Hollywood's Bleeding",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9ef2c8ba539c423497051d",
+        "title": "Sunflower",
+        "path": "songs/ab67616d0000b2739478c87599550dd73bfa7e02_9d9b8f8bd2bb_1587475144308_e182ee47c2ba_1587475144308.mp3",
+        "photo_path": "images/ab67616d0000b2739478c87599550dd73bfa7e02_9d9b8f8bd2bb_1587475144308.jpg",
+        "artist": "Post Malone",
+        "album": "Hollywood's Bleeding",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9ef2dbba539c423497051e",
+        "title": "Internet",
+        "path": "songs/ab67616d0000b2739478c87599550dd73bfa7e02_e2c73f956dc5_1587475163142_31a7e1caba90_1587475163142.mp3",
+        "photo_path": "images/ab67616d0000b2739478c87599550dd73bfa7e02_e2c73f956dc5_1587475163142.jpg",
+        "artist": "Post Malone",
+        "album": "Hollywood's Bleeding",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9ef2faba539c423497051f",
+        "title": "Goodbyes",
+        "path": "songs/ab67616d0000b2739478c87599550dd73bfa7e02_9a1cbe3e9491_1587475194604_20e1b607fa4b_1587475194604.mp3",
+        "photo_path": "images/ab67616d0000b2739478c87599550dd73bfa7e02_9a1cbe3e9491_1587475194604.jpg",
+        "artist": "Post Malone",
+        "album": "Hollywood's Bleeding",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9ef3c9ba539c4234970520",
+        "title": "Myself",
+        "path": "songs/ab67616d0000b2739478c87599550dd73bfa7e02_45e125311cef_1587475401683_e2454d8f87ca_1587475401683.mp3",
+        "photo_path": "images/ab67616d0000b2739478c87599550dd73bfa7e02_45e125311cef_1587475401683.jpg",
+        "artist": "Post Malone",
+        "album": "Hollywood's Bleeding",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9ef3e2ba539c4234970521",
+        "title": "Wow.",
+        "path": "songs/ab67616d0000b2739478c87599550dd73bfa7e02_550717ef6e8c_1587475426260_c4110555bdd2_1587475426261.",
+        "photo_path": "images/ab67616d0000b2739478c87599550dd73bfa7e02_550717ef6e8c_1587475426260.jpg",
+        "artist": "Post Malone",
+        "album": "Hollywood's Bleeding",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9ef584ba539c4234970522",
+        "title": "Rockstar",
+        "path": "songs/maxresdefault_03227ebc4cc4_1587475844869_52427ad1a176_1587475844869. 21 Savage",
+        "photo_path": "images/maxresdefault_03227ebc4cc4_1587475844869.jpg",
+        "artist": "Post Malone & Savage",
+        "album": "-",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9ef74fba539c4234970526",
+        "title": "Call Out My Name",
+        "path": "songs/ab67616d0000b273f38e946900c89c38a070227b_43c359bf6f62_1587476303681_a7f0c496ce3e_1587476303681.mp3",
+        "photo_path": "images/ab67616d0000b273f38e946900c89c38a070227b_43c359bf6f62_1587476303681.jpg",
+        "artist": "The Weeknd",
+        "album": "My Dear Melancholy",
+        "genre": "R&B"
+    },
+    {
+        "id": "5e9ef85aba539c4234970527",
+        "title": "Try Me",
+        "path": "songs/ab67616d0000b273f38e946900c89c38a070227b_6a0a08ab39da_1587476570625_8be39457e4dd_1587476570625.mp3",
+        "photo_path": "images/ab67616d0000b273f38e946900c89c38a070227b_6a0a08ab39da_1587476570625.jpg",
+        "artist": "The Weeknd",
+        "album": "My Dear Melancholy",
+        "genre": "R&B"
+    },
+    {
+        "id": "5e9ef8a2ba539c4234970528",
+        "title": "Wasted Times",
+        "path": "songs/ab67616d0000b273f38e946900c89c38a070227b_9a2e767b0b03_1587476642808_d5a36162f7fd_1587476642808.mp3",
+        "photo_path": "images/ab67616d0000b273f38e946900c89c38a070227b_9a2e767b0b03_1587476642808.jpg",
+        "artist": "The Weeknd",
+        "album": "My Dear Melancholy",
+        "genre": "R&B"
+    },
+    {
+        "id": "5e9ef8b6ba539c4234970529",
+        "title": "I Was Never There",
+        "path": "songs/ab67616d0000b273f38e946900c89c38a070227b_9b251d7863f6_1587476662882_03c7d12f24f3_1587476662882. Gesaffelstein (Official Audio)",
+        "photo_path": "images/ab67616d0000b273f38e946900c89c38a070227b_9b251d7863f6_1587476662882.jpg",
+        "artist": "The Weeknd",
+        "album": "My Dear Melancholy",
+        "genre": "R&B"
+    },
+    {
+        "id": "5e9ef8d2ba539c423497052a",
+        "title": "Hurt You",
+        "path": "songs/ab67616d0000b273f38e946900c89c38a070227b_cda5ded69a01_1587476690040_627c888d2965_1587476690040. Gesaffelstein (Official Audio)",
+        "photo_path": "images/ab67616d0000b273f38e946900c89c38a070227b_cda5ded69a01_1587476690040.jpg",
+        "artist": "The Weeknd",
+        "album": "My Dear Melancholy",
+        "genre": "R&B"
+    },
+    {
+        "id": "5e9ef8e6ba539c423497052b",
+        "title": "Privilege",
+        "path": "songs/ab67616d0000b273f38e946900c89c38a070227b_4508ec955ee5_1587476710439_a8be45ccda98_1587476710440.mp3",
+        "photo_path": "images/ab67616d0000b273f38e946900c89c38a070227b_4508ec955ee5_1587476710439.jpg",
+        "artist": "The Weeknd",
+        "album": "My Dear Melancholy",
+        "genre": "R&B"
+    },
+    {
+        "id": "5e9ef977ba539c423497052c",
+        "title": "Some Way",
+        "path": "songs/NavSomeWayVid_9f9abab385d0_1587476855207_6a8f00374e7d_1587476855207. The Weeknd (Official Music Video)",
+        "photo_path": "images/NavSomeWayVid_9f9abab385d0_1587476855207.webp",
+        "artist": "The Weeknd",
+        "album": "-",
+        "genre": "R&B"
+    },
+    {
+        "id": "5e9efe9bba539c423497052f",
+        "title": "Antidot",
+        "path": "songs/download_c6442dd42583_1587478171289_db4c79207e72_1587478171289.mp3",
+        "photo_path": "images/download_c6442dd42583_1587478171289.png",
+        "artist": "Deliric",
+        "album": "Deliric x Silent Strike",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9effdeba539c4234970531",
+        "title": "Trecator",
+        "path": "songs/35052318_800_800_a3965413a6a7_1587478494181_ec0e064ecda8_1587478494181.mp3",
+        "photo_path": "images/35052318_800_800_a3965413a6a7_1587478494181.jpg",
+        "artist": "Deliric",
+        "album": "Deliric x Silent Strike",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f00c5ba539c4234970533",
+        "title": "Panopticon",
+        "path": "songs/35052318_800_800_aa1c85192c70_1587478725642_ebf4f76a998b_1587478725642.mp3",
+        "photo_path": "images/35052318_800_800_aa1c85192c70_1587478725642.jpg",
+        "artist": "Deliric",
+        "album": "Deliric x Silent Strike",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f02acba539c4234970534",
+        "title": "Maine",
+        "path": "songs/35052318_800_800_98d6f23c12eb_1587479212434_7d6f05725013_1587479212435. EM (Video)",
+        "photo_path": "images/35052318_800_800_98d6f23c12eb_1587479212434.jpg",
+        "artist": "Deliric",
+        "album": "Deliric x Silent Strike",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f02c5ba539c4234970535",
+        "title": "Eroare",
+        "path": "songs/35052318_800_800_658b35f9b0d6_1587479237396_4f9745262414_1587479237397.mp3",
+        "photo_path": "images/35052318_800_800_658b35f9b0d6_1587479237396.jpg",
+        "artist": "Deliric",
+        "album": "Deliric x Silent Strike",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f02eaba539c4234970536",
+        "title": "Tesla",
+        "path": "songs/35052318_800_800_bbf160cdc477_1587479274385_3162fa08eebd_1587479274385.mp3",
+        "photo_path": "images/35052318_800_800_bbf160cdc477_1587479274385.jpg",
+        "artist": "Deliric",
+        "album": "Deliric x Silent Strike",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0306ba539c4234970537",
+        "title": "Porc",
+        "path": "songs/35052318_800_800_291450a7411d_1587479302899_f7e0d9b13beb_1587479302899.mp3",
+        "photo_path": "images/35052318_800_800_291450a7411d_1587479302899.jpg",
+        "artist": "Deliric",
+        "album": "Deliric x Silent Strike",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0316ba539c4234970538",
+        "title": "Venin",
+        "path": "songs/35052318_800_800_3f1f7dc32b6f_1587479318038_5bdcd50d548f_1587479318039.mp3",
+        "photo_path": "images/35052318_800_800_3f1f7dc32b6f_1587479318038.jpg",
+        "artist": "Deliric",
+        "album": "Deliric x Silent Strike",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0326ba539c4234970539",
+        "title": "Doua",
+        "path": "songs/35052318_800_800_ce7d22d51643_1587479334393_b6f18db57d99_1587479334393.mp3",
+        "photo_path": "images/35052318_800_800_ce7d22d51643_1587479334393.jpg",
+        "artist": "Deliric",
+        "album": "Deliric x Silent Strike",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0335ba539c423497053a",
+        "title": "Simian",
+        "path": "songs/35052318_800_800_cf4737f6dd32_1587479349855_e09ac15203a5_1587479349855.mp3",
+        "photo_path": "images/35052318_800_800_cf4737f6dd32_1587479349855.jpg",
+        "artist": "Deliric",
+        "album": "Deliric x Silent Strike",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0351ba539c423497053b",
+        "title": "Sefu",
+        "path": "songs/35052318_800_800_56ef8b2a5a4a_1587479377107_0edc76939d95_1587479377107.mp3",
+        "photo_path": "images/35052318_800_800_56ef8b2a5a4a_1587479377107.jpg",
+        "artist": "Deliric",
+        "album": "Deliric x Silent Strike",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0363ba539c423497053c",
+        "title": "Independent",
+        "path": "songs/35052318_800_800_5875af68b552_1587479395735_01d5ece6177f_1587479395735.mp3",
+        "photo_path": "images/35052318_800_800_5875af68b552_1587479395735.jpg",
+        "artist": "Deliric",
+        "album": "Deliric x Silent Strike",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0377ba539c423497053d",
+        "title": "Plastic",
+        "path": "songs/35052318_800_800_717bc9107b9e_1587479415007_c37d1a8ed4c9_1587479415007.mp3",
+        "photo_path": "images/35052318_800_800_717bc9107b9e_1587479415007.jpg",
+        "artist": "Deliric",
+        "album": "Deliric x Silent Strike",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f03beba539c423497053e",
+        "title": "Orasul",
+        "path": "songs/35052318_800_800_22b410eb451e_1587479486385_a4e9159ffd00_1587479486385.mp3",
+        "photo_path": "images/35052318_800_800_22b410eb451e_1587479486385.jpg",
+        "artist": "Deliric",
+        "album": "Deliric x Silent Strike",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f03d5ba539c423497053f",
+        "title": "Gaia",
+        "path": "songs/35052318_800_800_9fca04a962c5_1587479509493_6a6d6644bee4_1587479509493. Alexandrina (Audio)",
+        "photo_path": "images/35052318_800_800_9fca04a962c5_1587479509493.jpg",
+        "artist": "Deliric",
+        "album": "Deliric x Silent Strike",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f041dba539c4234970540",
+        "title": "Van Gogh",
+        "path": "songs/35052318_800_800_3cce1c7c42e1_1587479581804_58eb3b08b5e3_1587479581804.mp3",
+        "photo_path": "images/35052318_800_800_3cce1c7c42e1_1587479581804.jpg",
+        "artist": "Deliric",
+        "album": "-",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0b03ba539c4234970543",
+        "title": "Unaccommodating",
+        "path": "songs/emimen_54e74c138d77_1587481347828_0c167841a3a3_1587481347828. Young M",
+        "photo_path": "images/emimen_54e74c138d77_1587481347828.jpg",
+        "artist": "Eminem",
+        "album": "Music To Be Murdered",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0b62ba539c4234970544",
+        "title": "You Gon' Learn",
+        "path": "songs/emimen_c3c41db28397_1587481442774_aa1bdeb2252f_1587481442775. Royce Da 5'9 & White Gold) [Official Audio]",
+        "photo_path": "images/emimen_c3c41db28397_1587481442774.jpg",
+        "artist": "Eminem",
+        "album": "Music To Be Murdered",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0b78ba539c4234970545",
+        "title": "Those Kinda Nights",
+        "path": "songs/emimen_61e9e7f3f6a1_1587481464036_a3f070ab745a_1587481464036. Ed Sheeran) [Official Audio]",
+        "photo_path": "images/emimen_61e9e7f3f6a1_1587481464036.jpg",
+        "artist": "Eminem",
+        "album": "Music To Be Murdered",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0b8aba539c4234970546",
+        "title": "In Too Deep",
+        "path": "songs/emimen_58dda11cb3ef_1587481482460_425635fe606f_1587481482460.mp3",
+        "photo_path": "images/emimen_58dda11cb3ef_1587481482460.jpg",
+        "artist": "Eminem",
+        "album": "Music To Be Murdered",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0beaba539c4234970547",
+        "title": "Godzilla",
+        "path": "songs/emimen_2973e3b1d1da_1587481578450_c8e22e4089b6_1587481578450. Juice WRLD) [Official Audio]",
+        "photo_path": "images/emimen_2973e3b1d1da_1587481578450.jpg",
+        "artist": "Eminem & Juice WRLD",
+        "album": "Music To Be Murdered",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0c01ba539c4234970548",
+        "title": "Darkness",
+        "path": "songs/emimen_845068933479_1587481601607_26585a9fff02_1587481601607.mp3",
+        "photo_path": "images/emimen_845068933479_1587481601607.jpg",
+        "artist": "Eminem & Juice WRLD",
+        "album": "Music To Be Murdered",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0c1cba539c4234970549",
+        "title": "Leaving Heaven",
+        "path": "songs/emimen_07cdd9b5d02b_1587481628760_17a7ced76340_1587481628761. Skylar Grey) [Official Audio]",
+        "photo_path": "images/emimen_07cdd9b5d02b_1587481628760.jpg",
+        "artist": "Eminem & Skylar Grey",
+        "album": "Music To Be Murdered",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0c5aba539c423497054c",
+        "title": "Stepdad",
+        "path": "songs/emimen_46852a60f99a_1587481690909_711deb3d10ab_1587481690909.mp3",
+        "photo_path": "images/emimen_46852a60f99a_1587481690909.jpg",
+        "artist": "Eminem",
+        "album": "Music To Be Murdered",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0c80ba539c423497054e",
+        "title": "Yah Yah",
+        "path": "songs/emimen_b653d0f7d5ca_1587481728687_be24e08bf930_1587481728687. Royce Da 5'9, Black Thought, Q-Tip & Denaun) [Official Audio]",
+        "photo_path": "images/emimen_b653d0f7d5ca_1587481728687.jpg",
+        "artist": "Eminem ft Royce Da 5'9\"",
+        "album": "Music To Be Murdered",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0cd0ba539c423497054f",
+        "title": "Marsh",
+        "path": "songs/emimen_878354f5f29e_1587481808253_90fb6af67a56_1587481808253.mp3",
+        "photo_path": "images/emimen_878354f5f29e_1587481808253.jpg",
+        "artist": "Eminem",
+        "album": "Music To Be Murdered",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0ce7ba539c4234970550",
+        "title": "Never Love Again",
+        "path": "songs/emimen_d0cd0a44d509_1587481831677_73c013f37b88_1587481831677.mp3",
+        "photo_path": "images/emimen_d0cd0a44d509_1587481831677.jpg",
+        "artist": "Eminem",
+        "album": "Music To Be Murdered",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0d0cba539c4234970551",
+        "title": "Little Engine",
+        "path": "songs/emimen_d07a525cdd9d_1587481868098_6366bcbf7498_1587481868098.mp3",
+        "photo_path": "images/emimen_d07a525cdd9d_1587481868098.jpg",
+        "artist": "Eminem",
+        "album": "Music To Be Murdered",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f0d65ba539c4234970552",
+        "title": "Mockingbird",
+        "path": "songs/emimen_d6ac4cd3860c_1587481957104_a99b619a44c2_1587481957104.mp3",
+        "photo_path": "images/emimen_d6ac4cd3860c_1587481957104.jpg",
+        "artist": "Eminem",
+        "album": "-",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f1009ba539c4234970555",
+        "title": "Every Hour",
+        "path": "songs/ab67616d0000b2731bb797bbfe2480650b6c2964_a944b4fdc260_1587482633812_ee6463b3f5dc_1587482633812.mp3",
+        "photo_path": "images/ab67616d0000b2731bb797bbfe2480650b6c2964_a944b4fdc260_1587482633812.jpg",
+        "artist": "Kanye West",
+        "album": "Jesus is King",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f1033ba539c4234970556",
+        "title": "Selah",
+        "path": "songs/ab67616d0000b2731bb797bbfe2480650b6c2964_abe0cfea0576_1587482675782_65a906a5f9fd_1587482675782.mp3",
+        "photo_path": "images/ab67616d0000b2731bb797bbfe2480650b6c2964_abe0cfea0576_1587482675782.jpg",
+        "artist": "Kanye West",
+        "album": "Jesus is King",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f1084ba539c4234970557",
+        "title": "Follow God",
+        "path": "songs/ab67616d0000b2731bb797bbfe2480650b6c2964_4b7255d7e6c6_1587482756068_b7f69e148061_1587482756068.mp3",
+        "photo_path": "images/ab67616d0000b2731bb797bbfe2480650b6c2964_4b7255d7e6c6_1587482756068.jpg",
+        "artist": "Kanye West",
+        "album": "Jesus is King",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f10b8ba539c4234970558",
+        "title": "Closed On Sunday",
+        "path": "songs/ab67616d0000b2731bb797bbfe2480650b6c2964_83d116e816cb_1587482808434_bfe7a33b7099_1587482808434.mp3",
+        "photo_path": "images/ab67616d0000b2731bb797bbfe2480650b6c2964_83d116e816cb_1587482808434.jpg",
+        "artist": "Kanye West",
+        "album": "Jesus is King",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f10e8ba539c4234970559",
+        "title": "On God",
+        "path": "songs/ab67616d0000b2731bb797bbfe2480650b6c2964_90139daa65c1_1587482856254_3fae5b7d426c_1587482856254.mp3",
+        "photo_path": "images/ab67616d0000b2731bb797bbfe2480650b6c2964_90139daa65c1_1587482856254.jpg",
+        "artist": "Kanye West",
+        "album": "Jesus is King",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f113bba539c423497055a",
+        "title": "Everything We Need",
+        "path": "songs/ab67616d0000b2731bb797bbfe2480650b6c2964_fbf5de8733a3_1587482939476_c84e6c345579_1587482939476.mp3",
+        "photo_path": "images/ab67616d0000b2731bb797bbfe2480650b6c2964_fbf5de8733a3_1587482939476.jpg",
+        "artist": "Kanye West",
+        "album": "Jesus is King",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f1175ba539c423497055b",
+        "title": "Water",
+        "path": "songs/ab67616d0000b2731bb797bbfe2480650b6c2964_d908d2a87646_1587482997979_3b2ed7eb9dc2_1587482997979.mp3",
+        "photo_path": "images/ab67616d0000b2731bb797bbfe2480650b6c2964_d908d2a87646_1587482997979.jpg",
+        "artist": "Kanye West",
+        "album": "Jesus is King",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f11f0ba539c423497055c",
+        "title": "God Is",
+        "path": "songs/ab67616d0000b2731bb797bbfe2480650b6c2964_9218d6fae594_1587483120900_f7f091306b50_1587483120900.mp3",
+        "photo_path": "images/ab67616d0000b2731bb797bbfe2480650b6c2964_9218d6fae594_1587483120900.jpg",
+        "artist": "Kanye West",
+        "album": "Jesus is King",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f1215ba539c423497055d",
+        "title": "Hands On",
+        "path": "songs/ab67616d0000b2731bb797bbfe2480650b6c2964_3f87dc7afd3c_1587483157745_6c9888b3f456_1587483157745.mp3",
+        "photo_path": "images/ab67616d0000b2731bb797bbfe2480650b6c2964_3f87dc7afd3c_1587483157745.jpg",
+        "artist": "Kanye West",
+        "album": "Jesus is King",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f124aba539c423497055e",
+        "title": "Use This Gospel",
+        "path": "songs/ab67616d0000b2731bb797bbfe2480650b6c2964_0eef8307863d_1587483210203_346a2a4170cb_1587483210203.mp3",
+        "photo_path": "images/ab67616d0000b2731bb797bbfe2480650b6c2964_0eef8307863d_1587483210203.jpg",
+        "artist": "Kanye West",
+        "album": "Jesus is King",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f1274ba539c423497055f",
+        "title": "Jesus Is Lord",
+        "path": "songs/ab67616d0000b2731bb797bbfe2480650b6c2964_39c9a3de1791_1587483252660_d575e6d52e68_1587483252660.mp3",
+        "photo_path": "images/ab67616d0000b2731bb797bbfe2480650b6c2964_39c9a3de1791_1587483252660.jpg",
+        "artist": "Kanye West",
+        "album": "Jesus is King",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f132fba539c4234970561",
+        "title": "Follow God.",
+        "path": "songs/kanye-west-follow-god_9a52f185eb63_1587483439010_95ac9256ac7b_1587483439010.mp3",
+        "photo_path": "images/kanye-west-follow-god_9a52f185eb63_1587483439010.jpg",
+        "artist": "Kanye West",
+        "album": "-",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f1389ba539c4234970562",
+        "title": "test",
+        "path": "songs/kanye-west-follow-god_76f52c23b9ba_1587483529290_0d9a5a53994c_1587483529290.mp3",
+        "photo_path": "images/kanye-west-follow-god_76f52c23b9ba_1587483529290.jpg",
+        "artist": "Kanye West",
+        "album": "-",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f13f7ba539c4234970563",
+        "title": "Fade",
+        "path": "songs/Fadekanyewest_77e76e756bf2_1587483639906_b5f6eafe21e5_1587483639906.mp3",
+        "photo_path": "images/Fadekanyewest_77e76e756bf2_1587483639906.png",
+        "artist": "Kanye West",
+        "album": "-",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5e9f164eba539c4234970566",
+        "title": "COPYCAT ",
+        "path": "songs/61VFNQJ-HLL_b218632279c9_1587484238256_e9fad3613561_1587484238256.mp3",
+        "photo_path": "images/61VFNQJ-HLL_b218632279c9_1587484238256._AC_SL1200_",
+        "artist": "Billie Eilish",
+        "album": "Don't Smile At Me",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f16aeba539c4234970567",
+        "title": "idontwannabeyouanymore",
+        "path": "songs/61VFNQJ-HLL_79692972bc81_1587484334605_c0783f60c521_1587484334605.mp3",
+        "photo_path": "images/61VFNQJ-HLL_79692972bc81_1587484334605._AC_SL1200_",
+        "artist": "Billie Eilish",
+        "album": "Don't Smile At Me",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f170bba539c4234970568",
+        "title": "my boy",
+        "path": "songs/61VFNQJ-HLL_4a18156528dc_1587484427476_75aa7972836d_1587484427476.mp3",
+        "photo_path": "images/61VFNQJ-HLL_4a18156528dc_1587484427476._AC_SL1200_",
+        "artist": "Billie Eilish",
+        "album": "Don't Smile At Me",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f1755ba539c4234970569",
+        "title": "watch",
+        "path": "songs/61VFNQJ-HLL_31901eecd873_1587484501508_de4dadc2279f_1587484501508.mp3",
+        "photo_path": "images/61VFNQJ-HLL_31901eecd873_1587484501508._AC_SL1200_",
+        "artist": "Billie Eilish",
+        "album": "Don't Smile At Me",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f1782ba539c423497056a",
+        "title": "party favor",
+        "path": "songs/61VFNQJ-HLL_fcc0acd3d9a4_1587484546260_e4b9e3dd4fc8_1587484546260.mp3",
+        "photo_path": "images/61VFNQJ-HLL_fcc0acd3d9a4_1587484546260._AC_SL1200_",
+        "artist": "Billie Eilish",
+        "album": "Don't Smile At Me",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f17b4ba539c423497056b",
+        "title": "Bellyache",
+        "path": "songs/61VFNQJ-HLL_6cefcf12e1eb_1587484596467_c67a3533612e_1587484596467.mp3",
+        "photo_path": "images/61VFNQJ-HLL_6cefcf12e1eb_1587484596467._AC_SL1200_",
+        "artist": "Billie Eilish",
+        "album": "Don't Smile At Me",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f180cba539c423497056c",
+        "title": "Ocean Eyes",
+        "path": "songs/61VFNQJ-HLL_84f7ae4b9534_1587484684100_1aa8396beb91_1587484684100.mp3",
+        "photo_path": "images/61VFNQJ-HLL_84f7ae4b9534_1587484684100._AC_SL1200_",
+        "artist": "Billie Eilish",
+        "album": "Don't Smile At Me",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f1833ba539c423497056d",
+        "title": "hostage",
+        "path": "songs/61VFNQJ-HLL_3000a6d1a096_1587484723236_0371bd33235c_1587484723237.mp3",
+        "photo_path": "images/61VFNQJ-HLL_3000a6d1a096_1587484723236._AC_SL1200_",
+        "artist": "Billie Eilish",
+        "album": "Don't Smile At Me",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f185fba539c423497056e",
+        "title": "&burn",
+        "path": "songs/61VFNQJ-HLL_0862f1996913_1587484767279_d837bffea50d_1587484767279.mp3",
+        "photo_path": "images/61VFNQJ-HLL_0862f1996913_1587484767279._AC_SL1200_",
+        "artist": "Billie Eilish",
+        "album": "Don't Smile At Me",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f1f80ba539c4234970571",
+        "title": "STARGAZING",
+        "path": "songs/res_dc8cf287800d42719d47a179a75fb4b8_full_311775b7a7eb_1587486592352_5997e9c5e77a_1587486592353.mp3",
+        "photo_path": "images/res_dc8cf287800d42719d47a179a75fb4b8_full_311775b7a7eb_1587486592352.jpg",
+        "artist": "Travis Scott",
+        "album": "Astroworld",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f1fd1ba539c4234970572",
+        "title": "SICKO MODE",
+        "path": "songs/res_dc8cf287800d42719d47a179a75fb4b8_full_3f06eb96c889_1587486673448_311b04a42719_1587486673448. Drake (Official Video)",
+        "photo_path": "images/res_dc8cf287800d42719d47a179a75fb4b8_full_3f06eb96c889_1587486673448.jpg",
+        "artist": "Travis Scott",
+        "album": "Astroworld",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f201aba539c4234970573",
+        "title": "STOP TRYING TO BE GOD",
+        "path": "songs/res_dc8cf287800d42719d47a179a75fb4b8_full_f5a372d205e6_1587486746835_f553f550ec4f_1587486746835.mp3",
+        "photo_path": "images/res_dc8cf287800d42719d47a179a75fb4b8_full_f5a372d205e6_1587486746835.jpg",
+        "artist": "Travis Scott",
+        "album": "Astroworld",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f21dfba539c4234970578",
+        "title": "NO BYSTANDERS",
+        "path": "songs/res_dc8cf287800d42719d47a179a75fb4b8_full_256d6637d1bd_1587487199188_5ebe3bd62ada_1587487199188.mp3",
+        "photo_path": "images/res_dc8cf287800d42719d47a179a75fb4b8_full_256d6637d1bd_1587487199188.jpg",
+        "artist": "Travis Scott",
+        "album": "Astroworld",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f22636d4a6c36242ce480",
+        "title": "SKELETONS",
+        "path": "songs/res_dc8cf287800d42719d47a179a75fb4b8_full_eb8e1a563fbe_1587487331800_d162c3266d8c_1587487331801.mp3",
+        "photo_path": "images/res_dc8cf287800d42719d47a179a75fb4b8_full_eb8e1a563fbe_1587487331800.jpg",
+        "artist": "Travis Scott",
+        "album": "Astroworld",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f22a16d4a6c36242ce482",
+        "title": "WAKE UP",
+        "path": "songs/res_dc8cf287800d42719d47a179a75fb4b8_full_a151c7765af7_1587487393527_bffab780ffed_1587487393527.mp3",
+        "photo_path": "images/res_dc8cf287800d42719d47a179a75fb4b8_full_a151c7765af7_1587487393527.jpg",
+        "artist": "Travis Scott",
+        "album": "Astroworld",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f22fd6d4a6c36242ce484",
+        "title": "YOSEMITE",
+        "path": "songs/res_dc8cf287800d42719d47a179a75fb4b8_full_da8869e046ea_1587487485121_97ef734ba7d4_1587487485121.mp3",
+        "photo_path": "images/res_dc8cf287800d42719d47a179a75fb4b8_full_da8869e046ea_1587487485121.jpg",
+        "artist": "Travis Scott",
+        "album": "Astroworld",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f23396d4a6c36242ce485",
+        "title": "CAN'T SAY",
+        "path": "songs/res_dc8cf287800d42719d47a179a75fb4b8_full_c8e0e1345534_1587487545977_4efd715d1d0b_1587487545978.mp3",
+        "photo_path": "images/res_dc8cf287800d42719d47a179a75fb4b8_full_c8e0e1345534_1587487545977.jpg",
+        "artist": "Travis Scott",
+        "album": "Astroworld",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f23826d4a6c36242ce486",
+        "title": "BUTTERFLY EFFECT",
+        "path": "songs/res_dc8cf287800d42719d47a179a75fb4b8_full_92041ae8d78a_1587487618814_bce4cc8b45a6_1587487618814.mp3",
+        "photo_path": "images/res_dc8cf287800d42719d47a179a75fb4b8_full_92041ae8d78a_1587487618814.jpg",
+        "artist": "Travis Scott",
+        "album": "Astroworld",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f23a86d4a6c36242ce487",
+        "title": "HOUSTONFORNICATION",
+        "path": "songs/res_dc8cf287800d42719d47a179a75fb4b8_full_5650b329f18d_1587487656067_122f4e798010_1587487656067.mp3",
+        "photo_path": "images/res_dc8cf287800d42719d47a179a75fb4b8_full_5650b329f18d_1587487656067.jpg",
+        "artist": "Travis Scott",
+        "album": "Astroworld",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f23d36d4a6c36242ce488",
+        "title": "COFFEE BEAN",
+        "path": "songs/res_dc8cf287800d42719d47a179a75fb4b8_full_4da4bef054c8_1587487699792_b101e51612cb_1587487699792.mp3",
+        "photo_path": "images/res_dc8cf287800d42719d47a179a75fb4b8_full_4da4bef054c8_1587487699792.jpg",
+        "artist": "Travis Scott",
+        "album": "Astroworld",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f241b6d4a6c36242ce489",
+        "title": "ASTROWORLD TRAILER",
+        "path": "songs/res_dc8cf287800d42719d47a179a75fb4b8_full_9d1207da5eb8_1587487771185_a69b1c19009d_1587487771185.mp3",
+        "photo_path": "images/res_dc8cf287800d42719d47a179a75fb4b8_full_9d1207da5eb8_1587487771185.jpg",
+        "artist": "Travis Scott",
+        "album": "Astroworld",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f253f6d4a6c36242ce48a",
+        "title": "HIGHEST IN THE ROOM",
+        "path": "songs/a17ac4e073be8c1b49b446e17fa296bc_ca19161ccd62_1587488063565_878edea077d0_1587488063565.mp3",
+        "photo_path": "images/a17ac4e073be8c1b49b446e17fa296bc_ca19161ccd62_1587488063565.1000x1000x1",
+        "artist": "Travis Scott",
+        "album": "-",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f25df6d4a6c36242ce48b",
+        "title": "everything i wanted",
+        "path": "songs/unnamed_dbc5c6bbbd4f_1587488223029_4ae01b20812b_1587488223029.mp3",
+        "photo_path": "images/unnamed_dbc5c6bbbd4f_1587488223029.jpg",
+        "artist": "Billie Eilish",
+        "album": "-",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f28d86d4a6c36242ce490",
+        "title": "the light is coming",
+        "path": "songs/res_c0fdc9e43df24f7a0f275078f98fb82e_full_c38c147200e5_1587488984602_591085eea367_1587488984602. Nicki Minaj",
+        "photo_path": "images/res_c0fdc9e43df24f7a0f275078f98fb82e_full_c38c147200e5_1587488984602.jpg",
+        "artist": "Ariana Grande",
+        "album": "Sweetener",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f29376d4a6c36242ce491",
+        "title": "R.E.M.",
+        "path": "songs/res_c0fdc9e43df24f7a0f275078f98fb82e_full_328850722e1d_1587489079539_f13ff512d543_1587489079539.E",
+        "photo_path": "images/res_c0fdc9e43df24f7a0f275078f98fb82e_full_328850722e1d_1587489079539.jpg",
+        "artist": "Ariana Grande",
+        "album": "Sweetener",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f29876d4a6c36242ce492",
+        "title": "God is a woman",
+        "path": "songs/res_c0fdc9e43df24f7a0f275078f98fb82e_full_8a08bbd39c6a_1587489159975_4c6a3a7025f3_1587489159975.mp3",
+        "photo_path": "images/res_c0fdc9e43df24f7a0f275078f98fb82e_full_8a08bbd39c6a_1587489159975.jpg",
+        "artist": "Ariana Grande",
+        "album": "Sweetener",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f29e16d4a6c36242ce493",
+        "title": "sweetener",
+        "path": "songs/res_c0fdc9e43df24f7a0f275078f98fb82e_full_dc8606bd01a2_1587489249516_ef8ef0ddcf06_1587489249516.mp3",
+        "photo_path": "images/res_c0fdc9e43df24f7a0f275078f98fb82e_full_dc8606bd01a2_1587489249516.jpg",
+        "artist": "Ariana Grande",
+        "album": "Sweetener",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f2a2f6d4a6c36242ce495",
+        "title": "everytime",
+        "path": "songs/res_c0fdc9e43df24f7a0f275078f98fb82e_full_af8718d6f89c_1587489327172_d0d99a5a826a_1587489327172.mp3",
+        "photo_path": "images/res_c0fdc9e43df24f7a0f275078f98fb82e_full_af8718d6f89c_1587489327172.jpg",
+        "artist": "Ariana Grande",
+        "album": "Sweetener",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f2a7c6d4a6c36242ce497",
+        "title": "breathin",
+        "path": "songs/res_c0fdc9e43df24f7a0f275078f98fb82e_full_e8c126d1bf18_1587489404639_33452383afa2_1587489404639.mp3",
+        "photo_path": "images/res_c0fdc9e43df24f7a0f275078f98fb82e_full_e8c126d1bf18_1587489404639.jpg",
+        "artist": "Ariana Grande",
+        "album": "Sweetener",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f2aa56d4a6c36242ce498",
+        "title": "no tears left to cry",
+        "path": "songs/res_c0fdc9e43df24f7a0f275078f98fb82e_full_6904c930acc1_1587489445636_217c008eb89e_1587489445636.mp3",
+        "photo_path": "images/res_c0fdc9e43df24f7a0f275078f98fb82e_full_6904c930acc1_1587489445636.jpg",
+        "artist": "Ariana Grande",
+        "album": "Sweetener",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f2adc6d4a6c36242ce49a",
+        "title": "better off",
+        "path": "songs/res_c0fdc9e43df24f7a0f275078f98fb82e_full_74a78eb815ae_1587489500058_3d079f8a1e85_1587489500058.mp3",
+        "photo_path": "images/res_c0fdc9e43df24f7a0f275078f98fb82e_full_74a78eb815ae_1587489500058.jpg",
+        "artist": "Ariana Grande",
+        "album": "Sweetener",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f2afc6d4a6c36242ce49b",
+        "title": "goodnight n go",
+        "path": "songs/res_c0fdc9e43df24f7a0f275078f98fb82e_full_64c9babbab10_1587489532683_fa5688ebeb24_1587489532683.mp3",
+        "photo_path": "images/res_c0fdc9e43df24f7a0f275078f98fb82e_full_64c9babbab10_1587489532683.jpg",
+        "artist": "Ariana Grande",
+        "album": "Sweetener",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f2b266d4a6c36242ce49c",
+        "title": "get well soon",
+        "path": "songs/res_c0fdc9e43df24f7a0f275078f98fb82e_full_3b41642cd899_1587489574716_a4f7afa2bfbd_1587489574717.mp3",
+        "photo_path": "images/res_c0fdc9e43df24f7a0f275078f98fb82e_full_3b41642cd899_1587489574716.jpg",
+        "artist": "Ariana Grande",
+        "album": "Sweetener",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f2b446d4a6c36242ce49d",
+        "title": "pete davidson",
+        "path": "songs/res_c0fdc9e43df24f7a0f275078f98fb82e_full_ae8a979b8944_1587489604396_4c1eccab136d_1587489604396.mp3",
+        "photo_path": "images/res_c0fdc9e43df24f7a0f275078f98fb82e_full_ae8a979b8944_1587489604396.jpg",
+        "artist": "Ariana Grande",
+        "album": "Sweetener",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f2c536d4a6c36242ce49e",
+        "title": "7 rings",
+        "path": "songs/e6e0ea10d04e9dae7fbe43193c91c3a9_4dba91980114_1587489875069_397abff59c75_1587489875069.mp3",
+        "photo_path": "images/rings.png",
+        "artist": "Ariana Grande",
+        "album": "-",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f2f5b6d4a6c36242ce4a1",
+        "title": "Perfect",
+        "path": "songs/5a0805d4a23966c3fbd5d493a4f98390_11ef197c436d_1587490651570_0bf696e5fc79_1587490651570.mp3",
+        "photo_path": "images/ok.jpg",
+        "artist": "Ed Sheeran",
+        "album": "Divide",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f2fa06d4a6c36242ce4a2",
+        "title": "Eraser",
+        "path": "songs/artworks-000218523042-atd54r-t500x500_68a8f90ccabc_1587490720609_900864fcb3a3_1587490720609.mp3",
+        "photo_path": "images/artworks-000218523042-atd54r-t500x500_68a8f90ccabc_1587490720609.jpg",
+        "artist": "Ed Sheeran",
+        "album": "Divide",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f2fe56d4a6c36242ce4a3",
+        "title": "Save Myself",
+        "path": "songs/0084bc1624e9b27dfdfe987b170fecf6_330a7a875ba9_1587490789450_d0ac22853d1c_1587490789450.mp3",
+        "photo_path": "images/0084bc1624e9b27dfdfe987b170fecf6_330a7a875ba9_1587490789450.720x720x1",
+        "artist": "Ed Sheeran",
+        "album": "Divide",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f30436d4a6c36242ce4a4",
+        "title": "Happier",
+        "path": "songs/746b9dcce0f4b2f7c44805a689676a20_d3cb50877ed8_1587490883473_0d5a304cd165_1587490883473.mp3",
+        "photo_path": "images/746b9dcce0f4b2f7c44805a689676a20_d3cb50877ed8_1587490883473.jpg",
+        "artist": "Ed Sheeran",
+        "album": "Divide",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f30876d4a6c36242ce4a5",
+        "title": "Supermarket Flowers",
+        "path": "songs/Supermarket-Flowers-Cover_9ad9300c8e83_1587490951497_4a5c5c4fbd03_1587490951497.mp3",
+        "photo_path": "images/Supermarket-Flowers-Cover_9ad9300c8e83_1587490951497.webp",
+        "artist": "Ed Sheeran",
+        "album": "Divide",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f30d66d4a6c36242ce4a6",
+        "title": "Galway Girl",
+        "path": "songs/Galway-Girl-Cover_ecb900e9e9d7_1587491030776_4f2e701bdbba_1587491030776.mp3",
+        "photo_path": "images/Galway-Girl-Cover_ecb900e9e9d7_1587491030776.webp",
+        "artist": "Ed Sheeran",
+        "album": "Divide",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f31ab6d4a6c36242ce4a7",
+        "title": "Shape Of You",
+        "path": "songs/08b6bd48c01695dbf439506bb4bd8abf_e85de98d1685_1587491243442_4f7d70263ecc_1587491243442.mp3",
+        "photo_path": "images/08b6bd48c01695dbf439506bb4bd8abf_e85de98d1685_1587491243442.jpg",
+        "artist": "Ed Sheeran",
+        "album": "Divide",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f320b6d4a6c36242ce4a8",
+        "title": "Dive",
+        "path": "songs/ed-sheeran-dive_e763367151da_1587491339038_a1ddc50209d8_1587491339038.mp3",
+        "photo_path": "images/ed-sheeran-dive_e763367151da_1587491339038.jpg",
+        "artist": "Ed Sheeran",
+        "album": "Divide",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f32c46d4a6c36242ce4a9",
+        "title": "How Would You Feel",
+        "path": "songs/ed_sheeran-how_would_you_feel_(paean)_s_79411b66832c_1587491524909_62bb5de67e62_1587491524909.mp3",
+        "photo_path": "images/ed_sheeran-how_would_you_feel_(paean)_s_79411b66832c_1587491524909.jpg",
+        "artist": "Ed Sheeran",
+        "album": "Divide",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f34326d4a6c36242ce4ad",
+        "title": "Hearts Don't Break Round Here",
+        "path": "songs/ed_sheeran-hearts_dont_break_around_here_s_ff0f0735eb71_1587491890478_3b2d514f1c36_1587491890479.mp3",
+        "photo_path": "images/ed_sheeran-hearts_dont_break_around_here_s_ff0f0735eb71_1587491890478.jpg",
+        "artist": "Ed Sheeran",
+        "album": "Divide",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f37946d4a6c36242ce4ae",
+        "title": "Thinking Out Loud",
+        "path": "songs/ab67616d0000b273e63747ddaba433c45b788d35_0318826ef131_1587492756150_c82798708a1f_1587492756150.mp3",
+        "photo_path": "images/ab67616d0000b273e63747ddaba433c45b788d35_0318826ef131_1587492756150.jpg",
+        "artist": "Ed Sheeran",
+        "album": "-",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9f3a406d4a6c36242ce4b1",
+        "title": "Rent Money",
+        "path": "songs/download_4df359be2fd7_1587493440897_4cb1ee85e499_1587493440897.mp3",
+        "photo_path": "images/download_4df359be2fd7_1587493440897.jpg",
+        "artist": "Future",
+        "album": "FUTURE",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f3adf6d4a6c36242ce4b2",
+        "title": "Good Dope",
+        "path": "songs/download_1c72b5b66130_1587493599200_061de17c1954_1587493599200.mp3",
+        "photo_path": "images/download_1c72b5b66130_1587493599200.jpg",
+        "artist": "Future",
+        "album": "FUTURE",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f3be86d4a6c36242ce4b3",
+        "title": "Draco",
+        "path": "songs/download_b48112cb37b5_1587493864351_be4e7b7caf0c_1587493864351.mp3",
+        "photo_path": "images/download_b48112cb37b5_1587493864351.jpg",
+        "artist": "Future",
+        "album": "FUTURE",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f3c4e6d4a6c36242ce4b4",
+        "title": "When I Was Broke",
+        "path": "songs/download_0ab665422912_1587493966915_79f46152f534_1587493966916.mp3",
+        "photo_path": "images/download_0ab665422912_1587493966915.jpg",
+        "artist": "Future",
+        "album": "FUTURE",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f3c6c6d4a6c36242ce4b5",
+        "title": "Feds Did a Sweep",
+        "path": "songs/download_ba7902191787_1587493996141_032afca18b7c_1587493996142.mp3",
+        "photo_path": "images/download_ba7902191787_1587493996141.jpg",
+        "artist": "Future",
+        "album": "FUTURE",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f3c896d4a6c36242ce4b6",
+        "title": "Might as Well",
+        "path": "songs/download_3d9cf9a280ea_1587494025055_a44b305d02f6_1587494025055.mp3",
+        "photo_path": "images/download_3d9cf9a280ea_1587494025055.jpg",
+        "artist": "Future",
+        "album": "FUTURE",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f3caf6d4a6c36242ce4b7",
+        "title": "I'm so Groovy",
+        "path": "songs/download_e47d85fbc98c_1587494063873_8cef3e7b06d3_1587494063873.mp3",
+        "photo_path": "images/download_e47d85fbc98c_1587494063873.jpg",
+        "artist": "Future",
+        "album": "FUTURE",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f3ccd6d4a6c36242ce4b8",
+        "title": "Scrape",
+        "path": "songs/download_b262d3855356_1587494093752_b8d8a174e8a7_1587494093753.mp3",
+        "photo_path": "images/download_b262d3855356_1587494093752.jpg",
+        "artist": "Future",
+        "album": "FUTURE",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9f3ce96d4a6c36242ce4b9",
+        "title": "Outta Time",
+        "path": "songs/download_e920ea835cda_1587494121204_13e3e5604310_1587494121204.mp3",
+        "photo_path": "images/download_e920ea835cda_1587494121204.jpg",
+        "artist": "Future",
+        "album": "FUTURE",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9ff27c653e60322c1b3228",
+        "title": "Life Is Good",
+        "path": "songs/8348fe96c0f03df1cbd4993ed66edc8c_e74cd27ad5c3_1587540604008_e2ccea616694_1587540604009. Drake",
+        "photo_path": "images/8348fe96c0f03df1cbd4993ed66edc8c_e74cd27ad5c3_1587540604008.500x500x1",
+        "artist": "Future & Drake",
+        "album": "-",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9ff4f6653e60322c1b322b",
+        "title": "All Around Me",
+        "path": "songs/ab67706c0000da8496c0686a95c7e0821aac93dd_7f615eb62178_1587541238349_9558849e4797_1587541238349.mp3",
+        "photo_path": "images/ab67706c0000da8496c0686a95c7e0821aac93dd_7f615eb62178_1587541238349.jpg",
+        "artist": "Justin Bieber",
+        "album": "Changes",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ff524653e60322c1b322c",
+        "title": "Habitual",
+        "path": "songs/ab67706c0000da8496c0686a95c7e0821aac93dd_e48ec9bc4bee_1587541284977_785c7dbdfe61_1587541284977.mp3",
+        "photo_path": "images/ab67706c0000da8496c0686a95c7e0821aac93dd_e48ec9bc4bee_1587541284977.jpg",
+        "artist": "Justin Bieber",
+        "album": "Changes",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ff545653e60322c1b322d",
+        "title": "Come Around Me",
+        "path": "songs/ab67706c0000da8496c0686a95c7e0821aac93dd_65351cc48641_1587541317731_8d2a0ec9b69d_1587541317731.mp3",
+        "photo_path": "images/ab67706c0000da8496c0686a95c7e0821aac93dd_65351cc48641_1587541317731.jpg",
+        "artist": "Justin Bieber",
+        "album": "Changes",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ff55f653e60322c1b322e",
+        "title": "Intentions",
+        "path": "songs/ab67706c0000da8496c0686a95c7e0821aac93dd_0c6e0892c77b_1587541343854_0342e399c04a_1587541343855. Quavo (Official Video)",
+        "photo_path": "images/ab67706c0000da8496c0686a95c7e0821aac93dd_0c6e0892c77b_1587541343854.jpg",
+        "artist": "Justin Bieber & Quavo",
+        "album": "Changes",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ff5a1653e60322c1b322f",
+        "title": "Yummy",
+        "path": "songs/ab67706c0000da8496c0686a95c7e0821aac93dd_d1f7c518c2e8_1587541409090_09915d6db9be_1587541409090.mp3",
+        "photo_path": "images/ab67706c0000da8496c0686a95c7e0821aac93dd_d1f7c518c2e8_1587541409090.jpg",
+        "artist": "Justin Bieber",
+        "album": "Changes",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ff5b9653e60322c1b3230",
+        "title": "Available",
+        "path": "songs/ab67706c0000da8496c0686a95c7e0821aac93dd_89d8ca92fc19_1587541433142_2095215131d7_1587541433142.mp3",
+        "photo_path": "images/ab67706c0000da8496c0686a95c7e0821aac93dd_89d8ca92fc19_1587541433142.jpg",
+        "artist": "Justin Bieber",
+        "album": "Changes",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ff5dd653e60322c1b3231",
+        "title": "Forever",
+        "path": "songs/ab67706c0000da8496c0686a95c7e0821aac93dd_b5d4099cac82_1587541469108_e9ab358e6470_1587541469108. Post Malone & Clever)(Audio)",
+        "photo_path": "images/ab67706c0000da8496c0686a95c7e0821aac93dd_b5d4099cac82_1587541469108.jpg",
+        "artist": "Justin Bieber & Post Malone",
+        "album": "Changes",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ff64c653e60322c1b3232",
+        "title": "Running Over",
+        "path": "songs/ab67706c0000da8496c0686a95c7e0821aac93dd_ee37a6b44cf2_1587541580225_9c9aa26102ec_1587541580225. Lil Dicky)(Audio)",
+        "photo_path": "images/ab67706c0000da8496c0686a95c7e0821aac93dd_ee37a6b44cf2_1587541580225.jpg",
+        "artist": "Justin Bieber",
+        "album": "Changes",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ff66b653e60322c1b3233",
+        "title": "Take It Out On Me",
+        "path": "songs/ab67706c0000da8496c0686a95c7e0821aac93dd_4360aa547278_1587541611238_9ee75e010208_1587541611239.mp3",
+        "photo_path": "images/ab67706c0000da8496c0686a95c7e0821aac93dd_4360aa547278_1587541611238.jpg",
+        "artist": "Justin Bieber",
+        "album": "Changes",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ff680653e60322c1b3234",
+        "title": "Second Emotion",
+        "path": "songs/ab67706c0000da8496c0686a95c7e0821aac93dd_c565f3fe676e_1587541632570_24f399a0a67d_1587541632570. Travis Scott)(Audio)",
+        "photo_path": "images/ab67706c0000da8496c0686a95c7e0821aac93dd_c565f3fe676e_1587541632570.jpg",
+        "artist": "Justin Bieber & Travis Scott",
+        "album": "Changes",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ff752653e60322c1b3235",
+        "title": "Get Me",
+        "path": "songs/ab67706c0000da8496c0686a95c7e0821aac93dd_7573f28ac05d_1587541842940_4769ce43d5c3_1587541842941. Kehlani)(Audio)",
+        "photo_path": "images/ab67706c0000da8496c0686a95c7e0821aac93dd_7573f28ac05d_1587541842940.jpg",
+        "artist": "Justin Bieber & Kehlani",
+        "album": "Changes",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ff76c653e60322c1b3236",
+        "title": "Changes",
+        "path": "songs/ab67706c0000da8496c0686a95c7e0821aac93dd_51d57afb0113_1587541868770_634cdfc5426c_1587541868771.mp3",
+        "photo_path": "images/ab67706c0000da8496c0686a95c7e0821aac93dd_51d57afb0113_1587541868770.jpg",
+        "artist": "Justin Bieber",
+        "album": "Changes",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ff78b653e60322c1b3238",
+        "title": "Confirmation",
+        "path": "songs/ab67706c0000da8496c0686a95c7e0821aac93dd_81af2f2f0a70_1587541899376_de507be0d746_1587541899376.mp3",
+        "photo_path": "images/ab67706c0000da8496c0686a95c7e0821aac93dd_81af2f2f0a70_1587541899376.jpg",
+        "artist": "Justin Bieber",
+        "album": "Changes",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ff9f07931ca4154dbaa7c",
+        "title": "Midnight Summer Jam",
+        "path": "songs/ab67616d0000b2734626ff0fee963da605f6aa06_49fdf1a42a1c_1587542512454_266b0a9c25c7_1587542512455.mp3",
+        "photo_path": "images/ab67616d0000b2734626ff0fee963da605f6aa06_49fdf1a42a1c_1587542512454.jpg",
+        "artist": "Justin Timberlake",
+        "album": "Man Of The Woods",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ffa007931ca4154dbaa7d",
+        "title": "Sauce",
+        "path": "songs/ab67616d0000b2734626ff0fee963da605f6aa06_7301be9df761_1587542528499_418cc6d0c75c_1587542528499.mp3",
+        "photo_path": "images/ab67616d0000b2734626ff0fee963da605f6aa06_7301be9df761_1587542528499.jpg",
+        "artist": "Justin Timberlake",
+        "album": "Man Of The Woods",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ffa1f7931ca4154dbaa7e",
+        "title": "Man Of The Woods",
+        "path": "songs/ab67616d0000b2734626ff0fee963da605f6aa06_7d21eb9ca865_1587542559693_fea66eedc8dd_1587542559693.mp3",
+        "photo_path": "images/ab67616d0000b2734626ff0fee963da605f6aa06_7d21eb9ca865_1587542559693.jpg",
+        "artist": "Justin Timberlake",
+        "album": "Man Of The Woods",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ffa5d7931ca4154dbaa7f",
+        "title": "Higher Higher",
+        "path": "songs/ab67616d0000b2734626ff0fee963da605f6aa06_e96e3d3e3d04_1587542621599_0c08d65c55cc_1587542621599.mp3",
+        "photo_path": "images/ab67616d0000b2734626ff0fee963da605f6aa06_e96e3d3e3d04_1587542621599.jpg",
+        "artist": "Justin Timberlake",
+        "album": "Man Of The Woods",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ffa6b7931ca4154dbaa80",
+        "title": "Wave",
+        "path": "songs/ab67616d0000b2734626ff0fee963da605f6aa06_5f19225ad1f1_1587542635294_93ef0b25ed88_1587542635294.mp3",
+        "photo_path": "images/ab67616d0000b2734626ff0fee963da605f6aa06_5f19225ad1f1_1587542635294.jpg",
+        "artist": "Justin Timberlake",
+        "album": "Man Of The Woods",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ffa847931ca4154dbaa81",
+        "title": "Morning Light",
+        "path": "songs/ab67616d0000b2734626ff0fee963da605f6aa06_707307f8e568_1587542660832_622eed3d7f93_1587542660832.mp3",
+        "photo_path": "images/ab67616d0000b2734626ff0fee963da605f6aa06_707307f8e568_1587542660832.jpg",
+        "artist": "Justin Timberlake",
+        "album": "Man Of The Woods",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ffa9b7931ca4154dbaa82",
+        "title": "Flannel",
+        "path": "songs/ab67616d0000b2734626ff0fee963da605f6aa06_bc79893c825e_1587542683560_1d77b59eaba2_1587542683560.mp3",
+        "photo_path": "images/ab67616d0000b2734626ff0fee963da605f6aa06_bc79893c825e_1587542683560.jpg",
+        "artist": "Justin Timberlake",
+        "album": "Man Of The Woods",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ffab27931ca4154dbaa83",
+        "title": "Montana",
+        "path": "songs/ab67616d0000b2734626ff0fee963da605f6aa06_210c8613c46b_1587542706743_0d1395d250dc_1587542706743.mp3",
+        "photo_path": "images/ab67616d0000b2734626ff0fee963da605f6aa06_210c8613c46b_1587542706743.jpg",
+        "artist": "Justin Timberlake",
+        "album": "Man Of The Woods",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ffad47931ca4154dbaa84",
+        "title": "Breeze Off the Pond",
+        "path": "songs/ab67616d0000b2734626ff0fee963da605f6aa06_b8652fab1eb8_1587542740805_d4b47bfc1cec_1587542740805.mp3",
+        "photo_path": "images/ab67616d0000b2734626ff0fee963da605f6aa06_b8652fab1eb8_1587542740805.jpg",
+        "artist": "Justin Timberlake",
+        "album": "Man Of The Woods",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ffc1c2cde1535107a38e7",
+        "title": "The Other Side",
+        "path": "songs/sza-justin-timberlake-the-ther-side-screenshot_694f2b8f48e2_1587543068503_c8971bfd1697_1587543068504.mp3",
+        "photo_path": "images/sza-justin-timberlake-the-ther-side-screenshot_694f2b8f48e2_1587543068503.jpg",
+        "artist": "Justin Timberlake & SZA",
+        "album": "-",
+        "genre": "Pop"
+    },
+    {
+        "id": "5e9ffdc32cde1535107a38ea",
+        "title": "Bussdown",
+        "path": "songs/0afeb64fedf0a13b4462ee545d71a27d54429432_5abb97f779cc_1587543491362_442727d61790_1587543491362.mp3",
+        "photo_path": "images/0afeb64fedf0a13b4462ee545d71a27d54429432_5abb97f779cc_1587543491362.jpg",
+        "artist": "Gucci Mane",
+        "album": "Delusions of Grandeur",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9ffe192cde1535107a38eb",
+        "title": "Backwards",
+        "path": "songs/0afeb64fedf0a13b4462ee545d71a27d54429432_bdf7b4a17737_1587543577620_f3ef4375f128_1587543577621. Meek Mill (Delusions of Grandeur)",
+        "photo_path": "images/0afeb64fedf0a13b4462ee545d71a27d54429432_bdf7b4a17737_1587543577620.jpg",
+        "artist": "Gucci Mane & Meek Mill",
+        "album": "Delusions of Grandeur",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9ffe3c2cde1535107a38ec",
+        "title": "Special",
+        "path": "songs/0afeb64fedf0a13b4462ee545d71a27d54429432_9f7978f00bbf_1587543612226_77521568aba5_1587543612226.mp3",
+        "photo_path": "images/0afeb64fedf0a13b4462ee545d71a27d54429432_9f7978f00bbf_1587543612226.jpg",
+        "artist": "Gucci Mane",
+        "album": "Delusions of Grandeur",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9ffe602cde1535107a38ed",
+        "title": "ICE",
+        "path": "songs/0afeb64fedf0a13b4462ee545d71a27d54429432_b19560bde94d_1587543648872_baaa72a45758_1587543648872. Gunna & Lil Baby (Delusions of Grandeur)",
+        "photo_path": "images/0afeb64fedf0a13b4462ee545d71a27d54429432_b19560bde94d_1587543648872.jpg",
+        "artist": "Gucci Mane & Gunna",
+        "album": "Delusions of Grandeur",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9ffe852cde1535107a38ee",
+        "title": "Love Thru the Computer",
+        "path": "songs/0afeb64fedf0a13b4462ee545d71a27d54429432_3d412d3e19ac_1587543685145_6b07480d1a79_1587543685145. Justin Bieber (Delusions of Grandeur)",
+        "photo_path": "images/0afeb64fedf0a13b4462ee545d71a27d54429432_3d412d3e19ac_1587543685145.jpg",
+        "artist": "Gucci Mane & Justin Bieber",
+        "album": "Delusions of Grandeur",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9ffef62cde1535107a38ef",
+        "title": "Proud Of You",
+        "path": "songs/0afeb64fedf0a13b4462ee545d71a27d54429432_7173f4a3fb95_1587543798324_684400821a5a_1587543798324.mp3",
+        "photo_path": "images/0afeb64fedf0a13b4462ee545d71a27d54429432_7173f4a3fb95_1587543798324.jpg",
+        "artist": "Gucci Mane",
+        "album": "Delusions of Grandeur",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9fff2d2cde1535107a38f0",
+        "title": "Bottom",
+        "path": "songs/0afeb64fedf0a13b4462ee545d71a27d54429432_558cbd1dc071_1587543853172_72bf8cb20353_1587543853172.mp3",
+        "photo_path": "images/0afeb64fedf0a13b4462ee545d71a27d54429432_558cbd1dc071_1587543853172.jpg",
+        "artist": "Gucci Mane",
+        "album": "Delusions of Grandeur",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9fff4a2cde1535107a38f1",
+        "title": "Hands Off",
+        "path": "songs/0afeb64fedf0a13b4462ee545d71a27d54429432_967ab579befa_1587543882824_2a68bd78370f_1587543882824. Jeremih (Delusions of Grandeur)",
+        "photo_path": "images/0afeb64fedf0a13b4462ee545d71a27d54429432_967ab579befa_1587543882824.jpg",
+        "artist": "Gucci Mane & Jeremih",
+        "album": "Delusions of Grandeur",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9fffb32cde1535107a38f2",
+        "title": "Superstar",
+        "path": "songs/0afeb64fedf0a13b4462ee545d71a27d54429432_4140c8bbf25d_1587543987132_a9532532143a_1587543987132.mp3",
+        "photo_path": "images/0afeb64fedf0a13b4462ee545d71a27d54429432_4140c8bbf25d_1587543987132.jpg",
+        "artist": "Gucci Mane",
+        "album": "Delusions of Grandeur",
+        "genre": "Trap"
+    },
+    {
+        "id": "5e9fffd62cde1535107a38f3",
+        "title": "Us",
+        "path": "songs/0afeb64fedf0a13b4462ee545d71a27d54429432_9c36df370916_1587544022224_6c97fc05a1ca_1587544022224.mp3",
+        "photo_path": "images/0afeb64fedf0a13b4462ee545d71a27d54429432_9c36df370916_1587544022224.jpg",
+        "artist": "Gucci Mane",
+        "album": "Delusions of Grandeur",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea000162cde1535107a38f4",
+        "title": "I Get The Bag",
+        "path": "songs/0afeb64fedf0a13b4462ee545d71a27d54429432_488f4bb6590e_1587544086400_46c0578f2650_1587544086400. Migos [Official Music Video]",
+        "photo_path": "images/0afeb64fedf0a13b4462ee545d71a27d54429432_488f4bb6590e_1587544086400.jpg",
+        "artist": "Gucci Mane & Migos",
+        "album": "-",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea001492cde1535107a38f7",
+        "title": "Supastars",
+        "path": "songs/CS679658-01A-BIG_f8686bd0e0a6_1587544393595_910cbf9d70b8_1587544393595.mp3",
+        "photo_path": "images/CS679658-01A-BIG_f8686bd0e0a6_1587544393595.jpg",
+        "artist": "Migos",
+        "album": "Culture II",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea001602cde1535107a38f8",
+        "title": "Narcos",
+        "path": "songs/CS679658-01A-BIG_20f05f7b1dc6_1587544416041_51e840ed6ad7_1587544416041.mp3",
+        "photo_path": "images/CS679658-01A-BIG_20f05f7b1dc6_1587544416041.jpg",
+        "artist": "Migos",
+        "album": "Culture II",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea0017a2cde1535107a38f9",
+        "title": "BBO",
+        "path": "songs/CS679658-01A-BIG_988f90d247cb_1587544442866_c3ce6b4f5671_1587544442866. 21 Savage (Audio)",
+        "photo_path": "images/CS679658-01A-BIG_988f90d247cb_1587544442866.jpg",
+        "artist": "Migos & Savage 21",
+        "album": "Culture II",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea001912cde1535107a38fa",
+        "title": "Auto Pilot",
+        "path": "songs/CS679658-01A-BIG_2c924bea3067_1587544465539_91283914f224_1587544465539.mp3",
+        "photo_path": "images/CS679658-01A-BIG_2c924bea3067_1587544465539.jpg",
+        "artist": "Migos",
+        "album": "Culture II",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea001b92cde1535107a38fb",
+        "title": "Walk It Talk It",
+        "path": "songs/CS679658-01A-BIG_1a461630e8aa_1587544505522_cdfaa3a920dc_1587544505522. Drake (Audio)",
+        "photo_path": "images/CS679658-01A-BIG_1a461630e8aa_1587544505522.jpg",
+        "artist": "Migos & Drake",
+        "album": "Culture II",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea002052cde1535107a38fc",
+        "title": "Emoji A Chain",
+        "path": "songs/CS679658-01A-BIG_fa3b67624547_1587544581492_917189ce1a11_1587544581492.mp3",
+        "photo_path": "images/CS679658-01A-BIG_fa3b67624547_1587544581492.jpg",
+        "artist": "Migos",
+        "album": "Culture II",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea0021c2cde1535107a38fd",
+        "title": "CC",
+        "path": "songs/CS679658-01A-BIG_b7633ad8d2d7_1587544604922_e727a5f29ae6_1587544604922. Gucci Mane (Audio)",
+        "photo_path": "images/CS679658-01A-BIG_b7633ad8d2d7_1587544604922.jpg",
+        "artist": "Migos & Gucci Mane",
+        "album": "Culture II",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea002352cde1535107a38fe",
+        "title": "Stir Fry",
+        "path": "songs/CS679658-01A-BIG_1bd6a4da7be5_1587544629437_6b809b9d402c_1587544629438.mp3",
+        "photo_path": "images/CS679658-01A-BIG_1bd6a4da7be5_1587544629437.jpg",
+        "artist": "Migos",
+        "album": "Culture II",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea0024a2cde1535107a38ff",
+        "title": "Too Much Jewelry",
+        "path": "songs/CS679658-01A-BIG_14745355d183_1587544650861_8a96d39acd78_1587544650861.mp3",
+        "photo_path": "images/CS679658-01A-BIG_14745355d183_1587544650861.jpg",
+        "artist": "Migos",
+        "album": "Culture II",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea0025d2cde1535107a3900",
+        "title": "Gang Gang",
+        "path": "songs/CS679658-01A-BIG_6ca3f98f3972_1587544669423_fb02ad26f9a5_1587544669423.mp3",
+        "photo_path": "images/CS679658-01A-BIG_6ca3f98f3972_1587544669423.jpg",
+        "artist": "Migos",
+        "album": "Culture II",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea002c52cde1535107a3901",
+        "title": "Notice Me",
+        "path": "songs/CS679658-01A-BIG_15a35802de17_1587544773084_638f8bda9732_1587544773084. Post Malone (Audio)",
+        "photo_path": "images/CS679658-01A-BIG_15a35802de17_1587544773084.jpg",
+        "artist": "Migos & Post Malone",
+        "album": "Culture II",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea0030c2cde1535107a3902",
+        "title": "Work Hard",
+        "path": "songs/CS679658-01A-BIG_c5099c902821_1587544844465_ecef1ea557c6_1587544844466.mp3",
+        "photo_path": "images/CS679658-01A-BIG_c5099c902821_1587544844465.jpg",
+        "artist": "Migos",
+        "album": "Culture II",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea0032a2cde1535107a3903",
+        "title": "Too Playa",
+        "path": "songs/CS679658-01A-BIG_9c5245c6d1e5_1587544874555_4b30880c5194_1587544874555. 2 Chainz (Audio)",
+        "photo_path": "images/CS679658-01A-BIG_9c5245c6d1e5_1587544874555.jpg",
+        "artist": "Migos & 2 Chainz",
+        "album": "Culture II",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea0039d2cde1535107a3904",
+        "title": "Bad and Boujee",
+        "path": "songs/CrCWdzgWgAE1rP4_64321968127f_1587544989618_aace80b78cf3_1587544989619.mp3",
+        "photo_path": "images/CrCWdzgWgAE1rP4_64321968127f_1587544989618.jpg",
+        "artist": "Migos & Lil Uzi Vert",
+        "album": "-",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea0051f2cde1535107a3907",
+        "title": "Empty",
+        "path": "songs/655770_3_0a4210bede53_1587545375468_e77bfcd62c02_1587545375469.mp3",
+        "photo_path": "images/655770_3_0a4210bede53_1587545375468.jpg",
+        "artist": "Juice WRLD",
+        "album": "Death Race For Love",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea005352cde1535107a3908",
+        "title": "Maze",
+        "path": "songs/655770_3_633e628069ef_1587545397757_ba5862fc8da6_1587545397758.mp3",
+        "photo_path": "images/655770_3_633e628069ef_1587545397757.jpg",
+        "artist": "Juice WRLD",
+        "album": "Death Race For Love",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea0054e2cde1535107a3909",
+        "title": "HeMotions",
+        "path": "songs/655770_3_f593cf13beca_1587545422196_f081caee9594_1587545422196.mp3",
+        "photo_path": "images/655770_3_f593cf13beca_1587545422196.jpg",
+        "artist": "Juice WRLD",
+        "album": "Death Race For Love",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea0056b2cde1535107a390a",
+        "title": "Demonz Interlude",
+        "path": "songs/655770_3_16292ed1cc28_1587545451412_1452a6642e30_1587545451412. Brent Faiyaz (Official Audio)",
+        "photo_path": "images/655770_3_16292ed1cc28_1587545451412.jpg",
+        "artist": "Juice WRLD",
+        "album": "Death Race For Love",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea005902cde1535107a390b",
+        "title": "Fast",
+        "path": "songs/655770_3_25cb3aeb45a9_1587545488262_91b42a423447_1587545488262.mp3",
+        "photo_path": "images/655770_3_25cb3aeb45a9_1587545488262.jpg",
+        "artist": "Juice WRLD",
+        "album": "Death Race For Love",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea005b12cde1535107a390c",
+        "title": "Hear Me Calling",
+        "path": "songs/655770_3_e8746135a78b_1587545521137_b89bbd1ccb3f_1587545521137.mp3",
+        "photo_path": "images/655770_3_e8746135a78b_1587545521137.jpg",
+        "artist": "Juice WRLD",
+        "album": "Death Race For Love",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea005d62cde1535107a390d",
+        "title": "Big",
+        "path": "songs/655770_3_4556e499447a_1587545558466_8af45fd61b4a_1587545558466.mp3",
+        "photo_path": "images/655770_3_4556e499447a_1587545558466.jpg",
+        "artist": "Juice WRLD",
+        "album": "Death Race For Love",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea005e92cde1535107a390e",
+        "title": "Robbery",
+        "path": "songs/655770_3_e7147dbaf390_1587545577036_3b6985ca5552_1587545577036.mp3",
+        "photo_path": "images/655770_3_e7147dbaf390_1587545577036.jpg",
+        "artist": "Juice WRLD",
+        "album": "Death Race For Love",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea005fa2cde1535107a390f",
+        "title": "Flaws and Sins",
+        "path": "songs/655770_3_c11af95ce3f9_1587545594369_7f5b2070e411_1587545594369.mp3",
+        "photo_path": "images/655770_3_c11af95ce3f9_1587545594369.jpg",
+        "artist": "Juice WRLD",
+        "album": "Death Race For Love",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea0061f2cde1535107a3910",
+        "title": "Feeling",
+        "path": "songs/655770_3_62925064cce5_1587545631610_58a06391d8a7_1587545631610.mp3",
+        "photo_path": "images/655770_3_62925064cce5_1587545631610.jpg",
+        "artist": "Juice WRLD",
+        "album": "Death Race For Love",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea006a22cde1535107a3911",
+        "title": "Lucid Dreams",
+        "path": "songs/artworks-000362414712-yez00y-t500x500_5232de5e357e_1587545762183_82dcd69034d2_1587545762183. by ColeBennett)",
+        "photo_path": "images/artworks-000362414712-yez00y-t500x500_5232de5e357e_1587545762183.jpg",
+        "artist": "Juice WRLD",
+        "album": "-",
+        "genre": "Trap"
+    },
+    {
+        "id": "5ea00b2afcdca327c869799d",
+        "title": "Do I Wanna Know",
+        "path": "songs/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_3e6e11ec1321_1587546922519_0dc133ac8144_1587546922519. Do I Wanna Know - Arctic Monkeys - AM +lyrics",
+        "photo_path": "images/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_3e6e11ec1321_1587546922519.jpg",
+        "artist": "Arctic Monkeys",
+        "album": "AM",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00b5dfcdca327c869799e",
+        "title": "R U Mine",
+        "path": "songs/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_36151a70910b_1587546973743_a9a71734d348_1587546973743. R U Mine - Arctic Monkeys - AM +lyrics",
+        "photo_path": "images/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_36151a70910b_1587546973743.jpg",
+        "artist": "Arctic Monkeys",
+        "album": "AM",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00b86fcdca327c869799f",
+        "title": "One for the Road",
+        "path": "songs/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_42741b6251c3_1587547014919_23afc1b61d22_1587547014920. One for the Road - Arctic Monkeys - AM +lyrics",
+        "photo_path": "images/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_42741b6251c3_1587547014919.jpg",
+        "artist": "Arctic Monkeys",
+        "album": "AM",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00ba7fcdca327c86979a0",
+        "title": "Arabella",
+        "path": "songs/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_df263acf1bd0_1587547047762_87fb3dc48f9e_1587547047763. Arabella - Arctic Monkeys - AM +lyrics",
+        "photo_path": "images/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_df263acf1bd0_1587547047762.jpg",
+        "artist": "Arctic Monkeys",
+        "album": "AM",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00bc4fcdca327c86979a1",
+        "title": "I Want It All",
+        "path": "songs/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_e1a8d73945d8_1587547076990_f8ca3629cea8_1587547076990. I Want It All - Arctic Monkeys - AM +lyrics",
+        "photo_path": "images/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_e1a8d73945d8_1587547076990.jpg",
+        "artist": "Arctic Monkeys",
+        "album": "AM",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00be1fcdca327c86979a2",
+        "title": "No 1 Party Anthem",
+        "path": "songs/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_377c1da25b37_1587547105339_a82f6a3a0c07_1587547105340. No 1 Party Anthem - Arctic Monkeys - AM +lyrics",
+        "photo_path": "images/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_377c1da25b37_1587547105339.jpg",
+        "artist": "Arctic Monkeys",
+        "album": "AM",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00c12fcdca327c86979a3",
+        "title": "Why'd You Only Call Me When You're High",
+        "path": "songs/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_9d4d58ca1d18_1587547154718_23d1c9bc639b_1587547154718. Why'd You Only Call Me When You're High - Arctic Monkeys - AM +lyrics",
+        "photo_path": "images/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_9d4d58ca1d18_1587547154718.jpg",
+        "artist": "Arctic Monkeys",
+        "album": "AM",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00c43fcdca327c86979a4",
+        "title": "Snap Out of It",
+        "path": "songs/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_4ac225ad34ae_1587547203157_486ccce86671_1587547203157. Snap Out of It - Arctic Monkeys - AM +lyrics",
+        "photo_path": "images/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_4ac225ad34ae_1587547203157.jpg",
+        "artist": "Arctic Monkeys",
+        "album": "AM",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00c63fcdca327c86979a5",
+        "title": "Knee Socks",
+        "path": "songs/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_a04c5cc4f301_1587547235938_57b8c7141bfc_1587547235938. Knee Socks - Arctic Monkeys - AM +lyrics",
+        "photo_path": "images/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_a04c5cc4f301_1587547235938.jpg",
+        "artist": "Arctic Monkeys",
+        "album": "AM",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00c87fcdca327c86979a6",
+        "title": "I Wanna Be Yours",
+        "path": "songs/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_5307fe0807a9_1587547271298_ea2433233c02_1587547271298. I Wanna Be Yours - Arctic Monkeys - AM +lyrics",
+        "photo_path": "images/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_5307fe0807a9_1587547271298.jpg",
+        "artist": "Arctic Monkeys",
+        "album": "AM",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00d09fcdca327c86979a7",
+        "title": "Four Out Of Five",
+        "path": "songs/7528_0f90653c3895_1587547401302_e6b0409d853c_1587547401302.mp3",
+        "photo_path": "images/7528_0f90653c3895_1587547401302.jpg",
+        "artist": "Arctic Monkeys",
+        "album": "-",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00e39fcdca327c86979aa",
+        "title": "Ascension",
+        "path": "songs/0d19c3-20170323-humanz-art_825a54df1326_1587547705927_e8888ff67e02_1587547705927.mp3",
+        "photo_path": "images/0d19c3-20170323-humanz-art_825a54df1326_1587547705927.jpg",
+        "artist": "Gorillaz",
+        "album": "Humanz",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00e65fcdca327c86979ab",
+        "title": "Strobelite",
+        "path": "songs/0d19c3-20170323-humanz-art_d4ffcd44f1b7_1587547749097_2b8a249b6f29_1587547749098.mp3",
+        "photo_path": "images/0d19c3-20170323-humanz-art_d4ffcd44f1b7_1587547749097.jpg",
+        "artist": "Gorillaz",
+        "album": "Humanz",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00ea3fcdca327c86979ac",
+        "title": "Andromeda",
+        "path": "songs/0d19c3-20170323-humanz-art_e937dc5fa5fb_1587547811432_52f813dae82c_1587547811432.mp3",
+        "photo_path": "images/0d19c3-20170323-humanz-art_e937dc5fa5fb_1587547811432.jpg",
+        "artist": "Gorillaz",
+        "album": "Humanz",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00ed3fcdca327c86979ad",
+        "title": "Carnival",
+        "path": "songs/0d19c3-20170323-humanz-art_89811882ccf9_1587547859978_cbca55fe4354_1587547859979. Anthony Hamilton)",
+        "photo_path": "images/0d19c3-20170323-humanz-art_89811882ccf9_1587547859978.jpg",
+        "artist": "Gorillaz",
+        "album": "Humanz",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00ef1fcdca327c86979ae",
+        "title": "Let Me Out",
+        "path": "songs/0d19c3-20170323-humanz-art_69e135b5c930_1587547889879_2122533d0bd6_1587547889879.mp3",
+        "photo_path": "images/0d19c3-20170323-humanz-art_69e135b5c930_1587547889879.jpg",
+        "artist": "Gorillaz",
+        "album": "Humanz",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00f17fcdca327c86979af",
+        "title": "Sex Murder Party",
+        "path": "songs/0d19c3-20170323-humanz-art_5e2015f6b306_1587547927655_542ff0c9ede3_1587547927655.mp3",
+        "photo_path": "images/0d19c3-20170323-humanz-art_5e2015f6b306_1587547927655.jpg",
+        "artist": "Gorillaz",
+        "album": "Humanz",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00f4bfcdca327c86979b0",
+        "title": "Hallelujah Money",
+        "path": "songs/0d19c3-20170323-humanz-art_0a712a960b4d_1587547979650_49a28a0400f9_1587547979650. Benjamin Clementine",
+        "photo_path": "images/0d19c3-20170323-humanz-art_0a712a960b4d_1587547979650.jpg",
+        "artist": "Gorillaz",
+        "album": "Humanz",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00f66fcdca327c86979b1",
+        "title": "We Got The Power",
+        "path": "songs/0d19c3-20170323-humanz-art_cacd215af5df_1587548006164_1d8f1ff5e95e_1587548006164.mp3",
+        "photo_path": "images/0d19c3-20170323-humanz-art_cacd215af5df_1587548006164.jpg",
+        "artist": "Gorillaz",
+        "album": "Humanz",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00f82fcdca327c86979b2",
+        "title": "The Apprentice",
+        "path": "songs/0d19c3-20170323-humanz-art_639544f223b5_1587548034684_cdbe9efbe10f_1587548034684.mp3",
+        "photo_path": "images/0d19c3-20170323-humanz-art_639544f223b5_1587548034684.jpg",
+        "artist": "Gorillaz",
+        "album": "Humanz",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea00f9bfcdca327c86979b3",
+        "title": "Out Of Body",
+        "path": "songs/0d19c3-20170323-humanz-art_01b5db32c3e5_1587548059388_a704469af391_1587548059388. Kilo Kish, Zebra Katz & Imani Vonshà)",
+        "photo_path": "images/0d19c3-20170323-humanz-art_01b5db32c3e5_1587548059388.jpg",
+        "artist": "Gorillaz",
+        "album": "Humanz",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea01029fcdca327c86979b4",
+        "title": "Feel Good",
+        "path": "songs/26950147_800_800_89284ce7e68a_1587548201208_3bd30f27a24e_1587548201208. (Official Video)",
+        "photo_path": "images/26950147_800_800_89284ce7e68a_1587548201208.jpg",
+        "artist": "Gorillaz",
+        "album": "-",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea010d3fcdca327c86979b5",
+        "title": "Clint Eastwood",
+        "path": "songs/95fb8e6ed5b624107d978e0c4898afd4_eec97c50eaab_1587548371397_85bb047d342f_1587548371397.mp3",
+        "photo_path": "images/95fb8e6ed5b624107d978e0c4898afd4_eec97c50eaab_1587548371397.png",
+        "artist": "Gorillaz",
+        "album": "-",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea01235fcdca327c86979b8",
+        "title": "Death on Two Legs",
+        "path": "songs/R-1648099-1274049905_704063163dc6_1587548725939_739c0e32ee7e_1587548725939.mp3",
+        "photo_path": "images/R-1648099-1274049905_704063163dc6_1587548725939.jpeg",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea0125afcdca327c86979b9",
+        "title": "Lazing On A Sunday Afternoon",
+        "path": "songs/R-1648099-1274049905_e18b84bf4f04_1587548762289_bacd23fe545d_1587548762289.mp3",
+        "photo_path": "images/R-1648099-1274049905_e18b84bf4f04_1587548762289.jpeg",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea0127ffcdca327c86979ba",
+        "title": "'39",
+        "path": "songs/R-1648099-1274049905_47a5bcae1419_1587548799040_796833f2edb1_1587548799040.mp3",
+        "photo_path": "images/R-1648099-1274049905_47a5bcae1419_1587548799040.jpeg",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea0129afcdca327c86979bb",
+        "title": "Sweet Lady",
+        "path": "songs/R-1648099-1274049905_6f93ed48e97a_1587548826799_f01742b5a75a_1587548826799.mp3",
+        "photo_path": "images/R-1648099-1274049905_6f93ed48e97a_1587548826799.jpeg",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea012b9fcdca327c86979bc",
+        "title": "Seaside Rendezvous",
+        "path": "songs/R-1648099-1274049905_099e2e2aac8b_1587548857658_04fab5860b9f_1587548857658.mp3",
+        "photo_path": "images/R-1648099-1274049905_099e2e2aac8b_1587548857658.jpeg",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea012d9fcdca327c86979bd",
+        "title": "The Prophets Song",
+        "path": "songs/R-1648099-1274049905_7be3bf53d4d7_1587548889231_9a0da1484fc2_1587548889231.mp3",
+        "photo_path": "images/R-1648099-1274049905_7be3bf53d4d7_1587548889231.jpeg",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea012f7fcdca327c86979be",
+        "title": "Love Of My Life",
+        "path": "songs/R-1648099-1274049905_cbe84d1ecff9_1587548919696_34b769b9b209_1587548919696.mp3",
+        "photo_path": "images/R-1648099-1274049905_cbe84d1ecff9_1587548919696.jpeg",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea01338fcdca327c86979bf",
+        "title": "Good Company",
+        "path": "songs/R-1648099-1274049905_b862342313de_1587548984616_1668a3acf732_1587548984617.mp3",
+        "photo_path": "images/R-1648099-1274049905_b862342313de_1587548984616.jpeg",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea013a3fcdca327c86979c0",
+        "title": "Bohemian Rhapsody",
+        "path": "songs/blu-ray-bohemian-rhapsody-la-historia-de-freddie-mercury-D_NQ_NP_782824-MLA29341933718_022019-F_0a0d1505ea1b_1587549091785_2de9d8554887_1587549091786.mp3",
+        "photo_path": "images/blu-ray-bohemian-rhapsody-la-historia-de-freddie-mercury-D_NQ_NP_782824-MLA29341933718_022019-F_0a0d1505ea1b_1587549091785.jpg",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea0141bfcdca327c86979c1",
+        "title": "I Want To Break Free",
+        "path": "songs/a2674052886_10_d32aa5f9edd5_1587549211164_d4fe2aed0bc7_1587549211164.mp3",
+        "photo_path": "images/a2674052886_10_d32aa5f9edd5_1587549211164.jpg",
+        "artist": "Queen",
+        "album": "-",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea0150ffcdca327c86979c4",
+        "title": "Smells Like Teen Spirit",
+        "path": "songs/res_1af48d9cec33865319539f9d36d9412d_full_15fea4066c45_1587549455357_5c01ea432772_1587549455357.mp3",
+        "photo_path": "images/res_1af48d9cec33865319539f9d36d9412d_full_15fea4066c45_1587549455357.jpg",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea01559fcdca327c86979c5",
+        "title": "In Bloom",
+        "path": "songs/res_1af48d9cec33865319539f9d36d9412d_full_ab28c6d9b034_1587549529023_5efdb362146d_1587549529023.mp3",
+        "photo_path": "images/res_1af48d9cec33865319539f9d36d9412d_full_ab28c6d9b034_1587549529023.jpg",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea0158afcdca327c86979c6",
+        "title": "Come As You Are",
+        "path": "songs/res_1af48d9cec33865319539f9d36d9412d_full_9e0052c6d7da_1587549578025_be269c031eb5_1587549578025.mp3",
+        "photo_path": "images/res_1af48d9cec33865319539f9d36d9412d_full_9e0052c6d7da_1587549578025.jpg",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea015abfcdca327c86979c7",
+        "title": "Breed",
+        "path": "songs/res_1af48d9cec33865319539f9d36d9412d_full_bc3058e8e580_1587549611456_34464a8fa02a_1587549611456.mp3",
+        "photo_path": "images/res_1af48d9cec33865319539f9d36d9412d_full_bc3058e8e580_1587549611456.jpg",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea015cdfcdca327c86979c8",
+        "title": "Lithium",
+        "path": "songs/res_1af48d9cec33865319539f9d36d9412d_full_88e85a733c95_1587549645740_1ee27de080e9_1587549645740.mp3",
+        "photo_path": "images/res_1af48d9cec33865319539f9d36d9412d_full_88e85a733c95_1587549645740.jpg",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea01604fcdca327c86979c9",
+        "title": "Polly",
+        "path": "songs/res_1af48d9cec33865319539f9d36d9412d_full_cf23c4415656_1587549700124_5603f7c83a4f_1587549700124.mp3",
+        "photo_path": "images/res_1af48d9cec33865319539f9d36d9412d_full_cf23c4415656_1587549700124.jpg",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea0163efcdca327c86979ca",
+        "title": "Stay Away",
+        "path": "songs/res_1af48d9cec33865319539f9d36d9412d_full_b8b670fa8762_1587549758782_2df88268faa9_1587549758782.mp3",
+        "photo_path": "images/res_1af48d9cec33865319539f9d36d9412d_full_b8b670fa8762_1587549758782.jpg",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea01661fcdca327c86979cb",
+        "title": "On a Plain",
+        "path": "songs/res_1af48d9cec33865319539f9d36d9412d_full_4f71d890eff4_1587549793791_bfa27f020bb9_1587549793791.mp3",
+        "photo_path": "images/res_1af48d9cec33865319539f9d36d9412d_full_4f71d890eff4_1587549793791.jpg",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea0167ffcdca327c86979cc",
+        "title": "Something In The Way",
+        "path": "songs/res_1af48d9cec33865319539f9d36d9412d_full_f9a9483f8a60_1587549823622_4d769ead6520_1587549823622.mp3",
+        "photo_path": "images/res_1af48d9cec33865319539f9d36d9412d_full_f9a9483f8a60_1587549823622.jpg",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea016dffcdca327c86979cd",
+        "title": "The Man Who Sold The World",
+        "path": "songs/artworks-000008096162-t2uwhk-t500x500_8e1ec3f2a824_1587549919196_8fc8ef03c6b7_1587549919197.mp3",
+        "photo_path": "images/artworks-000008096162-t2uwhk-t500x500_8e1ec3f2a824_1587549919196.jpg",
+        "artist": "Nirvana",
+        "album": "-",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea01823fcdca327c86979d0",
+        "title": "Welcome To The Jungle",
+        "path": "songs/91Zs9bMMAaL_11a71f567bd6_1587550243106_7d142fe72775_1587550243106.mp3",
+        "photo_path": "images/91Zs9bMMAaL_11a71f567bd6_1587550243106._SX466_",
+        "artist": "Guns N' Roses",
+        "album": "Appetite for Destruction",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea01847fcdca327c86979d1",
+        "title": "It's So Easy",
+        "path": "songs/91Zs9bMMAaL_14065b1108f4_1587550279087_c36f456578b4_1587550279087.mp3",
+        "photo_path": "images/91Zs9bMMAaL_14065b1108f4_1587550279087._SX466_",
+        "artist": "Guns N' Roses",
+        "album": "Appetite for Destruction",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea01873fcdca327c86979d2",
+        "title": "Nightrain",
+        "path": "songs/91Zs9bMMAaL_632acfa19df5_1587550323306_0a2f51c779b2_1587550323306.mp3",
+        "photo_path": "images/91Zs9bMMAaL_632acfa19df5_1587550323306._SX466_",
+        "artist": "Guns N' Roses",
+        "album": "Appetite for Destruction",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea01893fcdca327c86979d3",
+        "title": "Paradise City",
+        "path": "songs/91Zs9bMMAaL_aff44edcdb3a_1587550355364_c5e45ded696d_1587550355364.mp3",
+        "photo_path": "images/91Zs9bMMAaL_aff44edcdb3a_1587550355364._SX466_",
+        "artist": "Guns N' Roses",
+        "album": "Appetite for Destruction",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea018b3fcdca327c86979d4",
+        "title": "Think About You",
+        "path": "songs/91Zs9bMMAaL_68602ac97aad_1587550387261_b62a966df037_1587550387262.mp3",
+        "photo_path": "images/91Zs9bMMAaL_68602ac97aad_1587550387261._SX466_",
+        "artist": "Guns N' Roses",
+        "album": "Appetite for Destruction",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea018e3fcdca327c86979d5",
+        "title": "Sweet Child O' Mine",
+        "path": "songs/91Zs9bMMAaL_d5d8ebe6ee0f_1587550435713_d81e770dcf3f_1587550435713.mp3",
+        "photo_path": "images/91Zs9bMMAaL_d5d8ebe6ee0f_1587550435713._SX466_",
+        "artist": "Guns N' Roses",
+        "album": "Appetite for Destruction",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea01913fcdca327c86979d6",
+        "title": "Rocket Queen",
+        "path": "songs/91Zs9bMMAaL_e5142e86c506_1587550483119_6dbef590e094_1587550483120.mp3",
+        "photo_path": "images/91Zs9bMMAaL_e5142e86c506_1587550483119._SX466_",
+        "artist": "Guns N' Roses",
+        "album": "Appetite for Destruction",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea019b7fcdca327c86979d7",
+        "title": "Don't Cry",
+        "path": "songs/ab67616d0000b2731fd3e100e6a1f02caa229fe4_fce466781f14_1587550647865_2272b97abfd0_1587550647865.mp3",
+        "photo_path": "images/ab67616d0000b2731fd3e100e6a1f02caa229fe4_fce466781f14_1587550647865.jpg",
+        "artist": "Guns N' Roses",
+        "album": "-",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea01c5bfcdca327c86979da",
+        "title": "Indigo",
+        "path": "songs/71WR7mTL7BL_4b46fab063f1_1587551323389_0c0bbaff6d7f_1587551323389.mp3",
+        "photo_path": "images/71WR7mTL7BL_4b46fab063f1_1587551323389._AC_SL1200_",
+        "artist": "Chris Brown",
+        "album": "Indigo",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea01c82fcdca327c86979db",
+        "title": "Back To Love",
+        "path": "songs/71WR7mTL7BL_05e816cfee87_1587551362125_80b627c7c926_1587551362125.mp3",
+        "photo_path": "images/71WR7mTL7BL_05e816cfee87_1587551362125._AC_SL1200_",
+        "artist": "Chris Brown",
+        "album": "Indigo",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea01cabfcdca327c86979dc",
+        "title": "Come Together",
+        "path": "songs/71WR7mTL7BL_76451bb3e540_1587551403883_5ce5c4f8c948_1587551403884. H",
+        "photo_path": "images/71WR7mTL7BL_76451bb3e540_1587551403883._AC_SL1200_",
+        "artist": "Chris Brown",
+        "album": "Indigo",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea01ccdfcdca327c86979dd",
+        "title": "Temporary Lover",
+        "path": "songs/71WR7mTL7BL_91769e660a89_1587551437690_fd7aff6e9c3d_1587551437691. Lil Jon",
+        "photo_path": "images/71WR7mTL7BL_91769e660a89_1587551437690._AC_SL1200_",
+        "artist": "Chris Brown",
+        "album": "Indigo",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea01cf3fcdca327c86979de",
+        "title": "Emerald",
+        "path": "songs/71WR7mTL7BL_ac8016fb162f_1587551475927_56972840f283_1587551475927. Juvenile, Juicy J",
+        "photo_path": "images/71WR7mTL7BL_ac8016fb162f_1587551475927._AC_SL1200_",
+        "artist": "Chris Brown",
+        "album": "Indigo",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea01d1cfcdca327c86979df",
+        "title": "Wobble Up",
+        "path": "songs/71WR7mTL7BL_1acaa5661916_1587551516611_b45d96fb3130_1587551516612. Nicki Minaj, G-Eazy",
+        "photo_path": "images/71WR7mTL7BL_1acaa5661916_1587551516611._AC_SL1200_",
+        "artist": "Chris Brown",
+        "album": "Indigo",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea01d43fcdca327c86979e0",
+        "title": "Need A Stack",
+        "path": "songs/71WR7mTL7BL_b66bfba14934_1587551555352_bafb1a88c7b4_1587551555353. Lil Wayne, Joyner Lucas",
+        "photo_path": "images/71WR7mTL7BL_b66bfba14934_1587551555352._AC_SL1200_",
+        "artist": "Chris Brown",
+        "album": "Indigo",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea01d61fcdca327c86979e1",
+        "title": "Heat",
+        "path": "songs/71WR7mTL7BL_577ce1cb8f0d_1587551585672_c6f3853b74d9_1587551585672. Gunna",
+        "photo_path": "images/71WR7mTL7BL_577ce1cb8f0d_1587551585672._AC_SL1200_",
+        "artist": "Chris Brown",
+        "album": "Indigo",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea01d7cfcdca327c86979e2",
+        "title": "No Guidance",
+        "path": "songs/71WR7mTL7BL_c4c9f2c9b32a_1587551612001_9645bd146989_1587551612001. Drake",
+        "photo_path": "images/71WR7mTL7BL_c4c9f2c9b32a_1587551612001._AC_SL1200_",
+        "artist": "Chris Brown",
+        "album": "Indigo",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea01da1fcdca327c86979e3",
+        "title": "Undecided",
+        "path": "songs/71WR7mTL7BL_88777662a81a_1587551649918_89cef54eb707_1587551649918.mp3",
+        "photo_path": "images/71WR7mTL7BL_88777662a81a_1587551649918._AC_SL1200_",
+        "artist": "Chris Brown",
+        "album": "Indigo",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea01e26fcdca327c86979e4",
+        "title": "Stranger Things",
+        "path": "songs/ab67616d0000b27399c3deac18b729b5d5a8492f_981dfe695a92_1587551782855_8b4f086acd84_1587551782855.mp3",
+        "photo_path": "images/ab67616d0000b27399c3deac18b729b5d5a8492f_981dfe695a92_1587551782855.jpg",
+        "artist": "Chris Brown",
+        "album": "-",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea01f8afcdca327c86979e7",
+        "title": "Come Back to Earth",
+        "path": "songs/unnamed_20dbe0898b09_1587552138428_8d76f35dd4e9_1587552138428.mp3",
+        "photo_path": "images/unnamed_20dbe0898b09_1587552138428.jpg",
+        "artist": "Mac Miller",
+        "album": "Swimming",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea01fb3fcdca327c86979e8",
+        "title": "Hurt Feelings",
+        "path": "songs/unnamed_9e234193a9c4_1587552179753_1cb23bb61d83_1587552179753.mp3",
+        "photo_path": "images/unnamed_9e234193a9c4_1587552179753.jpg",
+        "artist": "Mac Miller",
+        "album": "Swimming",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea01fdafcdca327c86979e9",
+        "title": "Perfecto",
+        "path": "songs/unnamed_aff17ad7615a_1587552218721_7968795c5e28_1587552218721.mp3",
+        "photo_path": "images/unnamed_aff17ad7615a_1587552218721.jpg",
+        "artist": "Mac Miller",
+        "album": "Swimming",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea01ffbfcdca327c86979ea",
+        "title": "Self Care",
+        "path": "songs/unnamed_0681c9c7fa7e_1587552251017_1affb200fb22_1587552251017.mp3",
+        "photo_path": "images/unnamed_0681c9c7fa7e_1587552251017.jpg",
+        "artist": "Mac Miller",
+        "album": "Swimming",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea0202efcdca327c86979eb",
+        "title": "Wings",
+        "path": "songs/unnamed_a06675a32f46_1587552302775_b641ace0d77f_1587552302776.mp3",
+        "photo_path": "images/unnamed_a06675a32f46_1587552302775.jpg",
+        "artist": "Mac Miller",
+        "album": "Swimming",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02046fcdca327c86979ec",
+        "title": "Ladders",
+        "path": "songs/unnamed_77deb425ebe5_1587552326459_558a1c9147c7_1587552326460.mp3",
+        "photo_path": "images/unnamed_77deb425ebe5_1587552326459.jpg",
+        "artist": "Mac Miller",
+        "album": "Swimming",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02061fcdca327c86979ed",
+        "title": "Small Worlds",
+        "path": "songs/unnamed_af0628845e3c_1587552353971_410e60458cfc_1587552353971.mp3",
+        "photo_path": "images/unnamed_af0628845e3c_1587552353971.jpg",
+        "artist": "Mac Miller",
+        "album": "Swimming",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02082fcdca327c86979ee",
+        "title": "Dunno",
+        "path": "songs/unnamed_269af7bc492b_1587552386484_d06c0998941e_1587552386485.mp3",
+        "photo_path": "images/unnamed_269af7bc492b_1587552386484.jpg",
+        "artist": "Mac Miller",
+        "album": "Swimming",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea020acfcdca327c86979ef",
+        "title": "Jet Fuel",
+        "path": "songs/unnamed_81251a71f698_1587552428098_0c56e6b5e13a_1587552428098.mp3",
+        "photo_path": "images/unnamed_81251a71f698_1587552428098.jpg",
+        "artist": "Mac Miller",
+        "album": "Swimming",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea020ccfcdca327c86979f0",
+        "title": "So It Goes",
+        "path": "songs/unnamed_dae3ce1aa732_1587552460609_08f6de605a32_1587552460610.mp3",
+        "photo_path": "images/unnamed_dae3ce1aa732_1587552460609.jpg",
+        "artist": "Mac Miller",
+        "album": "Swimming",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02117fcdca327c86979f1",
+        "title": "Stay",
+        "path": "songs/90ac108ffd303212d5c183737c4cc1c0_466b9620a8f9_1587552535107_dc160ccdc1d3_1587552535107.mp3",
+        "photo_path": "images/90ac108ffd303212d5c183737c4cc1c0_466b9620a8f9_1587552535107.1000x1000x1",
+        "artist": "Mac Miller",
+        "album": "-",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea0239ffcdca327c86979f4",
+        "title": "Consideration",
+        "path": "songs/Rihanna_-_Anti_4ee3732f6745_1587553183131_7c991993feee_1587553183132.mp3",
+        "photo_path": "images/Rihanna_-_Anti_4ee3732f6745_1587553183131.png",
+        "artist": "Rihanna",
+        "album": "Anti",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea023c3fcdca327c86979f5",
+        "title": "Kiss It Better",
+        "path": "songs/Rihanna_-_Anti_c9415ec375b8_1587553219850_3bdf83d8b537_1587553219850.mp3",
+        "photo_path": "images/Rihanna_-_Anti_c9415ec375b8_1587553219850.png",
+        "artist": "Rihanna",
+        "album": "Anti",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea023e9fcdca327c86979f6",
+        "title": "Work",
+        "path": "songs/Rihanna_-_Anti_42acf6ccfc50_1587553257614_b49c6139354e_1587553257614. Drake) - Rihanna",
+        "photo_path": "images/Rihanna_-_Anti_42acf6ccfc50_1587553257614.png",
+        "artist": "Rihanna",
+        "album": "Anti",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02401fcdca327c86979f7",
+        "title": "Desperado",
+        "path": "songs/Rihanna_-_Anti_e1af6f19e33e_1587553281769_37395c9b6e71_1587553281769.mp3",
+        "photo_path": "images/Rihanna_-_Anti_e1af6f19e33e_1587553281769.png",
+        "artist": "Rihanna",
+        "album": "Anti",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea0241dfcdca327c86979f8",
+        "title": "Needed Me",
+        "path": "songs/Rihanna_-_Anti_91c02f6f7de9_1587553309095_2c26d7f6992f_1587553309095.mp3",
+        "photo_path": "images/Rihanna_-_Anti_91c02f6f7de9_1587553309095.png",
+        "artist": "Rihanna",
+        "album": "Anti",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea0243ffcdca327c86979f9",
+        "title": "Yeah, I Said It",
+        "path": "songs/Rihanna_-_Anti_f88ba0606684_1587553343148_089ceac0bd4d_1587553343148.mp3",
+        "photo_path": "images/Rihanna_-_Anti_f88ba0606684_1587553343148.png",
+        "artist": "Rihanna",
+        "album": "Anti",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02458fcdca327c86979fa",
+        "title": "Same Ol' Mistakes",
+        "path": "songs/Rihanna_-_Anti_846bbb5e059c_1587553368111_0c252219e94b_1587553368112.mp3",
+        "photo_path": "images/Rihanna_-_Anti_846bbb5e059c_1587553368111.png",
+        "artist": "Rihanna",
+        "album": "Anti",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea0247bfcdca327c86979fb",
+        "title": "Never Ending",
+        "path": "songs/Rihanna_-_Anti_fa077d6968ec_1587553403495_d11104760cdd_1587553403495.mp3",
+        "photo_path": "images/Rihanna_-_Anti_fa077d6968ec_1587553403495.png",
+        "artist": "Rihanna",
+        "album": "Anti",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02496fcdca327c86979fc",
+        "title": "Close To You",
+        "path": "songs/Rihanna_-_Anti_7d165e24dc9c_1587553430583_b40df3f3452e_1587553430583.mp3",
+        "photo_path": "images/Rihanna_-_Anti_7d165e24dc9c_1587553430583.png",
+        "artist": "Rihanna",
+        "album": "Anti",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea024affcdca327c86979fd",
+        "title": "Sex With Me",
+        "path": "songs/Rihanna_-_Anti_148f93453ff0_1587553455325_0501d3201391_1587553455325.mp3",
+        "photo_path": "images/Rihanna_-_Anti_148f93453ff0_1587553455325.png",
+        "artist": "Rihanna",
+        "album": "Anti",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02509fcdca327c86979fe",
+        "title": "Diamonds",
+        "path": "songs/Diamonds_-_Rihanna_cf6850d5a4e4_1587553545268_22536333923c_1587553545268.mp3",
+        "photo_path": "images/Diamonds_-_Rihanna_cf6850d5a4e4_1587553545268.png",
+        "artist": "Rihanna",
+        "album": "-",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02a8afcdca327c8697a01",
+        "title": "Bad Luck",
+        "path": "songs/ab67616d0000b273b361ce46dbadbf8a11081b60_39e18f60d628_1587554954045_8134f3bdd1d2_1587554954046.mp3",
+        "photo_path": "images/ab67616d0000b273b361ce46dbadbf8a11081b60_39e18f60d628_1587554954045.jpg",
+        "artist": "Khalid",
+        "album": "Free Spirit",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02ac6fcdca327c8697a02",
+        "title": "My Bad",
+        "path": "songs/ab67616d0000b273b361ce46dbadbf8a11081b60_5333ed7646b1_1587555014305_c2f3e30355d8_1587555014305.mp3",
+        "photo_path": "images/ab67616d0000b273b361ce46dbadbf8a11081b60_5333ed7646b1_1587555014305.jpg",
+        "artist": "Khalid",
+        "album": "Free Spirit",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02ad9fcdca327c8697a03",
+        "title": "Better",
+        "path": "songs/ab67616d0000b273b361ce46dbadbf8a11081b60_5e03d93b32e1_1587555033248_7a7bae0e9273_1587555033248.mp3",
+        "photo_path": "images/ab67616d0000b273b361ce46dbadbf8a11081b60_5e03d93b32e1_1587555033248.jpg",
+        "artist": "Khalid",
+        "album": "Free Spirit",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02aeafcdca327c8697a04",
+        "title": "Talk",
+        "path": "songs/ab67616d0000b273b361ce46dbadbf8a11081b60_4c1d4c58ff55_1587555050860_1248657c24c5_1587555050860.mp3",
+        "photo_path": "images/ab67616d0000b273b361ce46dbadbf8a11081b60_4c1d4c58ff55_1587555050860.jpg",
+        "artist": "Khalid",
+        "album": "Free Spirit",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02afffcdca327c8697a05",
+        "title": "Right Back",
+        "path": "songs/ab67616d0000b273b361ce46dbadbf8a11081b60_30a6e4c2bf99_1587555071252_350a3422a8ac_1587555071252.mp3",
+        "photo_path": "images/ab67616d0000b273b361ce46dbadbf8a11081b60_30a6e4c2bf99_1587555071252.jpg",
+        "artist": "Khalid",
+        "album": "Free Spirit",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02b14fcdca327c8697a06",
+        "title": "Don't Pretend",
+        "path": "songs/ab67616d0000b273b361ce46dbadbf8a11081b60_4f827dbf8bc9_1587555092682_c8a8107ffb8e_1587555092682. SAFE (Official Audio)",
+        "photo_path": "images/ab67616d0000b273b361ce46dbadbf8a11081b60_4f827dbf8bc9_1587555092682.jpg",
+        "artist": "Khalid & SAFE",
+        "album": "Free Spirit",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02b26fcdca327c8697a07",
+        "title": "Paradise",
+        "path": "songs/ab67616d0000b273b361ce46dbadbf8a11081b60_bed8f8213707_1587555110015_d54693b2f72a_1587555110015.mp3",
+        "photo_path": "images/ab67616d0000b273b361ce46dbadbf8a11081b60_bed8f8213707_1587555110015.jpg",
+        "artist": "Khalid",
+        "album": "Free Spirit",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02b3cfcdca327c8697a08",
+        "title": "Hundred",
+        "path": "songs/ab67616d0000b273b361ce46dbadbf8a11081b60_4ccbe6cbd53b_1587555132509_45ce6a3042e5_1587555132510.mp3",
+        "photo_path": "images/ab67616d0000b273b361ce46dbadbf8a11081b60_4ccbe6cbd53b_1587555132509.jpg",
+        "artist": "Khalid",
+        "album": "Free Spirit",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02b5ffcdca327c8697a0a",
+        "title": "Free Spirit",
+        "path": "songs/ab67616d0000b273b361ce46dbadbf8a11081b60_c13d0a14bc07_1587555167244_a0bee80492a4_1587555167244.mp3",
+        "photo_path": "images/ab67616d0000b273b361ce46dbadbf8a11081b60_c13d0a14bc07_1587555167244.jpg",
+        "artist": "Khalid",
+        "album": "Free Spirit",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02be5fcdca327c8697a0b",
+        "title": "Location",
+        "path": "songs/884998b85b3bb541ac669789724a5a92_50ab71c20c2d_1587555301203_fc77577495e4_1587555301204.mp3",
+        "photo_path": "images/884998b85b3bb541ac669789724a5a92_50ab71c20c2d_1587555301203.jpg",
+        "artist": "Khalid",
+        "album": "-",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea02cb7fcdca327c8697a0e",
+        "title": "So What",
+        "path": "songs/ab67616d0000b2730ebc17239b6b18ba88cfb8ca_8132c56c8812_1587555511706_b030000ea935_1587555511706.mp3",
+        "photo_path": "images/ab67616d0000b2730ebc17239b6b18ba88cfb8ca_8132c56c8812_1587555511706.jpg",
+        "artist": "Miles Davis",
+        "album": "Kind of Blue",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea02ce2fcdca327c8697a0f",
+        "title": "Freddie Freeloader",
+        "path": "songs/ab67616d0000b2730ebc17239b6b18ba88cfb8ca_075cb7c9bbf0_1587555554971_d0b783d7f53b_1587555554971.mp3",
+        "photo_path": "images/ab67616d0000b2730ebc17239b6b18ba88cfb8ca_075cb7c9bbf0_1587555554971.jpg",
+        "artist": "Miles Davis",
+        "album": "Kind of Blue",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea02cf4fcdca327c8697a10",
+        "title": "Blue In Green",
+        "path": "songs/ab67616d0000b2730ebc17239b6b18ba88cfb8ca_e9a59ca228ee_1587555572600_9e296e423bbb_1587555572600.mp3",
+        "photo_path": "images/ab67616d0000b2730ebc17239b6b18ba88cfb8ca_e9a59ca228ee_1587555572600.jpg",
+        "artist": "Miles Davis",
+        "album": "Kind of Blue",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea02d0cfcdca327c8697a11",
+        "title": "All Blues",
+        "path": "songs/ab67616d0000b2730ebc17239b6b18ba88cfb8ca_9ed688ed6ecb_1587555596086_09a09cb0cb91_1587555596086.mp3",
+        "photo_path": "images/ab67616d0000b2730ebc17239b6b18ba88cfb8ca_9ed688ed6ecb_1587555596086.jpg",
+        "artist": "Miles Davis",
+        "album": "Kind of Blue",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea02d2efcdca327c8697a12",
+        "title": "Flamenco Sketches",
+        "path": "songs/ab67616d0000b2730ebc17239b6b18ba88cfb8ca_4e2aa48fd4da_1587555630224_5462cae88608_1587555630224.mp3",
+        "photo_path": "images/ab67616d0000b2730ebc17239b6b18ba88cfb8ca_4e2aa48fd4da_1587555630224.jpg",
+        "artist": "Miles Davis",
+        "album": "Kind of Blue",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea02f81fcdca327c8697a15",
+        "title": "Ezekiel Saw De Wheel",
+        "path": "songs/R-2721218-1514183917-9642_b60a975b42ae_1587556225414_c3b59aa714ac_1587556225414.mp3",
+        "photo_path": "images/R-2721218-1514183917-9642_b60a975b42ae_1587556225414.jpeg",
+        "artist": "Louis Armstrong",
+        "album": "Louis and the Good Book",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea02f9afcdca327c8697a16",
+        "title": "Rock my soul",
+        "path": "songs/R-2721218-1514183917-9642_5046ec35d1d6_1587556250259_09e55e18298b_1587556250259.mp3",
+        "photo_path": "images/R-2721218-1514183917-9642_5046ec35d1d6_1587556250259.jpeg",
+        "artist": "Louis Armstrong",
+        "album": "Louis and the Good Book",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea02fc3fcdca327c8697a17",
+        "title": "On My Way",
+        "path": "songs/R-2721218-1514183917-9642_c30f786f55fd_1587556291148_026438c142bf_1587556291149.mp3",
+        "photo_path": "images/R-2721218-1514183917-9642_c30f786f55fd_1587556291148.jpeg",
+        "artist": "Louis Armstrong",
+        "album": "Louis and the Good Book",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea02fd9fcdca327c8697a18",
+        "title": "Down By the Riverside",
+        "path": "songs/R-2721218-1514183917-9642_e9afaed0a9c5_1587556313194_8c6fed566ae7_1587556313194.mp3",
+        "photo_path": "images/R-2721218-1514183917-9642_e9afaed0a9c5_1587556313194.jpeg",
+        "artist": "Louis Armstrong",
+        "album": "Louis and the Good Book",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea02fedfcdca327c8697a19",
+        "title": "Swing Low, Sweet Chariot",
+        "path": "songs/R-2721218-1514183917-9642_c688036d3255_1587556333675_88562202506c_1587556333675.mp3",
+        "photo_path": "images/R-2721218-1514183917-9642_c688036d3255_1587556333675.jpeg",
+        "artist": "Louis Armstrong",
+        "album": "Louis and the Good Book",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea03007fcdca327c8697a1a",
+        "title": "Sometimes I Feel Like A Motherless Child",
+        "path": "songs/R-2721218-1514183917-9642_3680a5e91609_1587556359276_e7ea68ca43ea_1587556359276.mp3",
+        "photo_path": "images/R-2721218-1514183917-9642_3680a5e91609_1587556359276.jpeg",
+        "artist": "Louis Armstrong",
+        "album": "Louis and the Good Book",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea03032fcdca327c8697a1b",
+        "title": "Jonah and the Whale",
+        "path": "songs/R-2721218-1514183917-9642_ec420cc4891e_1587556402347_2c5ebe2b0048_1587556402347.mp3",
+        "photo_path": "images/R-2721218-1514183917-9642_ec420cc4891e_1587556402347.jpeg",
+        "artist": "Louis Armstrong",
+        "album": "Louis and the Good Book",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea03060fcdca327c8697a1c",
+        "title": "Didn't it Rain",
+        "path": "songs/R-2721218-1514183917-9642_835a889e63e8_1587556448334_c1bef7ff79bd_1587556448334.mp3",
+        "photo_path": "images/R-2721218-1514183917-9642_835a889e63e8_1587556448334.jpeg",
+        "artist": "Louis Armstrong",
+        "album": "Louis and the Good Book",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea03071fcdca327c8697a1d",
+        "title": "This train",
+        "path": "songs/R-2721218-1514183917-9642_5f13fa64ac28_1587556465648_ac3a6e32f57b_1587556465649.mp3",
+        "photo_path": "images/R-2721218-1514183917-9642_5f13fa64ac28_1587556465648.jpeg",
+        "artist": "Louis Armstrong",
+        "album": "Louis and the Good Book",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea0319afcdca327c8697a20",
+        "title": "Where are you",
+        "path": "songs/0222b81f2ac4cb591a4263a5d06811d0_44e01c9854cb_1587556762955_6b0cf9a62746_1587556762956.mp3",
+        "photo_path": "images/0222b81f2ac4cb591a4263a5d06811d0_44e01c9854cb_1587556762955.1000x1000x1",
+        "artist": "Frank Sinatra",
+        "album": "Where are you",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea031b2fcdca327c8697a21",
+        "title": "Maybe You'll Be There",
+        "path": "songs/0222b81f2ac4cb591a4263a5d06811d0_73656457eabd_1587556786995_d36195337fa3_1587556786995.mp3",
+        "photo_path": "images/0222b81f2ac4cb591a4263a5d06811d0_73656457eabd_1587556786995.1000x1000x1",
+        "artist": "Frank Sinatra",
+        "album": "Where are you",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea031e8fcdca327c8697a22",
+        "title": "I Cover The Waterfront",
+        "path": "songs/0222b81f2ac4cb591a4263a5d06811d0_003562353884_1587556840114_1ea94a561d39_1587556840115.mp3",
+        "photo_path": "images/0222b81f2ac4cb591a4263a5d06811d0_003562353884_1587556840114.1000x1000x1",
+        "artist": "Frank Sinatra",
+        "album": "Where are you",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea0323bfcdca327c8697a23",
+        "title": "Laura",
+        "path": "songs/0222b81f2ac4cb591a4263a5d06811d0_214861444acd_1587556923343_bb1638f89020_1587556923343.mp3",
+        "photo_path": "images/0222b81f2ac4cb591a4263a5d06811d0_214861444acd_1587556923343.1000x1000x1",
+        "artist": "Frank Sinatra",
+        "album": "Where are you",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea0325bfcdca327c8697a24",
+        "title": "Lonely Town",
+        "path": "songs/0222b81f2ac4cb591a4263a5d06811d0_7aadcac97d47_1587556955892_8d016110c81c_1587556955892.mp3",
+        "photo_path": "images/0222b81f2ac4cb591a4263a5d06811d0_7aadcac97d47_1587556955892.1000x1000x1",
+        "artist": "Frank Sinatra",
+        "album": "Where are you",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea03283fcdca327c8697a25",
+        "title": "Autumn Leaves",
+        "path": "songs/0222b81f2ac4cb591a4263a5d06811d0_6d888a3423a6_1587556995321_4fd670983b98_1587556995321.mp3",
+        "photo_path": "images/0222b81f2ac4cb591a4263a5d06811d0_6d888a3423a6_1587556995321.1000x1000x1",
+        "artist": "Frank Sinatra",
+        "album": "Where are you",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea0329dfcdca327c8697a26",
+        "title": "I'm A Fool To Want You",
+        "path": "songs/0222b81f2ac4cb591a4263a5d06811d0_c7decbb35457_1587557021895_3c071c46ece8_1587557021895.mp3",
+        "photo_path": "images/0222b81f2ac4cb591a4263a5d06811d0_c7decbb35457_1587557021895.1000x1000x1",
+        "artist": "Frank Sinatra",
+        "album": "Where are you",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea032c0fcdca327c8697a27",
+        "title": "I Think Of You",
+        "path": "songs/0222b81f2ac4cb591a4263a5d06811d0_6c29891eafa5_1587557056948_b32a3fb295b9_1587557056948.mp3",
+        "photo_path": "images/0222b81f2ac4cb591a4263a5d06811d0_6c29891eafa5_1587557056948.1000x1000x1",
+        "artist": "Frank Sinatra",
+        "album": "Where are you",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea03305fcdca327c8697a28",
+        "title": "Where is the One",
+        "path": "songs/0222b81f2ac4cb591a4263a5d06811d0_9558473390d1_1587557125945_82e1cdd77d17_1587557125945.mp3",
+        "photo_path": "images/0222b81f2ac4cb591a4263a5d06811d0_9558473390d1_1587557125945.1000x1000x1",
+        "artist": "Frank Sinatra",
+        "album": "Where are you",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea0337cfcdca327c8697a29",
+        "title": "L.O.V.E",
+        "path": "songs/res_e05deba358ecf40772a7d3066292d462_full_2cce22b7789d_1587557244973_9441e57cc118_1587557244973.O",
+        "photo_path": "images/res_e05deba358ecf40772a7d3066292d462_full_2cce22b7789d_1587557244973.jpg",
+        "artist": "Frank Sinatra",
+        "album": "-",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea0346dfcdca327c8697a2c",
+        "title": "How High The Moon",
+        "path": "songs/25071803117_ed8d6c631a_b_4badc49ea980_1587557485205_ac6111c297c3_1587557485205.mp3",
+        "photo_path": "images/25071803117_ed8d6c631a_b_4badc49ea980_1587557485205.jpg",
+        "artist": "Chet Baker",
+        "album": "Chet",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea03489fcdca327c8697a2d",
+        "title": "It Never Entered My Mind",
+        "path": "songs/25071803117_ed8d6c631a_b_399e0a2e74cf_1587557513694_385e81a23167_1587557513694.mp3",
+        "photo_path": "images/25071803117_ed8d6c631a_b_399e0a2e74cf_1587557513694.jpg",
+        "artist": "Chet Baker",
+        "album": "Chet",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea034a6fcdca327c8697a2e",
+        "title": "'Tis Autumn",
+        "path": "songs/25071803117_ed8d6c631a_b_b178400d8c5f_1587557542567_13b0fac28202_1587557542567.mp3",
+        "photo_path": "images/25071803117_ed8d6c631a_b_b178400d8c5f_1587557542567.jpg",
+        "artist": "Chet Baker",
+        "album": "Chet",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea034bafcdca327c8697a2f",
+        "title": "If You Could See Me Now",
+        "path": "songs/25071803117_ed8d6c631a_b_89d13aed964b_1587557562595_92d10a839cd9_1587557562596.mp3",
+        "photo_path": "images/25071803117_ed8d6c631a_b_89d13aed964b_1587557562595.jpg",
+        "artist": "Chet Baker",
+        "album": "Chet",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea034d4fcdca327c8697a30",
+        "title": "September song",
+        "path": "songs/25071803117_ed8d6c631a_b_7f604eea070a_1587557588846_2f810ebf31ab_1587557588846.mp3",
+        "photo_path": "images/25071803117_ed8d6c631a_b_7f604eea070a_1587557588846.jpg",
+        "artist": "Chet Baker",
+        "album": "Chet",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea034e6fcdca327c8697a31",
+        "title": "You'd Be So Nice To Come Home To",
+        "path": "songs/25071803117_ed8d6c631a_b_1e57f6780847_1587557606696_bd579858e9d5_1587557606696.mp3",
+        "photo_path": "images/25071803117_ed8d6c631a_b_1e57f6780847_1587557606696.jpg",
+        "artist": "Chet Baker",
+        "album": "Chet",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea034f8fcdca327c8697a32",
+        "title": "Time On My Hands",
+        "path": "songs/25071803117_ed8d6c631a_b_11fb983635d4_1587557624539_741bce1c7ccd_1587557624539.mp3",
+        "photo_path": "images/25071803117_ed8d6c631a_b_11fb983635d4_1587557624539.jpg",
+        "artist": "Chet Baker",
+        "album": "Chet",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea0352afcdca327c8697a33",
+        "title": "Early Morning Mood",
+        "path": "songs/25071803117_ed8d6c631a_b_966bb1761aa8_1587557674357_caba201b2099_1587557674357.mp3",
+        "photo_path": "images/25071803117_ed8d6c631a_b_966bb1761aa8_1587557674357.jpg",
+        "artist": "Chet Baker",
+        "album": "Chet",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea035aefcdca327c8697a34",
+        "title": "Almost Blue",
+        "path": "songs/25071803117_ed8d6c631a_b_5cf9acdca231_1587557806156_13e0b89e77ac_1587557806156.mp3",
+        "photo_path": "images/chet.jpg",
+        "artist": "Chet Baker",
+        "album": "-",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea036f3fcdca327c8697a37",
+        "title": "Blue Train",
+        "path": "songs/51rILD0DI0L_ab22868389a9_1587558131268_5239aa3926c6_1587558131268.mp3",
+        "photo_path": "images/51rILD0DI0L_ab22868389a9_1587558131268.jpg",
+        "artist": "John Coltrane",
+        "album": "Blue Train",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea03713fcdca327c8697a38",
+        "title": "Moment's Notice",
+        "path": "songs/51rILD0DI0L_168310494bb6_1587558163699_7181b336cec8_1587558163699.mp3",
+        "photo_path": "images/51rILD0DI0L_168310494bb6_1587558163699.jpg",
+        "artist": "John Coltrane",
+        "album": "Blue Train",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea03741fcdca327c8697a39",
+        "title": "Locomotion",
+        "path": "songs/51rILD0DI0L_7699fd515b4b_1587558209064_26cb50be4fa1_1587558209065.mp3",
+        "photo_path": "images/51rILD0DI0L_7699fd515b4b_1587558209064.jpg",
+        "artist": "John Coltrane",
+        "album": "Blue Train",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea03787fcdca327c8697a3a",
+        "title": "Lazy Bird",
+        "path": "songs/51rILD0DI0L_c231796a9255_1587558279260_c861c4ad7cb5_1587558279260.mp3",
+        "photo_path": "images/51rILD0DI0L_c231796a9255_1587558279260.jpg",
+        "artist": "John Coltrane",
+        "album": "Blue Train",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea03796fcdca327c8697a3b",
+        "title": "I'm Old Fashioned",
+        "path": "songs/51rILD0DI0L_ac7d2166b26b_1587558294458_def08ed1fcf4_1587558294458.mp3",
+        "photo_path": "images/51rILD0DI0L_ac7d2166b26b_1587558294458.jpg",
+        "artist": "John Coltrane",
+        "album": "Blue Train",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea03883fcdca327c8697a3e",
+        "title": "Aint It Funky Now",
+        "path": "songs/81Q8WwnuWcL_9d7d700bb199_1587558531483_09dac2166a00_1587558531483.mp3",
+        "photo_path": "images/81Q8WwnuWcL_9d7d700bb199_1587558531483._SL1417_",
+        "artist": "James Brown",
+        "album": "Ain't It Funky",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea038c4fcdca327c8697a3f",
+        "title": "Fat Wood",
+        "path": "songs/81Q8WwnuWcL_96c6133aeb29_1587558596642_e5bda49bc85b_1587558596642.mp3",
+        "photo_path": "images/81Q8WwnuWcL_96c6133aeb29_1587558596642._SL1417_",
+        "artist": "James Brown",
+        "album": "Ain't It Funky",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea038e1fcdca327c8697a40",
+        "title": "Nose Job",
+        "path": "songs/81Q8WwnuWcL_9a59c5d5c114_1587558625680_8eec70d27cd3_1587558625680.mp3",
+        "photo_path": "images/81Q8WwnuWcL_9a59c5d5c114_1587558625680._SL1417_",
+        "artist": "James Brown",
+        "album": "Ain't It Funky",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea039cafcdca327c8697a43",
+        "title": "Let's Go Crazy",
+        "path": "songs/R-10475521-1528930172-6223_57ed96b9797b_1587558858576_0565b3c30280_1587558858576.mp3",
+        "photo_path": "images/R-10475521-1528930172-6223_57ed96b9797b_1587558858576.jpeg",
+        "artist": "Prince",
+        "album": "Purple Rain",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea039e7fcdca327c8697a44",
+        "title": "Take Me with U",
+        "path": "songs/R-10475521-1528930172-6223_cd6ea533e445_1587558887527_901b9b7825e6_1587558887527.mp3",
+        "photo_path": "images/R-10475521-1528930172-6223_cd6ea533e445_1587558887527.jpeg",
+        "artist": "Prince",
+        "album": "Purple Rain",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea039f5fcdca327c8697a45",
+        "title": "The Beautiful Ones",
+        "path": "songs/R-10475521-1528930172-6223_4aefe56514fc_1587558901761_b8614a360621_1587558901761.mp3",
+        "photo_path": "images/R-10475521-1528930172-6223_4aefe56514fc_1587558901761.jpeg",
+        "artist": "Prince",
+        "album": "Purple Rain",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03a1afcdca327c8697a46",
+        "title": "Darling Nikki",
+        "path": "songs/R-10475521-1528930172-6223_758c1b4b9ef9_1587558938987_02205fd02b66_1587558938987.mp3",
+        "photo_path": "images/R-10475521-1528930172-6223_758c1b4b9ef9_1587558938987.jpeg",
+        "artist": "Prince",
+        "album": "Purple Rain",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03a3ffcdca327c8697a47",
+        "title": "When Doves Cry",
+        "path": "songs/R-10475521-1528930172-6223_2f9f46e373c8_1587558975354_1df61fb92f1f_1587558975354.mp3",
+        "photo_path": "images/R-10475521-1528930172-6223_2f9f46e373c8_1587558975354.jpeg",
+        "artist": "Prince",
+        "album": "Purple Rain",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03a61fcdca327c8697a48",
+        "title": "I Would Die 4 U",
+        "path": "songs/R-10475521-1528930172-6223_d47dc364b4fb_1587559009159_b01f3bfe7b43_1587559009160.mp3",
+        "photo_path": "images/R-10475521-1528930172-6223_d47dc364b4fb_1587559009159.jpeg",
+        "artist": "Prince",
+        "album": "Purple Rain",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03a70fcdca327c8697a49",
+        "title": "Baby I'm a Star",
+        "path": "songs/R-10475521-1528930172-6223_c2f773819c4b_1587559024659_9ee96c258fb2_1587559024659.mp3",
+        "photo_path": "images/R-10475521-1528930172-6223_c2f773819c4b_1587559024659.jpeg",
+        "artist": "Prince",
+        "album": "Purple Rain",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03a81fcdca327c8697a4a",
+        "title": "Purple Rain",
+        "path": "songs/R-10475521-1528930172-6223_240f59a71593_1587559041905_13ac53135feb_1587559041905.mp3",
+        "photo_path": "images/R-10475521-1528930172-6223_240f59a71593_1587559041905.jpeg",
+        "artist": "Prince",
+        "album": "Purple Rain",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03abbfcdca327c8697a4b",
+        "title": "Computer Blue",
+        "path": "songs/R-10475521-1528930172-6223_14c86349ba8f_1587559099978_792ac09411c9_1587559099978.mp3",
+        "photo_path": "images/R-10475521-1528930172-6223_14c86349ba8f_1587559099978.jpeg",
+        "artist": "Prince",
+        "album": "Purple Rain",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03c34fcdca327c8697a4e",
+        "title": "Too High",
+        "path": "songs/res_3e2581572cfc3f21b68034b21a0fbe8e_full_24d264760de1_1587559476222_08fd51eb0c08_1587559476222.mp3",
+        "photo_path": "images/res_3e2581572cfc3f21b68034b21a0fbe8e_full_24d264760de1_1587559476222.jpg",
+        "artist": "Stivie Wonder",
+        "album": "Innervisions",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03c43fcdca327c8697a4f",
+        "title": "Visions",
+        "path": "songs/res_3e2581572cfc3f21b68034b21a0fbe8e_full_74966702cb6b_1587559491513_f15ec3387a9e_1587559491513.mp3",
+        "photo_path": "images/res_3e2581572cfc3f21b68034b21a0fbe8e_full_74966702cb6b_1587559491513.jpg",
+        "artist": "Stivie Wonder",
+        "album": "Innervisions",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03c7dfcdca327c8697a50",
+        "title": "Living for the City",
+        "path": "songs/res_3e2581572cfc3f21b68034b21a0fbe8e_full_b2feee42c0b5_1587559549260_73490ccdff28_1587559549260.mp3",
+        "photo_path": "images/res_3e2581572cfc3f21b68034b21a0fbe8e_full_b2feee42c0b5_1587559549260.jpg",
+        "artist": "Stivie Wonder",
+        "album": "Innervisions",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03c8cfcdca327c8697a51",
+        "title": "Golden Lady",
+        "path": "songs/res_3e2581572cfc3f21b68034b21a0fbe8e_full_375574da8e00_1587559564990_e07577ed89c9_1587559564991.mp3",
+        "photo_path": "images/res_3e2581572cfc3f21b68034b21a0fbe8e_full_375574da8e00_1587559564990.jpg",
+        "artist": "Stivie Wonder",
+        "album": "Innervisions",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03c9bfcdca327c8697a52",
+        "title": "Higher Ground",
+        "path": "songs/res_3e2581572cfc3f21b68034b21a0fbe8e_full_3938e1a34ff6_1587559579756_9ed0865517c0_1587559579756.mp3",
+        "photo_path": "images/res_3e2581572cfc3f21b68034b21a0fbe8e_full_3938e1a34ff6_1587559579756.jpg",
+        "artist": "Stivie Wonder",
+        "album": "Innervisions",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03cabfcdca327c8697a53",
+        "title": "Jesus Children Of America",
+        "path": "songs/res_3e2581572cfc3f21b68034b21a0fbe8e_full_323359eacd67_1587559595953_424c1d1aaecc_1587559595953.mp3",
+        "photo_path": "images/res_3e2581572cfc3f21b68034b21a0fbe8e_full_323359eacd67_1587559595953.jpg",
+        "artist": "Stivie Wonder",
+        "album": "Innervisions",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03cc6fcdca327c8697a54",
+        "title": "All In Love Is Fair",
+        "path": "songs/res_3e2581572cfc3f21b68034b21a0fbe8e_full_65244c4bbd83_1587559622656_683414c7cff3_1587559622656.mp3",
+        "photo_path": "images/res_3e2581572cfc3f21b68034b21a0fbe8e_full_65244c4bbd83_1587559622656.jpg",
+        "artist": "Stivie Wonder",
+        "album": "Innervisions",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03cd8fcdca327c8697a55",
+        "title": "Don't You Worry 'bout A Thing",
+        "path": "songs/res_3e2581572cfc3f21b68034b21a0fbe8e_full_6272d909bd31_1587559640400_c9281ef4150a_1587559640400.mp3",
+        "photo_path": "images/res_3e2581572cfc3f21b68034b21a0fbe8e_full_6272d909bd31_1587559640400.jpg",
+        "artist": "Stivie Wonder",
+        "album": "Innervisions",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03ce9fcdca327c8697a56",
+        "title": "He's Misstra Know-it-all",
+        "path": "songs/res_3e2581572cfc3f21b68034b21a0fbe8e_full_e92232df6338_1587559657767_b94b2e1c1971_1587559657767.mp3",
+        "photo_path": "images/res_3e2581572cfc3f21b68034b21a0fbe8e_full_e92232df6338_1587559657767.jpg",
+        "artist": "Stivie Wonder",
+        "album": "Innervisions",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03d80fcdca327c8697a58",
+        "title": "Get Dressed",
+        "path": "songs/George-Clinton-Computer-Games-album-cover-820_b355453299e5_1587559808250_1ca86e3a41cd_1587559808250.mp3",
+        "photo_path": "images/George-Clinton-Computer-Games-album-cover-820_b355453299e5_1587559808250.jpg",
+        "artist": "George Clinton",
+        "album": "Computer Games",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03da7fcdca327c8697a59",
+        "title": "Man's Best Friend",
+        "path": "songs/George-Clinton-Computer-Games-album-cover-820_7aa5503d8b5a_1587559847850_2a1a48b98d91_1587559847850.mp3",
+        "photo_path": "images/George-Clinton-Computer-Games-album-cover-820_7aa5503d8b5a_1587559847850.jpg",
+        "artist": "George Clinton",
+        "album": "Computer Games",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03dd2fcdca327c8697a5a",
+        "title": "Pot Sharing Tots",
+        "path": "songs/George-Clinton-Computer-Games-album-cover-820_bfe9f7ef48dc_1587559890991_52f96149d686_1587559890991.mp3",
+        "photo_path": "images/George-Clinton-Computer-Games-album-cover-820_bfe9f7ef48dc_1587559890991.jpg",
+        "artist": "George Clinton",
+        "album": "Computer Games",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03e26fcdca327c8697a5b",
+        "title": "Computer Games",
+        "path": "songs/George-Clinton-Computer-Games-album-cover-820_b51b8ef48cd4_1587559974934_ee21579a38eb_1587559974934.mp3",
+        "photo_path": "images/George-Clinton-Computer-Games-album-cover-820_b51b8ef48cd4_1587559974934.jpg",
+        "artist": "George Clinton",
+        "album": "Computer Games",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03e49fcdca327c8697a5c",
+        "title": "Free Alterations",
+        "path": "songs/George-Clinton-Computer-Games-album-cover-820_b69da31997e5_1587560009550_d30effa15020_1587560009550.mp3",
+        "photo_path": "images/George-Clinton-Computer-Games-album-cover-820_b69da31997e5_1587560009550.jpg",
+        "artist": "George Clinton",
+        "album": "Computer Games",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea03ecefcdca327c8697a5e",
+        "title": "One Fun At A Time",
+        "path": "songs/George-Clinton-Computer-Games-album-cover-820_1ac5daba8d7a_1587560142604_f0c1389367c4_1587560142604.mp3",
+        "photo_path": "images/George-Clinton-Computer-Games-album-cover-820_1ac5daba8d7a_1587560142604.jpg",
+        "artist": "George Clinton",
+        "album": "Computer Games",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea04066fcdca327c8697a61",
+        "title": "Urban Rapsody",
+        "path": "songs/39c040b93bccef14660982a97e8eeb15_97e55e78274a_1587560550811_05aa056bc7b1_1587560550811.mp3",
+        "photo_path": "images/39c040b93bccef14660982a97e8eeb15_97e55e78274a_1587560550811.800x800x1",
+        "artist": "Rick James",
+        "album": "Urban Rapsody",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea04087fcdca327c8697a62",
+        "title": "West Coast Thing",
+        "path": "songs/39c040b93bccef14660982a97e8eeb15_411627802c34_1587560583724_87d7216239a7_1587560583725.mp3",
+        "photo_path": "images/39c040b93bccef14660982a97e8eeb15_411627802c34_1587560583724.800x800x1",
+        "artist": "Rick James",
+        "album": "Urban Rapsody",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea040b3fcdca327c8697a63",
+        "title": "Somebody's Watching You",
+        "path": "songs/39c040b93bccef14660982a97e8eeb15_19c89d6c730a_1587560627970_99ca6e64ea25_1587560627970.mp3",
+        "photo_path": "images/39c040b93bccef14660982a97e8eeb15_19c89d6c730a_1587560627970.800x800x1",
+        "artist": "Rick James",
+        "album": "Urban Rapsody",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea040d4fcdca327c8697a64",
+        "title": "Back in you again",
+        "path": "songs/39c040b93bccef14660982a97e8eeb15_eef95f79987b_1587560660922_f28e98ad4f82_1587560660923.mp3",
+        "photo_path": "images/39c040b93bccef14660982a97e8eeb15_eef95f79987b_1587560660922.800x800x1",
+        "artist": "Rick James",
+        "album": "Urban Rapsody",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea040f0fcdca327c8697a65",
+        "title": "Turn It Out",
+        "path": "songs/39c040b93bccef14660982a97e8eeb15_b55cb81c268a_1587560688071_14854e3b17ca_1587560688071.mp3",
+        "photo_path": "images/39c040b93bccef14660982a97e8eeb15_b55cb81c268a_1587560688071.800x800x1",
+        "artist": "Rick James",
+        "album": "Urban Rapsody",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea04111fcdca327c8697a66",
+        "title": "Good ol days",
+        "path": "songs/39c040b93bccef14660982a97e8eeb15_2e3e6cbf9352_1587560721797_41501557e0f1_1587560721798.mp3",
+        "photo_path": "images/39c040b93bccef14660982a97e8eeb15_2e3e6cbf9352_1587560721797.800x800x1",
+        "artist": "Rick James & Charlie Wilson",
+        "album": "Urban Rapsody",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea04135fcdca327c8697a67",
+        "title": "Player's Way",
+        "path": "songs/39c040b93bccef14660982a97e8eeb15_d421277ce0d0_1587560757462_897e827714d5_1587560757462.mp3",
+        "photo_path": "images/39c040b93bccef14660982a97e8eeb15_d421277ce0d0_1587560757462.800x800x1",
+        "artist": "Rick James & Snoop Dogg",
+        "album": "Urban Rapsody",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea0414afcdca327c8697a68",
+        "title": "Never Say You Love Me",
+        "path": "songs/39c040b93bccef14660982a97e8eeb15_7fcff2c06471_1587560778573_98a4eca65123_1587560778573.mp3",
+        "photo_path": "images/39c040b93bccef14660982a97e8eeb15_7fcff2c06471_1587560778573.800x800x1",
+        "artist": "Rick James",
+        "album": "Urban Rapsody",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea04164fcdca327c8697a69",
+        "title": "So Soft So Wet",
+        "path": "songs/39c040b93bccef14660982a97e8eeb15_992a8e7d11d1_1587560804327_7e4572eec0c6_1587560804327.mp3",
+        "photo_path": "images/39c040b93bccef14660982a97e8eeb15_992a8e7d11d1_1587560804327.800x800x1",
+        "artist": "Rick James",
+        "album": "Urban Rapsody",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea041a7fcdca327c8697a6a",
+        "title": "Bring on the Love",
+        "path": "songs/39c040b93bccef14660982a97e8eeb15_375f9f1fb5c9_1587560871183_7f784a65fa2f_1587560871183.mp3",
+        "photo_path": "images/39c040b93bccef14660982a97e8eeb15_375f9f1fb5c9_1587560871183.800x800x1",
+        "artist": "Rick James",
+        "album": "Urban Rapsody",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea041fbfcdca327c8697a6b",
+        "title": "Mama's Eyes",
+        "path": "songs/39c040b93bccef14660982a97e8eeb15_1cc0a9c3fed3_1587560955618_fd7772e68eb4_1587560955619.mp3",
+        "photo_path": "images/39c040b93bccef14660982a97e8eeb15_1cc0a9c3fed3_1587560955618.800x800x1",
+        "artist": "Rick James",
+        "album": "Urban Rapsody",
+        "genre": "Funk"
+    },
+    {
+        "id": "5ea04479fcdca327c8697a6e",
+        "title": "Amarillo",
+        "path": "songs/220px-J_Balvin_-_Colores_215ed49d934f_1587561593391_5d7ca3055702_1587561593391.mp3",
+        "photo_path": "images/220px-J_Balvin_-_Colores_215ed49d934f_1587561593391.png",
+        "artist": "J Balvin",
+        "album": "Colores",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0449efcdca327c8697a6f",
+        "title": "Azul",
+        "path": "songs/220px-J_Balvin_-_Colores_8406e94a718f_1587561630613_4ee179ef84c8_1587561630613.mp3",
+        "photo_path": "images/220px-J_Balvin_-_Colores_8406e94a718f_1587561630613.png",
+        "artist": "J Balvin",
+        "album": "Colores",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea044abfcdca327c8697a70",
+        "title": "Rojo",
+        "path": "songs/220px-J_Balvin_-_Colores_138a6befa260_1587561643527_8c5cb625237b_1587561643527.mp3",
+        "photo_path": "images/220px-J_Balvin_-_Colores_138a6befa260_1587561643527.png",
+        "artist": "J Balvin",
+        "album": "Colores",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea044c2fcdca327c8697a71",
+        "title": "Rosa",
+        "path": "songs/220px-J_Balvin_-_Colores_4e4009960760_1587561666115_93aba763fc96_1587561666115.mp3",
+        "photo_path": "images/220px-J_Balvin_-_Colores_4e4009960760_1587561666115.png",
+        "artist": "J Balvin",
+        "album": "Colores",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea044d8fcdca327c8697a72",
+        "title": "Morado",
+        "path": "songs/220px-J_Balvin_-_Colores_d73d33e2adf3_1587561688912_4b1f9f603aef_1587561688912.mp3",
+        "photo_path": "images/220px-J_Balvin_-_Colores_d73d33e2adf3_1587561688912.png",
+        "artist": "J Balvin",
+        "album": "Colores",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea044e5fcdca327c8697a73",
+        "title": "Verde",
+        "path": "songs/220px-J_Balvin_-_Colores_8ea670e16d4f_1587561701719_00ed5a1b7fde_1587561701720.mp3",
+        "photo_path": "images/220px-J_Balvin_-_Colores_8ea670e16d4f_1587561701719.png",
+        "artist": "J Balvin",
+        "album": "Colores",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea044fefcdca327c8697a74",
+        "title": "Negro",
+        "path": "songs/220px-J_Balvin_-_Colores_22f7e435456f_1587561726412_cf31b654ef65_1587561726412.mp3",
+        "photo_path": "images/220px-J_Balvin_-_Colores_22f7e435456f_1587561726412.png",
+        "artist": "J Balvin",
+        "album": "Colores",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0450ffcdca327c8697a75",
+        "title": "Gris",
+        "path": "songs/220px-J_Balvin_-_Colores_9fb15fa5e848_1587561743529_dccf8469077c_1587561743529.mp3",
+        "photo_path": "images/220px-J_Balvin_-_Colores_9fb15fa5e848_1587561743529.png",
+        "artist": "J Balvin",
+        "album": "Colores",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0452efcdca327c8697a76",
+        "title": "Arcoíris",
+        "path": "songs/220px-J_Balvin_-_Colores_557ecd14421e_1587561774274_e7f984e1fcc8_1587561774275.mp3",
+        "photo_path": "images/220px-J_Balvin_-_Colores_557ecd14421e_1587561774274.png",
+        "artist": "J Balvin",
+        "album": "Colores",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0455afcdca327c8697a77",
+        "title": "Blanco",
+        "path": "songs/220px-J_Balvin_-_Colores_1ebd80881c2f_1587561818077_d8531841ccb4_1587561818077.mp3",
+        "photo_path": "images/220px-J_Balvin_-_Colores_1ebd80881c2f_1587561818077.png",
+        "artist": "J Balvin",
+        "album": "Colores",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea04637fcdca327c8697a7a",
+        "title": "11 PM",
+        "path": "songs/367868924-0_bbee9ceadf0d_1587562039757_7b0f50831be2_1587562039758.mp3",
+        "photo_path": "images/367868924-0_bbee9ceadf0d_1587562039757.jpg",
+        "artist": "Maluma",
+        "album": "11:11",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea04683fcdca327c8697a7b",
+        "title": "HP",
+        "path": "songs/367868924-0_203c3848c4b2_1587562115670_bfcb08c5b6d7_1587562115670.mp3",
+        "photo_path": "images/367868924-0_203c3848c4b2_1587562115670.jpg",
+        "artist": "Maluma",
+        "album": "11:11",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea046b5fcdca327c8697a7c",
+        "title": "No Se Me Quita",
+        "path": "songs/367868924-0_78dac99ffc5b_1587562165350_871866098f42_1587562165350.mp3",
+        "photo_path": "images/367868924-0_78dac99ffc5b_1587562165350.jpg",
+        "artist": "Maluma",
+        "album": "11:11",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea046c1fcdca327c8697a7d",
+        "title": "Dispuesto",
+        "path": "songs/Dispuesto.mp3",
+        "photo_path": "images/367868924-0_5ae3ec2c402c_1587562177951.jpg",
+        "artist": "Maluma",
+        "album": "11:11",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0479bfcdca327c8697a7e",
+        "title": "No Puedo Olvidarte",
+        "path": "songs/367868924-0_a61d22ed3bf4_1587562395825_3db2c09ed7dd_1587562395826.mp3",
+        "photo_path": "images/367868924-0_a61d22ed3bf4_1587562395825.jpg",
+        "artist": "Maluma",
+        "album": "11:11",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea047b5fcdca327c8697a7f",
+        "title": "Me Enamore de Ti",
+        "path": "songs/367868924-0_56c07fd1bd96_1587562421725_c25c6a4a720d_1587562421725.mp3",
+        "photo_path": "images/367868924-0_56c07fd1bd96_1587562421725.jpg",
+        "artist": "Maluma",
+        "album": "11:11",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea047d4fcdca327c8697a80",
+        "title": "Extrañándote",
+        "path": "songs/367868924-0_30b2a37a10d7_1587562452318_5e008d8b5ac8_1587562452318.mp3",
+        "photo_path": "images/367868924-0_30b2a37a10d7_1587562452318.jpg",
+        "artist": "Maluma",
+        "album": "11:11",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea047f1fcdca327c8697a81",
+        "title": "Dinero Tiene Cualquiera",
+        "path": "songs/367868924-0_2bf167aa58e1_1587562481324_43e532acb0e5_1587562481324.mp3",
+        "photo_path": "images/367868924-0_2bf167aa58e1_1587562481324.jpg",
+        "artist": "Maluma",
+        "album": "11:11",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0480afcdca327c8697a82",
+        "title": "Soltera",
+        "path": "songs/367868924-0_d56b3da42085_1587562506170_98d416d28cb4_1587562506170.mp3",
+        "photo_path": "images/367868924-0_d56b3da42085_1587562506170.jpg",
+        "artist": "Maluma",
+        "album": "11:11",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea04818fcdca327c8697a83",
+        "title": "Te Quiero",
+        "path": "songs/367868924-0_90652aef0531_1587562520985_c4d86c0eb43f_1587562520985.mp3",
+        "photo_path": "images/367868924-0_90652aef0531_1587562520985.jpg",
+        "artist": "Maluma",
+        "album": "11:11",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0482cfcdca327c8697a84",
+        "title": "Instinto Natural",
+        "path": "songs/367868924-0_8dd2f4c2f6c4_1587562540822_753ac9b333bc_1587562540822.mp3",
+        "photo_path": "images/367868924-0_8dd2f4c2f6c4_1587562540822.jpg",
+        "artist": "Maluma",
+        "album": "11:11",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea048d8fcdca327c8697a86",
+        "title": "Me Enamoré",
+        "path": "songs/res_5e123b41d7a936896c254f69ca22751f_full_26dc2853abf2_1587562712307_9339219bb8f6_1587562712307.mp3",
+        "photo_path": "images/res_5e123b41d7a936896c254f69ca22751f_full_26dc2853abf2_1587562712307.jpg",
+        "artist": "Shakira",
+        "album": "El Dorado",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea048ebfcdca327c8697a87",
+        "title": "Nada",
+        "path": "songs/res_5e123b41d7a936896c254f69ca22751f_full_01dc3d8a72b6_1587562731111_c988cdb5e010_1587562731111.mp3",
+        "photo_path": "images/res_5e123b41d7a936896c254f69ca22751f_full_01dc3d8a72b6_1587562731111.jpg",
+        "artist": "Shakira",
+        "album": "El Dorado",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea04996fcdca327c8697a89",
+        "title": "Chantaje",
+        "path": "songs/res_5e123b41d7a936896c254f69ca22751f_full_aa1f39e45422_1587562902065_d8f8bd77a224_1587562902065. Maluma",
+        "photo_path": "images/res_5e123b41d7a936896c254f69ca22751f_full_aa1f39e45422_1587562902065.jpg",
+        "artist": "Shakira",
+        "album": "El Dorado",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea04a6321c64711189b1c01",
+        "title": "Perro Fiel",
+        "path": "songs/res_5e123b41d7a936896c254f69ca22751f_full_a522f7b95aab_1587563107033_c75026a1e7da_1587563107034. Nicky Jam",
+        "photo_path": "images/res_5e123b41d7a936896c254f69ca22751f_full_a522f7b95aab_1587563107033.jpg",
+        "artist": "Shakira",
+        "album": "El Dorado",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea04a7021c64711189b1c02",
+        "title": "When a Women",
+        "path": "songs/res_5e123b41d7a936896c254f69ca22751f_full_763fa9955fe1_1587563120702_a0b327a6ba06_1587563120702.mp3",
+        "photo_path": "images/res_5e123b41d7a936896c254f69ca22751f_full_763fa9955fe1_1587563120702.jpg",
+        "artist": "Shakira",
+        "album": "El Dorado",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea04a9821c64711189b1c03",
+        "title": "Trap",
+        "path": "songs/res_5e123b41d7a936896c254f69ca22751f_full_e8e4420fc1b7_1587563160365_0fb379403805_1587563160365. Maluma",
+        "photo_path": "images/res_5e123b41d7a936896c254f69ca22751f_full_e8e4420fc1b7_1587563160365.jpg",
+        "artist": "Shakira",
+        "album": "El Dorado",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea04aaf21c64711189b1c04",
+        "title": "Coconut Tree",
+        "path": "songs/res_5e123b41d7a936896c254f69ca22751f_full_e19cb6825f03_1587563183594_1b944606c319_1587563183594.mp3",
+        "photo_path": "images/res_5e123b41d7a936896c254f69ca22751f_full_e19cb6825f03_1587563183594.jpg",
+        "artist": "Shakira",
+        "album": "El Dorado",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea04ad621c64711189b1c05",
+        "title": "La Bicicleta",
+        "path": "songs/res_5e123b41d7a936896c254f69ca22751f_full_2dd8fb622104_1587563222535_f849e603dc3b_1587563222536.mp3",
+        "photo_path": "images/res_5e123b41d7a936896c254f69ca22751f_full_2dd8fb622104_1587563222535.jpg",
+        "artist": "Shakira & Carlos Vives",
+        "album": "El Dorado",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea04afb21c64711189b1c06",
+        "title": "Deja vu",
+        "path": "songs/res_5e123b41d7a936896c254f69ca22751f_full_670c8690922b_1587563259110_ff94de673c84_1587563259110.mp3",
+        "photo_path": "images/res_5e123b41d7a936896c254f69ca22751f_full_670c8690922b_1587563259110.jpg",
+        "artist": "Shakira & Prince Royce",
+        "album": "El Dorado",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea04b2221c64711189b1c07",
+        "title": "What We Said",
+        "path": "songs/res_5e123b41d7a936896c254f69ca22751f_full_269939beaeee_1587563298881_88cc64d5e223_1587563298881. MAGIC!",
+        "photo_path": "images/res_5e123b41d7a936896c254f69ca22751f_full_269939beaeee_1587563298881.jpg",
+        "artist": "Shakira & MAGIC!",
+        "album": "El Dorado",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea04b3521c64711189b1c08",
+        "title": "Toneladas",
+        "path": "songs/res_5e123b41d7a936896c254f69ca22751f_full_15d40887217b_1587563317324_49ffd6a7ef42_1587563317324.mp3",
+        "photo_path": "images/res_5e123b41d7a936896c254f69ca22751f_full_15d40887217b_1587563317324.jpg",
+        "artist": "Shakira & MAGIC!",
+        "album": "El Dorado",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0500d21c64711189b1c0b",
+        "title": "Piensas",
+        "path": "songs/pitbull_dale_booklet_3_6b5746680ef6_1587564557339_45f2591fa92a_1587564557339. Gente De Zona [Official Audio]",
+        "photo_path": "images/pitbull_dale_booklet_3_6b5746680ef6_1587564557339.png",
+        "artist": "Pitbull",
+        "album": "Dale",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0503e21c64711189b1c0c",
+        "title": "Como Yo Le Doy",
+        "path": "songs/pitbull_dale_booklet_3_8d8f34deeaf2_1587564606962_fd45ed20fc49_1587564606962. Don Miguelo [Official Audio]",
+        "photo_path": "images/pitbull_dale_booklet_3_8d8f34deeaf2_1587564606962.png",
+        "artist": "Pitbull",
+        "album": "Dale",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0507521c64711189b1c0d",
+        "title": "Yo Quiero",
+        "path": "songs/pitbull_dale_booklet_3_d768ac71ccb2_1587564661821_1784772c0cd8_1587564661821. Gente de Zona [Official Audio]",
+        "photo_path": "images/pitbull_dale_booklet_3_d768ac71ccb2_1587564661821.png",
+        "artist": "Pitbull",
+        "album": "Dale",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0509521c64711189b1c0e",
+        "title": "El Party",
+        "path": "songs/pitbull_dale_booklet_3_ea265b2e276e_1587564693457_3f56a8cb9522_1587564693457. Micha [Official Audio]",
+        "photo_path": "images/pitbull_dale_booklet_3_ea265b2e276e_1587564693457.png",
+        "artist": "Pitbull",
+        "album": "Dale",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea050b521c64711189b1c0f",
+        "title": "Mami Mami",
+        "path": "songs/pitbull_dale_booklet_3_95a1a43590f6_1587564725667_cc494374086e_1587564725667. Fuego [Official Audio]",
+        "photo_path": "images/pitbull_dale_booklet_3_95a1a43590f6_1587564725667.png",
+        "artist": "Pitbull",
+        "album": "Dale",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea050d221c64711189b1c10",
+        "title": "Chi Chi Bon Bon",
+        "path": "songs/pitbull_dale_booklet_3_707b2b60c77e_1587564754757_4ed680b5b360_1587564754757. Osmani Garcia [Official Audio]",
+        "photo_path": "images/pitbull_dale_booklet_3_707b2b60c77e_1587564754757.png",
+        "artist": "Pitbull",
+        "album": "Dale",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0510a21c64711189b1c11",
+        "title": "Haciendo Ruido",
+        "path": "songs/pitbull_dale_booklet_3_8ae48ef8c152_1587564810713_08b0e77ae4b0_1587564810713. Ricky Martin [Official Audio]",
+        "photo_path": "images/pitbull_dale_booklet_3_8ae48ef8c152_1587564810713.png",
+        "artist": "Pitbull",
+        "album": "Dale",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0512721c64711189b1c12",
+        "title": "Hoy Se Bebe",
+        "path": "songs/pitbull_dale_booklet_3_aab54a687ebd_1587564839781_de9a4a471644_1587564839781. Farruko [Official Audio]",
+        "photo_path": "images/pitbull_dale_booklet_3_aab54a687ebd_1587564839781.png",
+        "artist": "Pitbull",
+        "album": "Dale",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0514421c64711189b1c13",
+        "title": "No Puedo Mas",
+        "path": "songs/pitbull_dale_booklet_3_381f2d0b6d00_1587564868788_841db4fc9e4b_1587564868788. Yandel [Official Audio]",
+        "photo_path": "images/pitbull_dale_booklet_3_381f2d0b6d00_1587564868788.png",
+        "artist": "Pitbull",
+        "album": "Dale",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0516021c64711189b1c14",
+        "title": "Que Lo Que",
+        "path": "songs/pitbull_dale_booklet_3_76dcdd31a7a6_1587564896884_a9883817afcf_1587564896884. Sensato, Papayo y El Chevo [Official Audio]",
+        "photo_path": "images/pitbull_dale_booklet_3_76dcdd31a7a6_1587564896884.png",
+        "artist": "Pitbull",
+        "album": "Dale",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0524f21c64711189b1c17",
+        "title": "I Like It",
+        "path": "songs/Euphoria_Album_Cover_169cc5bd1954_1587565135730_7a50fdc000d1_1587565135730.mp3",
+        "photo_path": "images/Euphoria_Album_Cover_169cc5bd1954_1587565135730.jpg",
+        "artist": "Enrique Iglesias",
+        "album": "Euphoria",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0528221c64711189b1c18",
+        "title": "One Day At a Time",
+        "path": "songs/Euphoria_Album_Cover_1674423a6fe7_1587565186255_4aa69daa8a57_1587565186255.mp3",
+        "photo_path": "images/Euphoria_Album_Cover_1674423a6fe7_1587565186255.jpg",
+        "artist": "Enrique Iglesias",
+        "album": "Euphoria",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea052a021c64711189b1c19",
+        "title": "Heartbeat",
+        "path": "songs/Euphoria_Album_Cover_d12e7d4a61fc_1587565216646_a964735227b8_1587565216646.mp3",
+        "photo_path": "images/Euphoria_Album_Cover_d12e7d4a61fc_1587565216646.jpg",
+        "artist": "Enrique Iglesias",
+        "album": "Euphoria",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea052b921c64711189b1c1a",
+        "title": "Dirty Dancer",
+        "path": "songs/Euphoria_Album_Cover_ae5a45f4dcf5_1587565241325_b964665f8782_1587565241325.mp3",
+        "photo_path": "images/Euphoria_Album_Cover_ae5a45f4dcf5_1587565241325.jpg",
+        "artist": "Enrique Iglesias",
+        "album": "Euphoria",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea052e221c64711189b1c1b",
+        "title": "Why Not Me",
+        "path": "songs/Euphoria_Album_Cover_c1bec111c249_1587565282071_ee3d90a8b874_1587565282072.mp3",
+        "photo_path": "images/Euphoria_Album_Cover_c1bec111c249_1587565282071.jpg",
+        "artist": "Enrique Iglesias",
+        "album": "Euphoria",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0531021c64711189b1c1c",
+        "title": "Ayer",
+        "path": "songs/Euphoria_Album_Cover_ea7b8d2c180c_1587565328755_e748abcf1d8e_1587565328755.mp3",
+        "photo_path": "images/Euphoria_Album_Cover_ea7b8d2c180c_1587565328755.jpg",
+        "artist": "Enrique Iglesias",
+        "album": "Euphoria",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0535c21c64711189b1c1d",
+        "title": "Dile Que",
+        "path": "songs/Euphoria_Album_Cover_1648868a82f2_1587565404570_1601e46e59ad_1587565404570.mp3",
+        "photo_path": "images/Euphoria_Album_Cover_1648868a82f2_1587565404570.jpg",
+        "artist": "Enrique Iglesias",
+        "album": "Euphoria",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0538421c64711189b1c1e",
+        "title": "Tu Y Yo",
+        "path": "songs/Euphoria_Album_Cover_6d61639daa92_1587565444743_40046eb42b92_1587565444743.mp3",
+        "photo_path": "images/Euphoria_Album_Cover_6d61639daa92_1587565444743.jpg",
+        "artist": "Enrique Iglesias",
+        "album": "Euphoria",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea053a321c64711189b1c1f",
+        "title": "Heartbreaker",
+        "path": "songs/Euphoria_Album_Cover_414dc6f793aa_1587565475744_0bef2e09acc3_1587565475744.mp3",
+        "photo_path": "images/Euphoria_Album_Cover_414dc6f793aa_1587565475744.jpg",
+        "artist": "Enrique Iglesias",
+        "album": "Euphoria",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0540021c64711189b1c20",
+        "title": "No Me Digas Que No",
+        "path": "songs/Euphoria_Album_Cover_1f82f8a7269b_1587565568049_adb3802cdec5_1587565568049.mp3",
+        "photo_path": "images/Euphoria_Album_Cover_1f82f8a7269b_1587565568049.jpg",
+        "artist": "Enrique Iglesias",
+        "album": "Euphoria",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0570221c64711189b1c23",
+        "title": "BLOOD.",
+        "path": "songs/6a0a761fbad580015c24479ef59077ae_87de390e86f4_1587566338967_7bafd33dc6c1_1587566338967.",
+        "photo_path": "images/6a0a761fbad580015c24479ef59077ae_87de390e86f4_1587566338967.960x960x1",
+        "artist": "Kendrick Lamar",
+        "album": "DAMN",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea0572021c64711189b1c24",
+        "title": "DNA.",
+        "path": "songs/6a0a761fbad580015c24479ef59077ae_a1b132f57da2_1587566368986_391490affc9d_1587566368986.",
+        "photo_path": "images/6a0a761fbad580015c24479ef59077ae_a1b132f57da2_1587566368986.960x960x1",
+        "artist": "Kendrick Lamar",
+        "album": "DAMN",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea0573b21c64711189b1c25",
+        "title": "YAH.",
+        "path": "songs/6a0a761fbad580015c24479ef59077ae_3710ff09ca43_1587566395490_8c3f19dd861f_1587566395490.",
+        "photo_path": "images/6a0a761fbad580015c24479ef59077ae_3710ff09ca43_1587566395490.960x960x1",
+        "artist": "Kendrick Lamar",
+        "album": "DAMN",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea0575821c64711189b1c26",
+        "title": "ELEMENT.",
+        "path": "songs/6a0a761fbad580015c24479ef59077ae_2003aa112017_1587566424401_3db54c998f4a_1587566424401.",
+        "photo_path": "images/6a0a761fbad580015c24479ef59077ae_2003aa112017_1587566424401.960x960x1",
+        "artist": "Kendrick Lamar",
+        "album": "DAMN",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea0579621c64711189b1c27",
+        "title": "FEEL.",
+        "path": "songs/6a0a761fbad580015c24479ef59077ae_9b713891abbf_1587566486217_2f7c27a827a2_1587566486217.",
+        "photo_path": "images/6a0a761fbad580015c24479ef59077ae_9b713891abbf_1587566486217.960x960x1",
+        "artist": "Kendrick Lamar",
+        "album": "DAMN",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea057b621c64711189b1c28",
+        "title": "LOYALTY.",
+        "path": "songs/6a0a761fbad580015c24479ef59077ae_5e55dc387f57_1587566518872_a01d63a562a5_1587566518873.",
+        "photo_path": "images/6a0a761fbad580015c24479ef59077ae_5e55dc387f57_1587566518872.960x960x1",
+        "artist": "Kendrick Lamar",
+        "album": "DAMN",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea057dd21c64711189b1c29",
+        "title": "PRIDE.",
+        "path": "songs/6a0a761fbad580015c24479ef59077ae_96b47804d3b3_1587566557046_6ca16d3ab4dd_1587566557046.",
+        "photo_path": "images/6a0a761fbad580015c24479ef59077ae_96b47804d3b3_1587566557046.960x960x1",
+        "artist": "Kendrick Lamar",
+        "album": "DAMN",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea057f721c64711189b1c2a",
+        "title": "HUMBLE.",
+        "path": "songs/6a0a761fbad580015c24479ef59077ae_f3cc80cb3f88_1587566583967_741fc9c8b782_1587566583967.",
+        "photo_path": "images/6a0a761fbad580015c24479ef59077ae_f3cc80cb3f88_1587566583967.960x960x1",
+        "artist": "Kendrick Lamar",
+        "album": "DAMN",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea0581c21c64711189b1c2b",
+        "title": "LUST.",
+        "path": "songs/6a0a761fbad580015c24479ef59077ae_d332121a37ce_1587566620013_51a6df730de9_1587566620013.",
+        "photo_path": "images/6a0a761fbad580015c24479ef59077ae_d332121a37ce_1587566620013.960x960x1",
+        "artist": "Kendrick Lamar",
+        "album": "DAMN",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea0587321c64711189b1c2c",
+        "title": "LOVE.",
+        "path": "songs/6a0a761fbad580015c24479ef59077ae_af1bf854702c_1587566707851_4faea7f04084_1587566707851.",
+        "photo_path": "images/6a0a761fbad580015c24479ef59077ae_af1bf854702c_1587566707851.960x960x1",
+        "artist": "Kendrick Lamar",
+        "album": "DAMN",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea059fc21c64711189b1c2f",
+        "title": "Things Done Changed",
+        "path": "songs/Ready_To_Die_311cd16089b7_1587567100713_7965b9d7376a_1587567100713.I",
+        "photo_path": "images/Ready_To_Die_311cd16089b7_1587567100713.jpg",
+        "artist": "The Notorious B.I.G.",
+        "album": "Ready to Die",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05a2c21c64711189b1c30",
+        "title": "Gimme the Loot",
+        "path": "songs/Ready_To_Die_edc0ee435a88_1587567148740_8f593071cfbe_1587567148741.I",
+        "photo_path": "images/Ready_To_Die_edc0ee435a88_1587567148740.jpg",
+        "artist": "The Notorious B.I.G.",
+        "album": "Ready to Die",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05a3f21c64711189b1c31",
+        "title": "Machine Gun Funk",
+        "path": "songs/Ready_To_Die_a0be87b13e54_1587567167605_c5d39dcf870f_1587567167605.I",
+        "photo_path": "images/Ready_To_Die_a0be87b13e54_1587567167605.jpg",
+        "artist": "The Notorious B.I.G.",
+        "album": "Ready to Die",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05a5821c64711189b1c32",
+        "title": "Warning",
+        "path": "songs/Ready_To_Die_6221c34171bb_1587567192060_f901a7c99d34_1587567192060.I",
+        "photo_path": "images/Ready_To_Die_6221c34171bb_1587567192060.jpg",
+        "artist": "The Notorious B.I.G.",
+        "album": "Ready to Die",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05a8421c64711189b1c33",
+        "title": "Ready to Die",
+        "path": "songs/Ready_To_Die_e38e24efd8a3_1587567236257_8d3e97bdb48c_1587567236257.I",
+        "photo_path": "images/Ready_To_Die_e38e24efd8a3_1587567236257.jpg",
+        "artist": "The Notorious B.I.G.",
+        "album": "Ready to Die",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05aca21c64711189b1c34",
+        "title": "One More Chance",
+        "path": "songs/Ready_To_Die_f1e42ed1ca82_1587567306120_8d7f5d496747_1587567306120.I",
+        "photo_path": "images/Ready_To_Die_f1e42ed1ca82_1587567306120.jpg",
+        "artist": "The Notorious B.I.G.",
+        "album": "Ready to Die",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05af221c64711189b1c35",
+        "title": "The What",
+        "path": "songs/Ready_To_Die_2a013c463456_1587567346628_d63d0177beb4_1587567346628.I",
+        "photo_path": "images/Ready_To_Die_2a013c463456_1587567346628.jpg",
+        "artist": "The Notorious B.I.G.",
+        "album": "Ready to Die",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05b3621c64711189b1c36",
+        "title": "Juicy",
+        "path": "songs/Ready_To_Die_e0bb1a5992ec_1587567414579_ccb197eff3d0_1587567414579.I",
+        "photo_path": "images/Ready_To_Die_e0bb1a5992ec_1587567414579.jpg",
+        "artist": "The Notorious B.I.G.",
+        "album": "Ready to Die",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05b4a21c64711189b1c37",
+        "title": "Everyday Struggle",
+        "path": "songs/Ready_To_Die_30e306edb510_1587567434467_8f3456e3a3ae_1587567434467.I",
+        "photo_path": "images/Ready_To_Die_30e306edb510_1587567434467.jpg",
+        "artist": "The Notorious B.I.G.",
+        "album": "Ready to Die",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05b6621c64711189b1c38",
+        "title": "Big Poppa",
+        "path": "songs/Ready_To_Die_2e2a81ac40a9_1587567462938_013967283546_1587567462938.I",
+        "photo_path": "images/Ready_To_Die_2e2a81ac40a9_1587567462938.jpg",
+        "artist": "The Notorious B.I.G.",
+        "album": "Ready to Die",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05d8d21c64711189b1c3b",
+        "title": "The Story of O.J.",
+        "path": "songs/1200px-4-44_album_cover_08c850912a8d_1587568013169_0aae7b411988_1587568013169.J",
+        "photo_path": "images/1200px-4-44_album_cover_08c850912a8d_1587568013169.png",
+        "artist": "Jay Z",
+        "album": "4:44",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05db121c64711189b1c3c",
+        "title": "Smile",
+        "path": "songs/1200px-4-44_album_cover_d465c672246b_1587568049017_f25738db7fbc_1587568049017. Gloria Carter",
+        "photo_path": "images/1200px-4-44_album_cover_d465c672246b_1587568049017.png",
+        "artist": "Jay Z",
+        "album": "4:44",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05dc621c64711189b1c3d",
+        "title": "4:44",
+        "path": "songs/1200px-4-44_album_cover_dd19db290f7c_1587568070619_733cb459afa2_1587568070619.mp3",
+        "photo_path": "images/1200px-4-44_album_cover_dd19db290f7c_1587568070619.png",
+        "artist": "Jay Z",
+        "album": "4:44",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05de321c64711189b1c3e",
+        "title": "Family Feud",
+        "path": "songs/1200px-4-44_album_cover_38b6fa33d03e_1587568099265_8e176962b8cd_1587568099265. Beyoncé",
+        "photo_path": "images/1200px-4-44_album_cover_38b6fa33d03e_1587568099265.png",
+        "artist": "Jay Z",
+        "album": "4:44",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05df821c64711189b1c3f",
+        "title": "Bam",
+        "path": "songs/1200px-4-44_album_cover_098fbe9dbb85_1587568120707_a300716d89d6_1587568120707. Damian Marley",
+        "photo_path": "images/1200px-4-44_album_cover_098fbe9dbb85_1587568120707.png",
+        "artist": "Jay Z",
+        "album": "4:44",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05e0d21c64711189b1c40",
+        "title": "Moonlight",
+        "path": "songs/1200px-4-44_album_cover_422f17fd9bd6_1587568141202_42d680d27c16_1587568141202.mp3",
+        "photo_path": "images/1200px-4-44_album_cover_422f17fd9bd6_1587568141202.png",
+        "artist": "Jay Z",
+        "album": "4:44",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05e3821c64711189b1c41",
+        "title": "Marcy Me",
+        "path": "songs/1200px-4-44_album_cover_2d59c67e4a44_1587568184313_fcb065383655_1587568184314.mp3",
+        "photo_path": "images/1200px-4-44_album_cover_2d59c67e4a44_1587568184313.png",
+        "artist": "Jay Z",
+        "album": "4:44",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05e5121c64711189b1c42",
+        "title": "Legacy",
+        "path": "songs/1200px-4-44_album_cover_c755c9a63e08_1587568209939_93ada6ecf3fa_1587568209939.mp3",
+        "photo_path": "images/1200px-4-44_album_cover_c755c9a63e08_1587568209939.png",
+        "artist": "Jay Z",
+        "album": "4:44",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05e6721c64711189b1c43",
+        "title": "Adnis",
+        "path": "songs/1200px-4-44_album_cover_aae46e93cb54_1587568231413_e398c638f0a2_1587568231413.mp3",
+        "photo_path": "images/1200px-4-44_album_cover_aae46e93cb54_1587568231413.png",
+        "artist": "Jay Z",
+        "album": "4:44",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05e8421c64711189b1c44",
+        "title": "MaNyfaCedGod",
+        "path": "songs/1200px-4-44_album_cover_89eb45ad2b4f_1587568260318_b597405ece1d_1587568260319. James Blake",
+        "photo_path": "images/1200px-4-44_album_cover_89eb45ad2b4f_1587568260318.png",
+        "artist": "Jay Z",
+        "album": "4:44",
+        "genre": "Hip hop"
+    },
+    {
+        "id": "5ea05f9321c64711189b1c47",
+        "title": "Mob Ties",
+        "path": "songs/Scorpion_by_Drake_bbe35f022652_1587568531279_0a0de4627749_1587568531279.mp3",
+        "photo_path": "images/Scorpion_by_Drake_bbe35f022652_1587568531279.jpg",
+        "artist": "Drake",
+        "album": "Scorpion",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea05fad21c64711189b1c48",
+        "title": "I'm Upset",
+        "path": "songs/Scorpion_by_Drake_6a378d9a8991_1587568557940_a1e2fdb58805_1587568557940.mp3",
+        "photo_path": "images/Scorpion_by_Drake_6a378d9a8991_1587568557940.jpg",
+        "artist": "Drake",
+        "album": "Scorpion",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea05fe221c64711189b1c49",
+        "title": "Toosie Slide",
+        "path": "songs/Scorpion_by_Drake_a67048694d57_1587568610343_fc95a76e78b8_1587568610343.mp3",
+        "photo_path": "images/Scorpion_by_Drake_a67048694d57_1587568610343.jpg",
+        "artist": "Drake",
+        "album": "Scorpion",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea05ffa21c64711189b1c4a",
+        "title": "Peak",
+        "path": "songs/Scorpion_by_Drake_40c7f4bc42e1_1587568634178_3355f6f08ac9_1587568634178.mp3",
+        "photo_path": "images/Scorpion_by_Drake_40c7f4bc42e1_1587568634178.jpg",
+        "artist": "Drake",
+        "album": "Scorpion",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea0601a21c64711189b1c4b",
+        "title": "Nonstop",
+        "path": "songs/Scorpion_by_Drake_e8274e65d89a_1587568666038_97249b1500aa_1587568666038.mp3",
+        "photo_path": "images/Scorpion_by_Drake_e8274e65d89a_1587568666038.jpg",
+        "artist": "Drake",
+        "album": "Scorpion",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea0604d21c64711189b1c4c",
+        "title": "God's Plan",
+        "path": "songs/Scorpion_by_Drake_d66a4b69c461_1587568717113_46497c9b64d4_1587568717113.mp3",
+        "photo_path": "images/Scorpion_by_Drake_d66a4b69c461_1587568717113.jpg",
+        "artist": "Drake",
+        "album": "Scorpion",
+        "genre": "R&B"
+    },
+    {
+        "id": "5ea0619321c64711189b1c4f",
+        "title": "Rare",
+        "path": "songs/Selena_Gomez_-_Rare_1576ca9231fc_1587569043460_81957b074ee6_1587569043460.mp3",
+        "photo_path": "images/Selena_Gomez_-_Rare_1576ca9231fc_1587569043460.png",
+        "artist": "Selena Gomez",
+        "album": "Rare",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea061f221c64711189b1c50",
+        "title": "A Sweeter Place",
+        "path": "songs/Selena_Gomez_-_Rare_c0d6d217bfcf_1587569138963_8874fd3f3410_1587569138963.mp3",
+        "photo_path": "images/Selena_Gomez_-_Rare_c0d6d217bfcf_1587569138963.png",
+        "artist": "Selena Gomez",
+        "album": "Rare",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea0621221c64711189b1c51",
+        "title": "Let Me Get Me",
+        "path": "songs/Selena_Gomez_-_Rare_a28af4c02488_1587569170123_31d9f6c5982e_1587569170123.mp3",
+        "photo_path": "images/Selena_Gomez_-_Rare_a28af4c02488_1587569170123.png",
+        "artist": "Selena Gomez",
+        "album": "Rare",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea0622121c64711189b1c52",
+        "title": "Ring",
+        "path": "songs/Selena_Gomez_-_Rare_bc8a5500c053_1587569185067_91e75a61726c_1587569185067.mp3",
+        "photo_path": "images/Selena_Gomez_-_Rare_bc8a5500c053_1587569185067.png",
+        "artist": "Selena Gomez",
+        "album": "Rare",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea0623921c64711189b1c53",
+        "title": "Vulnerable",
+        "path": "songs/Selena_Gomez_-_Rare_15ed7b7f6f13_1587569209384_c3b0b69c146f_1587569209385.mp3",
+        "photo_path": "images/Selena_Gomez_-_Rare_15ed7b7f6f13_1587569209384.png",
+        "artist": "Selena Gomez",
+        "album": "Rare",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea0625321c64711189b1c54",
+        "title": "Cut You Off",
+        "path": "songs/Selena_Gomez_-_Rare_89057e02b6e5_1587569235891_a6fbd90584e2_1587569235891.mp3",
+        "photo_path": "images/Selena_Gomez_-_Rare_89057e02b6e5_1587569235891.png",
+        "artist": "Selena Gomez",
+        "album": "Rare",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea0626b21c64711189b1c55",
+        "title": "Kinda Crazy",
+        "path": "songs/Selena_Gomez_-_Rare_d49cd783796b_1587569259563_a4615ad8e383_1587569259563.mp3",
+        "photo_path": "images/Selena_Gomez_-_Rare_d49cd783796b_1587569259563.png",
+        "artist": "Selena Gomez",
+        "album": "Rare",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea0628121c64711189b1c56",
+        "title": "Crowded Room",
+        "path": "songs/Selena_Gomez_-_Rare_ef21a6d1d487_1587569281221_4e6c8a1cfa3b_1587569281221.mp3",
+        "photo_path": "images/Selena_Gomez_-_Rare_ef21a6d1d487_1587569281221.png",
+        "artist": "Selena Gomez",
+        "album": "Rare",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea062a821c64711189b1c57",
+        "title": "People You Know",
+        "path": "songs/Selena_Gomez_-_Rare_1036dc2f374d_1587569320237_9f7f32b30b87_1587569320237.mp3",
+        "photo_path": "images/Selena_Gomez_-_Rare_1036dc2f374d_1587569320237.png",
+        "artist": "Selena Gomez",
+        "album": "Rare",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea062cf21c64711189b1c58",
+        "title": "Lose You To Love",
+        "path": "songs/Selena_Gomez_-_Rare_0b4657c6870d_1587569359013_ecb57c560769_1587569359013.mp3",
+        "photo_path": "images/Selena_Gomez_-_Rare_0b4657c6870d_1587569359013.png",
+        "artist": "Selena Gomez",
+        "album": "Rare",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea0630721c64711189b1c59",
+        "title": "Look At Her Now",
+        "path": "songs/Selena_Gomez_-_Rare_21f8191c0ab7_1587569415329_84976cf493c0_1587569415329.mp3",
+        "photo_path": "images/Selena_Gomez_-_Rare_21f8191c0ab7_1587569415329.png",
+        "artist": "Selena Gomez",
+        "album": "Rare",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea064b621c64711189b1c5c",
+        "title": "Shine On You Crazy Diamond One Part 1",
+        "path": "songs/1_Aad3rcP6yKOj3LgWqx75gA_3c926784b30e_1587569846891_eac8393eefe0_1587569846892.mp3",
+        "photo_path": "images/1_Aad3rcP6yKOj3LgWqx75gA_3c926784b30e_1587569846891.jpg",
+        "artist": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea064d621c64711189b1c5d",
+        "title": "Shine On You Crazy Diamond One Part 2",
+        "path": "songs/1_Aad3rcP6yKOj3LgWqx75gA_2f6368f0272d_1587569878224_bffa77178f13_1587569878225.mp3",
+        "photo_path": "images/1_Aad3rcP6yKOj3LgWqx75gA_2f6368f0272d_1587569878224.jpg",
+        "artist": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea0650e21c64711189b1c5e",
+        "title": "Welcome To The Machine",
+        "path": "songs/1_Aad3rcP6yKOj3LgWqx75gA_fe4d8da5c167_1587569934993_04f840cb2a5d_1587569934993.mp3",
+        "photo_path": "images/1_Aad3rcP6yKOj3LgWqx75gA_fe4d8da5c167_1587569934993.jpg",
+        "artist": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea0652721c64711189b1c5f",
+        "title": "Have A Cigar",
+        "path": "songs/1_Aad3rcP6yKOj3LgWqx75gA_da2938e481c1_1587569959617_d525d3776761_1587569959617.mp3",
+        "photo_path": "images/1_Aad3rcP6yKOj3LgWqx75gA_da2938e481c1_1587569959617.jpg",
+        "artist": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea0654a21c64711189b1c60",
+        "title": "Wish You Were Here",
+        "path": "songs/1_Aad3rcP6yKOj3LgWqx75gA_0956d21ef753_1587569994919_b2eb1320a5e7_1587569994920.mp3",
+        "photo_path": "images/1_Aad3rcP6yKOj3LgWqx75gA_0956d21ef753_1587569994919.jpg",
+        "artist": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea0659921c64711189b1c61",
+        "title": "Another Brick In The Wall",
+        "path": "songs/1_Aad3rcP6yKOj3LgWqx75gA_4622d4b2a920_1587570073092_2d0f7c176074_1587570073093.mp3",
+        "photo_path": "images/1_Aad3rcP6yKOj3LgWqx75gA_4622d4b2a920_1587570073092.jpg",
+        "artist": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea065ad21c64711189b1c62",
+        "title": "Comfortably numb",
+        "path": "songs/1_Aad3rcP6yKOj3LgWqx75gA_5865b3957511_1587570093533_47411531cdc2_1587570093533.mp3",
+        "photo_path": "images/1_Aad3rcP6yKOj3LgWqx75gA_5865b3957511_1587570093533.jpg",
+        "artist": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "genre": "Rock"
+    },
+    {
+        "id": "5ea066a321c64711189b1c65",
+        "title": "Can't We Be Friends",
+        "path": "songs/ella-and-louis_370a7f3de6fb_1587570339518_0b6c4500b436_1587570339518.mp3",
+        "photo_path": "images/ella-and-louis_370a7f3de6fb_1587570339518.jpg",
+        "artist": "Ella Fitzgerald",
+        "album": "Ella and Louis",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea066d421c64711189b1c66",
+        "title": "Isn't This A Lovely Day",
+        "path": "songs/ella-and-louis_3fb44431bb5c_1587570388578_f2701ac60a51_1587570388579.mp3",
+        "photo_path": "images/ella-and-louis_3fb44431bb5c_1587570388578.jpg",
+        "artist": "Ella Fitzgerald",
+        "album": "Ella and Louis",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea066ed21c64711189b1c67",
+        "title": "Moonlight in Vermont",
+        "path": "songs/ella-and-louis_177a56793738_1587570413430_4603e51620ac_1587570413430.mp3",
+        "photo_path": "images/ella-and-louis_177a56793738_1587570413430.jpg",
+        "artist": "Ella Fitzgerald",
+        "album": "Ella and Louis",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea0670821c64711189b1c68",
+        "title": "They can't take that away from me",
+        "path": "songs/ella-and-louis_8484d960984f_1587570440996_cb383f882683_1587570440996.mp3",
+        "photo_path": "images/ella-and-louis_8484d960984f_1587570440996.jpg",
+        "artist": "Ella Fitzgerald",
+        "album": "Ella and Louis",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea0673221c64711189b1c69",
+        "title": "Under A Blanket Of Blue",
+        "path": "songs/ella-and-louis_5f7277483a05_1587570482658_df041aa03550_1587570482659.mp3",
+        "photo_path": "images/ella-and-louis_5f7277483a05_1587570482658.jpg",
+        "artist": "Ella Fitzgerald",
+        "album": "Ella and Louis",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea0675621c64711189b1c6a",
+        "title": "Tenderly",
+        "path": "songs/ella-and-louis_730912775260_1587570518411_17826dda20bd_1587570518411.mp3",
+        "photo_path": "images/ella-and-louis_730912775260_1587570518411.jpg",
+        "artist": "Ella Fitzgerald",
+        "album": "Ella and Louis",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea0677021c64711189b1c6b",
+        "title": "A foggy day",
+        "path": "songs/ella-and-louis_8e7820d2eb21_1587570544650_34fdbde8ab36_1587570544650.mp3",
+        "photo_path": "images/ella-and-louis_8e7820d2eb21_1587570544650.jpg",
+        "artist": "Ella Fitzgerald",
+        "album": "Ella and Louis",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea0678621c64711189b1c6c",
+        "title": "Stars fell on Alabama",
+        "path": "songs/ella-and-louis_9c6ddf9084e6_1587570566629_70642ac51d48_1587570566629.mp3",
+        "photo_path": "images/ella-and-louis_9c6ddf9084e6_1587570566629.jpg",
+        "artist": "Ella Fitzgerald",
+        "album": "Ella and Louis",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea067a121c64711189b1c6d",
+        "title": "Cheek to Cheek",
+        "path": "songs/ella-and-louis_f32b9c6350a6_1587570593263_73b708088e46_1587570593263.mp3",
+        "photo_path": "images/ella-and-louis_f32b9c6350a6_1587570593263.jpg",
+        "artist": "Ella Fitzgerald",
+        "album": "Ella and Louis",
+        "genre": "Jazz"
+    },
+    {
+        "id": "5ea06f3721c64711189b1c70",
+        "title": "MALA SANTA",
+        "path": "songs/51A8gFtxjFL_2e29ea3872b4_1587572535491_86060c387684_1587572535491.mp3",
+        "photo_path": "images/51A8gFtxjFL_2e29ea3872b4_1587572535491._SX342_QL70_ML2_",
+        "artist": "Becky G",
+        "album": "Mala Santa",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea06f8921c64711189b1c71",
+        "title": "Dollar",
+        "path": "songs/51A8gFtxjFL_e22572532aea_1587572617578_deaaf4b68e27_1587572617579.mp3",
+        "photo_path": "images/51A8gFtxjFL_e22572532aea_1587572617578._SX342_QL70_ML2_",
+        "artist": "Becky G",
+        "album": "Mala Santa",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea06fde21c64711189b1c72",
+        "title": "SI SI",
+        "path": "songs/51A8gFtxjFL_03b5598bd3f8_1587572702984_c65cd1fdbb10_1587572702984.mp3",
+        "photo_path": "images/51A8gFtxjFL_03b5598bd3f8_1587572702984._SX342_QL70_ML2_",
+        "artist": "Becky G",
+        "album": "Mala Santa",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0707521c64711189b1c73",
+        "title": "Vamanos",
+        "path": "songs/51A8gFtxjFL_127cecf9ce68_1587572853092_2a490326d282_1587572853092.mp3",
+        "photo_path": "images/51A8gFtxjFL_127cecf9ce68_1587572853092._SX342_QL70_ML2_",
+        "artist": "Becky G",
+        "album": "Mala Santa",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea070b321c64711189b1c74",
+        "title": "Mejor Asi",
+        "path": "songs/51A8gFtxjFL_da183eeaa572_1587572915573_3c24c57e902b_1587572915573.mp3",
+        "photo_path": "images/51A8gFtxjFL_da183eeaa572_1587572915573._SX342_QL70_ML2_",
+        "artist": "Becky G",
+        "album": "Mala Santa",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea070dd21c64711189b1c75",
+        "title": "Peleas",
+        "path": "songs/51A8gFtxjFL_0bb968ab3ef7_1587572957103_92cdd2c34bd1_1587572957103.mp3",
+        "photo_path": "images/51A8gFtxjFL_0bb968ab3ef7_1587572957103._SX342_QL70_ML2_",
+        "artist": "Becky G",
+        "album": "Mala Santa",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0713721c64711189b1c76",
+        "title": "No Te Pertenezco",
+        "path": "songs/51A8gFtxjFL_2b6a37d41cb2_1587573047218_92297c942405_1587573047218.mp3",
+        "photo_path": "images/51A8gFtxjFL_2b6a37d41cb2_1587573047218._SX342_QL70_ML2_",
+        "artist": "Becky G",
+        "album": "Mala Santa",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea0718721c64711189b1c77",
+        "title": "En Mi Contra",
+        "path": "songs/51A8gFtxjFL_93c6a5065f6d_1587573127326_48ea1a8ad351_1587573127326.mp3",
+        "photo_path": "images/51A8gFtxjFL_93c6a5065f6d_1587573127326._SX342_QL70_ML2_",
+        "artist": "Becky G",
+        "album": "Mala Santa",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea071db21c64711189b1c78",
+        "title": "Subiendo",
+        "path": "songs/51A8gFtxjFL_f7a605d2296d_1587573211443_8eefa19fb743_1587573211445.mp3",
+        "photo_path": "images/51A8gFtxjFL_f7a605d2296d_1587573211443._SX342_QL70_ML2_",
+        "artist": "Becky G",
+        "album": "Mala Santa",
+        "genre": "Latino"
+    },
+    {
+        "id": "5ea074c921c64711189b1c7b",
+        "title": "Jam",
+        "path": "songs/Michaeljacksondangerous_97922b93ee08_1587573961884_888e1b890c10_1587573961884.mp3",
+        "photo_path": "images/Michaeljacksondangerous_97922b93ee08_1587573961884.jpg",
+        "artist": "Michael Jackson",
+        "album": "Dangerous",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea074e721c64711189b1c7c",
+        "title": "Why You Wanna Trip on Me",
+        "path": "songs/Michaeljacksondangerous_4cb574b994d0_1587573991516_177f1400f822_1587573991516.mp3",
+        "photo_path": "images/Michaeljacksondangerous_4cb574b994d0_1587573991516.jpg",
+        "artist": "Michael Jackson",
+        "album": "Dangerous",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea0751c21c64711189b1c7d",
+        "title": "In the Closet",
+        "path": "songs/Michaeljacksondangerous_7d784cc5b3d8_1587574044830_a18066e49f16_1587574044830.mp3",
+        "photo_path": "images/Michaeljacksondangerous_7d784cc5b3d8_1587574044830.jpg",
+        "artist": "Michael Jackson",
+        "album": "Dangerous",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea0755621c64711189b1c7e",
+        "title": "She Drives Me Wild",
+        "path": "songs/Michaeljacksondangerous_e3fd13896201_1587574102440_efaa44be30f6_1587574102440.mp3",
+        "photo_path": "images/Michaeljacksondangerous_e3fd13896201_1587574102440.jpg",
+        "artist": "Michael Jackson",
+        "album": "Dangerous",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea0756e21c64711189b1c7f",
+        "title": "Remember the Time",
+        "path": "songs/Michaeljacksondangerous_5b813e78592b_1587574126869_10fbacd5e3f7_1587574126869.mp3",
+        "photo_path": "images/Michaeljacksondangerous_5b813e78592b_1587574126869.jpg",
+        "artist": "Michael Jackson",
+        "album": "Dangerous",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea0759a21c64711189b1c80",
+        "title": "Can't Let Her Get Away",
+        "path": "songs/Michaeljacksondangerous_0e4b35a30e4d_1587574170687_c0fad9faa761_1587574170688.mp3",
+        "photo_path": "images/Michaeljacksondangerous_0e4b35a30e4d_1587574170687.jpg",
+        "artist": "Michael Jackson",
+        "album": "Dangerous",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea0764921c64711189b1c81",
+        "title": "Heal the World",
+        "path": "songs/Michaeljacksondangerous_65e319fe301d_1587574345947_2e23a34d6316_1587574345947.mp3",
+        "photo_path": "images/Michaeljacksondangerous_65e319fe301d_1587574345947.jpg",
+        "artist": "Michael Jackson",
+        "album": "Dangerous",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea0766821c64711189b1c82",
+        "title": "Who Is It",
+        "path": "songs/Michaeljacksondangerous_dbc13e93a5e6_1587574376350_c8174ef34887_1587574376350.mp3",
+        "photo_path": "images/Michaeljacksondangerous_dbc13e93a5e6_1587574376350.jpg",
+        "artist": "Michael Jackson",
+        "album": "Dangerous",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea076a821c64711189b1c83",
+        "title": "Give In to Me",
+        "path": "songs/Michaeljacksondangerous_3136b8ede098_1587574440189_687c40b69361_1587574440189.mp3",
+        "photo_path": "images/Michaeljacksondangerous_3136b8ede098_1587574440189.jpg",
+        "artist": "Michael Jackson",
+        "album": "Dangerous",
+        "genre": "Pop"
+    },
+    {
+        "id": "5ea076c721c64711189b1c84",
+        "title": "Will You Be There",
+        "path": "songs/Michaeljacksondangerous_74157cb0d6fa_1587574471788_f7720c178487_1587574471789.mp3",
+        "photo_path": "images/Michaeljacksondangerous_74157cb0d6fa_1587574471788.jpg",
+        "artist": "Michael Jackson",
+        "album": "Dangerous",
+        "genre": "Pop"
+    }
+]

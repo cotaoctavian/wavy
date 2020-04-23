@@ -40,9 +40,9 @@ const App = () => {
         <Route path="/library/album/:id" component={WebPlayer} />
         <Route exact path="/search" component={WebPlayer} />
         <Route exact path="/panel" component={AdminPanel} />
-        <Route exact path="/admin/artists" component={AdminArtists} />
-        <Route exact path="/admin/albums" component={AdminAlbums} />
-        <Route exact path="/admin/songs" component={AdminSongs} />
+        <PrivateRoute exact path="/admin/artists" component={AdminArtists} />
+        <PrivateRoute exact path="/admin/albums" component={AdminAlbums} />
+        <PrivateRoute exact path="/admin/songs" component={AdminSongs} />
       </Switch>
     </React.Fragment>
   );

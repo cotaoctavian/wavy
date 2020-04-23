@@ -1,0 +1,971 @@
+[
+    {
+        "id": "5e8afe681c9d44000011cc70",
+        "artistId": "5e8454251c9d44000090ba1d",
+        "artist": "J Cole",
+        "name": "K.O.D",
+        "photo": "images/album/jcole.png",
+        "year": 2019,
+        "tracks": [
+            "5e84a8321c9d440000377a1e",
+            "5e84a8ea1c9d440000377a1f",
+            "5e84a72b1c9d440000377a1c"
+        ]
+    },
+    {
+        "id": "5e9ee6894c560b27c0772324",
+        "tracks": [
+            "5e9ee6434c560b27c0772323",
+            "5e9ee78d4c560b27c0772325",
+            "5e9ee7ba4c560b27c0772326",
+            "5e9ee7e04c560b27c0772327",
+            "5e9ee8034c560b27c0772328",
+            "5e9ee8504c560b27c0772329",
+            "5e9ee8e54c560b27c077232a"
+        ],
+        "artistId": "5e9ee4804c560b27c0772322",
+        "artist": "Nane",
+        "name": "Șmecherescu",
+        "photo": "images/album/5acc8f550a990134f10a8a9f1e99932f_349992e28b48_1587472008760.1000x1000x1",
+        "year": 2019
+    },
+    {
+        "id": "5e9ef0a8ba539c4234970511",
+        "tracks": [
+            "5e9ef0f6ba539c4234970512",
+            "5e9ef136ba539c4234970513",
+            "5e9ef14fba539c4234970514",
+            "5e9ef1a7ba539c4234970515",
+            "5e9ef1c4ba539c4234970516",
+            "5e9ef1d9ba539c4234970517",
+            "5e9ef1f3ba539c4234970518",
+            "5e9ef224ba539c4234970519",
+            "5e9ef26dba539c423497051a",
+            "5e9ef283ba539c423497051b",
+            "5e9ef2a1ba539c423497051c",
+            "5e9ef2c8ba539c423497051d",
+            "5e9ef2dbba539c423497051e",
+            "5e9ef2faba539c423497051f",
+            "5e9ef3c9ba539c4234970520",
+            "5e9ef3e2ba539c4234970521"
+        ],
+        "artistId": "5e9eedd00bc4bd1edc7cf221",
+        "artist": "Post Malone",
+        "name": "Hollywood's Bleeding",
+        "photo": "images/album/ab67616d0000b2739478c87599550dd73bfa7e02_f8ad1d441515_1587474600562.jpg",
+        "year": 2019
+    },
+    {
+        "id": "5e9ef6daba539c4234970525",
+        "tracks": [
+            "5e9ef74fba539c4234970526",
+            "5e9ef85aba539c4234970527",
+            "5e9ef8a2ba539c4234970528",
+            "5e9ef8b6ba539c4234970529",
+            "5e9ef8d2ba539c423497052a",
+            "5e9ef8e6ba539c423497052b"
+        ],
+        "artistId": "5e9ef67fba539c4234970524",
+        "artist": "The Weekend",
+        "name": "My Dear Melancholy",
+        "photo": "images/album/ab67616d0000b273f38e946900c89c38a070227b_88325a18bc37_1587476186340.jpg",
+        "year": 2018
+    },
+    {
+        "id": "5e9efd09ba539c423497052e",
+        "tracks": [
+            "5e9efe9bba539c423497052f",
+            "5e9effdeba539c4234970531",
+            "5e7766291c9d440000336a03",
+            "5e9f00c5ba539c4234970533",
+            "5e9f02acba539c4234970534",
+            "5e9f02c5ba539c4234970535",
+            "5e9f02eaba539c4234970536",
+            "5e9f0306ba539c4234970537",
+            "5e9f0316ba539c4234970538",
+            "5e9f0326ba539c4234970539",
+            "5e9f0335ba539c423497053a",
+            "5e9f0351ba539c423497053b",
+            "5e9f0363ba539c423497053c",
+            "5e9f0377ba539c423497053d",
+            "5e9f03beba539c423497053e",
+            "5e9f03d5ba539c423497053f"
+        ],
+        "artistId": "5e9efcb1ba539c423497052d",
+        "artist": "Deliric",
+        "name": "Deliric x Silent Strike",
+        "photo": "images/album/35052318_800_800_d29d4a457ee5_1587477768968.jpg",
+        "year": 2018
+    },
+    {
+        "id": "5e9f0604ba539c4234970542",
+        "tracks": [
+            "5e9f0b03ba539c4234970543",
+            "5e9f0b62ba539c4234970544",
+            "5e9f0b78ba539c4234970545",
+            "5e9f0b8aba539c4234970546",
+            "5e9f0beaba539c4234970547",
+            "5e9f0c01ba539c4234970548",
+            "5e9f0c1cba539c4234970549",
+            "5e9f0c5aba539c423497054c",
+            "5e9f0c80ba539c423497054e",
+            "5e9f0cd0ba539c423497054f",
+            "5e9f0ce7ba539c4234970550",
+            "5e9f0d0cba539c4234970551"
+        ],
+        "artistId": "5e9f05c3ba539c4234970541",
+        "artist": "Eminem",
+        "name": "Music To Be Murdered",
+        "photo": "images/album/emimen_a85313a028b1_1587480068088.jpg",
+        "year": 2019
+    },
+    {
+        "id": "5e9f0f84ba539c4234970554",
+        "tracks": [
+            "5e9f1009ba539c4234970555",
+            "5e9f1033ba539c4234970556",
+            "5e9f1084ba539c4234970557",
+            "5e9f10b8ba539c4234970558",
+            "5e9f10e8ba539c4234970559",
+            "5e9f113bba539c423497055a",
+            "5e9f1175ba539c423497055b",
+            "5e9f11f0ba539c423497055c",
+            "5e9f1215ba539c423497055d",
+            "5e9f124aba539c423497055e",
+            "5e9f1274ba539c423497055f"
+        ],
+        "artistId": "5e9f0f64ba539c4234970553",
+        "artist": "Kanye West",
+        "name": "Jesus is King",
+        "photo": "images/album/ab67616d0000b2731bb797bbfe2480650b6c2964_e1e920b8073a_1587482500491.jpg",
+        "year": 2019
+    },
+    {
+        "id": "5e9f154fba539c4234970565",
+        "tracks": [
+            "5e9f164eba539c4234970566",
+            "5e9f16aeba539c4234970567",
+            "5e9f170bba539c4234970568",
+            "5e9f1755ba539c4234970569",
+            "5e9f1782ba539c423497056a",
+            "5e9f17b4ba539c423497056b",
+            "5e9f180cba539c423497056c",
+            "5e9f1833ba539c423497056d",
+            "5e9f185fba539c423497056e"
+        ],
+        "artistId": "5e9f14d9ba539c4234970564",
+        "artist": "Billie Eilish",
+        "name": "Don't Smile At Me",
+        "photo": "images/album/61VFNQJ-HLL_d154522cad16_1587483983500._AC_SL1200_",
+        "year": 2017
+    },
+    {
+        "id": "5e9f1ed7ba539c4234970570",
+        "tracks": [
+            "5e9f1f80ba539c4234970571",
+            "5e9f1fd1ba539c4234970572",
+            "5e9f201aba539c4234970573",
+            "5e9f21dfba539c4234970578",
+            "5e9f22636d4a6c36242ce480",
+            "5e9f22a16d4a6c36242ce482",
+            "5e9f22fd6d4a6c36242ce484",
+            "5e9f23396d4a6c36242ce485",
+            "5e9f23826d4a6c36242ce486",
+            "5e9f23a86d4a6c36242ce487",
+            "5e9f23d36d4a6c36242ce488",
+            "5e9f241b6d4a6c36242ce489"
+        ],
+        "artistId": "5e9f1ea2ba539c423497056f",
+        "artist": "Travis Scott",
+        "name": "Astroworld",
+        "photo": "images/album/res_dc8cf287800d42719d47a179a75fb4b8_full_803e22465cd5_1587486422828.jpg",
+        "year": 2019
+    },
+    {
+        "id": "5e9f27516d4a6c36242ce48d",
+        "tracks": [
+            "5e9f28d86d4a6c36242ce490",
+            "5e9f29376d4a6c36242ce491",
+            "5e9f29876d4a6c36242ce492",
+            "5e9f29e16d4a6c36242ce493",
+            "5e9f2a2f6d4a6c36242ce495",
+            "5e9f2a7c6d4a6c36242ce497",
+            "5e9f2aa56d4a6c36242ce498",
+            "5e9f2adc6d4a6c36242ce49a",
+            "5e9f2afc6d4a6c36242ce49b",
+            "5e9f2b266d4a6c36242ce49c",
+            "5e9f2b446d4a6c36242ce49d"
+        ],
+        "artistId": "5e9f271c6d4a6c36242ce48c",
+        "artist": "Ariana Grande",
+        "name": "Sweetener",
+        "photo": "images/album/res_c0fdc9e43df24f7a0f275078f98fb82e_full_d9d1ca38d66b_1587488593369.jpg",
+        "year": 2018
+    },
+    {
+        "id": "5e9f2e4a6d4a6c36242ce4a0",
+        "tracks": [
+            "5e9f2f5b6d4a6c36242ce4a1",
+            "5e9f2fa06d4a6c36242ce4a2",
+            "5e9f2fe56d4a6c36242ce4a3",
+            "5e9f30436d4a6c36242ce4a4",
+            "5e9f30876d4a6c36242ce4a5",
+            "5e9f30d66d4a6c36242ce4a6",
+            "5e9f31ab6d4a6c36242ce4a7",
+            "5e9f320b6d4a6c36242ce4a8",
+            "5e9f32c46d4a6c36242ce4a9",
+            "5e9f34326d4a6c36242ce4ad"
+        ],
+        "artistId": "5e9f2de76d4a6c36242ce49f",
+        "artist": "Ed Sheeran",
+        "name": "Divide",
+        "photo": "images/album/ab67616d0000b273ba5db46f4b838ef6027e6f96_d2ceddd75e94_1587490378592.jpg",
+        "year": 2017
+    },
+    {
+        "id": "5e9f39b76d4a6c36242ce4b0",
+        "tracks": [
+            "5e9f3a406d4a6c36242ce4b1",
+            "5e9f3adf6d4a6c36242ce4b2",
+            "5e9f3be86d4a6c36242ce4b3",
+            "5e9f3c4e6d4a6c36242ce4b4",
+            "5e9f3c6c6d4a6c36242ce4b5",
+            "5e9f3c896d4a6c36242ce4b6",
+            "5e9f3caf6d4a6c36242ce4b7",
+            "5e9f3ccd6d4a6c36242ce4b8",
+            "5e9f3ce96d4a6c36242ce4b9"
+        ],
+        "artistId": "5e9f38d26d4a6c36242ce4af",
+        "artist": "Future",
+        "name": "FUTURE",
+        "photo": "images/album/download_1854978bb331_1587493303364.jpg",
+        "year": 2017
+    },
+    {
+        "id": "5e9ff45a653e60322c1b322a",
+        "tracks": [
+            "5e9ff4f6653e60322c1b322b",
+            "5e9ff524653e60322c1b322c",
+            "5e9ff545653e60322c1b322d",
+            "5e9ff55f653e60322c1b322e",
+            "5e9ff5a1653e60322c1b322f",
+            "5e9ff5b9653e60322c1b3230",
+            "5e9ff5dd653e60322c1b3231",
+            "5e9ff64c653e60322c1b3232",
+            "5e9ff66b653e60322c1b3233",
+            "5e9ff680653e60322c1b3234",
+            "5e9ff752653e60322c1b3235",
+            "5e9ff76c653e60322c1b3236",
+            "5e9ff78b653e60322c1b3238"
+        ],
+        "artistId": "5e9ff423653e60322c1b3229",
+        "artist": "Justin Bieber",
+        "name": "Changes",
+        "photo": "images/album/5e30db1e700c6_97edbb8b0943_1587541082128.image",
+        "year": 2020
+    },
+    {
+        "id": "5e9ff99f7931ca4154dbaa7b",
+        "tracks": [
+            "5e9ff9f07931ca4154dbaa7c",
+            "5e9ffa007931ca4154dbaa7d",
+            "5e9ffa1f7931ca4154dbaa7e",
+            "5e9ffa5d7931ca4154dbaa7f",
+            "5e9ffa6b7931ca4154dbaa80",
+            "5e9ffa847931ca4154dbaa81",
+            "5e9ffa9b7931ca4154dbaa82",
+            "5e9ffab27931ca4154dbaa83",
+            "5e9ffad47931ca4154dbaa84"
+        ],
+        "artistId": "5e9ff86e653e60322c1b3239",
+        "artist": "Justin Timberlake",
+        "name": "Man Of The Woods",
+        "photo": "images/album/ab67616d0000b2734626ff0fee963da605f6aa06_8a85a9f3773f_1587542431457.jpg",
+        "year": 2018
+    },
+    {
+        "id": "5e9ffd622cde1535107a38e9",
+        "tracks": [
+            "5e9ffdc32cde1535107a38ea",
+            "5e9ffe192cde1535107a38eb",
+            "5e9ffe3c2cde1535107a38ec",
+            "5e9ffe602cde1535107a38ed",
+            "5e9ffe852cde1535107a38ee",
+            "5e9ffef62cde1535107a38ef",
+            "5e9fff2d2cde1535107a38f0",
+            "5e9fff4a2cde1535107a38f1",
+            "5e9fffb32cde1535107a38f2",
+            "5e9fffd62cde1535107a38f3"
+        ],
+        "artistId": "5e9ffd472cde1535107a38e8",
+        "artist": "Gucci Mane",
+        "name": "Delusions of Grandeur",
+        "photo": "images/album/0afeb64fedf0a13b4462ee545d71a27d54429432_ee21672140bf_1587543394106.jpg",
+        "year": 2019
+    },
+    {
+        "id": "5ea001142cde1535107a38f6",
+        "tracks": [
+            "5ea001492cde1535107a38f7",
+            "5ea001602cde1535107a38f8",
+            "5ea0017a2cde1535107a38f9",
+            "5ea001912cde1535107a38fa",
+            "5ea001b92cde1535107a38fb",
+            "5ea002052cde1535107a38fc",
+            "5ea0021c2cde1535107a38fd",
+            "5ea002352cde1535107a38fe",
+            "5ea0024a2cde1535107a38ff",
+            "5ea0025d2cde1535107a3900",
+            "5ea002c52cde1535107a3901",
+            "5ea0030c2cde1535107a3902",
+            "5ea0032a2cde1535107a3903"
+        ],
+        "artistId": "5ea001052cde1535107a38f5",
+        "artist": "Migos",
+        "name": "Culture II",
+        "photo": "images/album/CS679658-01A-BIG_77a0f19df4dd_1587544339769.jpg",
+        "year": 2018
+    },
+    {
+        "id": "5ea004e12cde1535107a3906",
+        "tracks": [
+            "5ea0051f2cde1535107a3907",
+            "5ea005352cde1535107a3908",
+            "5ea0054e2cde1535107a3909",
+            "5ea0056b2cde1535107a390a",
+            "5ea005902cde1535107a390b",
+            "5ea005b12cde1535107a390c",
+            "5ea005d62cde1535107a390d",
+            "5ea005e92cde1535107a390e",
+            "5ea005fa2cde1535107a390f",
+            "5ea0061f2cde1535107a3910"
+        ],
+        "artistId": "5ea004c02cde1535107a3905",
+        "artist": "Juice WRLD",
+        "name": "Death Race For Love",
+        "photo": "images/album/655770_3_91969829aec5_1587545312726.jpg",
+        "year": 2019
+    },
+    {
+        "id": "5ea00af8fcdca327c869799c",
+        "tracks": [
+            "5ea00b2afcdca327c869799d",
+            "5ea00b5dfcdca327c869799e",
+            "5ea00b86fcdca327c869799f",
+            "5ea00ba7fcdca327c86979a0",
+            "5ea00bc4fcdca327c86979a1",
+            "5ea00be1fcdca327c86979a2",
+            "5ea00c12fcdca327c86979a3",
+            "5ea00c43fcdca327c86979a4",
+            "5ea00c63fcdca327c86979a5",
+            "5ea00c87fcdca327c86979a6"
+        ],
+        "artistId": "5ea0086d2cde1535107a3912",
+        "artist": "Arctic Monkeys",
+        "name": "AM",
+        "photo": "images/album/res_cfb63bd6c7b512b46315802c3a6cb1a5_full_dc168d1de79d_1587546871841.jpg",
+        "year": 2013
+    },
+    {
+        "id": "5ea00e02fcdca327c86979a9",
+        "tracks": [
+            "5ea00e39fcdca327c86979aa",
+            "5ea00e65fcdca327c86979ab",
+            "5ea00ea3fcdca327c86979ac",
+            "5ea00ed3fcdca327c86979ad",
+            "5ea00ef1fcdca327c86979ae",
+            "5ea00f17fcdca327c86979af",
+            "5ea00f4bfcdca327c86979b0",
+            "5ea00f66fcdca327c86979b1",
+            "5ea00f82fcdca327c86979b2",
+            "5ea00f9bfcdca327c86979b3"
+        ],
+        "artistId": "5ea00dcafcdca327c86979a8",
+        "artist": "Gorillaz",
+        "name": "Humanz",
+        "photo": "images/album/0d19c3-20170323-humanz-art_f487e3913e95_1587547650430.jpg",
+        "year": 2017
+    },
+    {
+        "id": "5ea011cefcdca327c86979b7",
+        "tracks": [
+            "5ea01235fcdca327c86979b8",
+            "5ea0125afcdca327c86979b9",
+            "5ea0127ffcdca327c86979ba",
+            "5ea0129afcdca327c86979bb",
+            "5ea012b9fcdca327c86979bc",
+            "5ea012d9fcdca327c86979bd",
+            "5ea012f7fcdca327c86979be",
+            "5ea01338fcdca327c86979bf",
+            "5ea013a3fcdca327c86979c0"
+        ],
+        "artistId": "5ea011b7fcdca327c86979b6",
+        "artist": "Queen",
+        "name": "A Night at the Opera",
+        "photo": "images/album/R-1648099-1274049905_4e09f83c32d2_1587548622609.jpeg",
+        "year": 1975
+    },
+    {
+        "id": "5ea014d8fcdca327c86979c3",
+        "tracks": [
+            "5ea0150ffcdca327c86979c4",
+            "5ea01559fcdca327c86979c5",
+            "5ea0158afcdca327c86979c6",
+            "5ea015abfcdca327c86979c7",
+            "5ea015cdfcdca327c86979c8",
+            "5ea01604fcdca327c86979c9",
+            "5ea0163efcdca327c86979ca",
+            "5ea01661fcdca327c86979cb",
+            "5ea0167ffcdca327c86979cc"
+        ],
+        "artistId": "5ea014a5fcdca327c86979c2",
+        "artist": "Nirvana",
+        "name": "Nevermind",
+        "photo": "images/album/res_1af48d9cec33865319539f9d36d9412d_full_0c1d05b1df10_1587549399968.jpg",
+        "year": 1991
+    },
+    {
+        "id": "5ea017cefcdca327c86979cf",
+        "tracks": [
+            "5ea01823fcdca327c86979d0",
+            "5ea01847fcdca327c86979d1",
+            "5ea01873fcdca327c86979d2",
+            "5ea01893fcdca327c86979d3",
+            "5ea018b3fcdca327c86979d4",
+            "5ea018e3fcdca327c86979d5",
+            "5ea01913fcdca327c86979d6"
+        ],
+        "artistId": "5ea01747fcdca327c86979ce",
+        "artist": "Guns N' Roses",
+        "name": "Appetite for Destruction",
+        "photo": "images/album/91Zs9bMMAaL_8c07cc3b08f3_1587550157765._SX466_",
+        "year": 1987
+    },
+    {
+        "id": "5ea01b75fcdca327c86979d9",
+        "tracks": [
+            "5ea01c5bfcdca327c86979da",
+            "5ea01c82fcdca327c86979db",
+            "5ea01cabfcdca327c86979dc",
+            "5ea01ccdfcdca327c86979dd",
+            "5ea01cf3fcdca327c86979de",
+            "5ea01d1cfcdca327c86979df",
+            "5ea01d43fcdca327c86979e0",
+            "5ea01d61fcdca327c86979e1",
+            "5ea01d7cfcdca327c86979e2",
+            "5ea01da1fcdca327c86979e3"
+        ],
+        "artistId": "5ea01b59fcdca327c86979d8",
+        "artist": "Chris Brown",
+        "name": "Indigo",
+        "photo": "images/album/71WR7mTL7BL_c133de89fb70_1587551093664._AC_SL1200_",
+        "year": 2019
+    },
+    {
+        "id": "5ea01f3ffcdca327c86979e6",
+        "tracks": [
+            "5ea01f8afcdca327c86979e7",
+            "5ea01fb3fcdca327c86979e8",
+            "5ea01fdafcdca327c86979e9",
+            "5ea01ffbfcdca327c86979ea",
+            "5ea0202efcdca327c86979eb",
+            "5ea02046fcdca327c86979ec",
+            "5ea02061fcdca327c86979ed",
+            "5ea02082fcdca327c86979ee",
+            "5ea020acfcdca327c86979ef",
+            "5ea020ccfcdca327c86979f0"
+        ],
+        "artistId": "5ea01f1afcdca327c86979e5",
+        "artist": "Mac Miller",
+        "name": "Swimming",
+        "photo": "images/album/unnamed_607974221854_1587552063092.jpg",
+        "year": 2018
+    },
+    {
+        "id": "5ea02340fcdca327c86979f3",
+        "tracks": [
+            "5ea0239ffcdca327c86979f4",
+            "5ea023c3fcdca327c86979f5",
+            "5ea023e9fcdca327c86979f6",
+            "5ea02401fcdca327c86979f7",
+            "5ea0241dfcdca327c86979f8",
+            "5ea0243ffcdca327c86979f9",
+            "5ea02458fcdca327c86979fa",
+            "5ea0247bfcdca327c86979fb",
+            "5ea02496fcdca327c86979fc",
+            "5ea024affcdca327c86979fd"
+        ],
+        "artistId": "5ea02305fcdca327c86979f2",
+        "artist": "Rihanna",
+        "name": "Anti",
+        "photo": "images/album/Rihanna_-_Anti_db22cfeabd51_1587553088665.png",
+        "year": 2016
+    },
+    {
+        "id": "5ea02a69fcdca327c8697a00",
+        "tracks": [
+            "5ea02a8afcdca327c8697a01",
+            "5ea02ac6fcdca327c8697a02",
+            "5ea02ad9fcdca327c8697a03",
+            "5ea02aeafcdca327c8697a04",
+            "5ea02afffcdca327c8697a05",
+            "5ea02b14fcdca327c8697a06",
+            "5ea02b26fcdca327c8697a07",
+            "5ea02b3cfcdca327c8697a08",
+            "5ea02b5ffcdca327c8697a0a"
+        ],
+        "artistId": "5ea02a53fcdca327c86979ff",
+        "artist": "Khalid",
+        "name": "Free Spirit",
+        "photo": "images/album/ab67616d0000b273b361ce46dbadbf8a11081b60_aca3264bf5ee_1587554921013.jpg",
+        "year": 2019
+    },
+    {
+        "id": "5ea02c8efcdca327c8697a0d",
+        "tracks": [
+            "5ea02cb7fcdca327c8697a0e",
+            "5ea02ce2fcdca327c8697a0f",
+            "5ea02cf4fcdca327c8697a10",
+            "5ea02d0cfcdca327c8697a11",
+            "5ea02d2efcdca327c8697a12"
+        ],
+        "artistId": "5ea02c6ffcdca327c8697a0c",
+        "artist": "Miles Davis",
+        "name": "Kind of Blue",
+        "photo": "images/album/ab67616d0000b2730ebc17239b6b18ba88cfb8ca_161f4da04316_1587555470459.jpg",
+        "year": 1959
+    },
+    {
+        "id": "5ea02f09fcdca327c8697a14",
+        "tracks": [
+            "5ea02f81fcdca327c8697a15",
+            "5ea02f9afcdca327c8697a16",
+            "5ea02fc3fcdca327c8697a17",
+            "5ea02fd9fcdca327c8697a18",
+            "5ea02fedfcdca327c8697a19",
+            "5ea03007fcdca327c8697a1a",
+            "5ea03032fcdca327c8697a1b",
+            "5ea03060fcdca327c8697a1c",
+            "5ea03071fcdca327c8697a1d"
+        ],
+        "artistId": "5ea02ed7fcdca327c8697a13",
+        "artist": "Louis Armstrong",
+        "name": "Louis and the Good Book",
+        "photo": "images/album/R-2721218-1514183917-9642_22e17c6a23b7_1587556105486.jpeg",
+        "year": 1958
+    },
+    {
+        "id": "5ea0316cfcdca327c8697a1f",
+        "tracks": [
+            "5ea0319afcdca327c8697a20",
+            "5ea031b2fcdca327c8697a21",
+            "5ea031e8fcdca327c8697a22",
+            "5ea0323bfcdca327c8697a23",
+            "5ea0325bfcdca327c8697a24",
+            "5ea03283fcdca327c8697a25",
+            "5ea0329dfcdca327c8697a26",
+            "5ea032c0fcdca327c8697a27",
+            "5ea03305fcdca327c8697a28"
+        ],
+        "artistId": "5ea03155fcdca327c8697a1e",
+        "artist": "Frank Sinatra",
+        "name": "Where are you",
+        "photo": "images/album/0222b81f2ac4cb591a4263a5d06811d0_f04534a87979_1587556715747.1000x1000x1",
+        "year": 1957
+    },
+    {
+        "id": "5ea03446fcdca327c8697a2b",
+        "tracks": [
+            "5ea0346dfcdca327c8697a2c",
+            "5ea03489fcdca327c8697a2d",
+            "5ea034a6fcdca327c8697a2e",
+            "5ea034bafcdca327c8697a2f",
+            "5ea034d4fcdca327c8697a30",
+            "5ea034e6fcdca327c8697a31",
+            "5ea034f8fcdca327c8697a32",
+            "5ea0352afcdca327c8697a33"
+        ],
+        "artistId": "5ea0343afcdca327c8697a2a",
+        "artist": "Chet Baker",
+        "name": "Chet",
+        "photo": "images/album/25071803117_ed8d6c631a_b_c37a7ea1ea81_1587557446347.jpg",
+        "year": 1959
+    },
+    {
+        "id": "5ea036d0fcdca327c8697a36",
+        "tracks": [
+            "5ea036f3fcdca327c8697a37",
+            "5ea03713fcdca327c8697a38",
+            "5ea03741fcdca327c8697a39",
+            "5ea03787fcdca327c8697a3a",
+            "5ea03796fcdca327c8697a3b"
+        ],
+        "artistId": "5ea036bdfcdca327c8697a35",
+        "artist": "John Coltrane",
+        "name": "Blue Train",
+        "photo": "images/album/51rILD0DI0L_ad053a6488c1_1587558095900.jpg",
+        "year": 1958
+    },
+    {
+        "id": "5ea03851fcdca327c8697a3d",
+        "tracks": [
+            "5ea03883fcdca327c8697a3e",
+            "5ea038c4fcdca327c8697a3f",
+            "5ea038e1fcdca327c8697a40"
+        ],
+        "artistId": "5ea0382cfcdca327c8697a3c",
+        "artist": "James Brown",
+        "name": "Ain't It Funky",
+        "photo": "images/album/81Q8WwnuWcL_69c3b26c5024_1587558481638._SL1417_",
+        "year": 1970
+    },
+    {
+        "id": "5ea0397dfcdca327c8697a42",
+        "tracks": [
+            "5ea039cafcdca327c8697a43",
+            "5ea039e7fcdca327c8697a44",
+            "5ea039f5fcdca327c8697a45",
+            "5ea03a1afcdca327c8697a46",
+            "5ea03a3ffcdca327c8697a47",
+            "5ea03a61fcdca327c8697a48",
+            "5ea03a70fcdca327c8697a49",
+            "5ea03a81fcdca327c8697a4a",
+            "5ea03abbfcdca327c8697a4b"
+        ],
+        "artistId": "5ea03966fcdca327c8697a41",
+        "artist": "Prince",
+        "name": "Purple Rain",
+        "photo": "images/album/R-10475521-1528930172-6223_1e682481e620_1587558781110.jpeg",
+        "year": 1984
+    },
+    {
+        "id": "5ea03c14fcdca327c8697a4d",
+        "tracks": [
+            "5ea03c34fcdca327c8697a4e",
+            "5ea03c43fcdca327c8697a4f",
+            "5ea03c7dfcdca327c8697a50",
+            "5ea03c8cfcdca327c8697a51",
+            "5ea03c9bfcdca327c8697a52",
+            "5ea03cabfcdca327c8697a53",
+            "5ea03cc6fcdca327c8697a54",
+            "5ea03cd8fcdca327c8697a55",
+            "5ea03ce9fcdca327c8697a56"
+        ],
+        "artistId": "5ea03bf9fcdca327c8697a4c",
+        "artist": "Stivie Wonder",
+        "name": "Innervisions",
+        "photo": "images/album/res_3e2581572cfc3f21b68034b21a0fbe8e_full_52bd564580f5_1587559443769.jpg",
+        "year": 1973
+    },
+    {
+        "id": "5ea03e86fcdca327c8697a5d",
+        "tracks": [
+            "5ea03ecefcdca327c8697a5e",
+            "5ea03d80fcdca327c8697a58",
+            "5ea03da7fcdca327c8697a59",
+            "5ea03dd2fcdca327c8697a5a",
+            "5ea03e26fcdca327c8697a5b",
+            "5ea03e49fcdca327c8697a5c"
+        ],
+        "artistId": "5ea03d3ffcdca327c8697a57",
+        "artist": "George Clinton",
+        "name": "Computer Games",
+        "photo": "images/album/George-Clinton-Computer-Games-album-cover-820_d9eac2710886_1587560070592.jpg",
+        "year": 1982
+    },
+    {
+        "id": "5ea04037fcdca327c8697a60",
+        "tracks": [
+            "5ea04066fcdca327c8697a61",
+            "5ea04087fcdca327c8697a62",
+            "5ea040b3fcdca327c8697a63",
+            "5ea040d4fcdca327c8697a64",
+            "5ea040f0fcdca327c8697a65",
+            "5ea04111fcdca327c8697a66",
+            "5ea04135fcdca327c8697a67",
+            "5ea0414afcdca327c8697a68",
+            "5ea04164fcdca327c8697a69",
+            "5ea041a7fcdca327c8697a6a",
+            "5ea041fbfcdca327c8697a6b"
+        ],
+        "artistId": "5ea03ff1fcdca327c8697a5f",
+        "artist": "Rick James",
+        "name": "Urban Rapsody",
+        "photo": "images/album/39c040b93bccef14660982a97e8eeb15_c1b689086b9f_1587560503545.800x800x1",
+        "year": 1997
+    },
+    {
+        "id": "5ea04437fcdca327c8697a6d",
+        "tracks": [
+            "5ea04479fcdca327c8697a6e",
+            "5ea0449efcdca327c8697a6f",
+            "5ea044abfcdca327c8697a70",
+            "5ea044c2fcdca327c8697a71",
+            "5ea044d8fcdca327c8697a72",
+            "5ea044e5fcdca327c8697a73",
+            "5ea044fefcdca327c8697a74",
+            "5ea0450ffcdca327c8697a75",
+            "5ea0452efcdca327c8697a76",
+            "5ea0455afcdca327c8697a77"
+        ],
+        "artistId": "5ea043e0fcdca327c8697a6c",
+        "artist": "J Balvin",
+        "name": "Colores",
+        "photo": "images/album/220px-J_Balvin_-_Colores_c45cce77c152_1587561527177.png",
+        "year": 2020
+    },
+    {
+        "id": "5ea04611fcdca327c8697a79",
+        "tracks": [
+            "5ea04637fcdca327c8697a7a",
+            "5ea04683fcdca327c8697a7b",
+            "5ea046b5fcdca327c8697a7c",
+            "5ea046c1fcdca327c8697a7d",
+            "5ea0479bfcdca327c8697a7e",
+            "5ea047b5fcdca327c8697a7f",
+            "5ea047d4fcdca327c8697a80",
+            "5ea047f1fcdca327c8697a81",
+            "5ea0480afcdca327c8697a82",
+            "5ea04818fcdca327c8697a83",
+            "5ea0482cfcdca327c8697a84"
+        ],
+        "artistId": "5ea04603fcdca327c8697a78",
+        "artist": "Maluma",
+        "name": "11:11",
+        "photo": "images/album/367868924-0_003d3235b21c_1587562001610.jpg",
+        "year": 2020
+    },
+    {
+        "id": "5ea0493efcdca327c8697a88",
+        "tracks": [
+            "5ea048d8fcdca327c8697a86",
+            "5ea048ebfcdca327c8697a87",
+            "5ea04996fcdca327c8697a89",
+            "5ea04a6321c64711189b1c01",
+            "5ea04a7021c64711189b1c02",
+            "5ea04a9821c64711189b1c03",
+            "5ea04aaf21c64711189b1c04",
+            "5ea04ad621c64711189b1c05",
+            "5ea04afb21c64711189b1c06",
+            "5ea04b2221c64711189b1c07",
+            "5ea04b3521c64711189b1c08"
+        ],
+        "artistId": "5ea04896fcdca327c8697a85",
+        "artist": "Shakira",
+        "name": "El Dorado",
+        "photo": "images/album/res_5e123b41d7a936896c254f69ca22751f_full_49838fdfa7bf_1587562814522.jpg",
+        "year": 2017
+    },
+    {
+        "id": "5ea04f6221c64711189b1c0a",
+        "tracks": [
+            "5ea0500d21c64711189b1c0b",
+            "5ea0503e21c64711189b1c0c",
+            "5ea0507521c64711189b1c0d",
+            "5ea0509521c64711189b1c0e",
+            "5ea050b521c64711189b1c0f",
+            "5ea050d221c64711189b1c10",
+            "5ea0510a21c64711189b1c11",
+            "5ea0512721c64711189b1c12",
+            "5ea0514421c64711189b1c13",
+            "5ea0516021c64711189b1c14"
+        ],
+        "artistId": "5ea04f3821c64711189b1c09",
+        "artist": "Pitbull",
+        "name": "Dale",
+        "photo": "images/album/pitbull_dale_booklet_3_bcacc277d1c4_1587564385888.png",
+        "year": 2015
+    },
+    {
+        "id": "5ea051ff21c64711189b1c16",
+        "tracks": [
+            "5ea0524f21c64711189b1c17",
+            "5ea0528221c64711189b1c18",
+            "5ea052a021c64711189b1c19",
+            "5ea052b921c64711189b1c1a",
+            "5ea052e221c64711189b1c1b",
+            "5ea0531021c64711189b1c1c",
+            "5ea0535c21c64711189b1c1d",
+            "5ea0538421c64711189b1c1e",
+            "5ea053a321c64711189b1c1f",
+            "5ea0540021c64711189b1c20"
+        ],
+        "artistId": "5ea051e421c64711189b1c15",
+        "artist": "Enrique Iglesias",
+        "name": "Euphoria",
+        "photo": "images/album/Euphoria_Album_Cover_13d023e69605_1587565055145.jpg",
+        "year": 2010
+    },
+    {
+        "id": "5ea0569121c64711189b1c22",
+        "tracks": [
+            "5ea0570221c64711189b1c23",
+            "5ea0572021c64711189b1c24",
+            "5ea0573b21c64711189b1c25",
+            "5ea0575821c64711189b1c26",
+            "5ea0579621c64711189b1c27",
+            "5ea057b621c64711189b1c28",
+            "5ea057dd21c64711189b1c29",
+            "5ea057f721c64711189b1c2a",
+            "5ea0581c21c64711189b1c2b",
+            "5ea0587321c64711189b1c2c"
+        ],
+        "artistId": "5ea0567521c64711189b1c21",
+        "artist": "Kendrick Lamar",
+        "name": "DAMN",
+        "photo": "images/album/6a0a761fbad580015c24479ef59077ae_93ec923e1ae6_1587566224809.960x960x1",
+        "year": 2017
+    },
+    {
+        "id": "5ea059c521c64711189b1c2e",
+        "tracks": [
+            "5ea059fc21c64711189b1c2f",
+            "5ea05a2c21c64711189b1c30",
+            "5ea05a3f21c64711189b1c31",
+            "5ea05a5821c64711189b1c32",
+            "5ea05a8421c64711189b1c33",
+            "5ea05aca21c64711189b1c34",
+            "5ea05af221c64711189b1c35",
+            "5ea05b3621c64711189b1c36",
+            "5ea05b4a21c64711189b1c37",
+            "5ea05b6621c64711189b1c38"
+        ],
+        "artistId": "5ea0593421c64711189b1c2d",
+        "artist": "The Notorious B.I.G.",
+        "name": "Ready to Die",
+        "photo": "images/album/Ready_To_Die_d0a6770de311_1587567044948.jpg",
+        "year": 1994
+    },
+    {
+        "id": "5ea05d4221c64711189b1c3a",
+        "tracks": [
+            "5ea05d8d21c64711189b1c3b",
+            "5ea05db121c64711189b1c3c",
+            "5ea05dc621c64711189b1c3d",
+            "5ea05de321c64711189b1c3e",
+            "5ea05df821c64711189b1c3f",
+            "5ea05e0d21c64711189b1c40",
+            "5ea05e3821c64711189b1c41",
+            "5ea05e5121c64711189b1c42",
+            "5ea05e6721c64711189b1c43",
+            "5ea05e8421c64711189b1c44"
+        ],
+        "artistId": "5ea05d1c21c64711189b1c39",
+        "artist": "Jay Z",
+        "name": "4:44",
+        "photo": "images/album/1200px-4-44_album_cover_7ed323b48317_1587567938670.png",
+        "year": 2017
+    },
+    {
+        "id": "5ea05f4f21c64711189b1c46",
+        "tracks": [
+            "5ea05f9321c64711189b1c47",
+            "5ea05fad21c64711189b1c48",
+            "5ea05fe221c64711189b1c49",
+            "5ea05ffa21c64711189b1c4a",
+            "5ea0601a21c64711189b1c4b",
+            "5ea0604d21c64711189b1c4c"
+        ],
+        "artistId": "5ea05f2f21c64711189b1c45",
+        "artist": "Drake",
+        "name": "Scorpion",
+        "photo": "images/album/Scorpion_by_Drake_e263c85be034_1587568463200.jpg",
+        "year": 2018
+    },
+    {
+        "id": "5ea0615721c64711189b1c4e",
+        "tracks": [
+            "5ea0619321c64711189b1c4f",
+            "5ea061f221c64711189b1c50",
+            "5ea0621221c64711189b1c51",
+            "5ea0622121c64711189b1c52",
+            "5ea0623921c64711189b1c53",
+            "5ea0625321c64711189b1c54",
+            "5ea0626b21c64711189b1c55",
+            "5ea0628121c64711189b1c56",
+            "5ea062a821c64711189b1c57",
+            "5ea062cf21c64711189b1c58",
+            "5ea0630721c64711189b1c59"
+        ],
+        "artistId": "5ea0613b21c64711189b1c4d",
+        "artist": "Selena Gomez",
+        "name": "Rare",
+        "photo": "images/album/Selena_Gomez_-_Rare_c929f968b926_1587568983531.png",
+        "year": 2020
+    },
+    {
+        "id": "5ea063f021c64711189b1c5b",
+        "tracks": [
+            "5ea064b621c64711189b1c5c",
+            "5ea064d621c64711189b1c5d",
+            "5ea0650e21c64711189b1c5e",
+            "5ea0652721c64711189b1c5f",
+            "5ea0654a21c64711189b1c60",
+            "5ea0659921c64711189b1c61",
+            "5ea065ad21c64711189b1c62"
+        ],
+        "artistId": "5ea063cd21c64711189b1c5a",
+        "artist": "Pink Floyd",
+        "name": "Wish You Were Here",
+        "photo": "images/album/1_Aad3rcP6yKOj3LgWqx75gA_878356393a58_1587569648285.jpg",
+        "year": 1975
+    },
+    {
+        "id": "5ea0664421c64711189b1c64",
+        "tracks": [
+            "5ea066a321c64711189b1c65",
+            "5ea066d421c64711189b1c66",
+            "5ea066ed21c64711189b1c67",
+            "5ea0670821c64711189b1c68",
+            "5ea0673221c64711189b1c69",
+            "5ea0675621c64711189b1c6a",
+            "5ea0677021c64711189b1c6b",
+            "5ea0678621c64711189b1c6c",
+            "5ea067a121c64711189b1c6d"
+        ],
+        "artistId": "5ea0662421c64711189b1c63",
+        "artist": "Ella Fitzgerald",
+        "name": "Ella and Louis",
+        "photo": "images/album/ella-and-louis_5e1c4db7f192_1587570244281.jpg",
+        "year": 1956
+    },
+    {
+        "id": "5ea06e7d21c64711189b1c6f",
+        "tracks": [
+            "5ea06f3721c64711189b1c70",
+            "5ea06f8921c64711189b1c71",
+            "5ea06fde21c64711189b1c72",
+            "5ea0707521c64711189b1c73",
+            "5ea070b321c64711189b1c74",
+            "5ea070dd21c64711189b1c75",
+            "5ea0713721c64711189b1c76",
+            "5ea0718721c64711189b1c77",
+            "5ea071db21c64711189b1c78"
+        ],
+        "artistId": "5ea06e7021c64711189b1c6e",
+        "artist": "Becky G",
+        "name": "Mala Santa",
+        "photo": "images/album/51A8gFtxjFL_1e39b633454e_1587572349116._SX342_QL70_ML2_",
+        "year": 2019
+    },
+    {
+        "id": "5ea074a421c64711189b1c7a",
+        "tracks": [
+            "5ea074c921c64711189b1c7b",
+            "5ea074e721c64711189b1c7c",
+            "5ea0751c21c64711189b1c7d",
+            "5ea0755621c64711189b1c7e",
+            "5ea0756e21c64711189b1c7f",
+            "5ea0759a21c64711189b1c80",
+            "5ea0764921c64711189b1c81",
+            "5ea0766821c64711189b1c82",
+            "5ea076a821c64711189b1c83",
+            "5ea076c721c64711189b1c84"
+        ],
+        "artistId": "5ea0744a21c64711189b1c79",
+        "artist": "Michael Jackson",
+        "name": "Dangerous",
+        "photo": "images/album/Michaeljacksondangerous_f55c3d477337_1587573924591.jpg",
+        "year": 1991
+    }
+]
