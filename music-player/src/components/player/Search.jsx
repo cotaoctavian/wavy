@@ -58,7 +58,6 @@ const SearchTrack = ({ id, handleUrl, songState, hover }) => {
     useEffect(() => {
         Axios.post("http://localhost:5000/song", { song: id })
             .then(res => {
-                console.log(res.data.info)
                 setSong(res.data.info)
             })
             .catch(err => console.log(err))

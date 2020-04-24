@@ -72,7 +72,7 @@ router.post('/dislike', (req, res) => {
                             user.save()
                                 .then(() => {
                                     const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, albums: user.albums }, process.env.TOKEN_SECRET)
-                                    res.json({ token: token })
+                                    res.json({songId: song._id, token: token })
                                 })
                                 .catch(() => console.log(err))
                         }
@@ -103,7 +103,7 @@ router.post('/like', (req, res) => {
                             user.save()
                                 .then(() => {
                                     const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, albums: user.albums }, process.env.TOKEN_SECRET)
-                                    res.json({ token: token })
+                                    res.json({songId: song._id, token: token })
                                 })
                                 .catch(() => console.log(err))
                         }

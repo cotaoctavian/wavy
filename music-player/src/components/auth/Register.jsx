@@ -67,7 +67,15 @@ const Register = () => {
             Axios.post('http://localhost:5000/register/add/', registration)
                 .then(res => {
                     setMessage(res.data)
-                    if (res.data === "Registration added!") history.push('/login');
+
+                    Axios.post('http://localhost:5001/auth', {username: res.data.username, id: res.data.userId})
+                        .then((res) => {
+                            console.log(res.data.message)
+                        })
+                        .catch((err) => console.log(err))
+
+                    if (res.data.message === "Registration added!") history.push('/login');
+                    
                 })
                 .catch(err => console.log(err));
 

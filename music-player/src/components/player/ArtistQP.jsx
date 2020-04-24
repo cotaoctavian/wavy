@@ -216,6 +216,15 @@ const ArtistQPNotification = ({ id, songId, handleLike, songs, handleUrl, songId
                     localStorage.setItem('token', res.data.token)
                 })
                 .catch(err => console.log(err))
+
+            await Axios.post('http://localhost:5001/artist/follow', { userId: user.id, artistId: id })
+                .then((res) => {
+                    console.log(res.data)
+                })
+                .catch((err) => {
+                    console.log(err)
+                })
+
         } else {
             await Axios.patch(`http://localhost:5000/artist/unfollow/${id}/${user.id}`)
                 .then((res) => {
@@ -224,6 +233,14 @@ const ArtistQPNotification = ({ id, songId, handleLike, songs, handleUrl, songId
                     localStorage.setItem('token', res.data.token)
                 })
                 .catch(err => console.log(err))
+
+            await Axios.post('http://localhost:5001/artist/unfollow', { userId: user.id, artistId: id })
+                .then((res) => {
+                    console.log(res.data)
+                })
+                .catch((err) => {
+                    console.log(err)
+                })
         }
         setFollowing(!following)
     }

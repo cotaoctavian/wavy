@@ -53,24 +53,44 @@ const WebPlayer = (props) => {
                 setSongInfo(res.data.info)
             })
             .catch(err => console.log(err))
+
+        await Axios.post('http://localhost:5001/song/listened', { userId: user.id, songId: currentSongId })
+            .then(res => {
+                console.log(res.data)
+            })
+            .catch(err => console.log(err))
     }
 
     // Handle like functionality of tracks
-    const handleLike = (like, songUrl) => {
+    const handleLike = async (like, songUrl) => {
         setLike(like)
         if (like === false) {
-            Axios.post("http://localhost:5000/song/dislike", { name: songUrl, id: user.id })
-                .then(res => {
+            await Axios.post("http://localhost:5000/song/dislike", { name: songUrl, id: user.id })
+                .then(async (res) => {
                     dispatch(setUpUser(jwt(res.data.token)))
                     localStorage.setItem('token', res.data.token);
+
+                    await Axios.post('http://localhost:5001/song/disliked', { userId: user.id, songId: res.data.songId })
+                        .then(res => {
+                            console.log(res.data)
+                        })
+                        .catch(err => console.log(err))
                 })
                 .catch(err => console.log(err))
         } else if (like === true) {
-            Axios.post("http://localhost:5000/song/like", { name: songUrl, id: user.id })
-                .then(res => {
+            await Axios.post("http://localhost:5000/song/like", { name: songUrl, id: user.id })
+                .then(async (res) => {
                     dispatch(setUpUser(jwt(res.data.token)))
                     localStorage.setItem('token', res.data.token)
+
+                    await Axios.post('http://localhost:5001/song/liked', { userId: user.id, songId: res.data.songId })
+                        .then(res => {
+                            console.log(res.data)
+                        })
+                        .catch(err => console.log(err))
+
                 })
+                .catch(err => console.log(err))
         }
     }
 
@@ -248,7 +268,7 @@ const WebPlayer = (props) => {
             {urlPathname === "/library/artists" ? <Artists /> : null}
             {urlPathname === "/library/playlists" ? <Playlist image={user.img} userId={user.id} /> : null}
             {urlPathname === "/library/tracks" ? <LikedSongs image={user.img} songs={user.songs} songId={songId} songIdState={playing} handle={handleUrl} handleLike={handleLike} /> : null}
-            {urlPathname === "/search" ? <Search songId={songId} songIdState={playing} handleUrl={handleUrl}/> : null} 
+            {urlPathname === "/search" ? <Search songId={songId} songIdState={playing} handleUrl={handleUrl} /> : null}
             {url.length > 0 ? <Player resetTrack={reset} handlePrevious={handlePrevious} handleForward={handleForward} handleLike={handleLike} songInfo={songInfo} audio={audio} url={url} play={playing} changePlay={setPlaying} likeState={like} /> : null}
         </React.Fragment>
     );

@@ -4,7 +4,6 @@ import Axios from 'axios';
 
 
 const ArtistItem = ({ id }) => {
-    console.log(id)
 
     const [artist, setArtist] = useState(null)
 

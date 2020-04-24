@@ -72,7 +72,7 @@ const AlbumTrack = ({ albumId, id, handleLike, songs, handleUrl, hover, songStat
             for (i = 0; i < songs.length; i++) {
                 if (songs[i] === id) setLike(true)
             }
-        
+
             setPlaying(songState)
         }
     }, [id, songs, playing, songState])
@@ -207,6 +207,10 @@ const AlbumQPNotification = ({ id, songId, handleLike, songs, handleUrl, songIdS
             enqueueSnackbar(result.data.message, { variant: 'default' })
             localStorage.setItem('token', result.data.token);
             dispatch(setUpUser(jwt(result.data.token)))
+
+            const neo4j_result = await Axios.post('http://localhost:5001/album/saved', { userId: user.id, albumId: id })
+            console.log(neo4j_result.data)
+
         } catch (err) {
             enqueueSnackbar(err.response.data.message, { variant: 'default' })
         }
@@ -220,6 +224,10 @@ const AlbumQPNotification = ({ id, songId, handleLike, songs, handleUrl, songIdS
             enqueueSnackbar(result.data.message, { variant: 'default' })
             localStorage.setItem('token', result.data.token);
             dispatch(setUpUser(jwt(result.data.token)))
+
+            const neo4j_result = await Axios.post('http://localhost:5001/album/remove', { userId: user.id, albumId: id })
+            console.log(neo4j_result.data)
+
         } catch (err) {
             enqueueSnackbar(err.response.data.message, { variant: 'default' })
         }

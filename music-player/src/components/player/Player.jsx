@@ -178,9 +178,9 @@ const Player = ({ resetTrack, handlePrevious, handleForward, handleLike, songInf
         <React.Fragment>
             <Global />
             <ContainerPlayer>
-                <button onClick={toggleBackward}> <SkipPreviousSharpIcon style={{ fontSize: 30 }} /> </button>
-                <button onClick={togglePlay}> {playing ? <PauseCircleOutlineSharpIcon style={{ fontSize: 40 }} /> : <PlayCircleOutlineSharpIcon style={{ fontSize: 40 }} />} </button>
-                <button onClick={toggleForward}> <SkipNextSharpIcon style={{ fontSize: 30 }} /> </button>
+                <button onClick={toggleBackward}> <SkipPreviousSharpIcon style={{ fontSize: 30, cursor: "pointer" }} /> </button>
+                <button onClick={togglePlay}> {playing ? <PauseCircleOutlineSharpIcon style={{ fontSize: 40, cursor: "pointer"  }} /> : <PlayCircleOutlineSharpIcon style={{ fontSize: 40, cursor: "pointer"  }} />} </button>
+                <button onClick={toggleForward}> <SkipNextSharpIcon style={{ fontSize: 30, cursor: "pointer"  }} /> </button>
                 <TimerDiv>
                     <span> {currentTime} </span>
                     <span> / </span>

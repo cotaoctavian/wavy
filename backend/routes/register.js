@@ -29,7 +29,7 @@ router.route('/add').post((req, res) => {
             bcrypt.hash(req.body.password, 10, (err, hash) => {
                 newUser.password = hash;
                 newUser.save()
-                .then(() => res.json('Registration added!'))
+                .then((user) => res.json({message: "Registration added!", userId: user._id, username: user.username}))
                 .catch(err => res.status(400).json('Error: ' + err));
             })
 
