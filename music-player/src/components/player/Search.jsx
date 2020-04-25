@@ -92,7 +92,7 @@ const SearchTrack = ({ id, handleUrl, songState, hover }) => {
                         <button onClick={togglePlay}>
                             {song.photo_path ? <img src={`http://localhost:5000/${song.photo_path}`} alt="" /> : null}
                         </button>
-                        {playing ? <FontAwesomeIcon icon={faPause} /> : <FontAwesomeIcon icon={faPlay} />}
+                        {playing ? <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPause} /> : <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPlay} />}
                     </div>
                     <span> {song.title} </span>
                     <span> {song.artist} </span>
@@ -105,7 +105,7 @@ const SearchTrack = ({ id, handleUrl, songState, hover }) => {
                         <button onClick={togglePlay}>
                             {song.photo_path ? <img src={`http://localhost:5000/${song.photo_path}`} alt="" /> : null}
                         </button>
-                        {playing ? <FontAwesomeIcon icon={faPause} /> : <FontAwesomeIcon icon={faPlay} />}
+                        {playing ? <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPause} /> : <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPlay} />}
                     </div>
                     <span> {song.title} </span>
                     <span> {song.artist} </span>
@@ -159,10 +159,10 @@ const Search = ({ songId, songIdState, handleUrl }) => {
                 setAlbumsList(res.data.albums)
             })
             .catch(error => console.log(error))
-            if(filteredSongs !== null) {
-                if(filteredSongs[0]._id === songId) setPlaying(songIdState)
-                else setPlaying(false)
-            }
+        if (filteredSongs !== null) {
+            if (filteredSongs[0]._id === songId) setPlaying(songIdState)
+            else setPlaying(false)
+        }
     }, [topResult, filteredSongs, filteredAlbums, filteredArtists, songIdState, songId, handleUrl])
 
     const handleOnChange = (e) => {
@@ -295,7 +295,7 @@ const Search = ({ songId, songIdState, handleUrl }) => {
                     <Links>
                         <span> <NavLink exact to="/player" className="header-player-link"> Home </NavLink> </span>
                         <span> <NavLink exact to="/hotlist" className="header-player-link"> Hotlist </NavLink></span>
-                        <span> <NavLink exact to="/library" className="header-player-link"> Library </NavLink></span>
+                        <span> <NavLink exact to="/library/playlists" className="header-player-link"> Library </NavLink></span>
                         <span> <NavLink exact to="/search" className="header-nav-link"> <FontAwesomeIcon icon={faSearch} /> Search </NavLink> </span>
                     </Links>
 

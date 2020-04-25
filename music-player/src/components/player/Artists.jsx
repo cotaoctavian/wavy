@@ -31,7 +31,7 @@ const Artists = () => {
                 <Links>
                     <span> <NavLink exact to="/player" className="header-player-link"> Home </NavLink> </span>
                     <span> <NavLink exact to="/hotlist" className="header-player-link"> Hotlist </NavLink></span>
-                    <span> <NavLink exact to="/library" className="header-nav-link"> Library </NavLink></span>
+                    <span> <NavLink exact to="/library/playlists" className="header-nav-link"> Library </NavLink></span>
                     <span> <NavLink exact to="/search" className="header-player-link"> <FontAwesomeIcon icon={faSearch} /> Search </NavLink> </span>
                 </Links>
 

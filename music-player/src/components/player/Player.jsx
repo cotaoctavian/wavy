@@ -51,9 +51,12 @@ const Player = ({ resetTrack, handlePrevious, handleForward, handleLike, songInf
     useEffect(() => {
         audio.pause();
         audio.src = `http://localhost:5000/${url}`;
-        audio.addEventListener('canplay', () => {
-            audio.play();
-        });
+        audio.pause();        
+        if (play) {
+            audio.addEventListener('canplay', () => {
+                audio.play();
+            });
+        }
 
         if (url !== "") {
             audio.pause()
@@ -179,8 +182,8 @@ const Player = ({ resetTrack, handlePrevious, handleForward, handleLike, songInf
             <Global />
             <ContainerPlayer>
                 <button onClick={toggleBackward}> <SkipPreviousSharpIcon style={{ fontSize: 30, cursor: "pointer" }} /> </button>
-                <button onClick={togglePlay}> {playing ? <PauseCircleOutlineSharpIcon style={{ fontSize: 40, cursor: "pointer"  }} /> : <PlayCircleOutlineSharpIcon style={{ fontSize: 40, cursor: "pointer"  }} />} </button>
-                <button onClick={toggleForward}> <SkipNextSharpIcon style={{ fontSize: 30, cursor: "pointer"  }} /> </button>
+                <button onClick={togglePlay}> {playing ? <PauseCircleOutlineSharpIcon style={{ fontSize: 40, cursor: "pointer" }} /> : <PlayCircleOutlineSharpIcon style={{ fontSize: 40, cursor: "pointer" }} />} </button>
+                <button onClick={toggleForward}> <SkipNextSharpIcon style={{ fontSize: 30, cursor: "pointer" }} /> </button>
                 <TimerDiv>
                     <span> {currentTime} </span>
                     <span> / </span>
@@ -215,7 +218,7 @@ const Player = ({ resetTrack, handlePrevious, handleForward, handleLike, songInf
                         </div>
                         : null}
                     {songInfo !== null ?
-                        <button onClick={toggleLike}> {like ? <FavoriteIcon style={{ color: "white", cursor: "pointer" }} /> : <FavoriteBorderIcon style={{ color: "white", cursor:"pointer" }} />}  </button>
+                        <button onClick={toggleLike}> {like ? <FavoriteIcon style={{ color: "white", cursor: "pointer" }} /> : <FavoriteBorderIcon style={{ color: "white", cursor: "pointer" }} />}  </button>
                         : null
                     }
 
@@ -250,7 +253,7 @@ const Player = ({ resetTrack, handlePrevious, handleForward, handleLike, songInf
 
                     {repeatMode === 1 ?
                         <Tooltip TransitionComponent={Zoom} title="Repeat all">
-                            <button onClick={toggleRepeat}> <RepeatIcon style={{ width: 20, paddingTop: 5, color: "white", fontSize: 25, cursor: "pointer"}} /> </button>
+                            <button onClick={toggleRepeat}> <RepeatIcon style={{ width: 20, paddingTop: 5, color: "white", fontSize: 25, cursor: "pointer" }} /> </button>
                         </Tooltip> : null}
 
                     {repeatMode === 2 ?

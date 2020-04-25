@@ -87,7 +87,7 @@ const Song = props => {
                         <button onClick={togglePlay}>
                             {song.photo_path ? <img src={`http://localhost:5000/${song.photo_path}`} alt="" /> : null}
                         </button>
-                        {playing ? <FontAwesomeIcon icon={faPause} /> : <FontAwesomeIcon icon={faPlay} />}
+                        {playing ? <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPause} /> : <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPlay} />}
                     </div>
                     <span> {song.title} </span>
                     <span> {song.artist} </span>
@@ -102,7 +102,7 @@ const Song = props => {
                         <button onClick={togglePlay}>
                             {song.photo_path ? <img src={`http://localhost:5000/${song.photo_path}`} alt="" /> : null}
                         </button>
-                        {playing ? <FontAwesomeIcon icon={faPause} /> : <FontAwesomeIcon icon={faPlay} />}
+                        {playing ? <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPause} /> : <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPlay} />}
                     </div>
                     <span> {song.title} </span>
                     <span> {song.artist} </span>

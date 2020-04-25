@@ -104,7 +104,7 @@ const PlaylistSong = ({ handleDeleteTrack, playlistId, id, songs, handleLike, ha
                         <button onClick={togglePlay}>
                             {songInfo.photo_path ? <img src={`http://localhost:5000/${songInfo.photo_path}`} alt="" /> : null}
                         </button>
-                        {playing ? <FontAwesomeIcon icon={faPause} /> : <FontAwesomeIcon icon={faPlay} />}
+                        {playing ? <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPause} /> : <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPlay} />}
                     </div>
                     <span> {songInfo.title} </span>
                     <span> {songInfo.artist} </span>
@@ -119,7 +119,7 @@ const PlaylistSong = ({ handleDeleteTrack, playlistId, id, songs, handleLike, ha
                         <button onClick={togglePlay}>
                             {songInfo.photo_path ? <img src={`http://localhost:5000/${songInfo.photo_path}`} alt="" /> : null}
                         </button>
-                        {playing ? <FontAwesomeIcon icon={faPause} /> : <FontAwesomeIcon icon={faPlay} />}
+                        {playing ? <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPause} /> : <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPlay} />}
                     </div>
                     <span> {songInfo.title} </span>
                     <span> {songInfo.artist} </span>

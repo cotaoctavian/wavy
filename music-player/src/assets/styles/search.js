@@ -177,7 +177,7 @@ export const TopResultWithSongs = styled.div`
 
 export const SearchSong = styled.div`
     display: grid;
-    grid-template-columns: 0.01fr 0.25fr 0.9fr 0.01fr;
+    grid-template-columns: 0.01fr 0.5fr 0.9fr 0.01fr;
     width: 61%;
     padding-top: 23px;
     border-bottom: 0.05px solid #bdbdbd;
@@ -240,7 +240,7 @@ export const SearchSong = styled.div`
 
 export const HoveredSearchSong = styled.div`
     display: grid;
-    grid-template-columns: 0.01fr 0.25fr 0.9fr 0.01fr;
+    grid-template-columns: 0.01fr 0.5fr 0.9fr 0.01fr;
     width: 61%;
     padding-top: 23px;
     border-bottom: 0.05px solid #bdbdbd;

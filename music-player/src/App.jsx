@@ -30,7 +30,6 @@ const App = () => {
         <Route exact path="/change_password" component={ChangePassword} />
         <Route exact path="/update_profile" component={UpdateProfile} />
         <Route exact path="/player" component={WebPlayer} />
-        <Route exact path="/library" component={WebPlayer} />
         <Route exact path="/library/albums" component={WebPlayer} />
         <Route exact path="/library/tracks" component={WebPlayer} />
         <Route exact path="/library/playlists" component={WebPlayer} />

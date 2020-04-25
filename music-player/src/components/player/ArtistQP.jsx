@@ -119,7 +119,7 @@ const ArtistSingle = ({ artistId, id, handleLike, songs, handleUrl, hover, songS
                         <button onClick={togglePlay}>
                             {songInfo.photo_path ? <img src={`http://localhost:5000/${songInfo.photo_path}`} alt="" /> : null}
                         </button>
-                        {playing ? <FontAwesomeIcon icon={faPause} /> : <FontAwesomeIcon icon={faPlay} />}
+                        {playing ? <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPause} /> : <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPlay} />}
                     </div>
                     <span> {songInfo.title} </span>
                     <span> {songInfo.artist} </span>
@@ -134,7 +134,7 @@ const ArtistSingle = ({ artistId, id, handleLike, songs, handleUrl, hover, songS
                         <button onClick={togglePlay}>
                             {songInfo.photo_path ? <img src={`http://localhost:5000/${songInfo.photo_path}`} alt="" /> : null}
                         </button>
-                        {playing ? <FontAwesomeIcon icon={faPause} /> : <FontAwesomeIcon icon={faPlay} />}
+                        {playing ? <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPause} /> : <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPlay} />}
                     </div>
                     <span> {songInfo.title} </span>
                     <span> {songInfo.artist} </span>
@@ -258,7 +258,7 @@ const ArtistQPNotification = ({ id, songId, handleLike, songs, handleUrl, songId
                 <Links>
                     <span> <NavLink exact to="/player" className="header-player-link"> Home </NavLink> </span>
                     <span> <NavLink exact to="/hotlist" className="header-player-link"> Hotlist </NavLink></span>
-                    <span> <NavLink exact to="/library" className="header-nav-link"> Library </NavLink></span>
+                    <span> <NavLink exact to="/library/playlists" className="header-nav-link"> Library </NavLink></span>
                     <span> <NavLink exact to="/search" className="header-player-link"> <FontAwesomeIcon icon={faSearch} /> Search </NavLink> </span>
                 </Links>
 
