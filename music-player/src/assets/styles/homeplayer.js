@@ -9,6 +9,7 @@ export const RecommendedSongs = styled.div`
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     font-size: 15px;
+    margin-top: 4em;
     margin-bottom: 1em;
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -41,6 +42,10 @@ export const RecommendedSongs = styled.div`
         grid-column-gap: 25px;
         grid-row-gap: 20px;
         width: 100%;
+
+        & span {
+            
+        }
     }
 
     @keyframes fadein {
@@ -152,7 +157,6 @@ export const RecommendedAlbumsContainer = styled.div`
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     font-size: 15px;
-    margin-bottom: 20em;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -184,6 +188,42 @@ export const RecommendedAlbumsContainer = styled.div`
         grid-template-rows: auto;
         grid-column-gap: 25px;
         grid-row-gap: 20px;
+
+        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+
+            @keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            /* Firefox < 16 */
+            @-moz-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            /* Safari, Chrome and Opera > 12.1 */
+            @-webkit-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            /* Internet Explorer */
+            @-ms-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            /* Opera < 12.1 */
+            @-o-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+    
 
         & div {
             display: grid;
@@ -226,46 +266,117 @@ export const RecommendedAlbumsContainer = styled.div`
     }
 `;
 
+export const RecommendedArtistsContainer = styled.div`
+    display: grid;
+    margin-left: 3%;
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    font-size: 15px;
+    margin-bottom: 2em;
 
-export const Main = styled.div`
-    background-color: #1a1a1a;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 9%;
-    
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
          -o-animation: fadein 2s; /* Opera < 12.1 */
             animation: fadein 2s;
 
-    @keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
+    & h1 {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+    
+    & h2 {
+        font-family: 'Poppins', sans-serif;
+        color: white;
     }
 
-    /* Firefox < 16 */
-    @-moz-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
+    & h3 {
+        font-family: 'Poppins', sans-serif;
+        color: white;
     }
 
-    /* Safari, Chrome and Opera > 12.1 */
-    @-webkit-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-    }
+    & > div {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        width: 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 25px;
+        grid-row-gap: 20px;
 
-    /* Internet Explorer */
-    @-ms-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-    }
+        & div {
+            -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation: fadein 2s; /* Firefox < 16 */
+                -ms-animation: fadein 2s; /* Internet Explorer */
+                -o-animation: fadein 2s; /* Opera < 12.1 */
+                    animation: fadein 2s;
 
-    /* Opera < 12.1 */
-    @-o-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-    }
+            @keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            /* Firefox < 16 */
+            @-moz-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            /* Safari, Chrome and Opera > 12.1 */
+            @-webkit-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            /* Internet Explorer */
+            @-ms-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            /* Opera < 12.1 */
+            @-o-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+                }
+            }
+
+            @keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            /* Firefox < 16 */
+            @-moz-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            /* Safari, Chrome and Opera > 12.1 */
+            @-webkit-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            /* Internet Explorer */
+            @-ms-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+            /* Opera < 12.1 */
+            @-o-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+`;
+
+
+export const LoadingContainer = styled.div`
+    position: absolute;
+    top: 45%;
+    left: 48%;
 `;

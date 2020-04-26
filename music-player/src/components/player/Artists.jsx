@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { Header, Global, Links, Main, Menu } from '../../assets/styles/webplayer';
 import { ArtistContainer } from '../../assets/styles/artists';
 import { NavLink } from 'react-router-dom';
@@ -48,8 +48,8 @@ const Artists = () => {
                 </Menu>
 
                 <ArtistContainer>
-                    {user.artists.map((album, index) => {
-                        return (<ArtistItem key={index} id={album} />)
+                    {user.artists.map((artist, index) => {
+                        return (<ArtistItem key={index} id={artist} />)
                     })}
                 </ArtistContainer>
 

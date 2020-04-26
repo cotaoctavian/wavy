@@ -5,6 +5,9 @@ import Axios from 'axios';
 /* Redux */
 import { useSelector } from 'react-redux'
 
+/* Components */
+import ArtistItem from './ArtistItem'
+
 /* Images and icons */
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,8 +17,9 @@ import PauseCircleFilledIcon from '@material-ui/icons/PauseCircleFilled';
 
 /* Styling */
 import { Header, Global, Links } from '../../assets/styles/webplayer';
-import { RecommendedSongs, SongContainer, Main, RecommendedAlbumsContainer } from '../../assets/styles/homeplayer';
+import { RecommendedSongs, SongContainer, RecommendedAlbumsContainer, RecommendedArtistsContainer, LoadingContainer } from '../../assets/styles/homeplayer';
 import '../../assets/css/Global.css';
+import '../../assets/css/Spinner.scss';
 
 
 const AlbumItem = ({ id }) => {
@@ -90,13 +94,14 @@ const HomePlayer = ({ id, image, handleUrl, songId, songIdState }) => {
 
     const [recommendedSongs, setRecommendedSongs] = useState([])
     const [recommendedAlbums, setRecommendedAlbums] = useState([])
+    const [recommendedArtists, setRecommendedArtists] = useState([])
     const [loading, setLoading] = useState(false)
 
     useEffect(() => {
         if (id !== undefined) {
             Axios.post("http://localhost:5001/recommended/songs/genres", { userId: id })
                 .then(async (response) => {
-                    let genres = response.data.result
+                    let genres = response.data.result[0]
                     let tracks = []
                     for (let i = 0; i < genres.length; i++) {
                         await Axios.post("http://localhost:5001/recommended/tracks", { userId: id, genre: genres[i], limit: parseInt(Math.ceil(8 / genres.length)) })
@@ -108,11 +113,10 @@ const HomePlayer = ({ id, image, handleUrl, songId, songIdState }) => {
                             .catch((err) => console.log(err))
                     }
                     setRecommendedSongs(tracks)
-                    
+
                     Axios.post("http://localhost:5001/recommended/albums/genres", { userId: id })
                         .then(async (response) => {
-                            let genres = response.data.result
-                            console.log(genres)
+                            let genres = response.data.result[0]
                             let albums = []
                             for (let i = 0; i < genres.length; i++) {
                                 await Axios.post("http://localhost:5001/recommended/albums", { userId: id, genre: genres[i], limit: 2 })
@@ -125,10 +129,27 @@ const HomePlayer = ({ id, image, handleUrl, songId, songIdState }) => {
                             }
                             setRecommendedAlbums(albums)
 
-                            setInterval(() => {
-                                setLoading(true)
-                            }, 1000)
-        
+                            Axios.post("http://localhost:5001/recommended/artists/genres", { userId: id })
+                                .then(async (response) => {
+                                    let genres = response.data.result[0]
+                                    let artists = []
+                                    for (let i = 0; i < genres.length; i++) {
+                                        await Axios.post("http://localhost:5001/recommended/artists", { userId: id, genre: genres[i], limit: 2 })
+                                            .then((response) => {
+                                                const artists_data = response.data.result
+                                                for (let j = 0; j < artists_data.length; j++)
+                                                    artists.push(artists_data[j])
+                                            })
+                                            .catch((err) => console.log(err))
+                                    }
+                                    setRecommendedArtists(artists)
+
+                                    setInterval(() => {
+                                        setLoading(true)
+                                    }, 2000)
+                                })
+                                .catch((error) => console.log(error))
+
                         })
                         .catch((error) => console.log(error))
                 })
@@ -156,24 +177,30 @@ const HomePlayer = ({ id, image, handleUrl, songId, songIdState }) => {
 
             </Header>
 
-            <Main>
-                {loading ?
-                    <RecommendedSongs>
-                        {recommendedSongs.length > 0 ? <h1> Recommended songs for you </h1> : null}
-                        <div>
-                            {recommendedSongs.length > 0 ?
-                                recommendedSongs.map((song, index) => {
-                                    if (song === songId) return <SongItem key={index} id={song} handleUrl={handleUrl} songState={songIdState} />
-                                    else return <SongItem key={index} id={song} handleUrl={handleUrl} songState={false} />
-                                })
-                                : null}
-                        </div>
-                    </RecommendedSongs> : null}
-                
-                {loading ? 
+            {loading ? null :
+                <LoadingContainer>
+                    <div>
+                        <div class="sp sp-slices"></div>
+                    </div>
+                </LoadingContainer>}
+
+            {loading ?
+                <RecommendedSongs>
+                    {recommendedSongs.length > 0 ? <h1> Recommended songs for you </h1> : null}
+                    <div>
+                        {recommendedSongs.length > 0 ?
+                            recommendedSongs.map((song, index) => {
+                                if (song === songId) return <SongItem key={index} id={song} handleUrl={handleUrl} songState={songIdState} />
+                                else return <SongItem key={index} id={song} handleUrl={handleUrl} songState={false} />
+                            })
+                            : null}
+                    </div>
+                </RecommendedSongs> : null}
+
+            {loading ?
                 <RecommendedAlbumsContainer>
 
-                    {recommendedAlbums.length !== 0 ? <h2> Recommended albums for you </h2> : null}
+                    {recommendedAlbums.length !== 0 ? <h1> Recommended albums for you </h1> : null}
 
                     <div>
                         {recommendedAlbums.length !== 0 ?
@@ -185,9 +212,18 @@ const HomePlayer = ({ id, image, handleUrl, songId, songIdState }) => {
                 </RecommendedAlbumsContainer> : null}
 
 
-            </Main>
+            {loading ?
+                <RecommendedArtistsContainer>
 
-        </React.Fragment>
+                    {recommendedAlbums.length !== 0 ? <h1> Recommended artists for you </h1> : null}
+
+                    <div>
+                        {recommendedArtists.map((artist, index) => {
+                            return (<ArtistItem key={index} id={artist} />)
+                        })}
+                    </div>
+                </RecommendedArtistsContainer> : null}
+        </React.Fragment >
     );
     return content;
 }

@@ -5,7 +5,6 @@ import Axios from 'axios';
 import '../../assets/css/Global.css';
 
 /* COMPONENTS */
-import Library from './Library';
 import Artists from './Artists';
 import LikedSongs from './LikedSongs';
 import Player from './Player';
