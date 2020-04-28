@@ -95,7 +95,7 @@ router.patch('/unfollow/:artistId/:userId', (req, res) => {
         .catch(() => res.status(500).json({ message: "Something went wrong.. 🤔" }))
 })
 
-
+/* Admin panel routes */
 router.post('/1/:name/:solo', (req, res) => {
     if (req.files !== null) {
         let file = req.files.file;

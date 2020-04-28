@@ -68,6 +68,7 @@ router.delete('/:userId/:albumId/:albumTitle', (req, res) => {
         })
 })
 
+/* Admin panel route */
 router.post('/1/:artist/:name/:year', (req, res) => {
 
     if (req.files !== null) {

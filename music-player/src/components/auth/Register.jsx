@@ -64,7 +64,7 @@ const Register = () => {
                 img: 'images/user_avatar.svg'
             };
 
-            Axios.post('http://localhost:5000/register/add/', registration)
+            Axios.post('http://localhost:5000/register/', registration)
                 .then(res => {
                     setMessage(res.data)
 

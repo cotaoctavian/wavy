@@ -29,7 +29,7 @@ const PlaylistQPNotification = (props) => {
     useEffect(() => {
         document.body.classList.remove('dashboard-back')
         if (props.id !== undefined) {
-            Axios.post("http://localhost:5000/playlist/", { id: props.id })
+            Axios.get(`http://localhost:5000/playlist/${props.id}`)
                 .then(res => {
                     setPlaylistTitle(res.data.playlist.title);
                     setPlaylistSongs(res.data.playlist.songs);
@@ -65,7 +65,7 @@ const PlaylistQPNotification = (props) => {
     const handleDeleteTrack = async (songId) => {
         try {
             const result = await Axios.delete(`http://localhost:5000/playlist/${props.id}/${songId}`);
-            Axios.post("http://localhost:5000/playlist/", { id: props.id })
+            Axios.get(`http://localhost:5000/playlist/${props.id}`)
                 .then(res => {
                     setPlaylistSongs(res.data.playlist.songs);
                 })

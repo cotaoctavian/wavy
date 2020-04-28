@@ -79,6 +79,7 @@ export const PlaylistContainer = styled.div`
     grid-template-rows: auto;
     max-height: 600px;
     font-size: 15px;
+    margin-bottom: 20em;
 
     -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1.5s; /* Firefox < 16 */

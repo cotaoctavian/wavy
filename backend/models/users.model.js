@@ -10,7 +10,8 @@ const userSchema = new Schema({
   liked_songs: { type: [Schema.Types.ObjectId], default: [] },
   playlists: { type: [Schema.Types.ObjectId], default: [] },
   artists: { type: [Schema.Types.ObjectId], default: [] },
-  albums: { type: [Schema.Types.ObjectId], default: [] }
+  albums: { type: [Schema.Types.ObjectId], default: [] },
+  recommended_playlists: { type: [Schema.Types.ObjectId], default: [] }
 });
 
 const User = mongoose.model('User', userSchema)

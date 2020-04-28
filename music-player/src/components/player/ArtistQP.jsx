@@ -24,8 +24,7 @@ import { SnackbarProvider, useSnackbar } from 'notistack';
 
 /* STYLING */
 import '../../assets/css/Global.css';
-import { PlaylistContainer } from '../../assets/styles/playlistSong';
-import { Global, ArtistHeader, AlbumsContainer } from '../../assets/styles/artists';
+import { Global, ArtistHeader, AlbumsContainer, SinglesContainer } from '../../assets/styles/artists';
 import { Header, Links } from '../../assets/styles/webplayer';
 import { SongDiv, HoveredSongDiv } from '../../assets/styles/song';
 
@@ -35,7 +34,7 @@ const ModalItem = ({ playlistId, handleAddToPlaylist }) => {
     const [title, setTitle] = useState('')
 
     useEffect(() => {
-        Axios.post("http://localhost:5000/playlist/", { id: playlistId })
+        Axios.get(`http://localhost:5000/playlist/${playlistId}`)
             .then((res) => {
                 setTitle(res.data.playlist.title)
             })
@@ -285,7 +284,7 @@ const ArtistQPNotification = ({ id, songId, handleLike, songs, handleUrl, songId
             </ArtistHeader>
 
             {singles !== null && singles.length > 0 ?
-                <PlaylistContainer>
+                <SinglesContainer>
                     <h2> Songs </h2>
                     {singles !== null ?
                         singles.map((single, index) => {
@@ -293,7 +292,7 @@ const ArtistQPNotification = ({ id, songId, handleLike, songs, handleUrl, songId
                             else return (<ArtistSingle key={index} artistId={id} id={single} handleLike={handleLike} songs={songs} handleUrl={handleUrl} hover={false} songState={false} />)
                         })
                         : null}
-                </PlaylistContainer>
+                </SinglesContainer>
                 : null}
 
             <AlbumsContainer>

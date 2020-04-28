@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-router.route('/add').post((req, res) => {
+router.route('/').post((req, res) => {
     const username = req.body.username;
     const email = req.body.email;
     const password = req.body.password;
@@ -22,7 +22,6 @@ router.route('/add').post((req, res) => {
 
     User.findOne({
         email: req.body.email,
-        username: req.body.username
     })
     .then(user => {
         if(!user) {

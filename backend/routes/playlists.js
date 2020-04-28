@@ -4,15 +4,27 @@ let Playlist = require('../models/playlists.model');
 const jwt = require('jsonwebtoken');
 var ObjectId = require('mongoose').Types.ObjectId;
 
-router.post('/', (req, res) => {
-    Playlist.findById({ _id: req.body.id })
+router.get('/:id', (req, res) => {
+    Playlist.findById({ _id: req.params.id })
         .then((playlist) => {
             if (playlist) {
                 res.json({ playlist: playlist })
             }
         })
         .catch(err => console.log(err));
+})
 
+router.patch('/', (req, res) => {
+    Playlist.findById({ _id: req.body.id })
+        .then((playlist) => {
+            if (playlist) {
+                playlist.title = req.body.title
+                playlist.save()
+                    .then(() => { res.json({ message: "Title changed successfully! ✔️" }) })
+                    .catch((err) => console.log(err))
+            }
+        })
+        .catch((err) => console.log(err))
 })
 
 
@@ -66,19 +78,6 @@ router.delete('/track/:id/:userId', (req, res) => {
         })
 })
 
-router.patch('/', (req, res) => {
-    Playlist.findById({ _id: req.body.id })
-        .then((playlist) => {
-            if (playlist) {
-                playlist.title = req.body.title
-                playlist.save()
-                    .then(() => { res.json({ message: "Title changed successfully! ✔️" }) })
-                    .catch((err) => console.log(err))
-            }
-        })
-        .catch((err) => console.log(err))
-})
-
 router.post('/track', (req, res) => {
     Playlist.findById({ _id: req.body.playlistId })
         .then(playlist => {
@@ -104,7 +103,7 @@ router.post('/track', (req, res) => {
         .catch((err) => console.log(err))
 })
 
-router.post('/add', (req, res) => {
+router.post('/', (req, res) => {
     const newPlaylist = new Playlist({ userId: new ObjectId(req.body.userId), title: req.body.title });
     User.findById({ _id: req.body.userId })
         .then((user) => {
@@ -133,7 +132,35 @@ router.post('/add', (req, res) => {
         })
 })
 
+router.post('/recommended', (req, res) => {
+    tracks = req.body.tracks
 
+    const newPlaylist = new Playlist({ userId: new ObjectId(req.body.userId), title: "Mixed playlist", songs: tracks});
+    User.findById({ _id: req.body.userId })
+        .then((user) => {
+            if (user) {
+                newPlaylist.save()
+                    .then((result) => {
+                        playlists = user.recommended_playlists
+                        let i;
+                        let check = false;
+                        for (i = 0; i < playlists.length; i++) {
+                            if (new ObjectId(playlists[i]).equals(result._id)) {
+                                check = true;
+                            }
+                        }
+                        if (!check) playlists.push(result._id);
+
+                        user.recommended_playlists = playlists;
+                        user.save()
+                            .then(() => {
+                                res.json({ result: newPlaylist._id })
+                            })
+                            .catch((err) => console.log(err));
+                    })
+            }
+        })
+})
 
 
 module.exports = router;

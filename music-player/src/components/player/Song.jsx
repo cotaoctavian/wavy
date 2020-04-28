@@ -17,7 +17,7 @@ const ModalItem = ({ playlistId, handleAddToPlaylist }) => {
     const [title, setTitle] = useState('')
 
     useEffect(() => {
-        Axios.post("http://localhost:5000/playlist/", { id: playlistId })
+        Axios.get(`http://localhost:5000/playlist/${playlistId}`)
             .then((res) => {
                 setTitle(res.data.playlist.title)
             })

@@ -35,6 +35,7 @@ const App = () => {
         <Route exact path="/library/playlists" component={WebPlayer} />
         <Route path="/library/playlists/:id" component={WebPlayer} />
         <Route path="/library/artists/:id" component={WebPlayer} />
+        <Route path="/library/made-for-you" component={WebPlayer} />
         <Route exact path="/library/artists" component={WebPlayer} />
         <Route path="/library/album/:id" component={WebPlayer} />
         <Route exact path="/search" component={WebPlayer} />

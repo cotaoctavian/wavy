@@ -15,6 +15,7 @@ import ArtistQP from './ArtistQP';
 import AlbumQP from './AlbumQP';
 import LibraryAlbum from './LibraryAlbum';
 import Search from './Search';
+import MadeForYou from './MadeForYou';
 
 /* REDUX */
 import { useSelector, useDispatch } from 'react-redux';
@@ -115,7 +116,7 @@ const WebPlayer = (props) => {
             if (playlistIdentifier === "liked_songs") playlist = user.songs
             else {
                 try {
-                    const result = await Axios.post("http://localhost:5000/playlist/", { id: playlistIdentifier })
+                    const result = await Axios.get(`http://localhost:5000/playlist/${playlistIdentifier}`)
                     playlist = result.data.playlist.songs
                 } catch (err) {
                     console.log(err)
@@ -268,6 +269,7 @@ const WebPlayer = (props) => {
             {urlPathname === "/player" ? <HomePlayer id={user.id} image={user.img} handleUrl={handleUrl} songId={songId} songIdState={playing} /> : null}
             {urlPathname === "/library/albums" ? <LibraryAlbum image={user.img} /> : null}
             {urlPathname === "/library/artists" ? <Artists /> : null}
+            {urlPathname === "/library/made-for-you" ? <MadeForYou id={user.id} image={user.img} /> : null}
             {urlPathname === "/library/playlists" ? <Playlist image={user.img} userId={user.id} /> : null}
             {urlPathname === "/library/tracks" ? <LikedSongs image={user.img} songs={user.songs} songId={songId} songIdState={playing} handle={handleUrl} handleLike={handleLike} /> : null}
             {urlPathname === "/search" ? <Search songId={songId} songIdState={playing} handleUrl={handleUrl} /> : null}

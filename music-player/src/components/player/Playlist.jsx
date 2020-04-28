@@ -16,13 +16,13 @@ import { setUpUser } from '../../actions/index';
 
 Modal.setAppElement("#root");
 
-const PlaylistItem = (props) => {
+export const PlaylistItem = (props) => {
     const [title, setTitle] = useState('')
     // const [playlistId, setPlaylistId] = useState(null)
     const [playlistImage, setPlaylistImage] = useState(null)
 
     useEffect(() => {
-        Axios.post("http://localhost:5000/playlist/", {id: props.id})
+        Axios.get(`http://localhost:5000/playlist/${props.id}`)
             .then((res) => {
                 setTitle(res.data.playlist.title)
                 if (res.data.playlist.songs.length > 0) {
@@ -60,7 +60,7 @@ const Playlist = (props) => {
         setShowUpModal(false);
         setPlaylistTitle('');
         try {
-            const res = await Axios.post("http://localhost:5000/playlist/add", { title: playlistTitle, userId: props.userId })
+            const res = await Axios.post("http://localhost:5000/playlist/", { title: playlistTitle, userId: props.userId })
             dispatch(setUpUser(jwt(res.data.token)));
             localStorage.setItem('token', res.data.token);
         } catch (err) {
@@ -116,6 +116,7 @@ const Playlist = (props) => {
                 </PlaylistContainer>
 
             </Main>
+            
             {showUpModal ?
                 <Modal
                     isOpen={showUpModal}

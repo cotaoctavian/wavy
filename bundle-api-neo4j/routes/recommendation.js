@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const neo4j = require('neo4j-driver')
 const _ = require('loadsh')
+const jwt = require('jsonwebtoken');
 
 /* Credentials */
 const driver = neo4j.driver(process.env.NEO4J_URI, neo4j.auth.basic(process.env.NEO4J_USERNAME, process.env.NEO4J_PASSWORD))
@@ -20,8 +21,35 @@ const session = driver.session()
     7. Recommend 3 songs from the same artist that he liked a song.
 */
 
+router.post('/verifyToken', (req, res) => {
+    token = req.body.token
+
+    try {
+        const verified = jwt.verify(token, process.env.TOKEN_SECRET)
+        res.status(200).json({ result: true })
+    } catch (err) {
+        res.json({ result: false })
+    }
+})
+
+router.post('/token', (req, res) => {
+    songs = req.body.songs
+    albums = req.body.albums
+    artists = req.body.artists
+
+    res.status(200).json({ token: jwt.sign({ songs: songs, albums: albums, artists: artists }, process.env.TOKEN_SECRET, { expiresIn: 86400 }) })
+});
+
+router.post('/playlist_token', (req, res) => {
+    playlist = req.body.playlist
+
+    res.status(200).json({ token: jwt.sign({ playlist: playlist }, process.env.TOKEN_SECRET, { expiresIn: 86400 }) })
+});
+
+
 /* Get user's songs genre */
 router.post('/songs/genres', (req, res) => {
+
     userId = req.body.userId
 
     /* Get user's genres */
@@ -39,6 +67,7 @@ router.post('/songs/genres', (req, res) => {
             res.status(200).json({ result: genres })
         })
         .catch(err => console.log(err))
+
 })
 
 
@@ -146,6 +175,8 @@ router.post('/artists', (req, res) => {
         })
         .catch((err) => res.status(404).json(err))
 })
+
+
 
 
 module.exports = router
