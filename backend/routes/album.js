@@ -19,6 +19,19 @@ router.get('/:id', (req, res) => {
         })
 })
 
+router.get('/:album/:artist', (req, res) => {
+    Album.findOne({ artistId: req.params.artist, name: req.params.album })
+        .then((album) => {
+            if (album) {
+                res.status(200).json({ album: album })
+            }
+        })
+        .catch(() => {
+            res.status(404).json({ message: 'Album not found. 😥' })
+        })
+})
+
+
 /* ADD ALBUM TO ALBUM'S LIBRARY */
 router.post('/:userId/:albumId/:albumTitle', (req, res) => {
     User.findById({ _id: req.params.userId })
@@ -83,26 +96,26 @@ router.post('/1/:artist/:name/:year', (req, res) => {
                 Album.findOne({ name: req.params.name })
                     .then((album) => {
                         if (album) {
-                            
+
                         } else {
                             Artist.findOne({ name: req.params.artist })
-                            .then((artist) => {
-                                if (artist) {
-                                    let tracks = [];
-                                    let artistName = artist.name
-                                    const newAlbum = new Album({ artistId: artist._id, artist: artistName, name: req.params.name, photo: `images/album/${file.name}`, year: parseInt(req.params.year), tracks: tracks })
+                                .then((artist) => {
+                                    if (artist) {
+                                        let tracks = [];
+                                        let artistName = artist.name
+                                        const newAlbum = new Album({ artistId: artist._id, artist: artistName, name: req.params.name, photo: `images/album/${file.name}`, year: parseInt(req.params.year), tracks: tracks })
 
-                                    newAlbum.save()
-                                        .then((album) => {
-                                            artist.albums.push(album._id);
-                                            artist.save()
-                                                .then(() => res.json({message: "Done!"}))
-                                                .catch(err => console.log(err))
-                                        })
-                                        .catch((err) => console.log(err))
-                                }
-                                else res.status(404).json({ message: "Artist not found" })
-                            })
+                                        newAlbum.save()
+                                            .then((album) => {
+                                                artist.albums.push(album._id);
+                                                artist.save()
+                                                    .then(() => res.json({ message: "Done!" }))
+                                                    .catch(err => console.log(err))
+                                            })
+                                            .catch((err) => console.log(err))
+                                    }
+                                    else res.status(404).json({ message: "Artist not found" })
+                                })
                         }
                     })
                     .catch(err => console.log(err))

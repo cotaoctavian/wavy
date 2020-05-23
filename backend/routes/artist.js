@@ -17,6 +17,16 @@ router.get('/:id', (req, res) => {
         })
 })
 
+router.get('/name/:name', (req, res) => {
+    Artist.findOne( {name: req.params.name })   
+        .then((artist) => {
+            if(artist) {
+                res.status(200).json({ artist: artist})
+            }
+        })
+        .catch(err => console.log(err))
+})
+
 router.patch('/follow/:artistId/:userId', (req, res) => {
     User.findById({ _id: req.params.userId })
         .then((user) => {

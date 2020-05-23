@@ -1,24 +1,82 @@
 import React, { useState, useEffect } from 'react';
+import Axios from 'axios';
 import { useSelector } from 'react-redux'
-import { NavLink, useHistory} from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import '../assets/css/Dashboard.css';
 import "../assets/css/Global.css";
 import w_wave from '../assets/images/white_wave.png';
-import jcole from '../assets/images/jcole.png';
-import album2 from '../assets/images/album_2.jpg';
-import eminem from '../assets/images/eminem.jpg';
-import kendrick from '../assets/images/kendrick.jpg';
 import flag from '../assets/images/romania-flag.png';
-import deliric from '../assets/images/deliric.jpg';
-import nane from '../assets/images/nane.jpg';
+import { SongContainer } from '../assets/styles/dashboard';
 
 
-const Dashboard = props => {
+const SongItem = ({ songData, audio }) => {
+    const [song, setSong] = useState(undefined);
+    const [artist, setArtist] = useState(undefined);
+    var timeout;
+
+    useEffect(() => {
+        Axios.post("http://localhost:5000/song", { song: songData[0]["id"] })
+            .then(res => {
+                setSong(res.data.info)
+                Axios.post("http://localhost:5000/song/artist", { songId: songData[0]["id"] })
+                    .then((result) => {
+                        setArtist(result.data.message[0]["_id"])
+                    })
+                    .catch((err) => console.log(err))
+            })
+            .catch(err => console.log(err))
+    }, [songData])
+
+    const togglePlay = (event) => {
+        event.stopPropagation()
+        audio.pause();
+        audio.src = `http://localhost:5000/${song.path}`;
+        audio.addEventListener('canplay', () => {
+            audio.play();
+        });
+
+        timeout = setTimeout(() => {
+            audio.pause();
+            audio.src = "";
+        }, 10000);
+    }
+
+    const toggleStop = (event) => {
+        event.stopPropagation()
+        audio.pause();
+        audio.src = "";
+
+        clearTimeout(timeout);
+    }
+
+    let content = (
+        <React.Fragment>
+            {song !== undefined ?
+                <SongContainer>
+                    <NavLink onMouseOver={togglePlay} onMouseOut={toggleStop} to={`/library/artists/${artist}`}>
+                        <img src={`http://localhost:5000/${song.photo_path}`} alt="" />
+                        <div>
+                            <span> {song.artist} </span>
+                            <span> {song.title} </span>
+                        </div>
+                    </NavLink>
+                </SongContainer>
+                :
+                null}
+        </React.Fragment>
+    )
+    return content;
+}
+
+
+const Dashboard = () => {
 
     const history = useHistory()
     const userData = useSelector(state => state.user)
     const [username, setUsername] = useState('')
+    const [recommendedSongs, setRecommendedSongs] = useState([])
     const photoPath = userData.img
+    const [audio] = useState(new Audio());
 
     useEffect(() => {
         document.body.classList.add('dashboard-back')
@@ -26,6 +84,35 @@ const Dashboard = props => {
         document.body.classList.remove('header')
         document.body.classList.remove('right-div')
         setUsername(userData.username)
+
+        Axios.post("http://localhost:5001/recommended/songs/genres", { userId: userData.id })
+            .then(async (response) => {
+                let genres = response.data.result[0]
+                let albums = []
+
+                for (let i = 0; i < genres.length; i++) {
+                    await Axios.post("http://localhost:5001/recommended/genres/albums", { userId: userData.id, genre: genres[i], limit: parseInt(Math.ceil(6 / genres.length)) })
+                        .then((response) => {
+                            const album = response.data.result
+                            for (let j = 0; j < album.length; j++)
+                                albums.push(album[j])
+                        })
+                        .catch((err) => console.log(err))
+                }
+
+                let songs = []
+                for (let i = 0; i < 6; i++) {
+                    await Axios.post("http://localhost:5001/recommended/albums/songs", { userId: userData.id, album: albums[i], limit: 1 })
+                        .then((response) => {
+                            songs.push(response.data.result)
+                        })
+                        .catch(err => console.log(err))
+                }
+                setRecommendedSongs(songs);
+
+            })
+            .catch(err => console.log(err))
+
     }, [userData.username])
 
     const logout = () => {
@@ -38,11 +125,11 @@ const Dashboard = props => {
             <header>
                 <div className="left-div">
                     <img src={w_wave} alt="" />
-                    <p> <NavLink exact to ="/dashboard" className="header-nav-link">  wavy. </NavLink> </p>
+                    <p> <NavLink exact to="/dashboard" className="header-nav-link">  wavy. </NavLink> </p>
                 </div>
                 <span> | </span>
                 <div className="header-right-div">
-                    <img src={'http://localhost:5000/' + photoPath} alt = "" />
+                    <img src={'http://localhost:5000/' + photoPath} alt="" />
                     <p> <NavLink exact to="/profile" className="log-in-navlink"> {username} </NavLink> </p>
                     <p> <NavLink exact to="/" onClick={() => logout()} className="log-in-navlink"> Log Out </NavLink> </p>
                 </div>
@@ -53,12 +140,9 @@ const Dashboard = props => {
                 <p> Ride the best music releases.</p>
                 <NavLink exact to="/player" className="web-player-button"> GET WAVY </NavLink>
                 <div className="music-grid-container">
-                    <img src={jcole} alt=""/>
-                    <img src={eminem} alt=""/>
-                    <img src={kendrick} alt=""/>
-                    <img src={album2} alt=""/>
-                    <img src={deliric} alt=""/>
-                    <img src={nane} alt=""/>
+                    {recommendedSongs.length > 0 ? recommendedSongs.map((song, index) => {
+                        if (index < 6) return (<SongItem key={index} songData={song} audio={audio} />)
+                    }) : null}
                 </div>
             </main>
 

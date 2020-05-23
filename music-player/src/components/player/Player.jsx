@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Slider from '@material-ui/core/Slider';
@@ -27,7 +28,8 @@ const useStyles = makeStyles({
     }
 });
 
-const Player = ({ resetTrack, handlePrevious, handleForward, handleLike, songInfo, audio, url, play, changePlay, likeState }) => {
+const Player = ({ resetTrack, handlePrevious, handleForward, handleLike, songInfo, audio, url, play, changePlay, likeState, artistId, albumId }) => {
+
     const classes = useStyles();
     // const [audio, setAudio] = useState("");
     const [currentTime, setCurrentTime] = useState(null);
@@ -51,7 +53,7 @@ const Player = ({ resetTrack, handlePrevious, handleForward, handleLike, songInf
     useEffect(() => {
         audio.pause();
         audio.src = `http://localhost:5000/${url}`;
-        audio.pause();        
+        audio.pause();
         if (play) {
             audio.addEventListener('canplay', () => {
                 audio.play();
@@ -210,11 +212,21 @@ const Player = ({ resetTrack, handlePrevious, handleForward, handleLike, songInf
 
                 <SongInformation>
                     {songInfo !== null ?
-                        <img src={`http://localhost:5000/${songInfo.photo_path}`} alt="" /> : null}
+                        <React.Fragment>
+                            {albumId !== null ?
+                                <NavLink style={{ textDecoration: 'none', marginTop: '2px' }} to={`/library/album/${albumId}`}> <img src={`http://localhost:5000/${songInfo.photo_path}`} alt="" /> </NavLink>
+                                :
+                                <NavLink style={{ textDecoration: 'none', marginTop: '2px' }} to={`/library/artists/${artistId}`}> <img src={`http://localhost:5000/${songInfo.photo_path}`} alt="" /> </NavLink>}
+                        </React.Fragment>
+                        : null}
                     {songInfo !== null ?
                         <div>
                             <span> {songInfo.title} </span>
-                            <span> {songInfo.artist} &#8226; {songInfo.album} </span>
+                            {artistId !== null ?
+                                <span> <NavLink style={{ textDecoration: 'none', color: 'white' }} to={`/library/artists/${artistId}`}> {songInfo.artist} &#8226; {songInfo.album} </NavLink> </span>
+                                :
+                                <span> songInfo.artist &#8226; {songInfo.album} </span>}
+
                         </div>
                         : null}
                     {songInfo !== null ?

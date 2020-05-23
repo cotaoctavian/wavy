@@ -31,7 +31,23 @@ router.get('/', (req, res) => {
             })
         }
     })
-})
+});
+
+router.post('/artist', (req, res) => {
+    songId = req.body.songId;
+
+    Songs.findById({ _id: songId })
+        .then((song) => {
+            if (song) {
+                Artist.find({ name: song.artist })
+                    .then((artist) => {
+                        res.status(201).json({ message: artist })
+                    })
+                    .catch(err => console.log(err))
+            }
+        })
+        .catch(err => console.log(err))
+});
 
 router.post('/', (req, res) => {
 
@@ -42,7 +58,7 @@ router.post('/', (req, res) => {
             }
         })
         .catch(err => console.log(err))
-})
+});
 
 router.post('/info', (req, res) => {
 
@@ -72,7 +88,7 @@ router.post('/dislike', (req, res) => {
                             user.save()
                                 .then(() => {
                                     const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, albums: user.albums }, process.env.TOKEN_SECRET)
-                                    res.json({songId: song._id, token: token })
+                                    res.json({ songId: song._id, token: token })
                                 })
                                 .catch(() => console.log(err))
                         }
@@ -103,7 +119,7 @@ router.post('/like', (req, res) => {
                             user.save()
                                 .then(() => {
                                     const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, albums: user.albums }, process.env.TOKEN_SECRET)
-                                    res.json({songId: song._id, token: token })
+                                    res.json({ songId: song._id, token: token })
                                 })
                                 .catch(() => console.log(err))
                         }
@@ -146,14 +162,13 @@ router.post('/:title/:artist/:album/:genre/:duration', (req, res) => {
                         album.tracks.push(song._id)
 
                         album.save()
-                            .then(() => res.json({message: "Done!"}))
+                            .then(() => res.json({ message: "Done!" }))
                             .catch((err) => console.log(err))
-                    } 
+                    }
                 })
                 .catch(err => console.log(err))
         })
         .catch(err => console.log(err))
-
-})
+});
 
 module.exports = router

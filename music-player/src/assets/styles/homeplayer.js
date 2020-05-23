@@ -273,7 +273,7 @@ export const RecommendedArtistsContainer = styled.div`
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     font-size: 15px;
-    margin-bottom: 2em;
+    margin-bottom: 10em;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */

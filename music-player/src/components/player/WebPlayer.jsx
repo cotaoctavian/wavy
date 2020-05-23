@@ -31,6 +31,8 @@ const WebPlayer = (props) => {
     const [playing, setPlaying] = useState(false)
     const [like, setLike] = useState(false)
     const [reset, setReset] = useState(true)
+    const [artistId, setArtistId] = useState(null)
+    const [albumId, setAlbumId] = useState(null)
     const urlPathname = window.location.pathname
     const dispatch = useDispatch();
 
@@ -51,12 +53,23 @@ const WebPlayer = (props) => {
         await Axios.post(`http://localhost:5000/song/info`, { name: songUrl })
             .then(res => {
                 setSongInfo(res.data.info)
+                Axios.get(`http://localhost:5000/artist/name/${res.data.info.artist}`)
+                    .then(response => {
+                        setArtistId(response.data.artist._id)
+                        if (res.data.info.album !== '-') {
+                            Axios.get(`http://localhost:5000/album/${res.data.info.album}/${response.data.artist._id}`)
+                                .then((res) => {
+                                    setAlbumId(res.data.album._id)
+                                })
+                                .catch((err) => console.log(err))
+                        } else setAlbumId(null);
+                    })
+                    .catch(err => console.log(err))
             })
             .catch(err => console.log(err))
 
         await Axios.post('http://localhost:5001/song/listened', { userId: user.id, songId: currentSongId })
-            .then(res => {
-                console.log(res.data)
+            .then(() => {
             })
             .catch(err => console.log(err))
     }
@@ -72,7 +85,6 @@ const WebPlayer = (props) => {
 
                     await Axios.post('http://localhost:5001/song/disliked', { userId: user.id, songId: res.data.songId })
                         .then(res => {
-                            console.log(res.data)
                         })
                         .catch(err => console.log(err))
                 })
@@ -85,7 +97,6 @@ const WebPlayer = (props) => {
 
                     await Axios.post('http://localhost:5001/song/liked', { userId: user.id, songId: res.data.songId })
                         .then(res => {
-                            console.log(res.data)
                         })
                         .catch(err => console.log(err))
 
@@ -273,7 +284,7 @@ const WebPlayer = (props) => {
             {urlPathname === "/library/playlists" ? <Playlist image={user.img} userId={user.id} /> : null}
             {urlPathname === "/library/tracks" ? <LikedSongs image={user.img} songs={user.songs} songId={songId} songIdState={playing} handle={handleUrl} handleLike={handleLike} /> : null}
             {urlPathname === "/search" ? <Search songId={songId} songIdState={playing} handleUrl={handleUrl} /> : null}
-            {url.length > 0 ? <Player resetTrack={reset} handlePrevious={handlePrevious} handleForward={handleForward} handleLike={handleLike} songInfo={songInfo} audio={audio} url={url} play={playing} changePlay={setPlaying} likeState={like} /> : null}
+            {url.length > 0 ? <Player resetTrack={reset} handlePrevious={handlePrevious} handleForward={handleForward} handleLike={handleLike} songInfo={songInfo} audio={audio} url={url} play={playing} changePlay={setPlaying} likeState={like} artistId={artistId} albumId={albumId}/> : null}
         </React.Fragment>
     );
     return content;

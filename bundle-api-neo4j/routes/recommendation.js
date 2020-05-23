@@ -13,12 +13,12 @@ const session = driver.session()
 /*
     TODO:
     1. Recommend 8 random tracks based on what genre he likes. -> done
-    2. Create a playlist with 10 tracks based on what genre he likes. (MADE FOR YOU PAGE)
+    2. Create a playlist with 10 tracks based on what genre he likes. (MADE FOR YOU PAGE) -> done
     3. If he likes more than one genre recommend to him 10/#genre tracks for each genre. -> done
     4. Recommend 2 albums based on the genre of the album he saved. -> done
     5. Recommend 2 artists if he follows one from the same genre. -> done
-    6. If he listened to a track recommend 5 tracks from the same artist.
-    7. Recommend 3 songs from the same artist that he liked a song.
+    6. If he listened to a track recommend 5 tracks from the same artist. (not yet)
+    7. Recommend 3 songs from the same artist that he liked a song. (not yet)
 */
 
 router.post('/verifyToken', (req, res) => {
@@ -90,9 +90,57 @@ router.post('/tracks', (req, res) => {
             for (let i = 0; i < result.records.length; i++)
                 tracks.push(result.records[i]._fields[0]["properties"]["id"])
 
-            res.status(200).json({ result: tracks })
+            res.status(201).json({ result: tracks })
         })
         .catch((err) => res.status(404).json(err))
+})
+
+/* Get albums from a specific genre */
+router.post('/genres/albums', (req, res) => {
+    userId = req.body.userId
+    genre = req.body.genre
+    limit = req.body.limit
+
+    session.run(`MATCH
+                (n: User {mongoid: "${userId}"}),
+                (m: Album {genre: "${genre}"})
+                WHERE m.id <> "-"
+                RETURN collect(distinct m.id), rand() as r
+                ORDER BY r
+                LIMIT ${limit}`)
+        .then((result) => {
+            albums = []
+
+            for (let i = 0; i < result.records.length; i++) {
+                albums.push(result.records[i]._fields[0]);
+            }
+
+            res.status(200).json({ result: albums })
+        })
+        .catch((err) => console.log(err));
+});
+
+/* Get songs from a specific album */
+router.post('/albums/songs', (req, res) => {
+    userId = req.body.userId;
+    album = req.body.album;
+    limit = req.body.limit
+
+    session.run(`MATCH (n: User {mongoid:"${userId}"}), (m: Song), (o: Album)
+                WHERE o.id = "${album}" AND (m)-[:IN]->(o) AND NOT (n)-[:LIKES]->(m)
+                RETURN m, rand() as r
+                ORDER BY r
+                LIMIT ${limit}`)
+        .then((result) => {
+            songs = []
+
+            for (let i = 0; i < result.records.length; i++) {
+                songs.push(result.records[i]._fields[0]["properties"]);
+            }
+
+            res.status(200).json({ result: songs })
+        })
+        .catch((err) => console.log(err));
 })
 
 

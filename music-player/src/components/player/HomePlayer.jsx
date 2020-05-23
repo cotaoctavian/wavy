@@ -97,81 +97,66 @@ const HomePlayer = ({ id, image, handleUrl, songId, songIdState }) => {
 
     useEffect(() => {
         if (id !== undefined) {
-            Axios.post("http://localhost:5001/recommended/verifyToken", { token: localStorage.getItem('recommended_token') })
-                .then((response) => {
-                    if (!response.data.result) {
-                        Axios.post("http://localhost:5001/recommended/songs/genres", { userId: id })
-                            .then(async (response) => {
-                                let genres = response.data.result[0]
-                                let tracks = []
-                                for (let i = 0; i < genres.length; i++) {
-                                    await Axios.post("http://localhost:5001/recommended/tracks", { userId: id, genre: genres[i], limit: parseInt(Math.ceil(8 / genres.length)) })
+
+            Axios.post("http://localhost:5001/recommended/songs/genres", { userId: id })
+                .then(async (response) => {
+                    let genres = response.data.result[0]
+                    let tracks = []
+                    for (let i = 0; i < genres.length; i++) {
+                        await Axios.post("http://localhost:5001/recommended/tracks", { userId: id, genre: genres[i], limit: parseInt(Math.ceil(8 / genres.length)) })
+                            .then((response) => {
+                                const songs = response.data.result
+                                for (let j = 0; j < songs.length; j++)
+                                    tracks.push(songs[j])
+                            })
+                            .catch((err) => console.log(err))
+                    }
+                    setRecommendedSongs(tracks)
+
+                    Axios.post("http://localhost:5001/recommended/albums/genres", { userId: id })
+                        .then(async (response) => {
+                            let genres = response.data.result[0]
+                            let albums = []
+                            for (let i = 0; i < genres.length; i++) {
+                                await Axios.post("http://localhost:5001/recommended/albums", { userId: id, genre: genres[i], limit: 2 })
+                                    .then((response) => {
+                                        const albums_data = response.data.result
+                                        for (let j = 0; j < albums_data.length; j++)
+                                            albums.push(albums_data[j])
+                                    })
+                                    .catch((err) => console.log(err))
+                            }
+                            setRecommendedAlbums(albums)
+
+                            Axios.post("http://localhost:5001/recommended/artists/genres", { userId: id })
+                                .then(async (response) => {
+                                    let genres = response.data.result[0]
+                                    let artists = []
+                                    for (let i = 0; i < genres.length; i++) {
+                                        await Axios.post("http://localhost:5001/recommended/artists", { userId: id, genre: genres[i], limit: 2 })
+                                            .then((response) => {
+                                                const artists_data = response.data.result
+                                                for (let j = 0; j < artists_data.length; j++)
+                                                    artists.push(artists_data[j])
+                                            })
+                                            .catch((err) => console.log(err))
+                                    }
+                                    setRecommendedArtists(artists)
+
+                                    Axios.post("http://localhost:5001/recommended/token", { songs: tracks, albums: albums, artists: artists })
                                         .then((response) => {
-                                            const songs = response.data.result
-                                            for (let j = 0; j < songs.length; j++)
-                                                tracks.push(songs[j])
+                                            localStorage.setItem('recommended_token', response.data.token)
                                         })
                                         .catch((err) => console.log(err))
-                                }
-                                setRecommendedSongs(tracks)
 
-                                Axios.post("http://localhost:5001/recommended/albums/genres", { userId: id })
-                                    .then(async (response) => {
-                                        let genres = response.data.result[0]
-                                        let albums = []
-                                        for (let i = 0; i < genres.length; i++) {
-                                            await Axios.post("http://localhost:5001/recommended/albums", { userId: id, genre: genres[i], limit: 2 })
-                                                .then((response) => {
-                                                    const albums_data = response.data.result
-                                                    for (let j = 0; j < albums_data.length; j++)
-                                                        albums.push(albums_data[j])
-                                                })
-                                                .catch((err) => console.log(err))
-                                        }
-                                        setRecommendedAlbums(albums)
+                                    setInterval(() => {
+                                        setLoading(true)
+                                    }, 2000)
+                                })
+                                .catch((error) => console.log(error))
 
-                                        Axios.post("http://localhost:5001/recommended/artists/genres", { userId: id })
-                                            .then(async (response) => {
-                                                let genres = response.data.result[0]
-                                                let artists = []
-                                                for (let i = 0; i < genres.length; i++) {
-                                                    await Axios.post("http://localhost:5001/recommended/artists", { userId: id, genre: genres[i], limit: 2 })
-                                                        .then((response) => {
-                                                            const artists_data = response.data.result
-                                                            for (let j = 0; j < artists_data.length; j++)
-                                                                artists.push(artists_data[j])
-                                                        })
-                                                        .catch((err) => console.log(err))
-                                                }
-                                                setRecommendedArtists(artists)
-
-                                                Axios.post("http://localhost:5001/recommended/token", { songs: tracks, albums: albums, artists: artists })
-                                                    .then((response) => {
-                                                        localStorage.setItem('recommended_token', response.data.token)
-                                                    })
-                                                    .catch((err) => console.log(err))
-
-                                                setInterval(() => {
-                                                    setLoading(true)
-                                                }, 2000)
-                                            })
-                                            .catch((error) => console.log(error))
-
-                                    })
-                                    .catch((error) => console.log(error))
-                            })
-                            .catch((error) => console.log(error))
-                    }
-                    else {
-                        const decoded_jwt = jwt(localStorage.getItem('recommended_token'))
-                        setRecommendedSongs(decoded_jwt.songs)
-                        setRecommendedAlbums(decoded_jwt.albums)
-                        setRecommendedArtists(decoded_jwt.artists)
-
-                        setInterval(() => {
-                            setLoading(true)
-                        }, 2000)
-                    }
+                        })
+                        .catch((error) => console.log(error))
                 })
                 .catch((error) => console.log(error))
         }
