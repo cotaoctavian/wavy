@@ -142,6 +142,8 @@ const UpdateProfile = props => {
                     <span> <NavLink exact to="/profile" className="profile-nav-link"> Account overview </NavLink></span>
                     <span> <NavLink exact to="/change_password" className="profile-nav-link"> Change password </NavLink> </span>
                     <span> <NavLink exact to="/update_profile" className="profile-nav-link"> Update profile </NavLink></span>
+                    {user.is_artist === true ? <span> <NavLink exact to="/artist_panel" className="profile-nav-link"> Artist panel </NavLink></span> : null}
+                    {user.is_artist === true ? <span> <NavLink exact to="/edit_panel" className="profile-nav-link"> Edit panel </NavLink></span> : null}
                 </Sdiv>
 
                 <Tdiv>
@@ -191,6 +193,7 @@ const UpdateProfile = props => {
                                     type="text"
                                     required
                                     value={username}
+                                    placeholder="Enter your new username"
                                     onChange={e => setUsername(e.target.value)}
                                 />
                                 <button> Update </button>

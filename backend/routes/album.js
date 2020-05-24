@@ -47,7 +47,7 @@ router.post('/:userId/:albumId/:albumTitle', (req, res) => {
 
                     user.save()
                         .then(() => {
-                            const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, albums: user.albums }, process.env.TOKEN_SECRET)
+                            const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, albums: user.albums, is_artist: user.is_artist }, process.env.TOKEN_SECRET)
                             res.status(200).json({ token: token, message: `You added ${req.params.albumTitle} to your library. ✔️` })
                         })
                         .catch(() => {
@@ -72,7 +72,7 @@ router.delete('/:userId/:albumId/:albumTitle', (req, res) => {
 
             user.save()
                 .then(() => {
-                    const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, albums: user.albums }, process.env.TOKEN_SECRET)
+                    const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, albums: user.albums, is_artist: user.is_artist }, process.env.TOKEN_SECRET)
                     res.status(200).json({ token: token, message: `You removed ${req.params.albumTitle} from library. ❌` })
                 })
                 .catch(() => {
@@ -109,7 +109,7 @@ router.post('/1/:artist/:name/:year', (req, res) => {
                                             .then((album) => {
                                                 artist.albums.push(album._id);
                                                 artist.save()
-                                                    .then(() => res.json({ message: "Done!" }))
+                                                    .then(() => res.json({ message: "The album has been created successfully!" }))
                                                     .catch(err => console.log(err))
                                             })
                                             .catch((err) => console.log(err))

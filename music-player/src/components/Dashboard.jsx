@@ -20,7 +20,7 @@ const SongItem = ({ songData, audio }) => {
                 setSong(res.data.info)
                 Axios.post("http://localhost:5000/song/artist", { songId: songData[0]["id"] })
                     .then((result) => {
-                        setArtist(result.data.message[0]["_id"])
+                        setArtist(result.data.message[0]["artistId"]);
                     })
                     .catch((err) => console.log(err))
             })
@@ -31,9 +31,9 @@ const SongItem = ({ songData, audio }) => {
         event.stopPropagation()
         audio.pause();
         audio.src = `http://localhost:5000/${song.path}`;
-        audio.addEventListener('canplay', () => {
-            audio.play();
-        });
+        setTimeout(async () => {
+            await audio.play();
+        }, 150);
 
         timeout = setTimeout(() => {
             audio.pause();
@@ -44,7 +44,6 @@ const SongItem = ({ songData, audio }) => {
     const toggleStop = (event) => {
         event.stopPropagation()
         audio.pause();
-        audio.src = "";
 
         clearTimeout(timeout);
     }
@@ -53,8 +52,8 @@ const SongItem = ({ songData, audio }) => {
         <React.Fragment>
             {song !== undefined ?
                 <SongContainer>
-                    <NavLink onMouseOver={togglePlay} onMouseOut={toggleStop} to={`/library/artists/${artist}`}>
-                        <img src={`http://localhost:5000/${song.photo_path}`} alt="" />
+                    <NavLink onClick={toggleStop} to={`/library/artists/${artist}`}>
+                        <img onMouseEnter={togglePlay} onMouseOut={toggleStop} src={`http://localhost:5000/${song.photo_path}`} alt="" />
                         <div>
                             <span> {song.artist} </span>
                             <span> {song.title} </span>
@@ -100,9 +99,14 @@ const Dashboard = () => {
                         .catch((err) => console.log(err))
                 }
 
+                /* Shuffle albums so every artist can have a change to be on dashboard */
+                let shuffledAlbums = albums
+                    .map((a) => ({ sort: Math.random(), value: a }))
+                    .sort((a, b) => a.sort - b.sort)
+                    .map((a) => a.value)
                 let songs = []
                 for (let i = 0; i < 6; i++) {
-                    await Axios.post("http://localhost:5001/recommended/albums/songs", { userId: userData.id, album: albums[i], limit: 1 })
+                    await Axios.post("http://localhost:5001/recommended/albums/songs", { userId: userData.id, album: shuffledAlbums[i], limit: 1 })
                         .then((response) => {
                             songs.push(response.data.result)
                         })

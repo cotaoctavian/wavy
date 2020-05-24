@@ -52,7 +52,7 @@ router.patch('/follow/:artistId/:userId', (req, res) => {
                                         followers = followers + 1
                                         artist.followers = followers
 
-                                        const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, albums: user.albums }, process.env.TOKEN_SECRET)
+                                        const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, albums: user.albums, is_artist: user.is_artist }, process.env.TOKEN_SECRET)
                                         artist.save()
                                             .then(() => res.status(200).json({ token: token, message: `You started following ${artist.name}. ✔️` }))
                                             .catch(() => res.status(500).json({ message: "Something went wrong.. 🤔" }))
@@ -91,7 +91,7 @@ router.patch('/unfollow/:artistId/:userId', (req, res) => {
                                     followers = followers - 1
                                     artist.followers = followers
 
-                                    const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, albums: user.albums }, process.env.TOKEN_SECRET)
+                                    const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, albums: user.albums, is_artist: user.is_artist }, process.env.TOKEN_SECRET)
 
                                     artist.save()
                                         .then(() => res.status(200).json({ token: token, message: `You stopped following ${artist.name}. 🛑` }))

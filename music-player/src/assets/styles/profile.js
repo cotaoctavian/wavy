@@ -65,9 +65,9 @@ export const RightHeader = styled.div`
 export const Main = styled.div`
     width: 60%;
     background-color:white;
-    height: 600px;
+    height: 680px;
     margin: auto;
-    margin-top: 9%;
+    margin-top: 7%;
     display: grid;
     grid-template-columns: 0.3fr 1fr;
     grid-template-rows: 0.2fr 1fr;
@@ -80,49 +80,48 @@ export const Main = styled.div`
 
 export const Fdiv = styled.div`
     grid-row: 1;
-    height: 100px;
+    height: 120px;
     border-bottom: 1px solid black;
-
     background: #ebeef2;
+    
     & img {
         width: 70px;
+        height: 70px;
         position: relative;
-        top: 15%;
+        top: 18%;
         left: 35%;
         border-radius: 100%;
-        border: 1px solid gray;
+        -webkit-box-shadow: 1px 3px 10px 3px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px 3px 10px 3px rgba(0,0,0,0.75);
+        box-shadow: 1px 3px 10px 3px rgba(0,0,0,0.75);
     }  
 `;
 
 export const Sdiv = styled.div`
     background:#ebeef2;
-    grid-column: 1;
-    grid-row: 2;
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: repeat(3, 40px);
+    grid-template-rows: repeat(5, 40px);
     grid-gap: 20px;
 
     & span {
         border-bottom: 0.5px solid black;
-        width: 98%;
+        width: 100%;
         height: 100%;
         text-align: center;
         padding-top: 20px;
-        margin-right: 4px;
-        border-left: 5px solid #ebeef2;
     }
 
     & span:hover {
-        width: 98%;
-        border-left: 5px solid #ff887a;
+        width: 100%;
+        box-shadow: 5px 0px 0px #ff887a inset;
     }
     
     & span:first-child {
-        width: 98%;
+        width: 100%;
         background-color: white;
-        border-left: 5px solid #ff887a;
+        box-shadow: 5px 0px 0px #ff887a inset;
     }
 `;
 
@@ -132,12 +131,12 @@ export const Tdiv = styled.div`
     grid-column: 2;
     grid-row: 1;
     width: 100%;
-    height: 100px;
+    height: 120px;
     border-left: 1px solid black;
 
     & h1 {
         padding-left: 25px;
-        padding-top: 5px;
+        padding-top: 18px;
     }
 `;
 
@@ -146,6 +145,7 @@ export const Ftdiv = styled.div`
     grid-row: 2;
     border-left: 1px solid black;
     width: 100%;
+    height: 100%;
 
     & div h2{
         font-size: 24px;

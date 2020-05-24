@@ -95,6 +95,8 @@ const ChangePassword = props => {
                     <span> <NavLink exact to="/profile" className="profile-nav-link"> Account overview </NavLink></span>
                     <span> <NavLink exact to="/change_password" className="profile-nav-link"> Change password </NavLink> </span>
                     <span> <NavLink exact to="/update_profile" className="profile-nav-link"> Update profile </NavLink></span>
+                    {user.is_artist === true ? <span> <NavLink exact to="/artist_panel" className="profile-nav-link"> Artist panel </NavLink></span> : null}
+                    {user.is_artist === true ? <span> <NavLink exact to="/edit_panel" className="profile-nav-link"> Edit panel </NavLink></span> : null}
                 </Sdiv>
 
                 <Tdiv>
@@ -108,6 +110,7 @@ const ChangePassword = props => {
                             <input
                                 type="password"
                                 required
+                                placeholder="Enter your current password"
                                 value={password}
                                 onChange={e => setPassword(e.target.value)}
                             />
@@ -116,6 +119,7 @@ const ChangePassword = props => {
                             <input
                                 type="password"
                                 required
+                                placeholder="Enter your new password"
                                 value={newPassword}
                                 onChange={e => setNewPassword(e.target.value)}
                             />
@@ -124,6 +128,7 @@ const ChangePassword = props => {
                             <input
                                 type="password"
                                 required
+                                placeholder="Confirm new password"
                                 value={confirmNewPassword}
                                 onChange={e => setConfirmNewPassword(e.target.value)}
                             />

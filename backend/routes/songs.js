@@ -39,9 +39,9 @@ router.post('/artist', (req, res) => {
     Songs.findById({ _id: songId })
         .then((song) => {
             if (song) {
-                Artist.find({ name: song.artist })
-                    .then((artist) => {
-                        res.status(201).json({ message: artist })
+                Album.find({ name: song.album })
+                    .then((album) => {
+                        res.status(201).json({ message: album })
                     })
                     .catch(err => console.log(err))
             }
@@ -87,7 +87,7 @@ router.post('/dislike', (req, res) => {
                             user.liked_songs = liked_songs;
                             user.save()
                                 .then(() => {
-                                    const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, albums: user.albums }, process.env.TOKEN_SECRET)
+                                    const token = jwt.sign({ id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, albums: user.albums, is_artist: user.is_artist }, process.env.TOKEN_SECRET)
                                     res.json({ songId: song._id, token: token })
                                 })
                                 .catch(() => console.log(err))
@@ -162,9 +162,9 @@ router.post('/:title/:artist/:album/:genre/:duration', (req, res) => {
                         album.tracks.push(song._id)
 
                         album.save()
-                            .then(() => res.json({ message: "Done!" }))
+                            .then(() => res.json({ message: "Song added to the album successfully!" }))
                             .catch((err) => console.log(err))
-                    }
+                    } 
                 })
                 .catch(err => console.log(err))
         })

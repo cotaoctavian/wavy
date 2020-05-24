@@ -43,6 +43,7 @@ export const Header = styled.nav`
 
     & img {
         width: 45px;
+        height: 45px;
     }
 `;
 

@@ -2,33 +2,30 @@ import styled from 'styled-components';
 
 export const Sdiv = styled.div`
     background:#ebeef2;
-    grid-column: 1;
-    grid-row: 2;
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: repeat(3, 40px);
+    grid-template-rows: repeat(5, 40px);
     grid-gap: 20px;
 
     & span {
         border-bottom: 0.5px solid black;
-        width: 98%;
+        width: 100%;
         height: 100%;
         text-align: center;
         padding-top: 20px;
-        margin-right: 4px;
-        border-left: 5px solid #ebeef2;
     }
 
     & span:hover {
-        width: 98%;
-        border-left: 5px solid #ff887a;
+        width: 100%;
+        box-shadow: 5px 0px 0px #ff887a inset;
     }
     
     & span:nth-child(2) {
-        width: 98%;
+        width: 100%;
         background-color: white;
-        border-left: 5px solid #ff887a;
+        box-shadow: 5px 0px 0px #ff887a inset;
+        border-top: 0.5px solid black;
     }
 `;
 
@@ -51,6 +48,7 @@ export const Ftdiv = styled.div`
     & div form input {
         padding: 8px;
         border: 1px solid gray;
+        font-family: 'Poppins', sans-serif;
     }
 
     & div form input:focus{
@@ -88,4 +86,3 @@ export const Ftdiv = styled.div`
     }
 
 `;
-
