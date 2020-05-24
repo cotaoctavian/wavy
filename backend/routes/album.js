@@ -109,7 +109,7 @@ router.post('/1/:artist/:name/:year', (req, res) => {
                                             .then((album) => {
                                                 artist.albums.push(album._id);
                                                 artist.save()
-                                                    .then(() => res.json({ message: "The album has been created successfully!" }))
+                                                    .then(() => res.json({ message: "The album has been created successfully!", mongoid: album._id }))
                                                     .catch(err => console.log(err))
                                             })
                                             .catch((err) => console.log(err))

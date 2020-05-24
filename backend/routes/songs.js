@@ -162,7 +162,7 @@ router.post('/:title/:artist/:album/:genre/:duration', (req, res) => {
                         album.tracks.push(song._id)
 
                         album.save()
-                            .then(() => res.json({ message: "Song added to the album successfully!" }))
+                            .then(() => res.json({ message: "Song added to the album successfully!", songId: song._id, album: album }))
                             .catch((err) => console.log(err))
                     } 
                 })

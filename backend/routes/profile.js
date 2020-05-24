@@ -1,5 +1,6 @@
 const router = require('express').Router();
 let User = require('../models/users.model');
+let Artist = require('../models/artists.model');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const nodemailer = require('nodemailer');
@@ -58,12 +59,29 @@ router.post('/update_username', async (req, res) => {
                     if (user.username === req.body.username) {
                         res.json({ message: "You already own this username." })
                     } else {
-                        user.username = req.body.username
-                        const jwt_data = {id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists:user.artists, is_artist: user.is_artist}
+                        
+                        let previousUsername = user.username;
+                        user.username = req.body.username;
+                        let jwt_data = { id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, is_artist: user.is_artist }
+                        
                         user.save()
-                            .then(() => res.json({ message: "Username updated successfully.", token: jwt.sign(jwt_data, process.env.TOKEN_SECRET)}))
+                            .then(() => {
+                                Artist.findOne({ name: previousUsername})
+                                    .then((artist) => {
+                                        if(artist) {
+                                            artist.name = req.body.username;
+                                            artist.save()
+                                                .then(() => {
+                                                    res.json({ message: "Username updated successfully.", token: jwt.sign(jwt_data, process.env.TOKEN_SECRET) });
+                                                })
+                                                .catch(err => console.log(err))
+                                        }
+                                        else res.json({ message: "Username updated successfully.", token: jwt.sign(jwt_data, process.env.TOKEN_SECRET) });
+                                    })
+                                    .catch((err) => console.log(err))
+                            })
                             .catch(err => {
-                                res.json({ message: "The username is too short. Minimum 6 characters. ❌"})
+                                res.status(400).json({ message: "The username is too short. Minimum 6 characters. ❌" })
                             })
                     }
                 }
@@ -82,7 +100,7 @@ router.get('/confirm/:token', async (req, res) => {
                 if (user) {
                     user.email = data.new_email
                     user.save()
-                        .then(() => console.log("Your email has been updated."))
+                        .then(() => res.status(200).json({ message: "Your email has been updated." }))
                         .catch(err => res.status(400).json('Error ' + err))
                 }
             })

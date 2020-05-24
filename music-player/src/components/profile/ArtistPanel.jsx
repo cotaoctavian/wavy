@@ -27,6 +27,7 @@ const ArtistPanel = () => {
     const [file, setFile] = useState('');
     const [albumTitle, setAlbumTitle] = useState('');
     const [year, setYear] = useState('');
+    const [albumGenre, setAlbumGenre] = useState('');
 
     /* Song states */
     const [songTitle, setSongTitle] = useState('');
@@ -59,6 +60,13 @@ const ArtistPanel = () => {
                 }
             })
             setUploadMessageAlbum(result.data.message);
+
+            await Axios.post("http://localhost:5001/album/", { mongoid: result.data.mongoid, genre: albumGenre, album: albumTitle });
+            // console.log(response.data.message);
+
+            await Axios.post("http://localhost:5001/album/made-relationship", { mongoid: user.id, album: albumTitle });
+            // console.log(response.data.message);
+
             setAlbumName('');
             setYear('');
             setFile('');
@@ -99,10 +107,23 @@ const ArtistPanel = () => {
 
             try {
                 const result = await Axios.post(`http://localhost:5000/song/${songTitle}/${user.username}/${albumName}/${genre}/${duration}`, formData, {
-                    headers: { 'Content-Type': 'multipart/form-data'}
+                    headers: { 'Content-Type': 'multipart/form-data' }
                 })
-    
+
                 setUploadMessageSong(result.data.message);
+                let songId = result.data.songId;
+                let album = result.data.album
+
+                /* Create node into NEO4j DB */
+                await Axios.post("http://localhost:5001/song", { album: album.name, genre: genre, mongoid: songId, title: songTitle })
+                    .then((response) => console.log(response.data))
+                    .catch(error => console.log(error));
+                
+                /* Create relationship between album and song */
+                await Axios.post("http://localhost:5001/song/in-relationship", { albumMongoId: album._id, songMongoId: songId })
+                    .then((response) => console.log(response.data))
+                    .catch(error => console.log(error));
+
             } catch (err) {
                 console.log(err)
             }
@@ -165,6 +186,14 @@ const ArtistPanel = () => {
                                     required
                                     placeholder="Enter the name of the album"
                                     onChange={(e) => setAlbumTitle(e.target.value)}
+                                />
+
+                                <label> Genre of the album </label>
+                                <input
+                                    type="text"
+                                    required
+                                    placeholder="Enter the genre of the album"
+                                    onChange={(e) => setAlbumGenre(e.target.value)}
                                 />
 
 

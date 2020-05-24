@@ -6,6 +6,7 @@ const driver = neo4j.driver(process.env.NEO4J_URI, neo4j.auth.basic(process.env.
 const session = driver.session()
 
 /* Routes */
+/* Add album to user's library */
 router.post('/saved', (req, res) => {
 
     const userId = req.body.userId
@@ -22,6 +23,7 @@ router.post('/saved', (req, res) => {
 
 })
 
+/* Remove album from user's library */
 router.post('/remove', (req, res) => {
 
     const userId = req.body.userId
@@ -36,7 +38,32 @@ router.post('/remove', (req, res) => {
                 res.status(201).json({message: "Relationship deleted successfully."})
             })
             .catch(err => console.log(err))
-
 })
+
+/* Create album in NEO4j DB */
+router.post('/', (req, res) => {
+    genre = req.body.genre;
+    album = req.body.album;
+    mongoid = req.body.mongoid;
+    
+    session.run(`CREATE (n: Album {id: "${album}", genre: "${genre}", mongoid: "${mongoid}"}) RETURN n`)
+            .then(() => {
+                res.status(201).json({message: "Album has been created."})
+            })
+            .catch((err) => res.status(404).json(err));
+});
+
+/* Create relationship "MADE" between artist and album */
+router.post('/made-relationship', (req, res) => {
+    userId = req.body.mongoid;
+    album = req.body.album;
+    
+    session.run(`MATCH (n: User {mongoid: "${userId}"}), (m: Album {id: "${album}"}) MERGE (n)-[:MADE]->(m);`)
+            .then(() => {
+                res.status(201).json({message: "[:MADE] Relationship established successfully."})
+            })
+            .catch((err) => res.status(404).json(err));
+});
+
 
 module.exports = router

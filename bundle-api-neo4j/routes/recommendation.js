@@ -70,6 +70,27 @@ router.post('/songs/genres', (req, res) => {
 
 })
 
+/* Get random tracks for the users that don't like any genre */
+router.post('/random/tracks', (req, res) => {
+    userId = req.body.userId;
+
+    session.run(`MATCH
+                (n: User {mongoid: "${userId}"}),
+                (m: Song), (o: Album)
+                WHERE (m)-[:IN]->(o) AND NOT (n)-[:LIKES]->(m) AND NOT (n)-[:LISTENED]->(m)
+                RETURN m, rand() as r
+                ORDER BY r
+                LIMIT 6`)
+        .then((result) => {
+            tracks = []
+            for (let i = 0; i < result.records.length; i++)
+                tracks.push(result.records[i]._fields[0]["properties"])
+
+            res.status(201).json({ result: tracks })
+        })
+        .catch((err) => res.status(404).json(err))
+})
+
 
 /* Get random tracks from a specific genre */
 router.post('/tracks', (req, res) => {

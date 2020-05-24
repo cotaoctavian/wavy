@@ -43,6 +43,7 @@ const Login = () => {
                 if (res.data.message) setMessage(res.data.message);
                 else {
                     const result = res.data.token;
+                    console.log(result);
                     localStorage.setItem('token', result);
                     dispatch(setUpUser(jwt(result)))
                     history.push("/dashboard")

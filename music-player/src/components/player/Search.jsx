@@ -92,7 +92,7 @@ const SearchTrack = ({ id, handleUrl, songState, hover }) => {
                         <button onClick={togglePlay}>
                             {song.photo_path ? <img src={`http://localhost:5000/${song.photo_path}`} alt="" /> : null}
                         </button>
-                        {playing ? <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPause} /> : <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPlay} />}
+                        {playing ? <FontAwesomeIcon onClick={togglePlay} style={{ cursor: "pointer" }} icon={faPause} /> : <FontAwesomeIcon onClick={togglePlay} style={{ cursor: "pointer" }} icon={faPlay} />}
                     </div>
                     <span> {song.title} </span>
                     <span> {song.artist} </span>
@@ -105,7 +105,7 @@ const SearchTrack = ({ id, handleUrl, songState, hover }) => {
                         <button onClick={togglePlay}>
                             {song.photo_path ? <img src={`http://localhost:5000/${song.photo_path}`} alt="" /> : null}
                         </button>
-                        {playing ? <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPause} /> : <FontAwesomeIcon onClick={togglePlay} style={{cursor: "pointer"}} icon={faPlay} />}
+                        {playing ? <FontAwesomeIcon onClick={togglePlay} style={{ cursor: "pointer" }} icon={faPause} /> : <FontAwesomeIcon onClick={togglePlay} style={{ cursor: "pointer" }} icon={faPlay} />}
                     </div>
                     <span> {song.title} </span>
                     <span> {song.artist} </span>
@@ -140,12 +140,12 @@ const SearchTrack = ({ id, handleUrl, songState, hover }) => {
 const Search = ({ songId, songIdState, handleUrl }) => {
 
     const user = useSelector(state => state.user)
-    const [songsList, setSongsList] = useState(null)
-    const [artistsList, setArtistsList] = useState(null)
-    const [albumsList, setAlbumsList] = useState(null)
-    const [filteredArtists, setFilteredArtists] = useState(null)
-    const [filteredSongs, setFilteredSongs] = useState(null)
-    const [filteredAlbums, setFilteredAlbums] = useState(null)
+    const [songsList, setSongsList] = useState([])
+    const [artistsList, setArtistsList] = useState([])
+    const [albumsList, setAlbumsList] = useState([])
+    const [filteredArtists, setFilteredArtists] = useState([])
+    const [filteredSongs, setFilteredSongs] = useState([])
+    const [filteredAlbums, setFilteredAlbums] = useState([])
     const [topResult, setTopResult] = useState(null)
     const [searchMessage, setSearchMessage] = useState(null)
     const [introMessage, setIntroMessage] = useState(null)
@@ -159,11 +159,12 @@ const Search = ({ songId, songIdState, handleUrl }) => {
                 setAlbumsList(res.data.albums)
             })
             .catch(error => console.log(error))
-        if (filteredSongs !== null) {
+
+        if (filteredSongs.length > 0) {
             if (filteredSongs[0]._id === songId) setPlaying(songIdState)
             else setPlaying(false)
         }
-    }, [topResult, filteredSongs, filteredAlbums, filteredArtists, songIdState, songId, handleUrl])
+    }, [])
 
     const handleOnChange = (e) => {
         e.preventDefault()
@@ -203,7 +204,6 @@ const Search = ({ songId, songIdState, handleUrl }) => {
             })
 
             currentList = artistsList
-
             artistList = currentList.filter(item => {
                 let artistName = item.name.toLowerCase()
 
@@ -253,19 +253,19 @@ const Search = ({ songId, songIdState, handleUrl }) => {
             setFilteredSongs(trackList)
             setTopResult(0)
         }
-        else setFilteredSongs(null)
+        else setFilteredSongs([])
 
         if (albumList.length > 0) {
             setFilteredAlbums(albumList);
             setTopResult(1);
         }
-        else setFilteredAlbums(null)
+        else setFilteredAlbums([])
 
         if (artistList.length > 0) {
             setFilteredArtists(artistList)
             setTopResult(2)
         }
-        else setFilteredArtists(null)
+        else setFilteredArtists([])
 
         if (albumList.length === 0 && artistList.length === 0 && trackList.length === 0) {
             setTopResult(null)
@@ -374,8 +374,8 @@ const Search = ({ songId, songIdState, handleUrl }) => {
                         </div>
 
                         <div>
-                            {topResult !== null ? <h2> Songs </h2> : null}
-                            {filteredSongs !== null ? filteredSongs.map((song, index) => {
+                            {filteredSongs.length > 0 ? <h2> Songs </h2> : null}
+                            {filteredSongs.length > 0 ? filteredSongs.map((song, index) => {
                                 if (index < 3) {
                                     if (songId !== null) {
                                         if (song._id === songId) {
@@ -390,9 +390,9 @@ const Search = ({ songId, songIdState, handleUrl }) => {
 
                     </TopResultWithSongs>
 
-                    {filteredAlbums !== null ?
+                    {filteredAlbums.length > 0 ?
                         <AlbumsList>
-                            {filteredAlbums !== null ? <h2> Albums </h2> : null}
+                            {filteredAlbums.length > 0 ? <h2> Albums </h2> : null}
                             <div>
                                 {filteredAlbums !== null ? filteredAlbums.map((album, index) => {
                                     return <Album key={index} id={album._id} />
@@ -401,10 +401,10 @@ const Search = ({ songId, songIdState, handleUrl }) => {
                             </div>
                         </AlbumsList> : null}
 
-                    {filteredArtists !== null ? <h2> Artists </h2> : null}
+                    {filteredArtists.length > 0 ? <h2> Artists </h2> : null}
                     <ArtistsList>
-                        {filteredArtists !== null ? filteredArtists.map((artist, index) => {
-                            return <ArtistItem key={index} id={artist._id} />
+                        {filteredArtists.length > 0 ? filteredArtists.map((artist, index) => {
+                            return (<ArtistItem key={index} id={artist._id} />)
                         })
                             : null}
                     </ArtistsList>

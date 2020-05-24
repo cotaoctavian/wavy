@@ -12,7 +12,7 @@ const Album = ({ id }) => {
                 setAlbumData(res.data.album)
             })
             .catch(err => console.log(err))
-    }, [])
+    }, [id])
 
     let content = (
         <div>

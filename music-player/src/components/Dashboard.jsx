@@ -28,11 +28,10 @@ const SongItem = ({ songData, audio }) => {
     }, [songData])
 
     const togglePlay = (event) => {
-        event.stopPropagation()
-        audio.pause();
+        event.preventDefault();
         audio.src = `http://localhost:5000/${song.path}`;
-        setTimeout(async () => {
-            await audio.play();
+        setTimeout(() => {
+            audio.play();
         }, 150);
 
         timeout = setTimeout(() => {
@@ -42,8 +41,9 @@ const SongItem = ({ songData, audio }) => {
     }
 
     const toggleStop = (event) => {
-        event.stopPropagation()
+        event.preventDefault();
         audio.pause();
+        audio.src = "";
 
         clearTimeout(timeout);
     }
@@ -51,7 +51,7 @@ const SongItem = ({ songData, audio }) => {
     let content = (
         <React.Fragment>
             {song !== undefined ?
-                <SongContainer>
+                <SongContainer >
                     <NavLink onClick={toggleStop} to={`/library/artists/${artist}`}>
                         <img onMouseEnter={togglePlay} onMouseOut={toggleStop} src={`http://localhost:5000/${song.photo_path}`} alt="" />
                         <div>
@@ -87,32 +87,50 @@ const Dashboard = () => {
         Axios.post("http://localhost:5001/recommended/songs/genres", { userId: userData.id })
             .then(async (response) => {
                 let genres = response.data.result[0]
-                let albums = []
 
-                for (let i = 0; i < genres.length; i++) {
-                    await Axios.post("http://localhost:5001/recommended/genres/albums", { userId: userData.id, genre: genres[i], limit: parseInt(Math.ceil(6 / genres.length)) })
-                        .then((response) => {
-                            const album = response.data.result
-                            for (let j = 0; j < album.length; j++)
-                                albums.push(album[j])
-                        })
-                        .catch((err) => console.log(err))
-                }
+                if (genres.length > 0) {
+                    let albums = []
 
-                /* Shuffle albums so every artist can have a change to be on dashboard */
-                let shuffledAlbums = albums
-                    .map((a) => ({ sort: Math.random(), value: a }))
-                    .sort((a, b) => a.sort - b.sort)
-                    .map((a) => a.value)
-                let songs = []
-                for (let i = 0; i < 6; i++) {
-                    await Axios.post("http://localhost:5001/recommended/albums/songs", { userId: userData.id, album: shuffledAlbums[i], limit: 1 })
-                        .then((response) => {
-                            songs.push(response.data.result)
+                    for (let i = 0; i < genres.length; i++) {
+                        await Axios.post("http://localhost:5001/recommended/genres/albums", { userId: userData.id, genre: genres[i], limit: parseInt(Math.ceil(6 / genres.length)) })
+                            .then((response) => {
+                                const album = response.data.result
+                                for (let j = 0; j < album.length; j++)
+                                    albums.push(album[j])
+                            })
+                            .catch((err) => console.log(err))
+                    }
+
+                    /* Shuffle albums so every artist can have a change to be on dashboard */
+                    let shuffledAlbums = albums
+                        .map((a) => ({ sort: Math.random(), value: a }))
+                        .sort((a, b) => a.sort - b.sort)
+                        .map((a) => a.value)
+                    let songs = []
+                    for (let i = 0; i < 6; i++) {
+                        await Axios.post("http://localhost:5001/recommended/albums/songs", { userId: userData.id, album: shuffledAlbums[i], limit: 1 })
+                            .then((response) => {
+                                songs.push(response.data.result)
+                            })
+                            .catch(err => console.log(err))
+                    }
+                    setRecommendedSongs(songs);
+                } else {
+                    /* If the user doesn't have the recommendations already set. */
+                    await Axios.post("http://localhost:5001/recommended/random/tracks", { userId: userData.id })
+                        .then(async (response) => {
+                            let songs = [];
+                            for (let i = 0; i < response.data.result.length; i++) {
+                                await Axios.post("http://localhost:5001/recommended/albums/songs", { userId: userData.id, album: response.data.result[i].album, limit: 1 })
+                                    .then((response) => {
+                                        songs.push(response.data.result)
+                                    })
+                                    .catch(err => console.log(err))
+                            }
+                            setRecommendedSongs(songs);
                         })
                         .catch(err => console.log(err))
                 }
-                setRecommendedSongs(songs);
 
             })
             .catch(err => console.log(err))
