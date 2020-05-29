@@ -4,8 +4,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useHistory, NavLink } from 'react-router-dom';
 import { Global, Header, LeftHeader, RightHeader, Footer, FooterLeftSide, FooterRightSide, Main, Tdiv, Fdiv } from '../../assets/styles/profile';
 import { Sdiv, Ftdiv } from '../../assets/styles/artistpanel';
-import { setUpUser } from '../../actions/index';
-import jwt from 'jwt-decode'
 import '../../assets/css/Global.css';
 import w_wave from '../../assets/images/white_wave.png';
 import flag from '../../assets/images/romania-flag.png';
@@ -14,7 +12,6 @@ const ArtistPanel = () => {
 
     /* User stuff */
     const history = useHistory();
-    const dispatch = useDispatch();
     const user = useSelector(state => state.user);
     const [currentUsername, setCurrentUsername] = useState('');
     const [photoPath] = useState(user.img);

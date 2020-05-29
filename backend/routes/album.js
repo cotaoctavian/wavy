@@ -65,10 +65,12 @@ router.delete('/:userId/:albumId/:albumTitle', (req, res) => {
         .then((user) => {
             let i, check = true;
             for (i = 0; i < user.albums.length; i++) {
-                if (new ObjectId(user.albums[i]).equals(req.params.albumId))
+                if (new ObjectId(user.albums[i]).equals(req.params.albumId)) {
                     user.albums.splice(i, 1);
-                break;
+                    break;
+                }
             }
+
 
             user.save()
                 .then(() => {

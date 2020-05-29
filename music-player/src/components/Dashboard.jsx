@@ -52,7 +52,7 @@ const SongItem = ({ songData, audio }) => {
         <React.Fragment>
             {song !== undefined ?
                 <SongContainer >
-                    <NavLink onClick={toggleStop} to={`/library/artists/${artist}`}>
+                    <NavLink onMouseEnter={toggleStop} to={`/library/artists/${artist}`}>
                         <img onMouseEnter={togglePlay} onMouseOut={toggleStop} src={`http://localhost:5000/${song.photo_path}`} alt="" />
                         <div>
                             <span> {song.artist} </span>
