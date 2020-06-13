@@ -209,7 +209,6 @@ const AlbumQPNotification = ({ id, songId, handleLike, songs, handleUrl, songIdS
             dispatch(setUpUser(jwt(result.data.token)))
 
             const neo4j_result = await Axios.post('http://localhost:5001/album/saved', { userId: user.id, albumId: id })
-            console.log(neo4j_result.data)
 
         } catch (err) {
             enqueueSnackbar(err.response.data.message, { variant: 'default' })
@@ -220,13 +219,12 @@ const AlbumQPNotification = ({ id, songId, handleLike, songs, handleUrl, songIdS
     const handleDeleteFromLibrary = async () => {
         try {
             const result = await Axios.delete(`http://localhost:5000/album/${user.id}/${id}/${album.name}`)
-            console.log(result.data)
+            
             enqueueSnackbar(result.data.message, { variant: 'default' })
             localStorage.setItem('token', result.data.token);
             dispatch(setUpUser(jwt(result.data.token)))
 
             const neo4j_result = await Axios.post('http://localhost:5001/album/remove', { userId: user.id, albumId: id })
-            console.log(neo4j_result.data)
 
         } catch (err) {
             enqueueSnackbar(err.response.data.message, { variant: 'default' })

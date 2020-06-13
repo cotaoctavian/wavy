@@ -25,7 +25,7 @@ router.post('/:id', (req, res) => {
                 .then(user => {
                     if (user) {
                         user.img = `images/${file.name}`
-                        let jwt_data = { id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, is_artist: user.is_artist }
+                        let jwt_data = { id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, albums: user.albums, is_artist: user.is_artist }
                         user.save()
                             .then(() => {
                                 Artist.findById({ _id: id })

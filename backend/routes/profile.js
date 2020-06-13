@@ -62,7 +62,7 @@ router.post('/update_username', async (req, res) => {
                         
                         let previousUsername = user.username;
                         user.username = req.body.username;
-                        let jwt_data = { id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, is_artist: user.is_artist }
+                        let jwt_data = { id: user._id, username: user.username, email: user.email, img: user.img, songs: user.liked_songs, playlists: user.playlists, artists: user.artists, albums: user.albums, is_artist: user.is_artist }
                         
                         user.save()
                             .then(() => {
