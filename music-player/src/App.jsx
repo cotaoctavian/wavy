@@ -55,6 +55,7 @@ const App = () => {
 
         {/* Web player */}
         <Route exact path="/player" component={WebPlayer} />
+        <Route exact path="/hotlist" component={WebPlayer} />
         <Route exact path="/library/albums" component={WebPlayer} />
         <Route exact path="/library/tracks" component={WebPlayer} />
         <Route exact path="/library/playlists" component={WebPlayer} />

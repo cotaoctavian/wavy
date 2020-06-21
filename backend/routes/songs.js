@@ -60,11 +60,30 @@ router.post('/', (req, res) => {
         .catch(err => console.log(err))
 });
 
-router.post('/info', (req, res) => {
 
-    Songs.findOne({ path: req.body.name })
-        .then(song => {
-            if (song) res.json({ info: song })
+router.get('/views', async (req, res) => {
+    Songs.find({}, (err, songs) => {
+        if (err) {
+            res.status(404).json({ message: 'No songs found' })
+        } else {
+            songs.sort((a, b) => b.views - a.views);
+            res.status(200).json({ message: songs.splice(0, 10) })
+        }
+    })
+});
+
+router.post('/info', async (req, res) => {
+
+    await Songs.findOne({ path: req.body.name })
+        .then(async song => {
+            if (song) {
+                song.views += 1;
+                song.save()
+                    .then((result) => {
+                        res.status(201).json({ info: result })
+                    })
+                    .catch(err => console.log(err))
+            }
         })
         .catch(err => console.log(err))
 });
@@ -164,7 +183,7 @@ router.post('/:title/:artist/:album/:genre/:duration', (req, res) => {
                         album.save()
                             .then(() => res.json({ message: "Song added to the album successfully!", songId: song._id, album: album }))
                             .catch((err) => console.log(err))
-                    } 
+                    }
                 })
                 .catch(err => console.log(err))
         })

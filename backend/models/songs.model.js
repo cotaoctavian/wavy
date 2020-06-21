@@ -9,7 +9,8 @@ const songSchema = new Schema({
     duration: { type: String, required: true },
     artist: { type: String, required: true },
     album: { type: String },
-    genre: { type: String, minlength: 1}
+    genre: { type: String, minlength: 1},
+    views: { type: Number, default: 0}
 });
 
 const Song = mongoose.model('Song', songSchema)

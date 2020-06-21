@@ -16,6 +16,7 @@ import AlbumQP from './AlbumQP';
 import LibraryAlbum from './LibraryAlbum';
 import Search from './Search';
 import MadeForYou from './MadeForYou';
+import Hotlist from './Hotlist';
 
 /* REDUX */
 import { useSelector, useDispatch } from 'react-redux';
@@ -143,7 +144,6 @@ const WebPlayer = (props) => {
         } else if (albumIdentifier !== "null") {
             try {
                 const result = await Axios.get(`http://localhost:5000/album/${albumIdentifier}`)
-                console.log(result.data);
                 playlist = result.data.album.tracks;
             } catch (err) {
                 console.log(err)
@@ -278,13 +278,14 @@ const WebPlayer = (props) => {
             {props.match.params.id !== undefined && props.match.path.includes('playlists') ? <PlaylistQP songId={songId} songs={user.songs} id={props.match.params.id} handleLike={handleLike} handleUrl={handleUrl} songIdState={playing} /> : null}
             {props.match.params.id !== undefined && props.match.path.includes('album') ? <AlbumQP id={props.match.params.id} songId={songId} handleLike={handleLike} songs={user.songs} handleUrl={handleUrl} songIdState={playing} /> : null}
             {urlPathname === "/player" ? <HomePlayer id={user.id} image={user.img} handleUrl={handleUrl} songId={songId} songIdState={playing} /> : null}
+            {urlPathname === "/hotlist" ? <Hotlist handleUrl={handleUrl} songId={songId} songIdState={playing} /> : null}
             {urlPathname === "/library/albums" ? <LibraryAlbum image={user.img} /> : null}
             {urlPathname === "/library/artists" ? <Artists /> : null}
             {urlPathname === "/library/made-for-you" ? <MadeForYou id={user.id} image={user.img} /> : null}
             {urlPathname === "/library/playlists" ? <Playlist image={user.img} userId={user.id} /> : null}
             {urlPathname === "/library/tracks" ? <LikedSongs image={user.img} songs={user.songs} songId={songId} songIdState={playing} handle={handleUrl} handleLike={handleLike} /> : null}
             {urlPathname === "/search" ? <Search songId={songId} songIdState={playing} handleUrl={handleUrl} /> : null}
-            {url.length > 0 ? <Player resetTrack={reset} handlePrevious={handlePrevious} handleForward={handleForward} handleLike={handleLike} songInfo={songInfo} audio={audio} url={url} play={playing} changePlay={setPlaying} likeState={like} artistId={artistId} albumId={albumId}/> : null}
+            {url.length > 0 ? <Player resetTrack={reset} handlePrevious={handlePrevious} handleForward={handleForward} handleLike={handleLike} songInfo={songInfo} audio={audio} url={url} play={playing} changePlay={setPlaying} likeState={like} artistId={artistId} albumId={albumId} /> : null}
         </React.Fragment>
     );
     return content;
