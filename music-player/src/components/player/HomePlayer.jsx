@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import Axios from 'axios';
-import jwt from 'jwt-decode';
 
 /* Components */
 import ArtistItem from './ArtistItem'
@@ -185,7 +184,7 @@ const HomePlayer = ({ id, image, handleUrl, songId, songIdState }) => {
             {loading ? null :
                 <LoadingContainer>
                     <div>
-                        <div className="sp sp-slices"></div>
+                        <div className="spinner slices"></div>
                     </div>
                 </LoadingContainer>}
 
@@ -220,7 +219,7 @@ const HomePlayer = ({ id, image, handleUrl, songId, songIdState }) => {
             {loading ?
                 <RecommendedArtistsContainer>
 
-                    {recommendedAlbums.length !== 0 ? <h1> Recommended artists for you </h1> : null}
+                    {recommendedArtists.length !== 0 ? <h1> Recommended artists for you </h1> : null}
 
                     <div>
                         {recommendedArtists.map((artist, index) => {

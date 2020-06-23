@@ -40,8 +40,10 @@ router.post('/disliked', (req, res) => {
 
     const userId = req.body.userId
     const songId = req.body.songId
+    
+    let tx = session.beginTransaction();
 
-    session.run(`MATCH
+    tx.run(`MATCH
                 (n: User {mongoid:"${userId}"}),
                 (m:Song {id:"${songId}"}),
                 p=(n)-[r:LIKES]->(m)
@@ -50,9 +52,11 @@ router.post('/disliked', (req, res) => {
             res.status(201).json({ message: "Relationship deleted successfully." })
         })
         .catch(err => console.log(err))
+
+    tx.commit();
 })
 
-
+/* Create song node */
 router.post('/', (req, res) => {
     album = req.body.album;
     genre = req.body.genre;
@@ -68,6 +72,7 @@ router.post('/', (req, res) => {
         .catch(err => res.status(404).json(err))
 });
 
+/* IN relationship between album and song */
 router.post('/in-relationship', (req, res) => {
     albumMongoId = req.body.albumMongoId;
     songMongoId = req.body.songMongoId;
@@ -80,6 +85,22 @@ router.post('/in-relationship', (req, res) => {
         })
         .catch((err) => res.status(404).json(err))
 });
+
+/* Delete IN relationship between album and song + remove songs */
+router.delete('/in-relationship/:albumMongoId', (req, res) => {
+    albumMongoId = req.params.albumMongoId;
+    
+    let tx = session.beginTransaction();
+
+    tx.run(`MATCH (n:Album {mongoid:"${albumMongoId}" }), (m: Song), p=(m)-[r:IN]->(n) 
+                DELETE r, m`)
+            .then(() => {
+                res.status(200).json({message: "Relationship deleted successfully."})
+            })
+            .catch((error) => console.log(error))
+
+    tx.commit();
+})
 
 
 

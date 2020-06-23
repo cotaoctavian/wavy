@@ -19,6 +19,35 @@ router.get('/:id', (req, res) => {
         })
 })
 
+
+router.delete('/:id/:userId', (req, res) => {
+    Album.deleteOne({ _id: req.params.id }, (err) => {
+        if (err) {
+            res.status(403).json({ message: "Something went wrong.. 🤔" })
+        } else {
+            Artist.findById({ _id: req.params.userId })
+                .then((user) => {
+                    let i;
+                    for (i = 0; i < user.albums.length; i++) {
+                        if (new ObjectId(user.albums[i]).equals(req.params.id)) {
+                            user.albums.splice(i, 1);
+                            break;
+                        }
+                    }
+
+                    user.save()
+                        .then(() => {
+                            res.status(200).json({ message: `You removed the album. ❌` })
+                        })
+                        .catch(() => {
+                            res.status(500).json({ message: "Something went wrong.. 🤔" })
+                        })
+                })
+        }
+    })
+
+})
+
 router.get('/:album/:artist', (req, res) => {
     Album.findOne({ artistId: req.params.artist, name: req.params.album })
         .then((album) => {

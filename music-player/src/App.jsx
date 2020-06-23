@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 /* Private routes */
 import PrivateRoute from './components/admin_panel/PrivateRoute';
+import PrivateUserRoute from './components/player/PrivateUserRoute';
 
 /* Auth */
 import Register from './components/auth/Register';
@@ -44,27 +45,27 @@ const App = () => {
 
         {/* Dashboard */}
         <Route exact path="/" component={Home} />
-        <Route exact path="/dashboard" component={Dashboard} />
+        <PrivateUserRoute exact path="/dashboard" component={Dashboard} />
 
         {/* Profile pages */}
-        <Route exact path="/profile" component={Profile} />
-        <Route exact path="/change_password" component={ChangePassword} />
-        <Route exact path="/update_profile" component={UpdateProfile} />
-        <Route exact path="/artist_panel" component={ArtistPanel} />
-        <Route exact path="/edit_panel" component={EditPanel} />
+        <PrivateUserRoute exact path="/profile" component={Profile} />
+        <PrivateUserRoute exact path="/change_password" component={ChangePassword} />
+        <PrivateUserRoute exact path="/update_profile" component={UpdateProfile} />
+        <PrivateUserRoute exact path="/artist_panel" component={ArtistPanel} />
+        <PrivateUserRoute exact path="/edit_panel" component={EditPanel} />
 
         {/* Web player */}
-        <Route exact path="/player" component={WebPlayer} />
-        <Route exact path="/hotlist" component={WebPlayer} />
-        <Route exact path="/library/albums" component={WebPlayer} />
-        <Route exact path="/library/tracks" component={WebPlayer} />
-        <Route exact path="/library/playlists" component={WebPlayer} />
-        <Route path="/library/playlists/:id" component={WebPlayer} />
-        <Route path="/library/artists/:id" component={WebPlayer} />
-        <Route path="/library/made-for-you" component={WebPlayer} />
-        <Route exact path="/library/artists" component={WebPlayer} />
-        <Route path="/library/album/:id" component={WebPlayer} />
-        <Route exact path="/search" component={WebPlayer} />
+        <PrivateUserRoute exact path="/player" component={WebPlayer} />
+        <PrivateUserRoute exact path="/hotlist" component={WebPlayer} />
+        <PrivateUserRoute exact path="/library/albums" component={WebPlayer} />
+        <PrivateUserRoute exact path="/library/tracks" component={WebPlayer} />
+        <PrivateUserRoute exact path="/library/playlists" component={WebPlayer} />
+        <PrivateUserRoute path="/library/playlists/:id" component={WebPlayer} />
+        <PrivateUserRoute path="/library/artists/:id" component={WebPlayer} />
+        <PrivateUserRoute path="/library/made-for-you" component={WebPlayer} />
+        <PrivateUserRoute exact path="/library/artists" component={WebPlayer} />
+        <PrivateUserRoute path="/library/album/:id" component={WebPlayer} />
+        <PrivateUserRoute exact path="/search" component={WebPlayer} />
 
         {/* Admin panel */}
         <Route exact path="/panel" component={AdminPanel} />

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, } from 'react';
-import photo from '../../assets/images/img-01.png'
+import photo from '../../assets/images/login.png'
 import '../../assets/css/Login.css';
 import { NavLink, useHistory } from "react-router-dom";
 import { useDispatch } from 'react-redux';
@@ -29,6 +29,10 @@ const Login = () => {
             document.body.classList.remove('dashboard-back')
         }
     }, [])
+
+    if (localStorage.getItem('token') !== "null") {
+        history.push('/dashboard');
+    }
 
     const onSubmit = event => {
         event.preventDefault()

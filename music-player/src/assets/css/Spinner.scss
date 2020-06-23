@@ -1,83 +1,82 @@
 /* Spinner Slices */
 
-$spCol: #fff;
 
-.sp {
+.spinner {
 	clear: both;
 }
 
-.sp.sp-slices {
+.spinner.slices {
 	border-radius: 50%;
-	border-top: 30px rgba($spCol,0.75) solid;
-	border-left: 30px rgba($spCol,0.25) solid;
-	border-bottom: 30px rgba($spCol,0.25) solid;
-	border-right: 30px rgba($spCol,0.25) solid;
-	-webkit-animation: spSlices 1s infinite linear;
-	animation: spSlices 1s infinite linear;
+	border-top: 30px rgba(#fff,0.75) solid;
+	border-left: 30px rgba(#fff,0.25) solid;
+	border-bottom: 30px rgba(#fff,0.25) solid;
+	border-right: 30px rgba(#fff,0.25) solid;
+	-webkit-animation: loopSlices 1s infinite linear;
+	animation: loopSlices 1s infinite linear;
 }
 
-@-webkit-keyframes spSlices {
+@-webkit-keyframes loopSlices {
 	0% {
-		border-top: 30px rgba($spCol,0.75) solid;
-		border-right: 30px rgba($spCol,0.25) solid;
-		border-bottom: 30px rgba($spCol,0.25) solid;
-		border-left: 30px rgba($spCol,0.25) solid;
+		border-top: 30px rgba(#fff,0.75) solid;
+		border-right: 30px rgba(#fff,0.25) solid;
+		border-bottom: 30px rgba(#fff,0.25) solid;
+		border-left: 30px rgba(#fff,0.25) solid;
 	}
 	25% {
-		border-top: 30px rgba($spCol,0.25) solid;
-		border-right: 30px rgba($spCol,0.75) solid;
-		border-bottom: 30px rgba($spCol,0.25) solid;
-		border-left: 30px rgba($spCol,0.25) solid;
+		border-top: 30px rgba(#fff,0.25) solid;
+		border-right: 30px rgba(#fff,0.75) solid;
+		border-bottom: 30px rgba(#fff,0.25) solid;
+		border-left: 30px rgba(#fff,0.25) solid;
 	}
 	50% {
-		border-top: 30px rgba($spCol,0.25) solid;
-		border-right: 30px rgba($spCol,0.25) solid;
-		border-bottom: 30px rgba($spCol,0.75) solid;
-		border-left: 30px rgba($spCol,0.25) solid;
+		border-top: 30px rgba(#fff,0.25) solid;
+		border-right: 30px rgba(#fff,0.25) solid;
+		border-bottom: 30px rgba(#fff,0.75) solid;
+		border-left: 30px rgba(#fff,0.25) solid;
 	}
 	75% {
-		border-top: 30px rgba($spCol,0.25) solid;
-		border-right: 30px rgba($spCol,0.25) solid;
-		border-bottom: 30px rgba($spCol,0.25) solid;
-		border-left: 30px rgba($spCol,0.75) solid;
+		border-top: 30px rgba(#fff,0.25) solid;
+		border-right: 30px rgba(#fff,0.25) solid;
+		border-bottom: 30px rgba(#fff,0.25) solid;
+		border-left: 30px rgba(#fff,0.75) solid;
 	}
 	100% {
-		border-top: 30px rgba($spCol,0.75) solid;
-		border-right: 30px rgba($spCol,0.25) solid;
-		border-bottom: 30px rgba($spCol,0.25) solid;
-		border-left: 30px rgba($spCol,0.25) solid;
+		border-top: 30px rgba(#fff,0.75) solid;
+		border-right: 30px rgba(#fff,0.25) solid;
+		border-bottom: 30px rgba(#fff,0.25) solid;
+		border-left: 30px rgba(#fff,0.25) solid;
 	}
 }
 
-@keyframes spSlices {
+@keyframes loopSlices {
 	0% {
-		border-top: 30px rgba($spCol,0.75) solid;
-		border-right: 30px rgba($spCol,0.25) solid;
-		border-bottom: 30px rgba($spCol,0.25) solid;
-		border-left: 30px rgba($spCol,0.25) solid;
+		border-top: 30px rgba(#fff,0.75) solid;
+		border-right: 30px rgba(#fff,0.25) solid;
+		border-bottom: 30px rgba(#fff,0.25) solid;
+		border-left: 30px rgba(#fff,0.25) solid;
 	}
 	25% {
-		border-top: 30px rgba($spCol,0.25) solid;
-		border-right: 30px rgba($spCol,0.75) solid;
-		border-bottom: 30px rgba($spCol,0.25) solid;
-		border-left: 30px rgba($spCol,0.25) solid;
+		border-top: 30px rgba(#fff,0.25) solid;
+		border-right: 30px rgba(#fff,0.75) solid;
+		border-bottom: 30px rgba(#fff,0.25) solid;
+		border-left: 30px rgba(#fff,0.25) solid;
 	}
 	50% {
-		border-top: 30px rgba($spCol,0.25) solid;
-		border-right: 30px rgba($spCol,0.25) solid;
-		border-bottom: 30px rgba($spCol,0.75) solid;
-		border-left: 30px rgba($spCol,0.25) solid;
+		border-top: 30px rgba(#fff,0.25) solid;
+		border-right: 30px rgba(#fff,0.25) solid;
+		border-bottom: 30px rgba(#fff,0.75) solid;
+		border-left: 30px rgba(#fff,0.25) solid;
 	}
 	75% {
-		border-top: 30px rgba($spCol,0.25) solid;
-		border-right: 30px rgba($spCol,0.25) solid;
-		border-bottom: 30px rgba($spCol,0.25) solid;
-		border-left: 30px rgba($spCol,0.75) solid;
+		border-top: 30px rgba(#fff,0.25) solid;
+		border-right: 30px rgba(#fff,0.25) solid;
+		border-bottom: 30px rgba(#fff,0.25) solid;
+		border-left: 30px rgba(#fff,0.75) solid;
 	}
 	100% {
-		border-top: 30px rgba($spCol,0.75) solid;
-		border-right: 30px rgba($spCol,0.25) solid;
-		border-bottom: 30px rgba($spCol,0.25) solid;
-		border-left: 30px rgba($spCol,0.25) solid;
+		border-top: 30px rgba(#fff,0.75) solid;
+		border-right: 30px rgba(#fff,0.25) solid;
+		border-bottom: 30px rgba(#fff,0.25) solid;
+		border-left: 30px rgba(#fff,0.25) solid;
 	}
 }

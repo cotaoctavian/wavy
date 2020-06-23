@@ -9,6 +9,7 @@ import { useSelector } from 'react-redux';
 /* Styling */
 import { Header, Global, Links } from '../../assets/styles/webplayer';
 import { MainContainer, SongContainer } from '../../assets/styles/hotlist';
+import { LoadingContainer } from '../../assets/styles/homeplayer';
 
 /* Icons & Images */
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -25,7 +26,6 @@ const SongItem = ({ songData, handleUrl, songState }) => {
     const [song, setSong] = useState(undefined);
     const [playing, setPlaying] = useState(false)
 
-    console.log(songState);
 
     useEffect(() => {
         axios.post("http://localhost:5000/song", { song: songData._id })
@@ -65,12 +65,16 @@ const Hotlist = ({ handleUrl, songId, songIdState }) => {
 
     const user = useSelector(state => state.user)
     const [songsList, setSongsList] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         axios.get("http://localhost:5000/song/views")
             .then((response) => {
-                console.log(response.data.message);
                 setSongsList(response.data.message);
+                console.log(response.data.message);
+                setInterval(() => {
+                    setLoading(true)
+                }, 2000)
             })
             .catch((error) => console.log(error))
 
@@ -96,14 +100,21 @@ const Hotlist = ({ handleUrl, songId, songIdState }) => {
             </Header>
 
 
-            <MainContainer>
-                {songsList.length > 0 ?
-                    songsList.map((song, index) => {
-                        if (song._id === songId) {
-                            return <SongItem key={index} songData={song} handleUrl={handleUrl} songState={songIdState} />
-                        } else return <SongItem key={index} songData={song} handleUrl={handleUrl} songState={false} />
-                    }) : null}
-            </MainContainer>
+            {loading ?
+                <MainContainer>
+                    {songsList.length > 0 ?
+                        songsList.map((song, index) => {
+                            if (song._id === songId) {
+                                return <SongItem key={index} songData={song} handleUrl={handleUrl} songState={songIdState} />
+                            } else return <SongItem key={index} songData={song} handleUrl={handleUrl} songState={false} />
+                        }) : null}
+                </MainContainer> :
+                <LoadingContainer>
+                    <div>
+                        <div className="spinner slices"></div>
+                    </div>
+                </LoadingContainer>
+            }
 
 
         </React.Fragment>

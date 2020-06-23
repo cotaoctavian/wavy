@@ -31,127 +31,56 @@ export const Sdiv = styled.div`
 
 export const Ftdiv = styled.div`
     border-left: 1px solid black;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2.5em;
+    padding-left: 1.5em;
+    padding-top: 1.5em;
+
+    & > span {
+        font-size: 22px;
+        font-weight: bold;
+    }
+`;
+
+export const AlbumContainer = styled.div`
     width: 100%;
+    height: 6em;
+    background-color: #ebeef2;
+    display: flex; 
+    align-items: center;
+    padding-left: 0.8em;
+    border-radius: 5px;
+    padding-right: 1em;
+    border: 2px solid black;
+
+    & img {
+        width: 4.5em;
+        height: 4.5em;
+        flex: 1;
+        border-radius: 5px;
+        transition: 0.2s linear;
+    }
 
     & span {
-        font-size: 12px;
+        flex: 3;
+        padding-left: 1em;
     }
 
-    & > div {
-        display: flex;
-        width: 100%;
-
-        & > div:first-child {
-            padding-left: 3%;
-            width: 40%;
-            flex: 1;
-
-            & > form {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 0.05fr 0.1fr 0.2fr 0.1fr 0.2fr 0.1fr 0.2fr 0.2fr;
-                grid-gap: 10px;
-                height: 300px;
-                padding-right: 5%;
-                width: 100%;
-
-                & label {
-                    font-weight: 500;
-                }
-
-                & input {
-                    width: 70%;
-                    font-family: 'Poppins', sans-serif;
-                    padding: 5px 5px 5px 5px;
-                    border: 1px solid gray;
-                }
-
-                & input:focus {
-                    outline: none;
-                    border:1px solid #ff887a;
-                    font-family: 'Poppins', sans-serif;
-                }
-
-                & button {
-                    width: 45%;
-                    background-color: #ebeef2;
-                    padding: 8px;
-                    border: 2px solid gray;
-                    border-radius: 25px;
-                    font-family: 'Poppins', sans-serif;
-                }
-
-                & button:hover{
-                    transition: 1s;
-                    border: 2px solid #ff887a;
-                    background-color: white;
-                }
-
-                & button:not(:hover){
-                    transition: 1s;
-                }
-
-                & button:focus {
-                    outline: none;
-                }
-            }
-        }
-
-        & > div:nth-child(2) {
-            flex: 1;
-            & > form {
-                display: grid;
-                grid-template-columns: 1fr;
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 0.05fr 0.1fr 0.2fr 0.1fr 0.2fr 0.1fr 0.2fr 0.2fr;
-                grid-gap: 10px;
-                padding-right: 5%;
-                width: 100%;
-
-                & label {
-                    font-weight: 500;
-                }
-
-                & input {
-                    width: 70%;
-                    font-family: 'Poppins', sans-serif;
-                    padding: 5px 5px 5px 5px;
-                    border: 1px solid gray;
-                }
-
-                & input:focus {
-                    outline: none;
-                    border:1px solid #ff887a;
-                    font-family: 'Poppins', sans-serif;
-                }
-
-                & button {
-                    width: 45%;
-                    background-color: #ebeef2;
-                    padding: 8px;
-                    border: 2px solid gray;
-                    border-radius: 25px;
-                    font-family: 'Poppins', sans-serif;
-                }
-
-                & button:hover{
-                    transition: 1s;
-                    border: 2px solid #ff887a;
-                    background-color: white;
-                }
-
-                & button:not(:hover){
-                    transition: 1s;
-                }
-
-                & button:focus {
-                    outline: none;
-                }
-            }
-            
-        } 
+    & svg {
+        flex: 0.7;
+        cursor: pointer;
+        font-size: 25px;
+        transition: 0.3s linear;
     }
-   
 
+    & svg:hover {
+        color: #ff887a;
+    }
+
+    & svg:nth-child(2) {
+        padding-right: 5em;
+    }
 `;

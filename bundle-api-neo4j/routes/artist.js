@@ -38,7 +38,9 @@ router.post('/unfollow', (req, res) => {
     const userId = req.body.userId
     const artistId = req.body.artistId
 
-    session.run(`MATCH
+    let tx = session.beginTransaction();
+
+    tx.run(`MATCH
                 (n: User {mongoid:"${userId}"}),
                 (m: Artist {mongoid:"${artistId}"}),
                 p=(n)-[r:FOLLOWS]->(m)
@@ -47,6 +49,8 @@ router.post('/unfollow', (req, res) => {
             res.status(201).json({ message: "Relationship deleted successfully." })
         })
         .catch(err => console.log(err))
+
+    tx.commit();
 
 })
 

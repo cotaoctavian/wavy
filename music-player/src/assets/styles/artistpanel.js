@@ -79,6 +79,7 @@ export const Ftdiv = styled.div`
                     border: 2px solid gray;
                     border-radius: 25px;
                     font-family: 'Poppins', sans-serif;
+                    cursor: pointer;
                 }
 
                 & button:hover{
@@ -133,6 +134,7 @@ export const Ftdiv = styled.div`
                     border: 2px solid gray;
                     border-radius: 25px;
                     font-family: 'Poppins', sans-serif;
+                    cursor: pointer;
                 }
 
                 & button:hover{

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useHistory } from "react-router-dom";
-import photo from "../../assets/images/signup.png";
+import photo from "../../assets/images/signup.svg";
 import "../../assets/css/Register.css";
 import Axios from "axios";
 import * as EmailValidator from "email-validator";
@@ -35,6 +35,10 @@ const Register = () => {
             document.body.classList.remove('dashboard-back')
         }
     }, [])
+
+    if (localStorage.getItem('token') !== "null") {
+        history.push('/dashboard');
+    }
 
     const onChangeUsername = event => {
         setUsername(event.target.value)

@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
+import { withRouter, Redirect } from 'react-router';
 import '../assets/css/Home.css';
 import '../assets/css/Global.css';
 import { NavLink } from 'react-router-dom'
 import w_wave from '../assets/images/white_wave.png';
 import flag from '../assets/images/romania-flag.png';
 
-const Home = props => {
+const Home = ({ history }) => {
 
     useEffect(() => {
         document.body.classList.add('home-back')
@@ -19,12 +20,16 @@ const Home = props => {
         }
     }, []);
 
+    if (localStorage.getItem('token') !== "null") {
+        history.push('/dashboard');
+    }
+
     let content = (
         <div className="full-page">
             <header className="navbar">
                 <div className="left-div">
                     <img src={w_wave} alt="" />
-                    <p> <NavLink exact to ="/" className="header-nav-link">  wavy. </NavLink> </p>
+                    <p> <NavLink exact to="/" className="header-nav-link">  wavy. </NavLink> </p>
                 </div>
                 <span> | </span>
                 <div className="right-div">
@@ -58,4 +63,4 @@ const Home = props => {
     return content;
 }
 
-export default Home;
+export default withRouter(Home); 

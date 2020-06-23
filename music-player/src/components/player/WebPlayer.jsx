@@ -199,6 +199,7 @@ const WebPlayer = (props) => {
         let playlistIdentifier = localStorage.getItem('playlist');
         let artistSingleIdentifier = localStorage.getItem('artist_singles')
         let albumIdentifier = localStorage.getItem('album');
+        let shuffle = localStorage.getItem('shuffle');
 
         let playlist, position;
 
@@ -228,46 +229,63 @@ const WebPlayer = (props) => {
             }
         }
 
-        if (playlistIdentifier !== "null" || artistSingleIdentifier !== "null" || albumIdentifier !== "null") {
-            let i;
-            for (i = 0; i < playlist.length; i++) {
-                if (playlist[i] === songId) {
-                    position = i;
-                    break;
+        if (shuffle === "1") {
+            position = Math.floor(Math.random() * (playlist.length - 1));
+            setSongId(playlist[position]);
+            await Axios.post("http://localhost:5000/song", { song: playlist[position] })
+                .then(res => {
+                    setUrl(res.data.info.path)
+                    Axios.post(`http://localhost:5000/song/info`, { name: res.data.info.path })
+                        .then(res => {
+                            setSongInfo(res.data.info)
+                            setLike(getPlaylistLikeState(playlist[position + 1]))
+                        })
+                        .catch(err => console.log(err))
+                })
+                .catch(err => console.log(err))
+        }
+        else {
+            if (playlistIdentifier !== "null" || artistSingleIdentifier !== "null" || albumIdentifier !== "null") {
+                let i;
+                for (i = 0; i < playlist.length; i++) {
+                    if (playlist[i] === songId) {
+                        position = i;
+                        break;
+                    }
                 }
-            }
 
-            if (position === (playlist.length - 1)) {
-                if (repeatMode === 0) {
-                    setPlaying(false);
-                    setReset(!reset);
+                if (position === (playlist.length - 1)) {
+                    if (repeatMode === 0) {
+                        setPlaying(false);
+                        setReset(!reset);
+                    } else {
+                        setSongId(playlist[0]);
+                        await Axios.post("http://localhost:5000/song", { song: playlist[0] })
+                            .then(res => {
+                                setUrl(res.data.info.path)
+                                Axios.post(`http://localhost:5000/song/info`, { name: res.data.info.path })
+                                    .then(res => {
+                                        setSongInfo(res.data.info)
+                                        setLike(getPlaylistLikeState(playlist[0]))
+                                    })
+                                    .catch(err => console.log(err))
+                            })
+                            .catch(err => console.log(err))
+                    }
                 } else {
-                    setSongId(playlist[0]);
-                    await Axios.post("http://localhost:5000/song", { song: playlist[0] })
+                    setSongId(playlist[position + 1]);
+                    await Axios.post("http://localhost:5000/song", { song: playlist[position + 1] })
                         .then(res => {
                             setUrl(res.data.info.path)
                             Axios.post(`http://localhost:5000/song/info`, { name: res.data.info.path })
                                 .then(res => {
                                     setSongInfo(res.data.info)
-                                    setLike(getPlaylistLikeState(playlist[0]))
+                                    setLike(getPlaylistLikeState(playlist[position + 1]))
                                 })
                                 .catch(err => console.log(err))
                         })
                         .catch(err => console.log(err))
                 }
-            } else {
-                setSongId(playlist[position + 1]);
-                await Axios.post("http://localhost:5000/song", { song: playlist[position + 1] })
-                    .then(res => {
-                        setUrl(res.data.info.path)
-                        Axios.post(`http://localhost:5000/song/info`, { name: res.data.info.path })
-                            .then(res => {
-                                setSongInfo(res.data.info)
-                                setLike(getPlaylistLikeState(playlist[position + 1]))
-                            })
-                            .catch(err => console.log(err))
-                    })
-                    .catch(err => console.log(err))
             }
         }
     }

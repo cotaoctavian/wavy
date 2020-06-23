@@ -26,6 +26,8 @@
     position: relative;
     top: 10%;
     left: 18%;
+    width: 20em;
+    height: 20em;
 }
 
 .login-container form {

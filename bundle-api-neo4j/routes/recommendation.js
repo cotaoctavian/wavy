@@ -17,8 +17,6 @@ const session = driver.session()
     3. If he likes more than one genre recommend to him 10/#genre tracks for each genre. -> done
     4. Recommend 2 albums based on the genre of the album he saved. -> done
     5. Recommend 2 artists if he follows one from the same genre. -> done
-    6. If he listened to a track recommend 5 tracks from the same artist. (not yet)
-    7. Recommend 3 songs from the same artist that he liked a song. (not yet)
 */
 
 router.post('/verifyToken', (req, res) => {

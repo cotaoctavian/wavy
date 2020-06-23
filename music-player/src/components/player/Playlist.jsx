@@ -6,7 +6,6 @@ import { PlaylistContainer } from '../../assets/styles/playlist';
 import wavy from '../../assets/images/white_wave.png';
 import playlistCover from '../../assets/images/playlist.png';
 import '../../assets/css/Global.css';
-import liked_songs from '../../assets/images/liked_songs.gif';
 import { faSearch, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Axios from 'axios';
@@ -105,7 +104,7 @@ const Playlist = (props) => {
                         <span> New playlist </span>
                     </div>
                     <div>
-                        <NavLink exact to="/library/tracks" className="squared-nav-link"> <img src={liked_songs} alt="Liked songs" /> </NavLink>
+                        <NavLink exact to="/library/tracks" className="btn-grad"> </NavLink>
                         <span> Liked songs </span>
                     </div>
 

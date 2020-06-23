@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import photo from "../../assets/images/resetpass.png";
+import photo from "../../assets/images/resetpass.svg";
 import "../../assets/css/ResetPass.css";
 import Axios from "axios";
 

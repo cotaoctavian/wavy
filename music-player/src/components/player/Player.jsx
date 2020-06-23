@@ -94,18 +94,21 @@ const Player = ({ resetTrack, handlePrevious, handleForward, handleLike, songInf
                 setCurrentTime(formatSecondsAsTime(e.target.currentTime))
             })
 
-            audio.addEventListener('ended', () => {
-                if (Number(localStorage.getItem('repeatMode')) === 2) {
-                    audio.currentTime = 0;
-                } else {
-                    audio.pause();
-                    toggleForward(Number(localStorage.getItem('repeatMode')))
-                }
-            })
-
             audio.volume = volume / 100;
         }
     }, [playing, volume, duration, totalTrackTime, currentTime, audio, url, repeatMode, reset])
+
+
+    useEffect(() => {
+        audio.addEventListener('ended', () => {
+            if (Number(localStorage.getItem('repeatMode')) === 2) {
+                audio.currentTime = 0;
+            } else {
+                audio.pause();
+                toggleForward(Number(localStorage.getItem('repeatMode')));
+            }
+        })
+    }, [audio, songInfo])
 
 
     useEffect(() => {
@@ -175,8 +178,14 @@ const Player = ({ resetTrack, handlePrevious, handleForward, handleLike, songInf
     }
 
     const toggleShuffle = () => {
-        if (shuffle === true) setShuffle(false)
-        else setShuffle(true)
+        if (shuffle === true) {
+            localStorage.setItem('shuffle', 0);
+            setShuffle(false);
+        }
+        else {
+            localStorage.setItem('shuffle', 1);
+            setShuffle(true);
+        }
     }
 
     let content = (
