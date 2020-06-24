@@ -64,6 +64,7 @@ export const Main = styled.div`
     width: 100%;
     position: fixed;
     top: 7%;
+    
 `;
 
 
@@ -78,13 +79,18 @@ export const Menu = styled.div`
 
 export const SongsList = styled.div`
     display: grid;
-    margin-top: 25px;
     width: 80%;
     margin-left: 65px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     max-height: 600px;
     font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+    & h3 {
+        font-weight: bold;
+    }
 
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */

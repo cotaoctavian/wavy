@@ -51,17 +51,20 @@ const LikedSongs = props => {
 
 
                     <SongsList>
-                        {props.songs.map((item, id) => {
-                            if (props.songId != null) {
-                                if (item === props.songId) {
-                                    return <Song key={id} data={item} handle={handleSongUrl} handleLike={props.handleLike} playing={props.songIdState} hover={true} />
+
+                        {props.songs.length === 0 ?
+                            <h3> No albums available in your library. 😥 </h3> :
+                            props.songs.map((item, id) => {
+                                if (props.songId != null) {
+                                    if (item === props.songId) {
+                                        return <Song key={id} data={item} handle={handleSongUrl} handleLike={props.handleLike} playing={props.songIdState} hover={true} />
+                                    } else {
+                                        return <Song key={id} data={item} handle={handleSongUrl} handleLike={props.handleLike} playing={false} hover={false} />
+                                    }
                                 } else {
                                     return <Song key={id} data={item} handle={handleSongUrl} handleLike={props.handleLike} playing={false} hover={false} />
                                 }
-                            } else {
-                                return <Song key={id} data={item} handle={handleSongUrl} handleLike={props.handleLike} playing={false} hover={false} />
-                            }
-                        })}
+                            })}
                     </SongsList>
                 </Main>
             </SnackbarProvider>

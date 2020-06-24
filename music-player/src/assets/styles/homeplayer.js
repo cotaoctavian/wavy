@@ -380,3 +380,21 @@ export const LoadingContainer = styled.div`
     top: 45%;
     left: 48%;
 `;
+
+
+export const NothingFoundContainer = styled.div`
+    margin: auto;
+    margin-top: 12em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+    & img {
+        height: 30em;
+        width: 30em;
+    }
+`;

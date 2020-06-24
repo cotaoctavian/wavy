@@ -72,6 +72,7 @@ export const Ftdiv = styled.div`
         padding: 5px 5px 5px 5px;
         border: 1px solid gray;
         font-family: 'Poppins', sans-serif;
+        cursor: pointer;
     }
 
     & div div form input:focus{
@@ -87,6 +88,7 @@ export const Ftdiv = styled.div`
         border: 2px solid gray;
         border-radius: 25px;
         font-family: 'Poppins', sans-serif;
+        cursor: pointer;
     }
 
     & div div form button:focus {

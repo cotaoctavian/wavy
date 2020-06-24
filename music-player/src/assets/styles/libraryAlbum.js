@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const LibraryAlbumContainer = styled.div`
     display: grid;
-    margin-left: 3%;
+    margin-left: 65px;
     width: 90%;
     grid-template-columns: 1fr;
     grid-template-rows: auto;

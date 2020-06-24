@@ -7,6 +7,58 @@ export const Global = createGlobalStyle`
     }
 `;
 
+export const ClearContainer = styled.div`
+    display: grid;
+    margin-left: 65px;
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    font-size: 15px;
+    margin-bottom: 20em;
+
+    font-family: 'Poppins', sans-serif;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+                -moz-animation: fadein 2s; /* Firefox < 16 */
+                    -ms-animation: fadein 2s; /* Internet Explorer */
+                    -o-animation: fadein 2s; /* Opera < 12.1 */
+                        animation: fadein 2s;
+
+                @keyframes fadein {
+                    from { opacity: 0; }
+                    to   { opacity: 1; }
+                }
+
+                /* Firefox < 16 */
+                @-moz-keyframes fadein {
+                    from { opacity: 0; }
+                    to   { opacity: 1; }
+                }
+
+                /* Safari, Chrome and Opera > 12.1 */
+                @-webkit-keyframes fadein {
+                    from { opacity: 0; }
+                    to   { opacity: 1; }
+                }
+
+                /* Internet Explorer */
+                @-ms-keyframes fadein {
+                    from { opacity: 0; }
+                    to   { opacity: 1; }
+                }
+
+                /* Opera < 12.1 */
+                @-o-keyframes fadein {
+                    from { opacity: 0; }
+                    to   { opacity: 1; }
+                }
+
+    h3 { 
+        font-weight: bold;
+        color: white;
+    }
+`;
+
 export const ArtistContainer = styled.div`
     color: white;
     font-family: 'Poppins', sans-serif;

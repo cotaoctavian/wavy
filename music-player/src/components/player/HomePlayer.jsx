@@ -11,10 +11,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import wavy from '../../assets/images/white_wave.png';
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 import PauseCircleFilledIcon from '@material-ui/icons/PauseCircleFilled';
+import rec from '../../assets/images/rec.svg';
 
 /* Styling */
 import { Header, Global, Links } from '../../assets/styles/webplayer';
-import { RecommendedSongs, SongContainer, RecommendedAlbumsContainer, RecommendedArtistsContainer, LoadingContainer } from '../../assets/styles/homeplayer';
+import { RecommendedSongs, SongContainer, RecommendedAlbumsContainer, RecommendedArtistsContainer, LoadingContainer, NothingFoundContainer } from '../../assets/styles/homeplayer';
 import '../../assets/css/Global.css';
 import '../../assets/css/Spinner.scss';
 
@@ -150,7 +151,7 @@ const HomePlayer = ({ id, image, handleUrl, songId, songIdState }) => {
 
                                     setInterval(() => {
                                         setLoading(true)
-                                    }, 2000)
+                                    }, 1500)
                                 })
                                 .catch((error) => console.log(error))
 
@@ -187,6 +188,14 @@ const HomePlayer = ({ id, image, handleUrl, songId, songIdState }) => {
                         <div className="spinner slices"></div>
                     </div>
                 </LoadingContainer>}
+
+            {recommendedSongs.length === 0 && recommendedAlbums.length === 0 && recommendedArtists.length === 0 && loading ?
+                <NothingFoundContainer>
+                    <h1> Appreciate some music to get your recommendations! </h1>
+                    <img src={rec} alt="" />
+                </NothingFoundContainer>
+                :
+                null}
 
             {loading ?
                 <RecommendedSongs>

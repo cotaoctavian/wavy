@@ -36,7 +36,7 @@ const Register = () => {
         }
     }, [])
 
-    if (localStorage.getItem('token') !== "null") {
+    if (localStorage.getItem('token') !== "null" && localStorage.getItem('token') !== null) {
         history.push('/dashboard');
     }
 

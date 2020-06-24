@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Header, Global, Links, Main, Menu } from '../../assets/styles/webplayer';
-import { ArtistContainer } from '../../assets/styles/artists';
+import { ArtistContainer, ClearContainer } from '../../assets/styles/artists';
 import { NavLink } from 'react-router-dom';
 import wavy from '../../assets/images/white_wave.png';
 import '../../assets/css/Global.css';
@@ -46,6 +46,13 @@ const Artists = () => {
                     <span> <NavLink exact to="/library/artists" className="main-nav-link"> ARTISTS </NavLink> </span>
                     <span> <NavLink exact to="/library/made-for-you" className="main-player-link"> MADE FOR YOU </NavLink> </span>
                 </Menu>
+
+                {user.artists.length === 0 ?
+                    <ClearContainer >
+                        <h3> No artists available in your library. 😥 </h3>
+                    </ClearContainer>
+                    : 
+                    null}
 
                 <ArtistContainer>
                     {user.artists.map((artist, index) => {

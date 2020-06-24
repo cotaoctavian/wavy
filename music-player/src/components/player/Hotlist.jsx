@@ -74,7 +74,7 @@ const Hotlist = ({ handleUrl, songId, songIdState }) => {
                 console.log(response.data.message);
                 setInterval(() => {
                     setLoading(true)
-                }, 2000)
+                }, 1500)
             })
             .catch((error) => console.log(error))
 
