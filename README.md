@@ -1,2 +1,2 @@
 # wavy
-## Music streaming app with collaborative filtering recommendation.
+Music streaming app with collaborative filtering recommendation.
